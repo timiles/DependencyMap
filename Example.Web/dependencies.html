@@ -1,0 +1,52 @@
+﻿<html>
+<head>
+    <title>Dependency Map: Dependencies View</title>
+    <link type="text/css" rel="stylesheet" href="css/styles.css" />
+    <script src="js/masonry.pkgd.min.js"></script>
+    <script type="text/javascript" src="data.js"></script>
+</head>
+
+<body>
+<h1>Dependency Map: Dependencies View</h1>
+
+<div id="dependencies" class="grid">
+
+</div>
+<script>
+
+    var dependenciesContainer = document.getElementById('dependencies');
+    for (var i = 0; i < g_dependencies.length; i++) {
+        var dependency = g_dependencies[i];
+
+        var dependencyContainer = document.createElement('div');
+        dependencyContainer.className = 'grid-item score-' + dependency.Score;
+
+        var header = document.createElement('h2');
+        header.innerHTML = dependency.DependencyId;
+        dependencyContainer.appendChild(header);
+
+        var versionList = document.createElement('ul');
+        for (var version in dependency.ServiceUsageByVersion) {
+            var serviceVersion = dependency.ServiceUsageByVersion[version];
+
+            var serviceList = document.createElement('ul');
+            for (var s = 0; s < serviceVersion.length; s++) {
+                var versionListItem = document.createElement('li');
+                versionListItem.innerText = serviceVersion[s];
+                serviceList.appendChild(versionListItem);
+            }
+
+            var serviceListItem = document.createElement('li');
+            serviceListItem.innerHTML = version;
+            serviceListItem.appendChild(serviceList);
+            versionList.appendChild(serviceListItem);
+        }
+
+        dependencyContainer.appendChild(versionList);
+        dependenciesContainer.appendChild(dependencyContainer);
+    }
+    
+    var msnry = new Masonry('.grid', { gutter: 10 });
+</script>
+</body>
+</html>
