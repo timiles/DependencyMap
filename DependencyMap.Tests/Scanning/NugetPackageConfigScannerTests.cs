@@ -8,14 +8,14 @@ using NUnit.Framework;
 namespace DependencyMap.Tests.Scanning
 {
     [TestFixture]
-    public class NugetPackageConfigScannerTests
+    public class NuGetPackageConfigScannerTests
     {
         [Test]
         public void EmptyFile_ShouldYieldNothing()
         {
             var dependencyFile = new DependencyFile { ServiceId = @"MyService", FileContents = @"" };
             var sourceRepository = new FakeSourceRepository(dependencyFile);
-            var scanner = new NugetPackageConfigScanner(sourceRepository);
+            var scanner = new NuGetPackageConfigScanner(sourceRepository);
 
             var serviceDependencies = scanner.GetAllServiceDependencies();
             serviceDependencies.Should().BeEmpty();
@@ -35,7 +35,7 @@ namespace DependencyMap.Tests.Scanning
 </packages>"
             };
             var sourceRepository = new FakeSourceRepository(dependencyFile);
-            var scanner = new NugetPackageConfigScanner(sourceRepository);
+            var scanner = new NuGetPackageConfigScanner(sourceRepository);
 
             var serviceDependencies = scanner.GetAllServiceDependencies().ToList();
             serviceDependencies.Count.Should().Be(3);
@@ -78,7 +78,7 @@ namespace DependencyMap.Tests.Scanning
                 }
             };
             var sourceRepository = new FakeSourceRepository(files);
-            var scanner = new NugetPackageConfigScanner(sourceRepository);
+            var scanner = new NuGetPackageConfigScanner(sourceRepository);
 
             var serviceDependencies = scanner.GetAllServiceDependencies().ToList();
             serviceDependencies.Count.Should().Be(4);
@@ -109,7 +109,7 @@ namespace DependencyMap.Tests.Scanning
                 FileContents = @"<package id=""AlphaPackage"" version=""0.0.1-alpha"" targetFramework=""net451"" />"
             };
             var sourceRepository = new FakeSourceRepository(dependencyFile);
-            var scanner = new NugetPackageConfigScanner(sourceRepository);
+            var scanner = new NuGetPackageConfigScanner(sourceRepository);
 
             var serviceDependencies = scanner.GetAllServiceDependencies().ToList();
             serviceDependencies.Count.Should().Be(1);

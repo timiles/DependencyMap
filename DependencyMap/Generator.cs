@@ -20,7 +20,7 @@ namespace DependencyMap
         private static List<ServiceDependency> GetServiceDependencies(string configFileName, params string[] rootFolders)
         {
             var sourceRepository = new FileSystemSourceRepository(configFileName, rootFolders);
-            var configScanner = new NugetPackageConfigScanner(sourceRepository);
+            var configScanner = new NuGetPackageConfigScanner(sourceRepository);
             return configScanner.GetAllServiceDependencies().ToList();
         }
 

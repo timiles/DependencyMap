@@ -7,11 +7,11 @@ using NuGet;
 
 namespace DependencyMap.Scanning
 {
-    internal class NugetPackageConfigScanner
+    internal class NuGetPackageConfigScanner
     {
         private readonly ISourceRepository _sourceRepository;
 
-        public NugetPackageConfigScanner(ISourceRepository sourceRepository)
+        public NuGetPackageConfigScanner(ISourceRepository sourceRepository)
         {
             _sourceRepository = sourceRepository;
         }
