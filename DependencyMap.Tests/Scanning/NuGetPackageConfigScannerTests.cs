@@ -1,4 +1,5 @@
-﻿using System.Linq;
+﻿using System;
+using System.Linq;
 using DependencyMap.Models;
 using DependencyMap.Scanning;
 using FluentAssertions;
@@ -10,6 +11,12 @@ namespace DependencyMap.Tests.Scanning
     [TestFixture]
     public class NuGetPackageConfigScannerTests
     {
+        [Test]
+        public void NullSourceRepository_ShouldThrowException()
+        {
+            Assert.Throws<ArgumentNullException>(() => new NuGetPackageConfigScanner(null));
+        }
+
         [Test]
         public void EmptyFile_ShouldYieldNothing()
         {

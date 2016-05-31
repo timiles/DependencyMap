@@ -13,6 +13,10 @@ namespace DependencyMap.Scanning
 
         public NuGetPackageConfigScanner(ISourceRepository sourceRepository)
         {
+            if (sourceRepository == null)
+            {
+                throw new ArgumentNullException(nameof(sourceRepository));
+            }
             _sourceRepository = sourceRepository;
         }
 
