@@ -1,4 +1,6 @@
-﻿using DependencyMap.Models;
+﻿using System;
+using System.Linq;
+using DependencyMap.Models;
 using DependencyMap.Scanning;
 using FluentAssertions;
 using NUnit.Framework;
@@ -9,7 +11,7 @@ namespace DependencyMap.Tests.Scanning
     public class NugetPackageConfigScannerTests
     {
         [Test]
-        public void EmptyFile_WhenScanned_ShouldYieldNothing()
+        public void EmptyFile_ShouldYieldNothing()
         {
             var dependencyFile = new DependencyFile { ServiceId = @"MyService", FileContents = @"" };
             var sourceRepository = new FakeSourceRepository(dependencyFile);
@@ -17,6 +19,40 @@ namespace DependencyMap.Tests.Scanning
 
             var serviceDependencies = scanner.GetAllServiceDependencies();
             serviceDependencies.Should().BeEmpty();
+        }
+
+        [Test]
+        public void FileWithPackages_ShouldYieldCorrectIdsAndVersions()
+        {
+            var dependencyFile = new DependencyFile
+            {
+                ServiceId = @"MyService",
+                FileContents = @"<?xml version=""1.0"" encoding=""utf-8""?>
+<packages>
+  <package id=""Package0"" version=""0.0.0.1"" targetFramework=""net451"" />
+  <package id=""Package1"" version=""1.2.345"" targetFramework=""net451"" />
+  <package id=""Package2"" version=""2.0"" targetFramework=""net451"" />
+</packages>"
+            };
+            var sourceRepository = new FakeSourceRepository(dependencyFile);
+            var scanner = new NugetPackageConfigScanner(sourceRepository);
+
+            var serviceDependencies = scanner.GetAllServiceDependencies().ToList();
+            serviceDependencies.Count.Should().Be(3);
+
+            foreach (var serviceDependency in serviceDependencies)
+            {
+                serviceDependency.ServiceId.Should().Be(dependencyFile.ServiceId);
+            }
+
+            serviceDependencies[0].DependencyId.Should().Be("Package0");
+            serviceDependencies[0].DependencyVersion.Should().Be(new Version(0, 0, 0, 1));
+
+            serviceDependencies[1].DependencyId.Should().Be("Package1");
+            serviceDependencies[1].DependencyVersion.Should().Be(new Version(1, 2, 345));
+
+            serviceDependencies[2].DependencyId.Should().Be("Package2");
+            serviceDependencies[2].DependencyVersion.Should().Be(new Version(2, 0));
         }
     }
 }
