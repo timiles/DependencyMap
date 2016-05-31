@@ -57,10 +57,7 @@ namespace DependencyMap.Scanning
                     {
                         packages.Add(packageId, ExtractValue(matchVersion.Value));
                     }
-                    else
-                    {
-                        Console.WriteLine("DUP: {0} ({1})", packagesConfig, matchPackageId);
-                    }
+                    // TODO: log duplicates?
                 }
             }
 
