@@ -101,7 +101,7 @@ namespace DependencyMap.Tests.Scanning
         }
 
         [Test]
-        public void Packages_ShouldYieldCorrectIdsAndVersions()
+        public void PrereleaseVersionValue_ShouldParseCorrectly()
         {
             var dependencyFile = new DependencyFile
             {
@@ -117,6 +117,25 @@ namespace DependencyMap.Tests.Scanning
             serviceDependencies[0].ServiceId.Should().Be("MyService");
             serviceDependencies[0].DependencyId.Should().Be("AlphaPackage");
             serviceDependencies[0].DependencyVersion.Should().Be(new SemanticVersion(0, 0, 1, "alpha"));
+        }
+
+        [Test]
+        public void InvalidVersionValue_ShouldYieldNullVersion()
+        {
+            var dependencyFile = new DependencyFile
+            {
+                ServiceId = @"MyService",
+                FileContents = @"<package id=""InvalidPackage"" version=""invalid"" targetFramework=""net451"" />"
+            };
+            var sourceRepository = new FakeSourceRepository(dependencyFile);
+            var scanner = new NuGetPackageConfigScanner(sourceRepository);
+
+            var serviceDependencies = scanner.GetAllServiceDependencies().ToList();
+            serviceDependencies.Count.Should().Be(1);
+
+            serviceDependencies[0].ServiceId.Should().Be("MyService");
+            serviceDependencies[0].DependencyId.Should().Be("InvalidPackage");
+            serviceDependencies[0].DependencyVersion.Should().BeNull();
         }
     }
 }
