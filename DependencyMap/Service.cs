@@ -1,5 +1,5 @@
-using System;
 using System.Collections.Generic;
+using NuGet;
 
 namespace DependencyMap
 {
@@ -15,9 +15,9 @@ namespace DependencyMap
         {
             public string DependencyId { get; set; }
 
-            public Version Version { get; set; }
+            public SemanticVersion Version { get; set; }
 
-            public Version LatestKnownVersion { get; set; }
+            public SemanticVersion LatestKnownVersion { get; set; }
 
             public bool IsStale { get; set; }
         }

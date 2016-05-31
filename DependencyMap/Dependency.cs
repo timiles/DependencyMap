@@ -1,5 +1,5 @@
-using System;
 using System.Collections.Generic;
+using NuGet;
 
 namespace DependencyMap
 {
@@ -9,6 +9,6 @@ namespace DependencyMap
 
         public int Score { get; set; }
 
-        public IDictionary<Version, string[]> ServiceUsageByVersion { get; set; }
+        public IDictionary<SemanticVersion, string[]> ServiceUsageByVersion { get; set; }
     }
 }

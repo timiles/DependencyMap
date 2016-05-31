@@ -1,7 +1,6 @@
 ﻿using System;
 using System.IO;
 using Newtonsoft.Json;
-using Newtonsoft.Json.Converters;
 
 namespace DependencyMap.JsonGenerator
 {
@@ -18,17 +17,17 @@ namespace DependencyMap.JsonGenerator
             var outputPath = args[1];
 
             var client = new Generator("packages.config", sourceDir);
-            var dependencies = SerializeJson(client.GetAllDependencies());
-            var services = SerializeJson(client.GetAllServices());
+            var dependencies = SerializeObjectToJson(client.GetAllDependencies());
+            var services = SerializeObjectToJson(client.GetAllServices());
 
             File.WriteAllText(outputPath, $"g_dependencies = {dependencies};\r\ng_services = {services};");
 
             return 0;
         }
 
-        private static string SerializeJson(object getServicesByDependency)
+        private static string SerializeObjectToJson(object value)
         {
-            return JsonConvert.SerializeObject(getServicesByDependency, Formatting.Indented, new VersionConverter());
+            return JsonConvert.SerializeObject(value, Formatting.Indented, new SemanticVersionConverter());
         }
     }
 }

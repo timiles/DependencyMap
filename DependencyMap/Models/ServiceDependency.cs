@@ -1,4 +1,4 @@
-﻿using System;
+﻿using NuGet;
 
 namespace DependencyMap.Models
 {
@@ -8,6 +8,6 @@ namespace DependencyMap.Models
 
         public string DependencyId { get; set; }
 
-        public Version DependencyVersion { get; set; }
+        public SemanticVersion DependencyVersion { get; set; }
     }
 }

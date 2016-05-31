@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Text.RegularExpressions;
 using DependencyMap.Models;
 using DependencyMap.SourceRepositories;
+using NuGet;
 
 namespace DependencyMap.Scanning
 {
@@ -23,8 +24,8 @@ namespace DependencyMap.Scanning
 
                 foreach (var package in packages)
                 {
-                    Version version;
-                    Version.TryParse(package.Value, out version);
+                    SemanticVersion version;
+                    SemanticVersion.TryParse(package.Value, out version);
                     yield return
                         new ServiceDependency
                         {

@@ -1,7 +1,7 @@
-using System;
 using System.Collections.Generic;
 using System.Linq;
 using DependencyMap.Models;
+using NuGet;
 
 namespace DependencyMap.Analysis
 {
@@ -56,9 +56,9 @@ namespace DependencyMap.Analysis
             }
         }
 
-        internal IDictionary<string, IDictionary<Version, string[]>> GroupByDependency()
+        internal IDictionary<string, IDictionary<SemanticVersion, string[]>> GroupByDependency()
         {
-            var results = new Dictionary<string, IDictionary<Version, string[]>>();
+            var results = new Dictionary<string, IDictionary<SemanticVersion, string[]>>();
             foreach (var dependency in _serviceDependencies.GroupBy(x => x.DependencyId).OrderBy(x => x.Key))
             {
                 results.Add(dependency.Key,
