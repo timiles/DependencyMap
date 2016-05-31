@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using DependencyMap.Models;
@@ -11,6 +12,10 @@ namespace DependencyMap.Analysis
 
         internal ServiceDependenciesAnalyser(IList<ServiceDependency> serviceDependencies)
         {
+            if (serviceDependencies == null)
+            {
+                throw new ArgumentNullException(nameof(serviceDependencies));
+            }
             _serviceDependencies = serviceDependencies;
         }
 
