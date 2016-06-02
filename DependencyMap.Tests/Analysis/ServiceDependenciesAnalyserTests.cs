@@ -78,5 +78,21 @@ namespace DependencyMap.Tests.Analysis
                 services["Service2"].First(x => x.DependencyId == "Dependency0").StalenessRating.Should().Be(0);
             }
         }
+
+
+        [TestFixture]
+        public class GroupedByDependency : ServiceDependenciesAnalyserTests
+        {
+            [Test]
+            public void SimpleDependency_ShouldReturnDependenciesAsExpected()
+            {
+                var serviceDependency = _serviceDependencies[0];
+                var analyser = new ServiceDependenciesAnalyser(new[] { serviceDependency });
+                var dependencies = analyser.GroupByDependency();
+
+                dependencies.Keys.Count.Should().Be(1);
+                dependencies.Keys.Should().Contain("Dependency0");
+            }
+        }
     }
 }
