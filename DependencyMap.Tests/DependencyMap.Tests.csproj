@@ -60,6 +60,7 @@
     <Compile Include="Scanning\FakeSourceRepository.cs" />
     <Compile Include="Scanning\NuGetPackageConfigScannerTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SourceRepositories\GitHubSourceRepositoryTests.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />

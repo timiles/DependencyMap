@@ -38,8 +38,13 @@
       <HintPath>..\packages\NuGet.Core.2.11.1\lib\net40-Client\NuGet.Core.dll</HintPath>
       <Private>True</Private>
     </Reference>
+    <Reference Include="Octokit, Version=0.19.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Octokit.0.19.0\lib\net45\Octokit.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Net.Http" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Analysis\ServiceDependenciesAnalyser.cs" />
@@ -52,6 +57,7 @@
     <Compile Include="Scanning\NuGetPackageConfigScanner.cs" />
     <Compile Include="Service.cs" />
     <Compile Include="SourceRepositories\FileSystemSourceRepository.cs" />
+    <Compile Include="SourceRepositories\GitHubSourceRepository.cs" />
     <Compile Include="SourceRepositories\ISourceRepository.cs" />
   </ItemGroup>
   <ItemGroup>
