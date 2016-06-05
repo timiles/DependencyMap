@@ -161,6 +161,37 @@ namespace DependencyMap.Tests.Analysis
                         }
                     });
             }
+            
+            [Test]
+            public void DifferentVersions_ShouldReturnServicesGroupedByVersion()
+            {
+                var analyser = new ServiceDependenciesAnalyser(_serviceDependencies);
+                var dependencies = analyser.GroupByDependency();
+
+
+                dependencies.ShouldBeEquivalentTo(
+                    new Dictionary<string, Dictionary<SemanticVersion, string[]>>
+                    {
+                        {
+                            "Dependency0",
+                            new Dictionary<SemanticVersion, string[]>
+                            {
+                                {
+                                    new SemanticVersion(1, 0, 0, 0),
+                                    new[] {"Service0", "Service1"}
+                                },
+                                {
+                                    new SemanticVersion(1, 1, 0, 0),
+                                    new[] {"Service1"}
+                                },
+                                {
+                                    new SemanticVersion(2, 0, 0, 0),
+                                    new[] {"Service2"}
+                                }
+                            }
+                        }
+                    });
+            }
         }
     }
 }
