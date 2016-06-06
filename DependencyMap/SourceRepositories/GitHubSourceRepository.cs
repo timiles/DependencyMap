@@ -20,6 +20,7 @@ namespace DependencyMap.SourceRepositories
         private readonly string _repositoryOwner;
         private readonly OwnerType _ownerType;
         private readonly Credentials _credentials;
+        private readonly Uri _apiBaseAddress;
 
         /// <summary>
         /// Reads files from all repositories owned by a GitHub user or organization
@@ -29,17 +30,20 @@ namespace DependencyMap.SourceRepositories
         /// <param name="ownerType">user or organization</param>
         /// <param name="login">Needed to prevent rate limiting</param>
         /// <param name="password">Needed to prevent rate limiting</param>
+        /// <param name="apiBaseAddress">override this for Enterprise instances</param>
         public GitHubSourceRepository(
             string dependencyFileName,
             string repositoryOwner,
             OwnerType ownerType,
             string login = null,
-            string password = null)
+            string password = null,
+            string apiBaseAddress = null)
         {
             _dependencyFileName = dependencyFileName;
             _repositoryOwner = repositoryOwner;
             _ownerType = ownerType;
             _credentials = login != null ? new Credentials(login, password) : Credentials.Anonymous;
+            _apiBaseAddress = apiBaseAddress != null ? new Uri(apiBaseAddress) : GitHubClient.GitHubApiUrl;
         }
 
         public IEnumerable<DependencyFile> GetDependencyFilesToScan()
@@ -51,7 +55,8 @@ namespace DependencyMap.SourceRepositories
         {
             var client = new GitHubClient(
                 new ProductHeaderValue("DependencyMap"),
-                new InMemoryCredentialStore(_credentials));
+                new InMemoryCredentialStore(_credentials),
+                _apiBaseAddress);
 
             var results = new List<DependencyFile>();
 
