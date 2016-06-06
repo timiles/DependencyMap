@@ -11,15 +11,22 @@ namespace DependencyMap
     public class Generator
     {
         private readonly Lazy<List<ServiceDependency>> _serviceDependencies;
-        
-        public Generator(string configFileName, params string[] rootFolders)
+
+        public Generator(IFileSystemSourceRepositoryConfig config) : this(new FileSystemSourceRepository(config))
         {
-            _serviceDependencies = new Lazy<List<ServiceDependency>>(() => GetServiceDependencies(configFileName, rootFolders));
         }
 
-        private static List<ServiceDependency> GetServiceDependencies(string configFileName, params string[] rootFolders)
+        public Generator(IGitHubSourceRepositoryConfig config) : this(new GitHubSourceRepository(config))
         {
-            var sourceRepository = new FileSystemSourceRepository(configFileName, rootFolders);
+        }
+
+        private Generator(ISourceRepository sourceRepository)
+        {
+            _serviceDependencies = new Lazy<List<ServiceDependency>>(() => GetServiceDependencies(sourceRepository));
+        }
+
+        private static List<ServiceDependency> GetServiceDependencies(ISourceRepository sourceRepository)
+        {
             var configScanner = new NuGetPackageConfigScanner(sourceRepository);
             return configScanner.GetAllServiceDependencies().ToList();
         }

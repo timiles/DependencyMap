@@ -9,10 +9,10 @@ namespace DependencyMap.SourceRepositories
         private readonly string _dependencyFileName;
         private readonly string[] _rootFolders;
 
-        public FileSystemSourceRepository(string dependencyFileName, params string[] rootFolders)
+        public FileSystemSourceRepository(IFileSystemSourceRepositoryConfig config)
         {
-            _dependencyFileName = dependencyFileName;
-            _rootFolders = rootFolders;
+            _dependencyFileName = config.DependencyFileName;
+            _rootFolders = config.RootFolders;
         }
 
         public IEnumerable<DependencyFile> GetDependencyFilesToScan()

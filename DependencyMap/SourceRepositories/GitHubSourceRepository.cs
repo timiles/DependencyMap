@@ -10,40 +10,22 @@ namespace DependencyMap.SourceRepositories
 {
     internal class GitHubSourceRepository : ISourceRepository
     {
-        internal enum OwnerType
-        {
-            User,
-            Organization
-        }
-
         private readonly string _dependencyFileName;
         private readonly string _repositoryOwner;
-        private readonly OwnerType _ownerType;
+        private readonly bool _ownerIsOrganization;
         private readonly Credentials _credentials;
         private readonly Uri _apiBaseAddress;
 
         /// <summary>
         /// Reads files from all repositories owned by a GitHub user or organization
         /// </summary>
-        /// <param name="dependencyFileName">e.g. packages.config</param>
-        /// <param name="repositoryOwner">user or organization name</param>
-        /// <param name="ownerType">user or organization</param>
-        /// <param name="login">Needed to prevent rate limiting</param>
-        /// <param name="password">Needed to prevent rate limiting</param>
-        /// <param name="apiBaseAddress">override this for Enterprise instances</param>
-        public GitHubSourceRepository(
-            string dependencyFileName,
-            string repositoryOwner,
-            OwnerType ownerType,
-            string login = null,
-            string password = null,
-            string apiBaseAddress = null)
+        public GitHubSourceRepository(IGitHubSourceRepositoryConfig config)
         {
-            _dependencyFileName = dependencyFileName;
-            _repositoryOwner = repositoryOwner;
-            _ownerType = ownerType;
-            _credentials = login != null ? new Credentials(login, password) : Credentials.Anonymous;
-            _apiBaseAddress = apiBaseAddress != null ? new Uri(apiBaseAddress) : GitHubClient.GitHubApiUrl;
+            _dependencyFileName = config.DependencyFileName;
+            _repositoryOwner = config.RepositoryOwner;
+            _ownerIsOrganization = config.OwnerIsOrganization;
+            _credentials = config.Login != null ? new Credentials(config.Login, config.Password) : Credentials.Anonymous;
+            _apiBaseAddress = config.ApiBaseAddress != null ? new Uri(config.ApiBaseAddress) : GitHubClient.GitHubApiUrl;
         }
 
         public IEnumerable<DependencyFile> GetDependencyFilesToScan()
@@ -60,9 +42,9 @@ namespace DependencyMap.SourceRepositories
 
             var results = new List<DependencyFile>();
 
-            var repositories = _ownerType == OwnerType.User
-                ? await client.Repository.GetAllForUser(_repositoryOwner)
-                : await client.Repository.GetAllForOrg(_repositoryOwner);
+            var repositories = _ownerIsOrganization
+                ? await client.Repository.GetAllForOrg(_repositoryOwner)
+                : await client.Repository.GetAllForUser(_repositoryOwner);
 
             foreach (var repo in repositories)
             {
