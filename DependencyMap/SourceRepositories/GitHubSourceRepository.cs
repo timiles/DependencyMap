@@ -16,6 +16,8 @@ namespace DependencyMap.SourceRepositories
         private readonly Credentials _credentials;
         private readonly Uri _apiBaseAddress;
 
+        private IEnumerable<DependencyFile> _dependencyFiles;
+
         /// <summary>
         /// Reads files from all repositories owned by a GitHub user or organization
         /// </summary>
@@ -30,10 +32,10 @@ namespace DependencyMap.SourceRepositories
 
         public IEnumerable<DependencyFile> GetDependencyFilesToScan()
         {
-            return ReadFilesFromGitHub().Result;
+            return _dependencyFiles ?? (_dependencyFiles = ReadFilesFromGitHubAsync().Result);
         }
 
-        private async Task<IEnumerable<DependencyFile>> ReadFilesFromGitHub()
+        private async Task<IEnumerable<DependencyFile>> ReadFilesFromGitHubAsync()
         {
             var client = new GitHubClient(
                 new ProductHeaderValue("DependencyMap"),

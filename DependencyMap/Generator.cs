@@ -10,7 +10,7 @@ namespace DependencyMap
 {
     public class Generator
     {
-        private readonly Lazy<List<ServiceDependency>> _serviceDependencies;
+        private readonly NuGetPackageConfigScanner _configScanner;
 
         public Generator(IFileSystemSourceRepositoryConfig config) : this(new FileSystemSourceRepository(config))
         {
@@ -22,18 +22,13 @@ namespace DependencyMap
 
         private Generator(ISourceRepository sourceRepository)
         {
-            _serviceDependencies = new Lazy<List<ServiceDependency>>(() => GetServiceDependencies(sourceRepository));
-        }
-
-        private static List<ServiceDependency> GetServiceDependencies(ISourceRepository sourceRepository)
-        {
-            var configScanner = new NuGetPackageConfigScanner(sourceRepository);
-            return configScanner.GetAllServiceDependencies().ToList();
+            _configScanner = new NuGetPackageConfigScanner(sourceRepository);
         }
 
         public IEnumerable<Dependency> GetAllDependencies()
         {
-            var dependencies = new ServiceDependenciesAnalyser(_serviceDependencies.Value).GroupByDependency();
+            var serviceDependencies = _configScanner.GetAllServiceDependencies().ToList();
+            var dependencies = new ServiceDependenciesAnalyser(serviceDependencies).GroupByDependency();
 
             foreach (var dependency in dependencies)
             {
@@ -49,7 +44,8 @@ namespace DependencyMap
 
         public IEnumerable<Service> GetAllServices()
         {
-            var services = new ServiceDependenciesAnalyser(_serviceDependencies.Value).GroupByService();
+            var serviceDependencies = _configScanner.GetAllServiceDependencies().ToList();
+            var services = new ServiceDependenciesAnalyser(serviceDependencies).GroupByService();
 
             // Normalise to a value between 1 and 5 where 1 is best.
             Func<IEnumerable<DependencyStaleness>, int> calculateScore = dependencyStalenesses =>
