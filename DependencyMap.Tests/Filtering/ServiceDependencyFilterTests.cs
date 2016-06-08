@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.Linq;
 using DependencyMap.Filtering;
 using DependencyMap.Models;
@@ -12,12 +13,17 @@ namespace DependencyMap.Tests.Filtering
     {
         class ServiceDependencyConfig : IServiceDependencyFilterConfig
         {
-            public ServiceDependencyConfig(IEnumerable<string> dependencyIdsToInclude = null)
+            public ServiceDependencyConfig(
+                IEnumerable<string> dependencyIdsToInclude = null,
+                Func<string, bool> filePathFilter = null)
             {
                 DependencyIdsToInclude = dependencyIdsToInclude;
+                FilePathFilter = filePathFilter;
             }
 
             public IEnumerable<string> DependencyIdsToInclude { get; }
+
+            public Func<string, bool> FilePathFilter { get; }
         }
 
         private readonly ServiceDependency[] _serviceDependencies;
@@ -31,31 +37,43 @@ namespace DependencyMap.Tests.Filtering
                 {
                     ServiceId = "Service0",
                     DependencyId = "Dependency0",
+                    DependencyFilePath = @"Project0\packages.config",
+                },
+                new ServiceDependency
+                {
+                    ServiceId = "Service0",
+                    DependencyId = "Dependency0",
+                    DependencyFilePath = @"Project0.Tests\packages.config",
                 },
                 new ServiceDependency
                 {
                     ServiceId = "Service0",
                     DependencyId = "Dependency1",
+                    DependencyFilePath = @"Project0\packages.config",
                 },
                 new ServiceDependency
                 {
                     ServiceId = "Service0",
                     DependencyId = "Dependency2",
+                    DependencyFilePath = @"Project0\packages.config",
                 },
                 new ServiceDependency
                 {
                     ServiceId = "Service1",
                     DependencyId = "Dependency0",
+                    DependencyFilePath = @"Project1\packages.config",
                 },
                 new ServiceDependency
                 {
                     ServiceId = "Service1",
                     DependencyId = "Dependency0",
+                    DependencyFilePath = @"Project1.Tests\packages.config",
                 },
                 new ServiceDependency
                 {
                     ServiceId = "Service2",
                     DependencyId = "Dependency0",
+                    DependencyFilePath = @"Project2\packages.config",
                 }
             };
         }
@@ -70,7 +88,7 @@ namespace DependencyMap.Tests.Filtering
         }
 
         [Test]
-        public void DependencyIdsFilterIsNull_ShouldReturnAllServiceDependencies()
+        public void ConfigPropertiesAreNull_ShouldReturnAllServiceDependencies()
         {
             var filter = new ServiceDependencyFilter(new ServiceDependencyConfig());
 
@@ -88,7 +106,19 @@ namespace DependencyMap.Tests.Filtering
             var filter = new ServiceDependencyFilter(new ServiceDependencyConfig(dependencyIdsToInclude));
 
             var filtered = filter.Apply(this._serviceDependencies);
-            filtered.ShouldBeEquivalentTo(this._serviceDependencies.Where(x => dependencyIdsToInclude.Contains(x.DependencyId)));
+            filtered.ShouldBeEquivalentTo(
+                this._serviceDependencies.Where(x => dependencyIdsToInclude.Contains(x.DependencyId)));
+        }
+
+        [Test]
+        public void FilePathFilterIsSet_ShouldReturnFilteredServiceDependencies()
+        {
+            Func<string, bool> pathFilter = p => !p.ToLower().Contains(@".tests\");
+            var filter = new ServiceDependencyFilter(new ServiceDependencyConfig(filePathFilter: pathFilter));
+
+            var filtered = filter.Apply(this._serviceDependencies);
+            filtered.ShouldBeEquivalentTo(
+                this._serviceDependencies.Where(x => pathFilter(x.DependencyFilePath)));
         }
     }
 }

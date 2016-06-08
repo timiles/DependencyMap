@@ -9,5 +9,7 @@ namespace DependencyMap.Models
         public string DependencyId { get; set; }
 
         public SemanticVersion DependencyVersion { get; set; }
+
+        public string DependencyFilePath { get; set; }
     }
 }

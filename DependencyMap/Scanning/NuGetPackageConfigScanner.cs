@@ -35,7 +35,8 @@ namespace DependencyMap.Scanning
                         {
                             ServiceId = configFile.ServiceId,
                             DependencyId = package.Key,
-                            DependencyVersion = version
+                            DependencyVersion = version,
+                            DependencyFilePath = configFile.FilePath,
                         };
                 }
             }
