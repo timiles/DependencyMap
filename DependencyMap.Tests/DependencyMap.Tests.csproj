@@ -57,6 +57,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Analysis\ServiceDependenciesAnalyserTests.cs" />
+    <Compile Include="Filtering\ServiceDependencyFilterTests.cs" />
     <Compile Include="Scanning\FakeSourceRepository.cs" />
     <Compile Include="Scanning\NuGetPackageConfigScannerTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -71,6 +72,7 @@
       <Name>DependencyMap</Name>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
