@@ -37,6 +37,7 @@ namespace DependencyMap.SourceRepositories
                         yield return new DependencyFile
                         {
                             ServiceId = serviceId,
+                            FilePath = filePath,
                             FileContents = File.ReadAllText(filePath)
                         };
                     }

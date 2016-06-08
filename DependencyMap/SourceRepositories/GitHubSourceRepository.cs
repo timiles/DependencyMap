@@ -71,6 +71,7 @@ namespace DependencyMap.SourceRepositories
                             results.Add(new DependencyFile
                             {
                                 ServiceId = repo.Name,
+                                FilePath = file.Path,
                                 FileContents = contents[0].Content
                             });
                         }
