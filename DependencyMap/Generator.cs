@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using DependencyMap.Analysis;
+using DependencyMap.Filtering;
 using DependencyMap.Models;
 using DependencyMap.Scanning;
 using DependencyMap.SourceRepositories;
@@ -11,24 +12,32 @@ namespace DependencyMap
     public class Generator
     {
         private readonly NuGetPackageConfigScanner _configScanner;
+        private readonly ServiceDependencyFilter _serviceDependencyFilter;
 
-        public Generator(IFileSystemSourceRepositoryConfig config) : this(new FileSystemSourceRepository(config))
+        public Generator(IFileSystemSourceRepositoryConfig sourceRepositoryConfig,
+            IServiceDependencyFilterConfig serviceDependencyFilterConfig = null)
+            : this(new FileSystemSourceRepository(sourceRepositoryConfig), serviceDependencyFilterConfig)
         {
         }
 
-        public Generator(IGitHubSourceRepositoryConfig config) : this(new GitHubSourceRepository(config))
+        public Generator(IGitHubSourceRepositoryConfig sourceRepositoryConfig,
+            IServiceDependencyFilterConfig serviceDependencyFilterConfig = null)
+            : this(new GitHubSourceRepository(sourceRepositoryConfig), serviceDependencyFilterConfig)
         {
         }
 
-        private Generator(ISourceRepository sourceRepository)
+        private Generator(ISourceRepository sourceRepository,
+            IServiceDependencyFilterConfig serviceDependencyFilterConfig)
         {
             _configScanner = new NuGetPackageConfigScanner(sourceRepository);
+            _serviceDependencyFilter = new ServiceDependencyFilter(serviceDependencyFilterConfig);
         }
 
         public IEnumerable<Dependency> GetAllDependencies()
         {
-            var serviceDependencies = _configScanner.GetAllServiceDependencies().ToList();
-            var dependencies = new ServiceDependenciesAnalyser(serviceDependencies).GroupByDependency();
+            var serviceDependencies = _configScanner.GetAllServiceDependencies();
+            var filtered = _serviceDependencyFilter.Apply(serviceDependencies);
+            var dependencies = new ServiceDependenciesAnalyser(filtered.ToList()).GroupByDependency();
 
             foreach (var dependency in dependencies)
             {
@@ -44,8 +53,9 @@ namespace DependencyMap
 
         public IEnumerable<Service> GetAllServices()
         {
-            var serviceDependencies = _configScanner.GetAllServiceDependencies().ToList();
-            var services = new ServiceDependenciesAnalyser(serviceDependencies).GroupByService();
+            var serviceDependencies = _configScanner.GetAllServiceDependencies();
+            var filtered = _serviceDependencyFilter.Apply(serviceDependencies);
+            var services = new ServiceDependenciesAnalyser(filtered.ToList()).GroupByService();
 
             // Normalise to a value between 1 and 5 where 1 is best.
             Func<IEnumerable<DependencyStaleness>, int> calculateScore = dependencyStalenesses =>
