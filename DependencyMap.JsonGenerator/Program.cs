@@ -1,5 +1,6 @@
 ﻿using System;
 using System.IO;
+using DependencyMap.SourceRepositories;
 using Newtonsoft.Json;
 
 namespace DependencyMap.JsonGenerator
@@ -16,7 +17,8 @@ namespace DependencyMap.JsonGenerator
             var sourceDir = args[0];
             var outputPath = args[1];
 
-            var client = new Generator(new FileSystemSourceRepositoryConfig(sourceDir));
+            var repository = new FileSystemSourceRepository(new FileSystemSourceRepositoryConfig(sourceDir));
+            var client = new Generator(repository);
             var dependencies = SerializeObjectToJson(client.GetAllDependencies());
             var services = SerializeObjectToJson(client.GetAllServices());
 

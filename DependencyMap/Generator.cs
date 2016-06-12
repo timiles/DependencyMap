@@ -13,21 +13,9 @@ namespace DependencyMap
     {
         private readonly NuGetPackageConfigScanner _configScanner;
         private readonly ServiceDependencyFilter _serviceDependencyFilter;
-
-        public Generator(IFileSystemSourceRepositoryConfig sourceRepositoryConfig,
+        
+        public Generator(ISourceRepository sourceRepository,
             IServiceDependencyFilterConfig serviceDependencyFilterConfig = null)
-            : this(new FileSystemSourceRepository(sourceRepositoryConfig), serviceDependencyFilterConfig)
-        {
-        }
-
-        public Generator(IGitHubSourceRepositoryConfig sourceRepositoryConfig,
-            IServiceDependencyFilterConfig serviceDependencyFilterConfig = null)
-            : this(new GitHubSourceRepository(sourceRepositoryConfig), serviceDependencyFilterConfig)
-        {
-        }
-
-        private Generator(ISourceRepository sourceRepository,
-            IServiceDependencyFilterConfig serviceDependencyFilterConfig)
         {
             _configScanner = new NuGetPackageConfigScanner(sourceRepository);
             _serviceDependencyFilter = new ServiceDependencyFilter(serviceDependencyFilterConfig);

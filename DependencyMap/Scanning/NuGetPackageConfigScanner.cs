@@ -22,7 +22,13 @@ namespace DependencyMap.Scanning
 
         public IEnumerable<ServiceDependency> GetAllServiceDependencies()
         {
-            foreach (var configFile in _sourceRepository.GetDependencyFilesToScan())
+            var dependencyFilesToScan = _sourceRepository.GetDependencyFilesToScan();
+            if (dependencyFilesToScan == null)
+            {
+                throw new DependencyFilesNotFoundException();
+            }
+
+            foreach (var configFile in dependencyFilesToScan)
             {
                 var packages = ProcessPackages(configFile.FileContents);
 

@@ -1,6 +1,6 @@
-﻿namespace DependencyMap.Models
+﻿namespace DependencyMap.SourceRepositories
 {
-    internal class DependencyFile
+    public class DependencyFile
     {
         public string ServiceId { get; set; }
 

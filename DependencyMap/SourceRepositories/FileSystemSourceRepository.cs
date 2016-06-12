@@ -1,10 +1,9 @@
 ﻿using System.Collections.Generic;
 using System.IO;
-using DependencyMap.Models;
 
 namespace DependencyMap.SourceRepositories
 {
-    internal class FileSystemSourceRepository : ISourceRepository
+    public class FileSystemSourceRepository : ISourceRepository
     {
         private readonly string _dependencyFileName;
         private readonly string[] _rootFolders;

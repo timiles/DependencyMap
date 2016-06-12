@@ -1,9 +1,8 @@
 ﻿using System.Collections.Generic;
-using DependencyMap.Models;
 
 namespace DependencyMap.SourceRepositories
 {
-    internal interface ISourceRepository
+    public interface ISourceRepository
     {
         IEnumerable<DependencyFile> GetDependencyFilesToScan();
     }

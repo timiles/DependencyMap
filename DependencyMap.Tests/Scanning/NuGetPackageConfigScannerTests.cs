@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Linq;
-using DependencyMap.Models;
 using DependencyMap.Scanning;
+using DependencyMap.SourceRepositories;
 using FluentAssertions;
 using NuGet;
 using NUnit.Framework;
