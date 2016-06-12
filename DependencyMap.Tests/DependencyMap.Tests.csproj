@@ -66,7 +66,8 @@
   <ItemGroup>
     <Compile Include="Analysis\ServiceDependenciesAnalyserTests.cs" />
     <Compile Include="Filtering\ServiceDependencyFilterTests.cs" />
-    <Compile Include="Generator\GeneratorTests.cs" />
+    <Compile Include="Generator\GetAllDependenciesTests.cs" />
+    <Compile Include="Generator\GetAllServicesTests.cs" />
     <Compile Include="Scanning\FakeSourceRepository.cs" />
     <Compile Include="Scanning\NuGetPackageConfigScannerTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

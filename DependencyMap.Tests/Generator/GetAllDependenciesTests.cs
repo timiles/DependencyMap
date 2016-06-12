@@ -8,10 +8,10 @@ using NUnit.Framework;
 namespace DependencyMap.Tests.Generator
 {
     [TestFixture]
-    public class GeneratorTests
+    public class GetAllDependenciesTests
     {
         [Test]
-        public void WhenSourceRepositoryReturnsNull_ThenGetAllDependenciesThrowsExcepion()
+        public void WhenSourceRepositoryReturnsNull_ThenExcepionIsThrown()
         {
             var sourceRepository = new Moq.Mock<ISourceRepository>();
             sourceRepository.Setup(x => x.GetDependencyFilesToScan())
