@@ -54,7 +54,7 @@
     <Compile Include="Generator.cs" />
     <Compile Include="Scanning\IDependencyFileScanner.cs" />
     <Compile Include="SourceRepositories\DependencyFile.cs" />
-    <Compile Include="Models\DependencyStaleness.cs" />
+    <Compile Include="Analysis\DependencyStaleness.cs" />
     <Compile Include="Scanning\ServiceDependency.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Scanning\NuGetPackageConfigScanner.cs" />

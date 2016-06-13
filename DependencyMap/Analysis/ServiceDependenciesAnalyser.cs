@@ -1,13 +1,12 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using DependencyMap.Models;
 using DependencyMap.Scanning;
 using NuGet;
 
 namespace DependencyMap.Analysis
 {
-    internal class ServiceDependenciesAnalyser
+    public class ServiceDependenciesAnalyser
     {
         private readonly IList<ServiceDependency> _serviceDependencies;
 
@@ -18,6 +17,36 @@ namespace DependencyMap.Analysis
                 throw new ArgumentNullException(nameof(serviceDependencies));
             }
             _serviceDependencies = serviceDependencies;
+        }
+
+        public IEnumerable<Service> GetAllServices()
+        {
+            // Normalise to a value between 1 and 5 where 1 is best.
+            Func<IEnumerable<DependencyStaleness>, int> calculateScore = dependencyStalenesses =>
+            {
+                var average = dependencyStalenesses.Average(x => x.StalenessRating);
+                var score = (int)Math.Floor(average) + 1;
+                return Math.Min(score, 5);
+            };
+
+            foreach (var service in GroupByService())
+            {
+                var score = calculateScore(service.Value);
+
+                yield return new Service
+                {
+                    ServiceId = service.Key,
+                    Score = score,
+                    Dependencies = service.Value.Select(
+                        x => new Service.Dependency
+                        {
+                            DependencyId = x.DependencyId,
+                            Version = x.Version,
+                            LatestKnownVersion = x.LatestKnownVersion,
+                            IsStale = x.Version != x.LatestKnownVersion
+                        })
+                };
+            }
         }
 
         internal IDictionary<string, DependencyStaleness[]> GroupByService()
@@ -59,6 +88,22 @@ namespace DependencyMap.Analysis
                         StalenessRating = stalenessRating++
                     };
                 }
+            }
+        }
+
+
+
+        public IEnumerable<Dependency> GetAllDependencies()
+        {
+            foreach (var dependency in GroupByDependency())
+            {
+                var score = Math.Min(dependency.Value.Count, 5);
+                yield return new Dependency
+                {
+                    DependencyId = dependency.Key,
+                    Score = score,
+                    ServiceUsageByVersion = dependency.Value
+                };
             }
         }
 

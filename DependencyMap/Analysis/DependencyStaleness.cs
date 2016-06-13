@@ -1,6 +1,6 @@
 ﻿using NuGet;
 
-namespace DependencyMap.Models
+namespace DependencyMap.Analysis
 {
     internal class DependencyStaleness
     {
