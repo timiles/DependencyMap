@@ -17,7 +17,7 @@ namespace DependencyMap.JsonGenerator
             var sourceDir = args[0];
             var outputPath = args[1];
 
-            var repository = new FileSystemSourceRepository(new FileSystemSourceRepositoryConfig(sourceDir));
+            var repository = new FileSystemSourceRepository("packages.config", new [] { sourceDir });
             var client = new Generator(repository);
             var dependencies = SerializeObjectToJson(client.GetAllDependencies());
             var services = SerializeObjectToJson(client.GetAllServices());
