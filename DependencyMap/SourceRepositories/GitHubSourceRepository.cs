@@ -2,7 +2,6 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using DependencyMap.Models;
 using Octokit;
 using Octokit.Internal;
 
@@ -45,8 +44,8 @@ namespace DependencyMap.SourceRepositories
             var results = new List<DependencyFile>();
 
             var repositories = _ownerIsOrganization
-                ? await client.Repository.GetAllForOrg(_repositoryOwner)
-                : await client.Repository.GetAllForUser(_repositoryOwner);
+                ? await client.Repository.GetAllForOrg(_repositoryOwner).ConfigureAwait(false)
+                : await client.Repository.GetAllForUser(_repositoryOwner).ConfigureAwait(false);
 
             foreach (var repo in repositories)
             {
@@ -60,12 +59,12 @@ namespace DependencyMap.SourceRepositories
                         In = new[] { CodeInQualifier.Path },
                         Page = page
                     };
-                    var files = await client.Search.SearchCode(searchCodeRequest);
+                    var files = await client.Search.SearchCode(searchCodeRequest).ConfigureAwait(false);
 
                     foreach (var file in files.Items)
                     {
                         var contents =
-                            await client.Repository.Content.GetAllContents(_repositoryOwner, repo.Name, file.Path);
+                            await client.Repository.Content.GetAllContents(_repositoryOwner, repo.Name, file.Path).ConfigureAwait(false);
                         if (contents.Any())
                         {
                             results.Add(new DependencyFile
