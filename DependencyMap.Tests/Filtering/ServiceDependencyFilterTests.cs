@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using DependencyMap.Filtering;
-using DependencyMap.Models;
+using DependencyMap.Scanning;
 using FluentAssertions;
 using NUnit.Framework;
 

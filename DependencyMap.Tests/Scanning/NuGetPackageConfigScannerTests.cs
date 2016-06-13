@@ -11,21 +11,20 @@ namespace DependencyMap.Tests.Scanning
     [TestFixture]
     public class NuGetPackageConfigScannerTests
     {
-        [Test]
-        public void NullSourceRepository_ShouldThrowException()
+        private NuGetPackageConfigScanner _scanner;
+
+        [SetUp]
+        public void GivenNewNuGetPackageConfigScanner()
         {
-            Assert.Throws<ArgumentNullException>(() => new NuGetPackageConfigScanner(null));
+            _scanner = new NuGetPackageConfigScanner();
         }
 
         [Test]
         public void WhenSourceRepositoryReturnsNull_ThenExcepionIsThrown()
         {
-            var sourceRepository = new FakeSourceRepository(null);
-            var scanner = new NuGetPackageConfigScanner(sourceRepository);
-
             Action a = () =>
             {
-                var list = scanner.GetAllServiceDependencies().ToList();
+                var list = _scanner.GetAllServiceDependencies(null).ToList();
             };
             a.ShouldThrow<DependencyFilesNotFoundException>();
         }
@@ -33,13 +32,9 @@ namespace DependencyMap.Tests.Scanning
         [Test]
         public void WhenSourceRepositoryReturnsEmptyList_ThenExcepionIsThrown()
         {
-            var emptyList = new DependencyFile[0];
-            var sourceRepository = new FakeSourceRepository(emptyList);
-            var scanner = new NuGetPackageConfigScanner(sourceRepository);
-
             Action a = () =>
             {
-                var list = scanner.GetAllServiceDependencies().ToList();
+                var list = _scanner.GetAllServiceDependencies(new DependencyFile[0]).ToList();
             };
             a.ShouldThrow<DependencyFilesNotFoundException>();
         }
@@ -48,10 +43,7 @@ namespace DependencyMap.Tests.Scanning
         public void EmptyFile_ShouldYieldNothing()
         {
             var dependencyFile = new DependencyFile { ServiceId = @"MyService", FileContents = @"" };
-            var sourceRepository = new FakeSourceRepository(dependencyFile);
-            var scanner = new NuGetPackageConfigScanner(sourceRepository);
-
-            var serviceDependencies = scanner.GetAllServiceDependencies();
+            var serviceDependencies = _scanner.GetAllServiceDependencies(new[] {dependencyFile});
             serviceDependencies.Should().BeEmpty();
         }
 
@@ -68,10 +60,8 @@ namespace DependencyMap.Tests.Scanning
   <package id=""Package2"" version=""2.0"" targetFramework=""net451"" />
 </packages>"
             };
-            var sourceRepository = new FakeSourceRepository(dependencyFile);
-            var scanner = new NuGetPackageConfigScanner(sourceRepository);
 
-            var serviceDependencies = scanner.GetAllServiceDependencies().ToList();
+            var serviceDependencies = _scanner.GetAllServiceDependencies(new[] {dependencyFile}).ToList();
             serviceDependencies.Count.Should().Be(3);
 
             foreach (var serviceDependency in serviceDependencies)
@@ -111,10 +101,8 @@ namespace DependencyMap.Tests.Scanning
                     FileContents = @"<package id=""MyPackage"" version=""2.0.0"" targetFramework=""net451"" />"
                 }
             };
-            var sourceRepository = new FakeSourceRepository(files);
-            var scanner = new NuGetPackageConfigScanner(sourceRepository);
 
-            var serviceDependencies = scanner.GetAllServiceDependencies().ToList();
+            var serviceDependencies = _scanner.GetAllServiceDependencies(files).ToList();
             serviceDependencies.Count.Should().Be(4);
 
             serviceDependencies[0].ServiceId.Should().Be("MyService1");
@@ -142,10 +130,8 @@ namespace DependencyMap.Tests.Scanning
                 ServiceId = @"MyService",
                 FileContents = @"<package id=""AlphaPackage"" version=""0.0.1-alpha"" targetFramework=""net451"" />"
             };
-            var sourceRepository = new FakeSourceRepository(dependencyFile);
-            var scanner = new NuGetPackageConfigScanner(sourceRepository);
 
-            var serviceDependencies = scanner.GetAllServiceDependencies().ToList();
+            var serviceDependencies = _scanner.GetAllServiceDependencies(new[] {dependencyFile}).ToList();
             serviceDependencies.Count.Should().Be(1);
 
             serviceDependencies[0].ServiceId.Should().Be("MyService");
@@ -161,10 +147,8 @@ namespace DependencyMap.Tests.Scanning
                 ServiceId = @"MyService",
                 FileContents = @"<package id=""InvalidPackage"" version=""invalid"" targetFramework=""net451"" />"
             };
-            var sourceRepository = new FakeSourceRepository(dependencyFile);
-            var scanner = new NuGetPackageConfigScanner(sourceRepository);
 
-            var serviceDependencies = scanner.GetAllServiceDependencies().ToList();
+            var serviceDependencies = _scanner.GetAllServiceDependencies(new[] {dependencyFile}).ToList();
             serviceDependencies.Count.Should().Be(1);
 
             serviceDependencies[0].ServiceId.Should().Be("MyService");

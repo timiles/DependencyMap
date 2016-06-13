@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using DependencyMap.Analysis;
 using DependencyMap.Models;
+using DependencyMap.Scanning;
 using FluentAssertions;
 using NuGet;
 using NUnit.Framework;

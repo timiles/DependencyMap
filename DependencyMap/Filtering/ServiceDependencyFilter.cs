@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using DependencyMap.Models;
+using DependencyMap.Scanning;
 
 namespace DependencyMap.Filtering
 {

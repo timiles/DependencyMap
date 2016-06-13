@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using DependencyMap.Models;
+using DependencyMap.Scanning;
 using NuGet;
 
 namespace DependencyMap.Analysis

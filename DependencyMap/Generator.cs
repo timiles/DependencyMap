@@ -11,19 +11,23 @@ namespace DependencyMap
 {
     public class Generator
     {
-        private readonly NuGetPackageConfigScanner _configScanner;
+        private readonly ISourceRepository _sourceRepository;
+        private readonly IDependencyFileScanner _dependencyFileScanner;
         private readonly ServiceDependencyFilter _serviceDependencyFilter;
-        
+
         public Generator(ISourceRepository sourceRepository,
+            IDependencyFileScanner dependencyFileScanner = null,
             IServiceDependencyFilterConfig serviceDependencyFilterConfig = null)
         {
-            _configScanner = new NuGetPackageConfigScanner(sourceRepository);
+            _sourceRepository = sourceRepository;
+            _dependencyFileScanner = dependencyFileScanner ?? new NuGetPackageConfigScanner();
             _serviceDependencyFilter = new ServiceDependencyFilter(serviceDependencyFilterConfig);
         }
 
         public IEnumerable<Dependency> GetAllDependencies()
         {
-            var serviceDependencies = _configScanner.GetAllServiceDependencies();
+            var dependencyFiles = _sourceRepository.GetDependencyFilesToScan();
+            var serviceDependencies = _dependencyFileScanner.GetAllServiceDependencies(dependencyFiles);
             var filtered = _serviceDependencyFilter.Apply(serviceDependencies);
             var dependencies = new ServiceDependenciesAnalyser(filtered.ToList()).GroupByDependency();
 
@@ -41,7 +45,8 @@ namespace DependencyMap
 
         public IEnumerable<Service> GetAllServices()
         {
-            var serviceDependencies = _configScanner.GetAllServiceDependencies();
+            var dependencyFiles = _sourceRepository.GetDependencyFilesToScan();
+            var serviceDependencies = _dependencyFileScanner.GetAllServiceDependencies(dependencyFiles);
             var filtered = _serviceDependencyFilter.Apply(serviceDependencies);
             var services = new ServiceDependenciesAnalyser(filtered.ToList()).GroupByService();
 

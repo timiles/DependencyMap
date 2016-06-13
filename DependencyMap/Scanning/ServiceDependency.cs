@@ -1,8 +1,8 @@
 ﻿using NuGet;
 
-namespace DependencyMap.Models
+namespace DependencyMap.Scanning
 {
-    internal class ServiceDependency
+    public class ServiceDependency
     {
         public string ServiceId { get; set; }
 

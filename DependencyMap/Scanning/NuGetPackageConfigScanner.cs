@@ -1,29 +1,16 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Linq;
 using System.Text.RegularExpressions;
-using DependencyMap.Models;
 using DependencyMap.SourceRepositories;
 using NuGet;
 
 namespace DependencyMap.Scanning
 {
-    internal class NuGetPackageConfigScanner
+    internal class NuGetPackageConfigScanner : IDependencyFileScanner
     {
-        private readonly ISourceRepository _sourceRepository;
-
-        public NuGetPackageConfigScanner(ISourceRepository sourceRepository)
+        public IEnumerable<ServiceDependency> GetAllServiceDependencies(IEnumerable<DependencyFile> dependencyFiles)
         {
-            if (sourceRepository == null)
-            {
-                throw new ArgumentNullException(nameof(sourceRepository));
-            }
-            _sourceRepository = sourceRepository;
-        }
-
-        public IEnumerable<ServiceDependency> GetAllServiceDependencies()
-        {
-            var configFiles = _sourceRepository.GetDependencyFilesToScan()?.ToList();
+            var configFiles = dependencyFiles?.ToList();
             if (configFiles == null || configFiles.IsEmpty())
             {
                 throw new DependencyFilesNotFoundException();
