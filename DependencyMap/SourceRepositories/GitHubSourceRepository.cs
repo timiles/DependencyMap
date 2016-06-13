@@ -7,7 +7,7 @@ using Octokit.Internal;
 
 namespace DependencyMap.SourceRepositories
 {
-    internal class GitHubSourceRepository : ISourceRepository
+    public class GitHubSourceRepository : ISourceRepository
     {
         private readonly string _dependencyFileName;
         private readonly string _repositoryOwner;
@@ -20,13 +20,20 @@ namespace DependencyMap.SourceRepositories
         /// <summary>
         /// Reads files from all repositories owned by a GitHub user or organization
         /// </summary>
-        public GitHubSourceRepository(IGitHubSourceRepositoryConfig config)
+        /// <param name="dependencyFileName">e.g. packages.config</param>
+        /// <param name="repositoryOwner">user or organization name</param>
+        /// <param name="ownerIsOrganization">false: RepositoryOwner is user; true: RepositoryOwner is organization</param>
+        /// <param name="login">Only needed if anonymous rate limiting applies (eg public GitHub API)</param>
+        /// <param name="password">Only needed if anonymous rate limiting applies (eg public GitHub API)</param>
+        /// <param name="apiBaseAddress">override this for Enterprise instances; defaults to public GitHub API</param>
+        public GitHubSourceRepository(string dependencyFileName, string repositoryOwner,
+            bool ownerIsOrganization = false, string login = null, string password = null, string apiBaseAddress = null)
         {
-            _dependencyFileName = config.DependencyFileName;
-            _repositoryOwner = config.RepositoryOwner;
-            _ownerIsOrganization = config.OwnerIsOrganization;
-            _credentials = config.Login != null ? new Credentials(config.Login, config.Password) : Credentials.Anonymous;
-            _apiBaseAddress = config.ApiBaseAddress != null ? new Uri(config.ApiBaseAddress) : GitHubClient.GitHubApiUrl;
+            _dependencyFileName = dependencyFileName;
+            _repositoryOwner = repositoryOwner;
+            _ownerIsOrganization = ownerIsOrganization;
+            _credentials = login != null ? new Credentials(login, password) : Credentials.Anonymous;
+            _apiBaseAddress = apiBaseAddress != null ? new Uri(apiBaseAddress) : GitHubClient.GitHubApiUrl;
         }
 
         public IEnumerable<DependencyFile> GetDependencyFilesToScan()

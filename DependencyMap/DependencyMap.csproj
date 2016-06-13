@@ -61,7 +61,6 @@
     <Compile Include="SourceRepositories\DependencyFilesNotFoundException.cs" />
     <Compile Include="SourceRepositories\FileSystemSourceRepository.cs" />
     <Compile Include="SourceRepositories\GitHubSourceRepository.cs" />
-    <Compile Include="SourceRepositories\IGitHubSourceRepositoryConfig.cs" />
     <Compile Include="SourceRepositories\ISourceRepository.cs" />
   </ItemGroup>
   <ItemGroup>
