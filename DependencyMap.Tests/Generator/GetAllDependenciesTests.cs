@@ -24,5 +24,20 @@ namespace DependencyMap.Tests.Generator
             };
             a.ShouldThrow<DependencyFilesNotFoundException>();
         }
+
+        [Test]
+        public void WhenSourceRepositoryReturnsEmptyList_ThenExcepionIsThrown()
+        {
+            var sourceRepository = new Moq.Mock<ISourceRepository>();
+            sourceRepository.Setup(x => x.GetDependencyFilesToScan())
+                .Returns(new DependencyFile[0]);
+            var generator = new DependencyMap.Generator(sourceRepository.Object);
+
+            Action a = () =>
+            {
+                var list = generator.GetAllDependencies().ToList();
+            };
+            a.ShouldThrow<DependencyFilesNotFoundException>();
+        }
     }
 }

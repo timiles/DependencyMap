@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Text.RegularExpressions;
 using DependencyMap.Models;
 using DependencyMap.SourceRepositories;
@@ -22,13 +23,13 @@ namespace DependencyMap.Scanning
 
         public IEnumerable<ServiceDependency> GetAllServiceDependencies()
         {
-            var dependencyFilesToScan = _sourceRepository.GetDependencyFilesToScan();
-            if (dependencyFilesToScan == null)
+            var configFiles = _sourceRepository.GetDependencyFilesToScan()?.ToList();
+            if (configFiles == null || configFiles.IsEmpty())
             {
                 throw new DependencyFilesNotFoundException();
             }
 
-            foreach (var configFile in dependencyFilesToScan)
+            foreach (var configFile in configFiles)
             {
                 var packages = ProcessPackages(configFile.FileContents);
 
