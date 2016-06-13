@@ -2,7 +2,6 @@
 using System.Collections.Generic;
 using System.Linq;
 using DependencyMap.Analysis;
-using DependencyMap.Filtering;
 using DependencyMap.Scanning;
 using DependencyMap.SourceRepositories;
 
@@ -13,23 +12,19 @@ namespace DependencyMap
     {
         private readonly ISourceRepository _sourceRepository;
         private readonly IDependencyFileScanner _dependencyFileScanner;
-        private readonly ServiceDependencyFilter _serviceDependencyFilter;
 
         public Generator(ISourceRepository sourceRepository,
-            IDependencyFileScanner dependencyFileScanner = null,
-            IServiceDependencyFilterConfig serviceDependencyFilterConfig = null)
+            IDependencyFileScanner dependencyFileScanner = null)
         {
             _sourceRepository = sourceRepository;
             _dependencyFileScanner = dependencyFileScanner ?? new NuGetPackageConfigScanner();
-            _serviceDependencyFilter = new ServiceDependencyFilter(serviceDependencyFilterConfig);
         }
 
         public IEnumerable<Dependency> GetAllDependencies()
         {
             var dependencyFiles = _sourceRepository.GetDependencyFilesToScan();
             var serviceDependencies = _dependencyFileScanner.GetAllServiceDependencies(dependencyFiles);
-            var filtered = _serviceDependencyFilter.Apply(serviceDependencies);
-            var analyser = new ServiceDependenciesAnalyser(filtered.ToList());
+            var analyser = new ServiceDependenciesAnalyser(serviceDependencies.ToList());
             return analyser.GetAllDependencies();
         }
 
@@ -37,8 +32,7 @@ namespace DependencyMap
         {
             var dependencyFiles = _sourceRepository.GetDependencyFilesToScan();
             var serviceDependencies = _dependencyFileScanner.GetAllServiceDependencies(dependencyFiles);
-            var filtered = _serviceDependencyFilter.Apply(serviceDependencies);
-            var analyser = new ServiceDependenciesAnalyser(filtered.ToList());
+            var analyser = new ServiceDependenciesAnalyser(serviceDependencies.ToList());
             return analyser.GetAllServices();
         }
     }

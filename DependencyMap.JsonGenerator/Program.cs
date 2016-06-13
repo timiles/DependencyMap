@@ -26,7 +26,10 @@ namespace DependencyMap.JsonGenerator
             var scanner = new NuGetPackageConfigScanner();
             var serviceDependencies = scanner.GetAllServiceDependencies(packageConfigs);
 
-            var analyser = new ServiceDependenciesAnalyser(serviceDependencies.ToList());
+            // filter our dependencies if we like
+            var nonTestServiceDependencies = serviceDependencies.Where(x => !x.DependencyFilePath.Contains(".Tests"));
+
+            var analyser = new ServiceDependenciesAnalyser(nonTestServiceDependencies.ToList());
 
             var dependencies = SerializeObjectToJson(analyser.GetAllDependencies());
             var services = SerializeObjectToJson(analyser.GetAllServices());
