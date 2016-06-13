@@ -1,7 +1,7 @@
 using System.Collections.Generic;
 using NuGet;
 
-namespace DependencyMap
+namespace DependencyMap.Analysis
 {
     public class Service
     {

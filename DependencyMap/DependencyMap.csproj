@@ -48,7 +48,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Analysis\ServiceDependenciesAnalyser.cs" />
-    <Compile Include="Dependency.cs" />
+    <Compile Include="Analysis\Dependency.cs" />
     <Compile Include="Generator.cs" />
     <Compile Include="Scanning\IDependencyFileScanner.cs" />
     <Compile Include="SourceRepositories\DependencyFile.cs" />
@@ -56,7 +56,7 @@
     <Compile Include="Scanning\ServiceDependency.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Scanning\NuGetPackageConfigScanner.cs" />
-    <Compile Include="Service.cs" />
+    <Compile Include="Analysis\Service.cs" />
     <Compile Include="SourceRepositories\DependencyFilesNotFoundException.cs" />
     <Compile Include="SourceRepositories\FileSystemSourceRepository.cs" />
     <Compile Include="SourceRepositories\GitHubSourceRepository.cs" />
