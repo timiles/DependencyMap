@@ -22,7 +22,7 @@ namespace DependencyMap
 
         public IEnumerable<Dependency> GetAllDependencies()
         {
-            var dependencyFiles = _sourceRepository.GetDependencyFilesToScan();
+            var dependencyFiles = _sourceRepository.GetDependencyFiles();
             var serviceDependencies = _dependencyFileScanner.GetAllServiceDependencies(dependencyFiles);
             var analyser = new ServiceDependenciesAnalyser(serviceDependencies.ToList());
             return analyser.GetAllDependencies();
@@ -30,7 +30,7 @@ namespace DependencyMap
 
         public IEnumerable<Service> GetAllServices()
         {
-            var dependencyFiles = _sourceRepository.GetDependencyFilesToScan();
+            var dependencyFiles = _sourceRepository.GetDependencyFiles();
             var serviceDependencies = _dependencyFileScanner.GetAllServiceDependencies(dependencyFiles);
             var analyser = new ServiceDependenciesAnalyser(serviceDependencies.ToList());
             return analyser.GetAllServices();

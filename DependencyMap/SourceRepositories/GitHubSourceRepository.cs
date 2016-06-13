@@ -36,7 +36,7 @@ namespace DependencyMap.SourceRepositories
             _apiBaseAddress = apiBaseAddress != null ? new Uri(apiBaseAddress) : GitHubClient.GitHubApiUrl;
         }
 
-        public IEnumerable<DependencyFile> GetDependencyFilesToScan()
+        public IEnumerable<DependencyFile> GetDependencyFiles()
         {
             return _dependencyFiles ?? (_dependencyFiles = ReadFilesFromGitHubAsync().Result);
         }

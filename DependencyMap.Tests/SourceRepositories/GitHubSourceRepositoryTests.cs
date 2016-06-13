@@ -11,7 +11,7 @@ namespace DependencyMap.Tests.SourceRepositories
         public void Test()
         {
             var gitHubSourceRepository = new GitHubSourceRepository("packages.config", "timiles");
-            var files = gitHubSourceRepository.GetDependencyFilesToScan();
+            var files = gitHubSourceRepository.GetDependencyFiles();
 
             files.Should().NotBeEmpty();
         }

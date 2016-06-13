@@ -16,7 +16,7 @@ namespace DependencyMap.SourceRepositories
             _rootFolders = rootFolders;
         }
 
-        public IEnumerable<DependencyFile> GetDependencyFilesToScan()
+        public IEnumerable<DependencyFile> GetDependencyFiles()
         {
             return _dependencyFiles ?? (_dependencyFiles = ReadFilesFromFileSystem());
         }

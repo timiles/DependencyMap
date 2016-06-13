@@ -21,7 +21,7 @@ namespace DependencyMap.JsonGenerator
             var outputPath = args[1];
 
             var repository = new FileSystemSourceRepository("packages.config", new [] { sourceDir });
-            var packageConfigs = repository.GetDependencyFilesToScan();
+            var packageConfigs = repository.GetDependencyFiles();
 
             var scanner = new NuGetPackageConfigScanner();
             var serviceDependencies = scanner.GetAllServiceDependencies(packageConfigs);

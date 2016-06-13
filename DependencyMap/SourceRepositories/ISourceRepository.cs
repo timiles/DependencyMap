@@ -4,6 +4,6 @@ namespace DependencyMap.SourceRepositories
 {
     public interface ISourceRepository
     {
-        IEnumerable<DependencyFile> GetDependencyFilesToScan();
+        IEnumerable<DependencyFile> GetDependencyFiles();
     }
 }
