@@ -10,7 +10,7 @@ namespace DependencyMap.Analysis
     {
         private readonly IList<ServiceDependency> _serviceDependencies;
 
-        internal ServiceDependenciesAnalyser(IList<ServiceDependency> serviceDependencies)
+        public ServiceDependenciesAnalyser(IList<ServiceDependency> serviceDependencies)
         {
             if (serviceDependencies == null)
             {

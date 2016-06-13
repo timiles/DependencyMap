@@ -6,7 +6,7 @@ using NuGet;
 
 namespace DependencyMap.Scanning
 {
-    internal class NuGetPackageConfigScanner : IDependencyFileScanner
+    public class NuGetPackageConfigScanner : IDependencyFileScanner
     {
         public IEnumerable<ServiceDependency> GetAllServiceDependencies(IEnumerable<DependencyFile> dependencyFiles)
         {

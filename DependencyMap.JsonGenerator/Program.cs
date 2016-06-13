@@ -1,5 +1,8 @@
 ﻿using System;
 using System.IO;
+using System.Linq;
+using DependencyMap.Analysis;
+using DependencyMap.Scanning;
 using DependencyMap.SourceRepositories;
 using Newtonsoft.Json;
 
@@ -18,9 +21,15 @@ namespace DependencyMap.JsonGenerator
             var outputPath = args[1];
 
             var repository = new FileSystemSourceRepository("packages.config", new [] { sourceDir });
-            var client = new Generator(repository);
-            var dependencies = SerializeObjectToJson(client.GetAllDependencies());
-            var services = SerializeObjectToJson(client.GetAllServices());
+            var packageConfigs = repository.GetDependencyFilesToScan();
+
+            var scanner = new NuGetPackageConfigScanner();
+            var serviceDependencies = scanner.GetAllServiceDependencies(packageConfigs);
+
+            var analyser = new ServiceDependenciesAnalyser(serviceDependencies.ToList());
+
+            var dependencies = SerializeObjectToJson(analyser.GetAllDependencies());
+            var services = SerializeObjectToJson(analyser.GetAllServices());
 
             File.WriteAllText(outputPath, $"g_dependencies = {dependencies};\r\ng_services = {services};");
 

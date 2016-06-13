@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.Linq;
 using DependencyMap.Analysis;
 using DependencyMap.Filtering;
@@ -7,6 +8,7 @@ using DependencyMap.SourceRepositories;
 
 namespace DependencyMap
 {
+    [Obsolete("Use individual components directly rather than through Generator")]
     public class Generator
     {
         private readonly ISourceRepository _sourceRepository;
