@@ -18,6 +18,33 @@ namespace DependencyMap.Tests.Scanning
         }
 
         [Test]
+        public void WhenSourceRepositoryReturnsNull_ThenExcepionIsThrown()
+        {
+            var sourceRepository = new FakeSourceRepository(null);
+            var scanner = new NuGetPackageConfigScanner(sourceRepository);
+
+            Action a = () =>
+            {
+                var list = scanner.GetAllServiceDependencies().ToList();
+            };
+            a.ShouldThrow<DependencyFilesNotFoundException>();
+        }
+
+        [Test]
+        public void WhenSourceRepositoryReturnsEmptyList_ThenExcepionIsThrown()
+        {
+            var emptyList = new DependencyFile[0];
+            var sourceRepository = new FakeSourceRepository(emptyList);
+            var scanner = new NuGetPackageConfigScanner(sourceRepository);
+
+            Action a = () =>
+            {
+                var list = scanner.GetAllServiceDependencies().ToList();
+            };
+            a.ShouldThrow<DependencyFilesNotFoundException>();
+        }
+
+        [Test]
         public void EmptyFile_ShouldYieldNothing()
         {
             var dependencyFile = new DependencyFile { ServiceId = @"MyService", FileContents = @"" };
