@@ -49,7 +49,6 @@
   <ItemGroup>
     <Compile Include="Analysis\ServiceDependenciesAnalyser.cs" />
     <Compile Include="Analysis\Dependency.cs" />
-    <Compile Include="Generator.cs" />
     <Compile Include="Scanning\IDependencyFileScanner.cs" />
     <Compile Include="SourceRepositories\DependencyFile.cs" />
     <Compile Include="Analysis\DependencyStaleness.cs" />
