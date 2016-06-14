@@ -2,7 +2,7 @@ using System;
 using Newtonsoft.Json;
 using NuGet;
 
-namespace DependencyMap.JsonGenerator
+namespace WebView.DataUpdater
 {
     /// <summary>
     /// Converts a NuGet.SemanticVersion to and from a string (e.g. "1.2.3-alpha").

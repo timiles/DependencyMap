@@ -1,30 +1,32 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
-VisualStudioVersion = 14.0.23107.0
+VisualStudioVersion = 14.0.25123.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DependencyMap", "DependencyMap\DependencyMap.csproj", "{17405C73-307C-410B-8D4F-EC642A37EF09}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DependencyMap.Tests", "DependencyMap.Tests\DependencyMap.Tests.csproj", "{AB35F321-7947-4E41-9F90-71658B21A257}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Example.Web", "Example.Web", "{2CBF5607-03B5-40C6-BB5F-44EDDD9DED7A}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "WebView", "WebView", "{2CBF5607-03B5-40C6-BB5F-44EDDD9DED7A}"
 	ProjectSection(SolutionItems) = preProject
-		Example.Web\data.js = Example.Web\data.js
-		Example.Web\dependencies.html = Example.Web\dependencies.html
-		Example.Web\services.html = Example.Web\services.html
+		Sample\WebView\data.js = Sample\WebView\data.js
+		Sample\WebView\dependencies.html = Sample\WebView\dependencies.html
+		Sample\WebView\services.html = Sample\WebView\services.html
 	EndProjectSection
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DependencyMap.JsonGenerator", "DependencyMap.JsonGenerator\DependencyMap.JsonGenerator.csproj", "{64912BB3-5EC2-4A7F-9B4A-E8E754A9C877}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "css", "css", "{59657D38-6E61-4D5D-B6C0-04DC85BBF0DD}"
 	ProjectSection(SolutionItems) = preProject
-		Example.Web\css\styles.css = Example.Web\css\styles.css
+		Sample\WebView\css\styles.css = Sample\WebView\css\styles.css
 	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "js", "js", "{08500260-FA2E-4BEF-BBE3-8267BA3DCC63}"
 	ProjectSection(SolutionItems) = preProject
-		Example.Web\js\masonry.pkgd.min.js = Example.Web\js\masonry.pkgd.min.js
+		Sample\WebView\js\masonry.pkgd.min.js = Sample\WebView\js\masonry.pkgd.min.js
 	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Sample", "Sample", "{EA4D3C48-09A8-4789-A737-E4AA5BD7BD57}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebView.DataUpdater", "Sample\WebView.DataUpdater\WebView.DataUpdater.csproj", "{730EB27B-9846-4EF6-93F1-9D11465B94CA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -40,16 +42,18 @@ Global
 		{AB35F321-7947-4E41-9F90-71658B21A257}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AB35F321-7947-4E41-9F90-71658B21A257}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AB35F321-7947-4E41-9F90-71658B21A257}.Release|Any CPU.Build.0 = Release|Any CPU
-		{64912BB3-5EC2-4A7F-9B4A-E8E754A9C877}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{64912BB3-5EC2-4A7F-9B4A-E8E754A9C877}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{64912BB3-5EC2-4A7F-9B4A-E8E754A9C877}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{64912BB3-5EC2-4A7F-9B4A-E8E754A9C877}.Release|Any CPU.Build.0 = Release|Any CPU
+		{730EB27B-9846-4EF6-93F1-9D11465B94CA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{730EB27B-9846-4EF6-93F1-9D11465B94CA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{730EB27B-9846-4EF6-93F1-9D11465B94CA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{730EB27B-9846-4EF6-93F1-9D11465B94CA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
+		{2CBF5607-03B5-40C6-BB5F-44EDDD9DED7A} = {EA4D3C48-09A8-4789-A737-E4AA5BD7BD57}
 		{59657D38-6E61-4D5D-B6C0-04DC85BBF0DD} = {2CBF5607-03B5-40C6-BB5F-44EDDD9DED7A}
 		{08500260-FA2E-4BEF-BBE3-8267BA3DCC63} = {2CBF5607-03B5-40C6-BB5F-44EDDD9DED7A}
+		{730EB27B-9846-4EF6-93F1-9D11465B94CA} = {EA4D3C48-09A8-4789-A737-E4AA5BD7BD57}
 	EndGlobalSection
 EndGlobal
