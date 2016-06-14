@@ -12,10 +12,10 @@ namespace WebView.DataUpdater
     {
         static void Main(string[] args)
         {
-            var sourceDir = "../../../DummySourceRepository/";
-            var webViewDir = "../../../WebView/";
-            var outputPath = webViewDir + "data.js";
+            const string webViewDir = "../../../WebView/";
+            const string outputPath = webViewDir + "data.js";
 
+            const string sourceDir = "../../../DummySourceRepository/";
             var repository = new FileSystemSourceRepository("packages.config", new [] { sourceDir });
             var packageConfigs = repository.GetDependencyFiles();
 
