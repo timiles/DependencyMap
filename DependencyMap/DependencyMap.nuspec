@@ -1,0 +1,27 @@
+﻿<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>DependencyMap</id>
+    <version>$version$</version>
+    <title>DependencyMap</title>
+    <authors>Tim Iles</authors>
+    <owners>Tim Iles</owners>
+    <licenseUrl>https://github.com/timiles/DependencyMap/blob/master/LICENSE.md</licenseUrl>
+    <projectUrl>https://github.com/timiles/DependencyMap</projectUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Visualize the dependencies (and their versions) referenced by services across your codebase</description>
+    <releaseNotes></releaseNotes>
+    <copyright>Copyright &#x00A9; Tim Iles</copyright>
+    <tags>nuget packages dependency visualiser</tags>
+  </metadata>
+  <files>
+    <file src="bin\$configuration$\DependencyMap.dll" target="lib\net46\" />
+  </files>
+  <dependencies>
+    <group>
+      <dependency id="Microsoft.Web.Xdt" />
+      <dependency id="NuGet.Core" />
+      <dependency id="Octokit" />
+    </group>
+  </dependencies>
+</package>
