@@ -13,15 +13,15 @@
     <releaseNotes></releaseNotes>
     <copyright>Copyright &#x00A9; Tim Iles</copyright>
     <tags>nuget packages dependency visualiser</tags>
+    <dependencies>
+      <group>
+        <dependency id="Microsoft.Web.Xdt" />
+        <dependency id="NuGet.Core" />
+        <dependency id="Octokit" />
+      </group>
+    </dependencies>
   </metadata>
   <files>
     <file src="bin\$configuration$\DependencyMap.dll" target="lib\net46\" />
   </files>
-  <dependencies>
-    <group>
-      <dependency id="Microsoft.Web.Xdt" />
-      <dependency id="NuGet.Core" />
-      <dependency id="Octokit" />
-    </group>
-  </dependencies>
 </package>
