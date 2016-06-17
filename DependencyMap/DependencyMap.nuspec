@@ -16,7 +16,7 @@
     <dependencies>
       <group>
         <dependency id="Microsoft.Web.Xdt" />
-        <dependency id="NuGet.Core" />
+        <dependency id="NuGet.Core" version="1.6.0" />
         <dependency id="Octokit" />
       </group>
     </dependencies>
