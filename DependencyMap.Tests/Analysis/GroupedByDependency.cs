@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using System.Linq;
 using DependencyMap.Analysis;
 using DependencyMap.Scanning;
 using FluentAssertions;
@@ -94,6 +95,37 @@ namespace DependencyMap.Tests.Analysis
                         }
                     }
                 });
+        }
+
+        [Test]
+        public void InputNotOrdered_ShouldReturnOutputOrderedByDependencyId()
+        {
+            var input = new[]
+            {
+                new ServiceDependency
+                {
+                    ServiceId = "Service0",
+                    DependencyId = "Charlie",
+                    DependencyVersion = new SemanticVersion(1, 0, 0, 0)
+                },
+                new ServiceDependency
+                {
+                    ServiceId = "Service1",
+                    DependencyId = "Bravo",
+                    DependencyVersion = new SemanticVersion(1, 0, 0, 0)
+                },
+                new ServiceDependency
+                {
+                    ServiceId = "Service1",
+                    DependencyId = "Alpha",
+                    DependencyVersion = new SemanticVersion(1, 0, 0, 0)
+                }
+            };
+            var analyser = new ServiceDependenciesAnalyser(input);
+            var output = analyser.GroupByDependency();
+
+
+            output.Select(x => x.Key).ShouldBeEquivalentTo(input.Select(x => x.DependencyId).OrderBy(x => x));
         }
     }
 }
