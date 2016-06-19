@@ -13,16 +13,16 @@ namespace DependencyMap.Tests.Analysis
         [Test]
         public void SimpleDependency_ShouldReturnServicesAsExpected()
         {
-            var serviceDependency = new ServiceDependency
+            var input = new ServiceDependency
             {
                 ServiceId = "Service0",
                 DependencyId = "Dependency0",
                 DependencyVersion = new SemanticVersion(1, 0, 0, 0)
             };
-            var analyser = new ServiceDependenciesAnalyser(new[] { serviceDependency });
-            var services = analyser.GroupByService();
+            var analyser = new ServiceDependenciesAnalyser(new[] { input });
+            var output = analyser.GroupByService();
 
-            services.ShouldBeEquivalentTo(
+            output.ShouldBeEquivalentTo(
                 new Dictionary<string, DependencyStaleness[]>
                 {
                     {
@@ -43,7 +43,7 @@ namespace DependencyMap.Tests.Analysis
         [Test]
         public void DifferentVersions_ShouldReturnDifferentStalenesses()
         {
-            var serviceDependencies = new[]
+            var input = new[]
             {
                 new ServiceDependency
                 {
@@ -70,10 +70,10 @@ namespace DependencyMap.Tests.Analysis
                     DependencyVersion = new SemanticVersion(2, 0, 0, 0)
                 }
             };
-            var analyser = new ServiceDependenciesAnalyser(serviceDependencies);
-            var services = analyser.GroupByService();
+            var analyser = new ServiceDependenciesAnalyser(input);
+            var output = analyser.GroupByService();
 
-            services.ShouldBeEquivalentTo(
+            output.ShouldBeEquivalentTo(
                 new Dictionary<string, DependencyStaleness[]>
                 {
                     {
