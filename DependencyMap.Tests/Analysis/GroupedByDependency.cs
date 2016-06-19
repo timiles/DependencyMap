@@ -98,7 +98,7 @@ namespace DependencyMap.Tests.Analysis
         }
 
         [Test]
-        public void InputNotOrdered_ShouldReturnOutputOrderedByDependencyId()
+        public void InputDependenciesNotOrdered_ShouldReturnOutputOrderedByDependencyId()
         {
             var input = new[]
             {
@@ -124,8 +124,42 @@ namespace DependencyMap.Tests.Analysis
             var analyser = new ServiceDependenciesAnalyser(input);
             var output = analyser.GroupByDependency();
 
+            // Should.Equal also asserts order
+            output.Select(x => x.Key).Should().Equal(
+                input.Select(x => x.DependencyId).OrderBy(x => x));
+        }
 
-            output.Select(x => x.Key).ShouldBeEquivalentTo(input.Select(x => x.DependencyId).OrderBy(x => x));
+        [Test]
+        public void InputServicesNotOrdered_ShouldReturnOutputOrderedByServiceId()
+        {
+            var version = new SemanticVersion(1, 0, 0, 0);
+            var input = new[]
+            {
+                new ServiceDependency
+                {
+                    ServiceId = "Charlie",
+                    DependencyId = "Dependency0",
+                    DependencyVersion = version
+                },
+                new ServiceDependency
+                {
+                    ServiceId = "Bravo",
+                    DependencyId = "Dependency0",
+                    DependencyVersion = version
+                },
+                new ServiceDependency
+                {
+                    ServiceId = "Alpha",
+                    DependencyId = "Dependency0",
+                    DependencyVersion = version
+                }
+            };
+            var analyser = new ServiceDependenciesAnalyser(input);
+            var output = analyser.GroupByDependency();
+
+            // Should.Equal also asserts order
+            output["Dependency0"][version].Should().Equal(
+                input.Select(x => x.ServiceId).OrderBy(x => x));
         }
     }
 }

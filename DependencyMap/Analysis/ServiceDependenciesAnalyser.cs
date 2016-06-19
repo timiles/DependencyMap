@@ -115,7 +115,7 @@ namespace DependencyMap.Analysis
                 results.Add(dependency.Key,
                     dependency.GroupBy(x => x.DependencyVersion)
                         .OrderByDescending(x => x.Key)
-                        .ToDictionary(x => x.Key, x => x.Select(y => y.ServiceId).Distinct().ToArray())
+                        .ToDictionary(x => x.Key, x => x.Select(y => y.ServiceId).Distinct().OrderBy(z => z).ToArray())
                     );
             }
             return results;
