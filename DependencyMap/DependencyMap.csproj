@@ -47,6 +47,7 @@
     <Reference Include="System.Net.Http" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Analysis\DependencyIdVersion.cs" />
     <Compile Include="Analysis\ServiceDependenciesAnalyser.cs" />
     <Compile Include="Analysis\Dependency.cs" />
     <Compile Include="Scanning\IDependencyFileScanner.cs" />

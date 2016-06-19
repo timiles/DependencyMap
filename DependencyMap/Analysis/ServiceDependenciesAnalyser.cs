@@ -52,7 +52,7 @@ namespace DependencyMap.Analysis
         internal IDictionary<string, DependencyStaleness[]> GroupByService()
         {
             var stalenesses = CalculateDependencyStalenessesAcrossEntireSource().ToList();
-            var stalenessLookup = stalenesses.ToDictionary(x => x.DependencyId + ":" + x.Version, x => x.StalenessRating);
+            var stalenessLookup = stalenesses.ToDictionary(x => new DependencyIdVersion(x.DependencyId, x.Version), x => x.StalenessRating);
 
             var latestVersionByDependency = stalenesses.GroupBy(x => x.DependencyId).ToDictionary(
                 x => x.Key,
@@ -61,9 +61,10 @@ namespace DependencyMap.Analysis
             var results = new Dictionary<string, DependencyStaleness[]>();
             foreach (var service in _serviceDependencies.GroupBy(x => x.ServiceId).OrderBy(x => x.Key))
             {
-                var dependencyVersions = service.GroupBy(x => x.DependencyId + ":" + x.DependencyVersion);
+                var dependencyVersions = service.GroupBy(x => new DependencyIdVersion(x.DependencyId, x.DependencyVersion));
+
                 results.Add(service.Key,
-                    dependencyVersions.OrderBy(x => stalenessLookup[x.Key]).ThenBy(x => x.Key)
+                    dependencyVersions.OrderBy(x => stalenessLookup[x.Key]).ThenBy(x => x.Key.DependencyId)
                         .Select(x => new DependencyStaleness
                         {
                             DependencyId = x.First().DependencyId,
