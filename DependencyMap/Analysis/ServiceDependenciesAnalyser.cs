@@ -59,17 +59,18 @@ namespace DependencyMap.Analysis
                 x => x.OrderByDescending(y => y.Version).First().Version);
 
             var results = new Dictionary<string, DependencyStaleness[]>();
-            foreach (var service in _serviceDependencies.GroupBy(x => x.ServiceId))
+            foreach (var service in _serviceDependencies.GroupBy(x => x.ServiceId).OrderBy(x => x.Key))
             {
                 var dependencyVersions = service.GroupBy(x => x.DependencyId + ":" + x.DependencyVersion);
                 results.Add(service.Key,
-                    dependencyVersions.OrderBy(x => stalenessLookup[x.Key]).Select(x => new DependencyStaleness
-                    {
-                        DependencyId = x.First().DependencyId,
-                        Version = x.First().DependencyVersion,
-                        LatestKnownVersion = latestVersionByDependency[x.First().DependencyId],
-                        StalenessRating = stalenessLookup[x.Key]
-                    }).ToArray());
+                    dependencyVersions.OrderBy(x => stalenessLookup[x.Key]).ThenBy(x => x.Key)
+                        .Select(x => new DependencyStaleness
+                        {
+                            DependencyId = x.First().DependencyId,
+                            Version = x.First().DependencyVersion,
+                            LatestKnownVersion = latestVersionByDependency[x.First().DependencyId],
+                            StalenessRating = stalenessLookup[x.Key]
+                        }).ToArray());
             }
             return results;
         }

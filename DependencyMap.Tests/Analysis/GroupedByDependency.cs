@@ -72,7 +72,6 @@ namespace DependencyMap.Tests.Analysis
             var analyser = new ServiceDependenciesAnalyser(input);
             var output = analyser.GroupByDependency();
 
-
             output.ShouldBeEquivalentTo(
                 new Dictionary<string, Dictionary<SemanticVersion, string[]>>
                 {
@@ -98,27 +97,63 @@ namespace DependencyMap.Tests.Analysis
         }
 
         [Test]
-        public void InputDependenciesNotOrdered_ShouldReturnOutputOrderedByDependencyId()
+        public void InputServicesNotOrdered_ShouldReturnOutputOrderedByServiceId()
         {
+            var dependencyId = "Dependency0";
+            var version = new SemanticVersion(1, 0, 0, 0);
             var input = new[]
             {
                 new ServiceDependency
                 {
-                    ServiceId = "Service0",
+                    ServiceId = "Charlie",
+                    DependencyId = dependencyId,
+                    DependencyVersion = version
+                },
+                new ServiceDependency
+                {
+                    ServiceId = "Bravo",
+                    DependencyId = dependencyId,
+                    DependencyVersion = version
+                },
+                new ServiceDependency
+                {
+                    ServiceId = "Alpha",
+                    DependencyId = dependencyId,
+                    DependencyVersion = version
+                }
+            };
+            var analyser = new ServiceDependenciesAnalyser(input);
+            var output = analyser.GroupByDependency();
+
+            // Should.Equal also asserts order
+            output[dependencyId][version].Should().Equal(
+                input.Select(x => x.ServiceId).OrderBy(x => x));
+        }
+
+        [Test]
+        public void InputDependenciesNotOrdered_ShouldReturnOutputOrderedByDependencyId()
+        {
+            var serviceId = "Service0";
+            var version = new SemanticVersion(1, 0, 0, 0);
+            var input = new[]
+            {
+                new ServiceDependency
+                {
+                    ServiceId = serviceId,
                     DependencyId = "Charlie",
-                    DependencyVersion = new SemanticVersion(1, 0, 0, 0)
+                    DependencyVersion = version
                 },
                 new ServiceDependency
                 {
-                    ServiceId = "Service1",
+                    ServiceId = serviceId,
                     DependencyId = "Bravo",
-                    DependencyVersion = new SemanticVersion(1, 0, 0, 0)
+                    DependencyVersion = version
                 },
                 new ServiceDependency
                 {
-                    ServiceId = "Service1",
+                    ServiceId = serviceId,
                     DependencyId = "Alpha",
-                    DependencyVersion = new SemanticVersion(1, 0, 0, 0)
+                    DependencyVersion = version
                 }
             };
             var analyser = new ServiceDependenciesAnalyser(input);
@@ -127,39 +162,6 @@ namespace DependencyMap.Tests.Analysis
             // Should.Equal also asserts order
             output.Select(x => x.Key).Should().Equal(
                 input.Select(x => x.DependencyId).OrderBy(x => x));
-        }
-
-        [Test]
-        public void InputServicesNotOrdered_ShouldReturnOutputOrderedByServiceId()
-        {
-            var version = new SemanticVersion(1, 0, 0, 0);
-            var input = new[]
-            {
-                new ServiceDependency
-                {
-                    ServiceId = "Charlie",
-                    DependencyId = "Dependency0",
-                    DependencyVersion = version
-                },
-                new ServiceDependency
-                {
-                    ServiceId = "Bravo",
-                    DependencyId = "Dependency0",
-                    DependencyVersion = version
-                },
-                new ServiceDependency
-                {
-                    ServiceId = "Alpha",
-                    DependencyId = "Dependency0",
-                    DependencyVersion = version
-                }
-            };
-            var analyser = new ServiceDependenciesAnalyser(input);
-            var output = analyser.GroupByDependency();
-
-            // Should.Equal also asserts order
-            output["Dependency0"][version].Should().Equal(
-                input.Select(x => x.ServiceId).OrderBy(x => x));
         }
     }
 }

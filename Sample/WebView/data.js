@@ -64,6 +64,12 @@ g_services = [
         "IsStale": false
       },
       {
+        "DependencyId": "MultipleVersions",
+        "Version": "1.0.1",
+        "LatestKnownVersion": "1.0.1",
+        "IsStale": false
+      },
+      {
         "DependencyId": "Package1",
         "Version": "1.0.0",
         "LatestKnownVersion": "1.0.0",
@@ -79,12 +85,6 @@ g_services = [
         "DependencyId": "Package3",
         "Version": "1.0.0",
         "LatestKnownVersion": "1.0.0",
-        "IsStale": false
-      },
-      {
-        "DependencyId": "MultipleVersions",
-        "Version": "1.0.1",
-        "LatestKnownVersion": "1.0.1",
         "IsStale": false
       },
       {
