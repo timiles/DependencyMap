@@ -28,6 +28,21 @@
     background: #f39c12;
 }
 
+.legend {
+    float: right;
+    background: #eee;
+    border-radius: 5px;
+}
+.legend > div {
+    float: left;
+    width: 40px;
+    height: 40px;
+    margin: 5px;
+    border-radius: 5px;
+    font-size: 1.6em;
+    text-align: center;
+}
+
 .score-5 {
     background: #FF6961;
 }
@@ -41,17 +56,17 @@
     display: none;
 }
 
-.dependency.dependency-fresh {
+.dependency-fresh {
     color: darkgreen;
 }
-.dependency.dependency-fresh:before {
+.dependency-fresh:before {
     content: '👍';
 }
 
-.dependency.dependency-stale {
+.dependency-stale {
     color: brown;
 }
-.dependency.dependency-stale:before {
+.dependency-stale:before {
     content: '💩';
 }
 
