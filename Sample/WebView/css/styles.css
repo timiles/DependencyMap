@@ -28,6 +28,10 @@
     background: #f39c12;
 }
 
+.score-5 {
+    background: #FF6961;
+}
+
 .legend {
     float: right;
     background: #eee;
@@ -41,10 +45,6 @@
     border-radius: 5px;
     font-size: 1.6em;
     text-align: center;
-}
-
-.score-5 {
-    background: #FF6961;
 }
 
 /* dependencies-only */
