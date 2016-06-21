@@ -2,6 +2,7 @@
 <head>
     <title>Dependency Map: Services View</title>
     <link type="text/css" rel="stylesheet" href="css/styles.css" />
+    <script src="js/dependencymap.js"></script>
     <script src="js/masonry.pkgd.min.js"></script>
     <script type="text/javascript" src="data.js"></script>
 </head>
@@ -22,29 +23,9 @@
     <script>
 
         var servicesContainer = document.getElementById('services');
-        for (var i = 0; i < g_services.length; i++) {
-            var service = g_services[i];
-
-            var serviceContainer = document.createElement('div');
-            serviceContainer.className = 'grid-item score-' + service.Score;
-
-            var header = document.createElement('h2');
-            header.innerHTML = service.ServiceId;
-            serviceContainer.appendChild(header);
-
-            var dependenciesList = document.createElement('ul');
-            dependenciesList.className = 'dependencies-list';
-            for (var d = 0; d < service.Dependencies.length; d++) {
-                var dependency = service.Dependencies[d];
-                var dependencyListItem = document.createElement('li');
-                dependencyListItem.className = 'dependency dependency-' + (dependency.IsStale ? 'stale' : 'fresh');
-                dependencyListItem.innerHTML = dependency.DependencyId + ' <span class="version">' + dependency.Version + ' &lt; ' + dependency.LatestKnownVersion + '</span>';
-
-                dependenciesList.appendChild(dependencyListItem);
-            }
-
-            serviceContainer.appendChild(dependenciesList);
-            servicesContainer.appendChild(serviceContainer);
+        var services = dependencymap.buildServices(g_services);
+        for (var s = 0; s < services.length; s++) {
+            servicesContainer.appendChild(services[s]);
         }
 
         var msnry = new Masonry('.grid', { gutter: 10 });
