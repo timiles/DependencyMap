@@ -9,7 +9,8 @@
     <licenseUrl>https://github.com/timiles/DependencyMap/blob/master/LICENSE.md</licenseUrl>
     <projectUrl>https://github.com/timiles/DependencyMap</projectUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <description>Visualize the dependencies (and their versions) referenced by services across your codebase</description>
+    <description>Compare package dependencies across all your repositories</description>
+    <iconUrl>https://raw.githubusercontent.com/timiles/DependencyMap/icon.png</iconUrl>
     <releaseNotes></releaseNotes>
     <copyright>Copyright &#x00A9; Tim Iles</copyright>
     <tags>nuget packages dependency visualiser</tags>
