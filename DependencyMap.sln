@@ -11,6 +11,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "WebView", "WebView", "{2CBF
 	ProjectSection(SolutionItems) = preProject
 		Sample\WebView\data.js = Sample\WebView\data.js
 		Sample\WebView\dependencies.html = Sample\WebView\dependencies.html
+		Sample\WebView\favicon.ico = Sample\WebView\favicon.ico
 		Sample\WebView\index.html = Sample\WebView\index.html
 		Sample\WebView\services.html = Sample\WebView\services.html
 	EndProjectSection
