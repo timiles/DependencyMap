@@ -19,8 +19,8 @@
     <h1>Dependency Map</h1>
 
     <ul class="tab-links">
-        <li><a href="#" class="tab-link" onclick="openCorrespondingTabContent(this); runMasonry('dependencies');">Dependencies</a></li>
-        <li><a href="#" class="tab-link" onclick="openCorrespondingTabContent(this); runMasonry('services');">Services</a></li>
+        <li><a href="#dependencies" class="tab-link" onclick="openCorrespondingTabContent(this); runMasonry('dependencies');">Dependencies</a></li>
+        <li><a href="#services" class="tab-link" onclick="openCorrespondingTabContent(this); runMasonry('services');">Services</a></li>
     </ul>
 
     <div class="tab-content">
@@ -40,6 +40,20 @@
             }
         }
 
+        function selectTabLinkFromHash() {
+            var links = document.getElementsByClassName('tab-link');
+            if (location.hash) {
+                for (var i = 0; i < links.length; i++) {
+                    if (links[i].href.indexOf(location.hash) >= 0) {
+                        links[i].click();
+                        return;
+                    }
+                }
+            }
+            // if didn't match a link, just pick the first
+            links[0].click();
+        }
+
         function runMasonry(containerElementId) {
             new Masonry('#' + containerElementId, { gutter: 10 });
         }
@@ -49,6 +63,8 @@
 
         var services = dependencymap.buildServices(g_services);
         document.getElementById('services').appendChildren(services);
+        
+        selectTabLinkFromHash();
     </script>
 </body>
 </html>
