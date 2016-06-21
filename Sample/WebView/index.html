@@ -1,0 +1,54 @@
+<html>
+<head>
+    <title>Dependency Map</title>
+    <link type="text/css" rel="stylesheet" href="css/styles.css" />
+    <script src="js/dependencymap.js"></script>
+    <script src="js/masonry.pkgd.min.js"></script>
+    <script src="js/tabs.js"></script>
+    <script type="text/javascript" src="data.js"></script>
+</head>
+
+<body>
+    <div class="legend">
+        <div class="score-1 dependency-fresh"></div>
+        <div class="score-2"></div>
+        <div class="score-3"></div>
+        <div class="score-4"></div>
+        <div class="score-5 dependency-stale"></div>
+    </div>
+    <h1>Dependency Map</h1>
+
+    <ul class="tab-links">
+        <li><a href="#" class="tab-link" onclick="openCorrespondingTabContent(this); runMasonry('dependencies');">Dependencies</a></li>
+        <li><a href="#" class="tab-link" onclick="openCorrespondingTabContent(this); runMasonry('services');">Services</a></li>
+    </ul>
+
+    <div class="tab-content">
+        <h3>Dependencies</h3>
+        <div id="dependencies"></div>
+    </div>
+
+    <div class="tab-content">
+        <h3>Services</h3>
+        <div id="services"></div>
+    </div>
+
+    <script>
+        HTMLDivElement.prototype.appendChildren = function (childNodes) {
+            for (var i = 0; i < childNodes.length; i++) {
+                this.appendChild(childNodes[i]);
+            }
+        }
+
+        function runMasonry(containerElementId) {
+            new Masonry('#' + containerElementId, { gutter: 10 });
+        }
+
+        var dependencies = dependencymap.buildDependencies(g_dependencies);
+        document.getElementById('dependencies').appendChildren(dependencies);
+
+        var services = dependencymap.buildServices(g_services);
+        document.getElementById('services').appendChildren(services);
+    </script>
+</body>
+</html>

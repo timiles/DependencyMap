@@ -1,6 +1,44 @@
 ﻿BODY {
     font-family: 'Comic Sans MS';
 }
+/* tabs */
+ul.tab-links {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    border: 1px solid #ccc;
+    background-color: #f1f1f1;
+}
+
+    ul.tab-links li {
+        float: left;
+    }
+
+        ul.tab-links li a {
+            display: inline-block;
+            color: black;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            transition: 0.3s;
+            font-size: 17px;
+        }
+
+            ul.tab-links li a:hover {
+                background-color: #ddd;
+            }
+
+            ul.tab-links li a:focus, .active {
+                background-color: #ccc;
+            }
+
+.tab-content {
+    display: none;
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+    border-top: none;
+}
 
 /* masonry */
 .grid-item {
@@ -37,15 +75,15 @@
     background: #eee;
     border-radius: 5px;
 }
-.legend > div {
-    float: left;
-    width: 40px;
-    height: 40px;
-    margin: 5px;
-    border-radius: 5px;
-    font-size: 1.6em;
-    text-align: center;
-}
+    .legend > div {
+        float: left;
+        width: 40px;
+        height: 40px;
+        margin: 5px;
+        border-radius: 5px;
+        font-size: 1.6em;
+        text-align: center;
+    }
 
 /* dependencies-only */
 .dependency .version {
@@ -59,16 +97,16 @@
 .dependency-fresh {
     color: darkgreen;
 }
-.dependency-fresh:before {
-    content: '👍';
-}
+    .dependency-fresh:before {
+        content: '👍';
+    }
 
 .dependency-stale {
     color: brown;
 }
-.dependency-stale:before {
-    content: '💩';
-}
+    .dependency-stale:before {
+        content: '💩';
+    }
 
 ul.dependencies-list {
     padding-left: 20px;

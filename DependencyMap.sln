@@ -11,6 +11,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "WebView", "WebView", "{2CBF
 	ProjectSection(SolutionItems) = preProject
 		Sample\WebView\data.js = Sample\WebView\data.js
 		Sample\WebView\dependencies.html = Sample\WebView\dependencies.html
+		Sample\WebView\index.html = Sample\WebView\index.html
 		Sample\WebView\services.html = Sample\WebView\services.html
 	EndProjectSection
 EndProject
@@ -23,6 +24,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "js", "js", "{08500260-FA2E-
 	ProjectSection(SolutionItems) = preProject
 		Sample\WebView\js\dependencymap.js = Sample\WebView\js\dependencymap.js
 		Sample\WebView\js\masonry.pkgd.min.js = Sample\WebView\js\masonry.pkgd.min.js
+		Sample\WebView\js\tabs.js = Sample\WebView\js\tabs.js
 	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Sample", "Sample", "{EA4D3C48-09A8-4789-A737-E4AA5BD7BD57}"
