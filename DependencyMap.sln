@@ -10,10 +10,8 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "WebView", "WebView", "{2CBF5607-03B5-40C6-BB5F-44EDDD9DED7A}"
 	ProjectSection(SolutionItems) = preProject
 		Sample\WebView\data.js = Sample\WebView\data.js
-		Sample\WebView\dependencies.html = Sample\WebView\dependencies.html
 		Sample\WebView\favicon.ico = Sample\WebView\favicon.ico
 		Sample\WebView\index.html = Sample\WebView\index.html
-		Sample\WebView\services.html = Sample\WebView\services.html
 	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "css", "css", "{59657D38-6E61-4D5D-B6C0-04DC85BBF0DD}"
