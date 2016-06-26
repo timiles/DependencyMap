@@ -15,8 +15,7 @@ namespace WebView.DataUpdater
             const string webViewDir = "../../../WebView/";
             const string outputPath = webViewDir + "data.js";
 
-            const string sourceDir = "../../../DummySourceRepository/";
-            var repository = new FileSystemSourceRepository("packages.config", new [] { sourceDir });
+            var repository = new GitHubSourceRepository("packages.config", "Particular", true);
             var packageConfigs = repository.GetDependencyFiles();
 
             var scanner = new NuGetPackageConfigScanner();
@@ -32,8 +31,7 @@ namespace WebView.DataUpdater
 
             File.WriteAllText(outputPath, $"g_dependencies = {dependencies};\r\ng_services = {services};");
 
-            Process.Start("chrome", webViewDir + "dependencies.html");
-            Process.Start("chrome", webViewDir + "services.html");
+            Process.Start("chrome.exe", webViewDir + "index.html");
         }
 
         private static string SerializeObjectToJson(object value)
