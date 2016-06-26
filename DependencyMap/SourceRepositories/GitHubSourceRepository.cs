@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Threading;
 using System.Threading.Tasks;
 using Octokit;
 using Octokit.Internal;
@@ -14,6 +15,7 @@ namespace DependencyMap.SourceRepositories
         private readonly bool _ownerIsOrganization;
         private readonly Credentials _credentials;
         private readonly Uri _apiBaseAddress;
+        private readonly int _searchApiRateLimitDelayMilliseconds;
 
         private IEnumerable<DependencyFile> _dependencyFiles;
 
@@ -34,6 +36,16 @@ namespace DependencyMap.SourceRepositories
             _ownerIsOrganization = ownerIsOrganization;
             _credentials = login != null ? new Credentials(login, password) : Credentials.Anonymous;
             _apiBaseAddress = apiBaseAddress != null ? new Uri(apiBaseAddress) : GitHubClient.GitHubApiUrl;
+
+            if (_apiBaseAddress == GitHubClient.GitHubApiUrl)
+            {
+                /*
+                From https://developer.github.com/v3/search/#rate-limit:
+                For requests using Basic Authentication, OAuth, or client ID and secret, you can make up to 30 requests per minute. 
+                For unauthenticated requests, the rate limit allows you to make up to 10 requests per minute.
+                */
+                _searchApiRateLimitDelayMilliseconds = login != null ? 60000/30 : 60000/10;
+            }
         }
 
         public IEnumerable<DependencyFile> GetDependencyFiles()
@@ -67,6 +79,7 @@ namespace DependencyMap.SourceRepositories
                         Page = page
                     };
                     var files = await client.Search.SearchCode(searchCodeRequest).ConfigureAwait(false);
+                    Thread.Sleep(_searchApiRateLimitDelayMilliseconds);
 
                     foreach (var file in files.Items)
                     {
