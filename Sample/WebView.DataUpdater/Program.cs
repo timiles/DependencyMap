@@ -1,10 +1,12 @@
-﻿using System.Diagnostics;
+﻿using System;
+using System.Diagnostics;
 using System.IO;
 using System.Linq;
 using DependencyMap.Analysis;
 using DependencyMap.Scanning;
 using DependencyMap.SourceRepositories;
 using Newtonsoft.Json;
+using WebView.DataUpdater.DataModels;
 
 namespace WebView.DataUpdater
 {
@@ -26,10 +28,17 @@ namespace WebView.DataUpdater
 
             var analyser = new ServiceDependenciesAnalyser(nonTestServiceDependencies.ToList());
 
-            var dependencies = SerializeObjectToJson(analyser.GetAllDependencies());
-            var services = SerializeObjectToJson(analyser.GetAllServices());
 
-            File.WriteAllText(outputPath, $"g_dependencies = {dependencies};\r\ng_services = {services};");
+            var data = new RootObject
+            {
+                LastRunDateTime = DateTime.Now.ToString("dd MMM yyyy HH:mm:ss"),
+                NuGetPackages = new Anaylsis
+                {
+                    Dependencies = analyser.GetAllDependencies(),
+                    Services = analyser.GetAllServices()
+                }
+            };
+            File.WriteAllText(outputPath, $"g_data = {SerializeObjectToJson(data)};");
 
             Process.Start("chrome.exe", webViewDir + "index.html");
         }

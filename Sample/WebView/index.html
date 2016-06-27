@@ -18,6 +18,7 @@
         <div class="score-5 dependency-stale"></div>
     </div>
     <h1>Dependency Map</h1>
+    <p>Generated at: <span id="lastRun"></span></p>
 
     <ul class="tab-links">
         <li><a href="#/dependencies" class="tab-link" onclick="openCorrespondingTabContent(this); runMasonry('dependenciesContainer');">Dependencies</a></li>
@@ -57,11 +58,13 @@
             new Masonry('#' + containerElementId, { gutter: 10 });
         }
 
-        var dependencies = dependencymap.buildDependencies(g_dependencies);
-        document.getElementById('dependenciesContainer').appendChildren(dependencies);
+        document.getElementById('lastRun').innerText = g_data.LastRunDateTime;
 
-        var services = dependencymap.buildServices(g_services);
-        document.getElementById('servicesContainer').appendChildren(services);
+        document.getElementById('dependenciesContainer')
+            .appendChildren(dependencymap.buildDependencies(g_data.NuGetPackages.Dependencies));
+
+        document.getElementById('servicesContainer')
+            .appendChildren(dependencymap.buildServices(g_data.NuGetPackages.Services));
         
         selectTabLinkFromHash();
     </script>
