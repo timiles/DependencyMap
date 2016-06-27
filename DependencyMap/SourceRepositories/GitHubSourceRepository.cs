@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Threading;
 using System.Threading.Tasks;
 using Octokit;
 using Octokit.Internal;
@@ -79,7 +78,7 @@ namespace DependencyMap.SourceRepositories
                         Page = page
                     };
                     var files = await client.Search.SearchCode(searchCodeRequest).ConfigureAwait(false);
-                    Thread.Sleep(_searchApiRateLimitDelayMilliseconds);
+                    await Task.Delay(_searchApiRateLimitDelayMilliseconds).ConfigureAwait(false);
 
                     foreach (var file in files.Items)
                     {
