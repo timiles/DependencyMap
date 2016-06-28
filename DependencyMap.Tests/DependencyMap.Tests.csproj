@@ -67,6 +67,7 @@
     <Compile Include="Analysis\ConstructorTests.cs" />
     <Compile Include="Analysis\GroupedByService.cs" />
     <Compile Include="Analysis\GroupedByDependency.cs" />
+    <Compile Include="Analysis\StalenessCalculations.cs" />
     <Compile Include="Scanning\NuGetPackageConfigScannerTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SourceRepositories\GitHubSourceRepositoryTests.cs" />

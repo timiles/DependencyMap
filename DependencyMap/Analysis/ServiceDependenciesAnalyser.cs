@@ -76,7 +76,7 @@ namespace DependencyMap.Analysis
             return results;
         }
 
-        private IEnumerable<DependencyStaleness> CalculateDependencyStalenessesAcrossEntireSource()
+        internal IEnumerable<DependencyStaleness> CalculateDependencyStalenessesAcrossEntireSource()
         {
             foreach (var dependency in _serviceDependencies.GroupBy(x => x.DependencyId))
             {
@@ -87,8 +87,12 @@ namespace DependencyMap.Analysis
                     {
                         DependencyId = dependency.Key,
                         Version = version.Key,
-                        StalenessRating = stalenessRating++
+                        StalenessRating = stalenessRating
                     };
+                    if (string.IsNullOrEmpty(version.Key.SpecialVersion))
+                    {
+                        stalenessRating++;
+                    }
                 }
             }
         }
