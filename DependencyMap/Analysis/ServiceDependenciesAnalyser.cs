@@ -56,7 +56,8 @@ namespace DependencyMap.Analysis
 
             var latestVersionByDependency = stalenesses.GroupBy(x => x.DependencyId).ToDictionary(
                 x => x.Key,
-                x => x.OrderByDescending(y => y.Version).First().Version);
+                x => x.OrderByDescending(y => string.IsNullOrEmpty(y.Version.SpecialVersion))
+                    .ThenByDescending(y => y.Version).First().Version);
 
             var results = new Dictionary<string, DependencyStaleness[]>();
             foreach (var service in _serviceDependencies.GroupBy(x => x.ServiceId).OrderBy(x => x.Key))

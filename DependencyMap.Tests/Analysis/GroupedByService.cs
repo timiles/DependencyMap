@@ -191,5 +191,85 @@ namespace DependencyMap.Tests.Analysis
             output.Select(x => x.Key).Should().Equal(
                 input.Select(x => x.ServiceId).OrderBy(x => x));
         }
+
+        [Test]
+        public void HighestVersionIsPreRelease_ShouldNotBeUsedAsLatestKnownVersion()
+        {
+            var input = new[]
+            {
+                new ServiceDependency
+                {
+                    ServiceId = "Service0",
+                    DependencyId = "Dependency0",
+                    DependencyVersion = new SemanticVersion(2, 0, 0, "alpha")
+                },
+                new ServiceDependency
+                {
+                    ServiceId = "Service0",
+                    DependencyId = "Dependency0",
+                    DependencyVersion = new SemanticVersion(1, 0, 0, 0)
+                }
+            };
+            var analyser = new ServiceDependenciesAnalyser(input);
+            var output = analyser.GroupByService();
+
+            output.ShouldBeEquivalentTo(
+                new Dictionary<string, DependencyStaleness[]>
+                {
+                    {
+                        "Service0", new[]
+                        {
+                            new DependencyStaleness
+                            {
+                                DependencyId = "Dependency0",
+                                LatestKnownVersion = new SemanticVersion(1, 0, 0, 0),
+                                Version = new SemanticVersion(2, 0, 0, "alpha"),
+                                StalenessRating = 0
+                            },
+                            new DependencyStaleness
+                            {
+                                DependencyId = "Dependency0",
+                                LatestKnownVersion = new SemanticVersion(1, 0, 0, 0),
+                                Version = new SemanticVersion(1, 0, 0, 0),
+                                StalenessRating = 0
+                            }
+                        }
+                    }
+                });
+        }
+
+        [Test]
+        public void OnlyVersionIsPreRelease_ShouldBeUsedAsLatestKnownVersion()
+        {
+            var input = new[]
+            {
+                new ServiceDependency
+                {
+                    ServiceId = "Service0",
+                    DependencyId = "Dependency0",
+                    DependencyVersion = new SemanticVersion(2, 0, 0, "alpha")
+                }
+            };
+            var analyser = new ServiceDependenciesAnalyser(input);
+            var output = analyser.GroupByService();
+
+            output.ShouldBeEquivalentTo(
+                new Dictionary<string, DependencyStaleness[]>
+                {
+                    {
+                        "Service0", new[]
+                        {
+                            new DependencyStaleness
+                            {
+                                DependencyId = "Dependency0",
+                                LatestKnownVersion = new SemanticVersion(2, 0, 0, "alpha"),
+                                Version = new SemanticVersion(2, 0, 0, "alpha"),
+                                StalenessRating = 0
+                            }
+                        }
+                    }
+                });
+        }
+
     }
 }
