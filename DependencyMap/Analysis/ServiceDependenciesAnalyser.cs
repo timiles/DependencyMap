@@ -56,7 +56,7 @@ namespace DependencyMap.Analysis
 
             var latestVersionByDependency = stalenesses.GroupBy(x => x.DependencyId).ToDictionary(
                 x => x.Key,
-                x => x.OrderByDescending(y => string.IsNullOrEmpty(y.Version.SpecialVersion))
+                x => x.OrderBy(y => y.IsPrerelease)
                     .ThenByDescending(y => y.Version).First().Version);
 
             var results = new Dictionary<string, DependencyStaleness[]>();

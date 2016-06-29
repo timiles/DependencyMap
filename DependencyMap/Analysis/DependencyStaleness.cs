@@ -11,5 +11,7 @@ namespace DependencyMap.Analysis
         public SemanticVersion LatestKnownVersion { get; set; }
 
         public int StalenessRating { get; set; }
+
+        public bool IsPrerelease => !string.IsNullOrEmpty(this.Version.SpecialVersion);
     }
 }

@@ -20,6 +20,8 @@ namespace DependencyMap.Analysis
             public SemanticVersion LatestKnownVersion { get; set; }
 
             public bool IsStale { get; set; }
+
+            public bool IsPrerelease => !string.IsNullOrEmpty(this.Version.SpecialVersion);
         }
     }
 }
