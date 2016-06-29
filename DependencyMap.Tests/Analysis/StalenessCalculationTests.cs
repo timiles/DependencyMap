@@ -7,7 +7,7 @@ using NUnit.Framework;
 namespace DependencyMap.Tests.Analysis
 {
     [TestFixture]
-    public class StalenessCalculations
+    public class StalenessCalculationTests
     {
         [Test]
         public void SimpleDependency_ShouldReturnStalenessAsExpected()

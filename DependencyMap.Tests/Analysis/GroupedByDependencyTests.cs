@@ -9,7 +9,7 @@ using NUnit.Framework;
 namespace DependencyMap.Tests.Analysis
 {
     [TestFixture]
-    public class GroupedByDependency
+    public class GroupedByDependencyTests
     {
         [Test]
         public void SimpleDependency_ShouldReturnDependenciesAsExpected()

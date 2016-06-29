@@ -65,9 +65,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Analysis\ConstructorTests.cs" />
-    <Compile Include="Analysis\GroupedByService.cs" />
-    <Compile Include="Analysis\GroupedByDependency.cs" />
-    <Compile Include="Analysis\StalenessCalculations.cs" />
+    <Compile Include="Analysis\GroupedByServiceTests.cs" />
+    <Compile Include="Analysis\GroupedByDependencyTests.cs" />
+    <Compile Include="Analysis\StalenessCalculationTests.cs" />
     <Compile Include="Scanning\NuGetPackageConfigScannerTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SourceRepositories\GitHubSourceRepositoryTests.cs" />
