@@ -1,5 +1,5 @@
 g_data = {
-  "LastRunDateTime": "27 Jun 2016 18:22:21",
+  "LastRunDateTime": "29 Jun 2016 23:32:30",
   "NuGetPackages": {
     "Dependencies": [
       {
@@ -235,10 +235,12 @@ g_data = {
       },
       {
         "DependencyId": "Caseless.Fody",
-        "Score": 3,
+        "Score": 4,
         "ServiceUsageByVersion": {
+          "1.4.2": [
+            "EndToEnd"
+          ],
           "1.4.1": [
-            "EndToEnd",
             "PlatformInstaller"
           ],
           "1.3.7": [
@@ -2071,10 +2073,10 @@ g_data = {
         "Score": 5,
         "ServiceUsageByVersion": {
           "4.3.5": [
-            "docs.particular.net"
+            "docs.particular.net",
+            "EndToEnd"
           ],
           "4.3.4": [
-            "EndToEnd",
             "ServiceControl"
           ],
           "4.2.3": [
@@ -2468,7 +2470,8 @@ g_data = {
         "Score": 5,
         "ServiceUsageByVersion": {
           "7.0.0-beta0004": [
-            "docs.particular.net"
+            "docs.particular.net",
+            "EndToEnd"
           ],
           "7.0.0-beta0003": [
             "EndToEnd"
@@ -2864,9 +2867,7 @@ g_data = {
         "Score": 5,
         "ServiceUsageByVersion": {
           "7.0.0-beta0004": [
-            "docs.particular.net"
-          ],
-          "7.0.0-beta0003": [
+            "docs.particular.net",
             "EndToEnd"
           ],
           "7.0.0-beta0001": [
@@ -2962,12 +2963,10 @@ g_data = {
       },
       {
         "DependencyId": "NServiceBus.Persistence.AzureStorage",
-        "Score": 2,
+        "Score": 1,
         "ServiceUsageByVersion": {
           "1.0.0-beta0003": [
-            "docs.particular.net"
-          ],
-          "1.0.0-beta0002": [
+            "docs.particular.net",
             "EndToEnd"
           ]
         }
@@ -2989,7 +2988,8 @@ g_data = {
         "Score": 5,
         "ServiceUsageByVersion": {
           "4.0.0-beta0004": [
-            "docs.particular.net"
+            "docs.particular.net",
+            "EndToEnd"
           ],
           "4.0.0-beta0003": [
             "EndToEnd"
@@ -3036,9 +3036,7 @@ g_data = {
         "Score": 5,
         "ServiceUsageByVersion": {
           "4.0.0-beta0005": [
-            "docs.particular.net"
-          ],
-          "4.0.0-beta0004": [
+            "docs.particular.net",
             "EndToEnd"
           ],
           "3.0.10": [
@@ -3390,8 +3388,11 @@ g_data = {
       },
       {
         "DependencyId": "NUnit",
-        "Score": 3,
+        "Score": 4,
         "ServiceUsageByVersion": {
+          "3.4.0": [
+            "EndToEnd"
+          ],
           "3.2.1": [
             "docs.particular.net",
             "EndToEnd",
@@ -3482,9 +3483,6 @@ g_data = {
         "Score": 5,
         "ServiceUsageByVersion": {
           "0.20.0": [
-            "docs.particular.net"
-          ],
-          "0.19.0": [
             "docs.particular.net"
           ],
           "0.18.0": [
@@ -3723,9 +3721,7 @@ g_data = {
         "Score": 5,
         "ServiceUsageByVersion": {
           "3.0.30143": [
-            "docs.particular.net"
-          ],
-          "3.0.30115": [
+            "docs.particular.net",
             "EndToEnd"
           ],
           "3.0.30000": [
@@ -4684,7 +4680,7 @@ g_data = {
         "DependencyId": "WindowsAzure.ServiceBus",
         "Score": 5,
         "ServiceUsageByVersion": {
-          "3.2.2": [
+          "3.3.0": [
             "EndToEnd"
           ],
           "3.1.7": [
@@ -4756,85 +4752,98 @@ g_data = {
     "Services": [
       {
         "ServiceId": "Automation.Engineering",
-        "Score": 4,
+        "Score": 2,
         "Dependencies": [
           {
             "DependencyId": "Autofac",
             "Version": "3.5.2",
             "LatestKnownVersion": "3.5.2",
-            "IsStale": false
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "FluentMigrator",
             "Version": "1.5.1.0",
             "LatestKnownVersion": "1.5.1.0",
-            "IsStale": false
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "ITOps.Contracts.Chat",
             "Version": "0.4.73",
             "LatestKnownVersion": "0.4.73",
-            "IsStale": false
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "ITOps.Contracts.Documents",
             "Version": "0.4.32",
             "LatestKnownVersion": "0.4.32",
-            "IsStale": false
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "ITOps.Contracts.Email",
             "Version": "0.4.32",
             "LatestKnownVersion": "0.4.32",
-            "IsStale": false
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "ITOps.Contracts.Issues",
             "Version": "0.4.32",
             "LatestKnownVersion": "0.4.32",
-            "IsStale": false
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "ITOps.Contracts.Releases",
             "Version": "0.4.32",
             "LatestKnownVersion": "0.4.32",
-            "IsStale": false
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "NuGetPackager",
             "Version": "0.5.5",
             "LatestKnownVersion": "0.6.0",
-            "IsStale": true
+            "IsStale": true,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "GitVersionTask",
             "Version": "2.0.1",
             "LatestKnownVersion": "3.5.4",
-            "IsStale": true
+            "IsStale": true,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "Octokit",
             "Version": "0.13.0",
             "LatestKnownVersion": "0.20.0",
-            "IsStale": true
+            "IsStale": true,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "Octokit",
             "Version": "0.12.0",
             "LatestKnownVersion": "0.20.0",
-            "IsStale": true
+            "IsStale": true,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "NServiceBus",
             "Version": "5.2.3",
-            "LatestKnownVersion": "6.0.0-unstable1786",
-            "IsStale": true
+            "LatestKnownVersion": "5.2.14",
+            "IsStale": true,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "NServiceBus",
             "Version": "5.2.2",
-            "LatestKnownVersion": "6.0.0-unstable1786",
-            "IsStale": true
+            "LatestKnownVersion": "5.2.14",
+            "IsStale": true,
+            "IsPrerelease": false
           }
         ]
       },
@@ -4846,307 +4855,357 @@ g_data = {
             "DependencyId": "Autofac",
             "Version": "3.5.2",
             "LatestKnownVersion": "3.5.2",
-            "IsStale": false
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "Engineering.Contracts",
             "Version": "0.3.28",
             "LatestKnownVersion": "0.3.28",
-            "IsStale": false
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "Engineering.Database",
             "Version": "0.3.12",
             "LatestKnownVersion": "0.3.12",
-            "IsStale": false
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "Engineering.Email",
             "Version": "0.3.12",
             "LatestKnownVersion": "0.3.12",
-            "IsStale": false
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "Engineering.Interface.Chat",
             "Version": "0.3.22",
             "LatestKnownVersion": "0.3.22",
-            "IsStale": false
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "Engineering.ReleaseManagement",
             "Version": "0.3.12",
             "LatestKnownVersion": "0.3.12",
-            "IsStale": false
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "Engineering.WebHooks",
             "Version": "0.3.11",
             "LatestKnownVersion": "0.3.11",
-            "IsStale": false
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "FluentMigrator",
             "Version": "1.5.1.0",
             "LatestKnownVersion": "1.5.1.0",
-            "IsStale": false
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "FluentMigrator.Runner",
             "Version": "1.5.1.0",
             "LatestKnownVersion": "1.5.1.0",
-            "IsStale": false
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "Iesi.Collections",
             "Version": "4.0.1.4000",
             "LatestKnownVersion": "4.0.1.4000",
-            "IsStale": false
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "Marketing.Announcements",
             "Version": "0.1.23",
             "LatestKnownVersion": "0.1.23",
-            "IsStale": false
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "Marketing.Announcements.Messages",
             "Version": "0.1.5",
             "LatestKnownVersion": "0.1.5",
-            "IsStale": false
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "Marketing.Email",
             "Version": "0.1.5",
             "LatestKnownVersion": "0.1.5",
-            "IsStale": false
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "Marketing.Interface.Chat",
             "Version": "0.1.5",
             "LatestKnownVersion": "0.1.5",
-            "IsStale": false
+            "IsStale": false,
+            "IsPrerelease": false
+          },
+          {
+            "DependencyId": "NServiceBus.Autofac",
+            "Version": "5.0.0",
+            "LatestKnownVersion": "5.0.0",
+            "IsStale": false,
+            "IsPrerelease": false
+          },
+          {
+            "DependencyId": "NServiceBus.Serilog",
+            "Version": "2.0.1.1",
+            "LatestKnownVersion": "2.0.1.1",
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "Rx-Core",
             "Version": "2.2.5",
             "LatestKnownVersion": "2.2.5",
-            "IsStale": false
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "Rx-Interfaces",
             "Version": "2.2.5",
             "LatestKnownVersion": "2.2.5",
-            "IsStale": false
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "Rx-Linq",
             "Version": "2.2.5",
             "LatestKnownVersion": "2.2.5",
-            "IsStale": false
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "Rx-Main",
             "Version": "2.2.5",
             "LatestKnownVersion": "2.2.5",
-            "IsStale": false
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "Rx-PlatformServices",
             "Version": "2.2.5",
             "LatestKnownVersion": "2.2.5",
-            "IsStale": false
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "ServiceStack",
             "Version": "4.0.40",
             "LatestKnownVersion": "4.0.40",
-            "IsStale": false
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "ServiceStack.Client",
             "Version": "4.0.40",
             "LatestKnownVersion": "4.0.40",
-            "IsStale": false
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "ServiceStack.Common",
             "Version": "4.0.40",
             "LatestKnownVersion": "4.0.40",
-            "IsStale": false
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "ServiceStack.Interfaces",
             "Version": "4.0.40",
             "LatestKnownVersion": "4.0.40",
-            "IsStale": false
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "ServiceStack.Text",
             "Version": "4.0.40",
             "LatestKnownVersion": "4.0.40",
-            "IsStale": false
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "Strike.IE.Merged",
             "Version": "1.1.0",
             "LatestKnownVersion": "1.1.0",
-            "IsStale": false
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "WebSocket4Net",
             "Version": "0.12",
             "LatestKnownVersion": "0.12",
-            "IsStale": false
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "NHibernate",
             "Version": "4.0.3.4000",
             "LatestKnownVersion": "4.0.4.4000",
-            "IsStale": true
-          },
-          {
-            "DependencyId": "NServiceBus.Autofac",
-            "Version": "5.0.0",
-            "LatestKnownVersion": "6.0.0-beta0001",
-            "IsStale": true
-          },
-          {
-            "DependencyId": "NServiceBus.Serilog",
-            "Version": "2.0.1.1",
-            "LatestKnownVersion": "3.0.0.0-beta0001",
-            "IsStale": true
+            "IsStale": true,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "NuGetPackager",
             "Version": "0.5.5",
             "LatestKnownVersion": "0.6.0",
-            "IsStale": true
+            "IsStale": true,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "Serilog",
             "Version": "1.5.7",
             "LatestKnownVersion": "1.5.14",
-            "IsStale": true
+            "IsStale": true,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "Nancy.Hosting.Self",
             "Version": "1.2.0",
             "LatestKnownVersion": "1.4.1",
-            "IsStale": true
+            "IsStale": true,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "Serilog",
             "Version": "1.5.6",
             "LatestKnownVersion": "1.5.14",
-            "IsStale": true
+            "IsStale": true,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "ServiceControl.Plugin.Nsb5.Heartbeat",
             "Version": "1.1.0",
             "LatestKnownVersion": "2.0.1",
-            "IsStale": true
+            "IsStale": true,
+            "IsPrerelease": false
+          },
+          {
+            "DependencyId": "GitVersionTask",
+            "Version": "2.0.1",
+            "LatestKnownVersion": "3.5.4",
+            "IsStale": true,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "Serilog",
             "Version": "1.5.5",
             "LatestKnownVersion": "1.5.14",
-            "IsStale": true
-          },
-          {
-            "DependencyId": "GitVersionTask",
-            "Version": "2.0.1",
-            "LatestKnownVersion": "3.5.4",
-            "IsStale": true
+            "IsStale": true,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "Nancy",
             "Version": "1.2.0",
             "LatestKnownVersion": "1.4.3",
-            "IsStale": true
+            "IsStale": true,
+            "IsPrerelease": false
+          },
+          {
+            "DependencyId": "NServiceBus.NHibernate",
+            "Version": "6.2.0",
+            "LatestKnownVersion": "6.2.7",
+            "IsStale": true,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "Octokit",
             "Version": "0.12.0",
             "LatestKnownVersion": "0.20.0",
-            "IsStale": true
+            "IsStale": true,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "Octokit",
             "Version": "0.11.0",
             "LatestKnownVersion": "0.20.0",
-            "IsStale": true
-          },
-          {
-            "DependencyId": "NServiceBus.NHibernate",
-            "Version": "6.2.0",
-            "LatestKnownVersion": "7.0.0-beta0004",
-            "IsStale": true
+            "IsStale": true,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "NServiceBus",
             "Version": "5.2.2",
-            "LatestKnownVersion": "6.0.0-unstable1786",
-            "IsStale": true
+            "LatestKnownVersion": "5.2.14",
+            "IsStale": true,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "NServiceBus",
             "Version": "5.2.0",
-            "LatestKnownVersion": "6.0.0-unstable1786",
-            "IsStale": true
+            "LatestKnownVersion": "5.2.14",
+            "IsStale": true,
+            "IsPrerelease": false
           }
         ]
       },
       {
         "ServiceId": "Automation.Marketing",
-        "Score": 4,
+        "Score": 2,
         "Dependencies": [
           {
             "DependencyId": "Autofac",
             "Version": "3.5.2",
             "LatestKnownVersion": "3.5.2",
-            "IsStale": false
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "ITOps.Contracts.Chat",
             "Version": "0.4.73",
             "LatestKnownVersion": "0.4.73",
-            "IsStale": false
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "Engineering.Contracts",
             "Version": "0.3.23",
             "LatestKnownVersion": "0.3.28",
-            "IsStale": true
+            "IsStale": true,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "ITOps.Contracts.Documents",
             "Version": "0.4.11",
             "LatestKnownVersion": "0.4.32",
-            "IsStale": true
+            "IsStale": true,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "ITOps.Contracts.Email",
             "Version": "0.4.11",
             "LatestKnownVersion": "0.4.32",
-            "IsStale": true
+            "IsStale": true,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "NuGetPackager",
             "Version": "0.5.5",
             "LatestKnownVersion": "0.6.0",
-            "IsStale": true
+            "IsStale": true,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "GitVersionTask",
             "Version": "2.0.1",
             "LatestKnownVersion": "3.5.4",
-            "IsStale": true
+            "IsStale": true,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "NServiceBus",
             "Version": "5.2.0",
-            "LatestKnownVersion": "6.0.0-unstable1786",
-            "IsStale": true
+            "LatestKnownVersion": "5.2.14",
+            "IsStale": true,
+            "IsPrerelease": false
           }
         ]
       },
@@ -5158,835 +5217,974 @@ g_data = {
             "DependencyId": "bootstrap",
             "Version": "3.0.0",
             "LatestKnownVersion": "3.0.0",
-            "IsStale": false
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "Iesi.Collections",
             "Version": "4.0.1.4000",
             "LatestKnownVersion": "4.0.1.4000",
-            "IsStale": false
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "jQuery.Validation",
             "Version": "1.11.1",
             "LatestKnownVersion": "1.11.1",
-            "IsStale": false
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "Microsoft.AspNet.Identity.Core",
             "Version": "2.1.0",
             "LatestKnownVersion": "2.1.0",
-            "IsStale": false
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "Microsoft.AspNet.Identity.EntityFramework",
             "Version": "2.1.0",
             "LatestKnownVersion": "2.1.0",
-            "IsStale": false
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "Microsoft.AspNet.Identity.Owin",
             "Version": "2.1.0",
             "LatestKnownVersion": "2.1.0",
-            "IsStale": false
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "Microsoft.AspNet.Web.Optimization",
             "Version": "1.1.3",
             "LatestKnownVersion": "1.1.3",
-            "IsStale": false
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "Microsoft.Owin.Security.Cookies",
             "Version": "2.1.0",
             "LatestKnownVersion": "2.1.0",
-            "IsStale": false
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "Microsoft.Owin.Security.Facebook",
             "Version": "2.1.0",
             "LatestKnownVersion": "2.1.0",
-            "IsStale": false
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "Microsoft.Owin.Security.Google",
             "Version": "2.1.0",
             "LatestKnownVersion": "2.1.0",
-            "IsStale": false
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "Microsoft.Owin.Security.MicrosoftAccount",
             "Version": "2.1.0",
             "LatestKnownVersion": "2.1.0",
-            "IsStale": false
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "Microsoft.Owin.Security.OAuth",
             "Version": "2.1.0",
             "LatestKnownVersion": "2.1.0",
-            "IsStale": false
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "Microsoft.Owin.Security.Twitter",
             "Version": "2.1.0",
             "LatestKnownVersion": "2.1.0",
-            "IsStale": false
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "Microsoft.Web.Infrastructure",
             "Version": "1.0.0.0",
             "LatestKnownVersion": "1.0.0.0",
-            "IsStale": false
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "Modernizr",
             "Version": "2.6.2",
             "LatestKnownVersion": "2.6.2",
-            "IsStale": false
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "Ninject",
             "Version": "3.2.2.0",
             "LatestKnownVersion": "3.2.2.0",
-            "IsStale": false
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "Ninject.Extensions.ContextPreservation",
             "Version": "3.2.0.0",
             "LatestKnownVersion": "3.2.0.0",
-            "IsStale": false
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "Ninject.Extensions.NamedScope",
             "Version": "3.2.0.0",
             "LatestKnownVersion": "3.2.0.0",
-            "IsStale": false
+            "IsStale": false,
+            "IsPrerelease": false
+          },
+          {
+            "DependencyId": "NServiceBus.Host",
+            "Version": "6.0.0",
+            "LatestKnownVersion": "6.0.0",
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "NServiceBus.Serilog-CodeOnly",
             "Version": "1.5.0.0",
             "LatestKnownVersion": "1.5.0.0",
-            "IsStale": false
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "Owin",
             "Version": "1.0",
             "LatestKnownVersion": "1.0",
-            "IsStale": false
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "Respond",
             "Version": "1.2.0",
             "LatestKnownVersion": "1.2.0",
-            "IsStale": false
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "ServiceControl.Plugin.Nsb4.SagaAudit",
             "Version": "1.0.0",
             "LatestKnownVersion": "1.0.0",
-            "IsStale": false
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "WebGrease",
             "Version": "1.5.2",
             "LatestKnownVersion": "1.5.2",
-            "IsStale": false
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "Antlr",
             "Version": "3.4.1.9004",
             "LatestKnownVersion": "3.5.0.2",
-            "IsStale": true
+            "IsStale": true,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "Castle.Core",
             "Version": "3.2.2",
             "LatestKnownVersion": "3.3.3",
-            "IsStale": true
+            "IsStale": true,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "Castle.Windsor",
             "Version": "3.2.1",
             "LatestKnownVersion": "3.3.0",
-            "IsStale": true
+            "IsStale": true,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "EntityFramework",
             "Version": "6.1.1",
             "LatestKnownVersion": "6.1.3",
-            "IsStale": true
+            "IsStale": true,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "FluentNHibernate",
             "Version": "1.4.0.0",
             "LatestKnownVersion": "2.0.3.0",
-            "IsStale": true
+            "IsStale": true,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "jQuery",
             "Version": "1.10.2",
             "LatestKnownVersion": "1.11.3",
-            "IsStale": true
+            "IsStale": true,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "log4net",
             "Version": "2.0.3",
             "LatestKnownVersion": "2.0.5",
-            "IsStale": true
+            "IsStale": true,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "Microsoft.AspNet.Mvc",
             "Version": "5.2.0",
             "LatestKnownVersion": "5.2.3",
-            "IsStale": true
+            "IsStale": true,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "Microsoft.AspNet.Razor",
             "Version": "3.2.0",
             "LatestKnownVersion": "3.2.3",
-            "IsStale": true
+            "IsStale": true,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "Microsoft.AspNet.WebApi",
             "Version": "5.0.0",
             "LatestKnownVersion": "5.2.3",
-            "IsStale": true
+            "IsStale": true,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "Microsoft.AspNet.WebApi.Client",
             "Version": "5.0.0",
             "LatestKnownVersion": "5.2.3",
-            "IsStale": true
+            "IsStale": true,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "Microsoft.AspNet.WebApi.Core",
             "Version": "5.0.0",
             "LatestKnownVersion": "5.2.3",
-            "IsStale": true
+            "IsStale": true,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "Microsoft.AspNet.WebApi.WebHost",
             "Version": "5.0.0",
             "LatestKnownVersion": "5.2.3",
-            "IsStale": true
+            "IsStale": true,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "Microsoft.AspNet.WebPages",
             "Version": "3.2.0",
             "LatestKnownVersion": "3.2.3",
-            "IsStale": true
+            "IsStale": true,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "Microsoft.jQuery.Unobtrusive.Validation",
             "Version": "3.2.0",
             "LatestKnownVersion": "3.2.3",
-            "IsStale": true
+            "IsStale": true,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "Microsoft.Owin",
             "Version": "2.1.0",
             "LatestKnownVersion": "3.0.1",
-            "IsStale": true
+            "IsStale": true,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "Microsoft.Owin.Host.SystemWeb",
             "Version": "2.1.0",
             "LatestKnownVersion": "3.0.1",
-            "IsStale": true
+            "IsStale": true,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "Microsoft.Owin.Security",
             "Version": "2.1.0",
             "LatestKnownVersion": "3.0.1",
-            "IsStale": true
+            "IsStale": true,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "NServiceBus.Interfaces",
             "Version": "4.7.1",
             "LatestKnownVersion": "4.7.12",
-            "IsStale": true
+            "IsStale": true,
+            "IsPrerelease": false
+          },
+          {
+            "DependencyId": "NServiceBus.Ninject",
+            "Version": "5.0.0",
+            "LatestKnownVersion": "5.1.0",
+            "IsStale": true,
+            "IsPrerelease": false
+          },
+          {
+            "DependencyId": "NServiceBus.Serilog",
+            "Version": "1.6.1.0",
+            "LatestKnownVersion": "2.0.1.1",
+            "IsStale": true,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "Castle.Core",
             "Version": "3.2.0",
             "LatestKnownVersion": "3.3.3",
-            "IsStale": true
+            "IsStale": true,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "Iesi.Collections",
             "Version": "3.3.3.4000",
             "LatestKnownVersion": "4.0.1.4000",
-            "IsStale": true
+            "IsStale": true,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "log4net",
             "Version": "2.0.2",
             "LatestKnownVersion": "2.0.5",
-            "IsStale": true
+            "IsStale": true,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "NHibernate",
             "Version": "4.0.1.4000",
             "LatestKnownVersion": "4.0.4.4000",
-            "IsStale": true
-          },
-          {
-            "DependencyId": "NServiceBus.Host",
-            "Version": "6.0.0",
-            "LatestKnownVersion": "7.0.0-beta0003",
-            "IsStale": true
-          },
-          {
-            "DependencyId": "NServiceBus.Ninject",
-            "Version": "5.0.0",
-            "LatestKnownVersion": "6.0.0-beta0001",
-            "IsStale": true
-          },
-          {
-            "DependencyId": "NServiceBus.Serilog",
-            "Version": "1.6.1.0",
-            "LatestKnownVersion": "3.0.0.0-beta0001",
-            "IsStale": true
+            "IsStale": true,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "NServiceBus.CastleWindsor",
             "Version": "4.4.0",
-            "LatestKnownVersion": "6.0.0-beta0002",
-            "IsStale": true
+            "LatestKnownVersion": "5.0.0",
+            "IsStale": true,
+            "IsPrerelease": false
+          },
+          {
+            "DependencyId": "NServiceBus.Host",
+            "Version": "5.0.2",
+            "LatestKnownVersion": "6.0.0",
+            "IsStale": true,
+            "IsPrerelease": false
+          },
+          {
+            "DependencyId": "NServiceBus.Serilog",
+            "Version": "1.5.0.0",
+            "LatestKnownVersion": "2.0.1.1",
+            "IsStale": true,
+            "IsPrerelease": false
+          },
+          {
+            "DependencyId": "NServiceBus.CastleWindsor",
+            "Version": "4.3.1",
+            "LatestKnownVersion": "5.0.0",
+            "IsStale": true,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "NServiceBus.Interfaces",
             "Version": "4.6.7",
             "LatestKnownVersion": "4.7.12",
-            "IsStale": true
+            "IsStale": true,
+            "IsPrerelease": false
+          },
+          {
+            "DependencyId": "NServiceBus.NHibernate",
+            "Version": "6.2.2",
+            "LatestKnownVersion": "6.2.7",
+            "IsStale": true,
+            "IsPrerelease": false
+          },
+          {
+            "DependencyId": "NServiceBus.Ninject",
+            "Version": "4.4.2",
+            "LatestKnownVersion": "5.1.0",
+            "IsStale": true,
+            "IsPrerelease": false
+          },
+          {
+            "DependencyId": "NServiceBus.RabbitMQ",
+            "Version": "3.0.0",
+            "LatestKnownVersion": "3.3.1",
+            "IsStale": true,
+            "IsPrerelease": false
+          },
+          {
+            "DependencyId": "NServiceBus.RavenDB",
+            "Version": "2.0.0-beta0001",
+            "LatestKnownVersion": "3.0.10",
+            "IsStale": true,
+            "IsPrerelease": true
           },
           {
             "DependencyId": "NServiceBus.Serilog",
-            "Version": "1.5.0.0",
-            "LatestKnownVersion": "3.0.0.0-beta0001",
-            "IsStale": true
+            "Version": "1.4.0.0",
+            "LatestKnownVersion": "2.0.1.1",
+            "IsStale": true,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "NHibernate",
             "Version": "3.3.3.4001",
             "LatestKnownVersion": "4.0.4.4000",
-            "IsStale": true
+            "IsStale": true,
+            "IsPrerelease": false
           },
           {
-            "DependencyId": "NServiceBus.CastleWindsor",
-            "Version": "4.3.1",
-            "LatestKnownVersion": "6.0.0-beta0002",
-            "IsStale": true
+            "DependencyId": "NServiceBus",
+            "Version": "5.2.5",
+            "LatestKnownVersion": "5.2.14",
+            "IsStale": true,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "NServiceBus.Host",
-            "Version": "5.0.2",
-            "LatestKnownVersion": "7.0.0-beta0003",
-            "IsStale": true
+            "Version": "5.0.0-beta0005",
+            "LatestKnownVersion": "6.0.0",
+            "IsStale": true,
+            "IsPrerelease": true
           },
           {
             "DependencyId": "NServiceBus.Interfaces",
             "Version": "4.6.5",
             "LatestKnownVersion": "4.7.12",
-            "IsStale": true
+            "IsStale": true,
+            "IsPrerelease": false
           },
           {
-            "DependencyId": "NServiceBus.Ninject",
-            "Version": "4.4.2",
-            "LatestKnownVersion": "6.0.0-beta0001",
-            "IsStale": true
+            "DependencyId": "NServiceBus.RavenDB",
+            "Version": "1.0.0",
+            "LatestKnownVersion": "3.0.10",
+            "IsStale": true,
+            "IsPrerelease": false
           },
           {
-            "DependencyId": "NServiceBus.Serilog",
-            "Version": "1.4.0.0",
-            "LatestKnownVersion": "3.0.0.0-beta0001",
-            "IsStale": true
+            "DependencyId": "NServiceBus.SqlServer",
+            "Version": "1.1.0",
+            "LatestKnownVersion": "2.2.3",
+            "IsStale": true,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "RabbitMQ.Client",
             "Version": "3.5.0",
             "LatestKnownVersion": "3.6.2",
-            "IsStale": true
+            "IsStale": true,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "log4net",
             "Version": "1.2.10",
             "LatestKnownVersion": "2.0.5",
-            "IsStale": true
+            "IsStale": true,
+            "IsPrerelease": false
+          },
+          {
+            "DependencyId": "NServiceBus.Host",
+            "Version": "4.7.1",
+            "LatestKnownVersion": "6.0.0",
+            "IsStale": true,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "NServiceBus.Interfaces",
             "Version": "4.6.4",
             "LatestKnownVersion": "4.7.12",
-            "IsStale": true
-          },
-          {
-            "DependencyId": "NServiceBus.RabbitMQ",
-            "Version": "3.0.0",
-            "LatestKnownVersion": "4.0.0-beta0004",
-            "IsStale": true
-          },
-          {
-            "DependencyId": "NServiceBus.RavenDB",
-            "Version": "2.0.0-beta0001",
-            "LatestKnownVersion": "4.0.0-beta0005",
-            "IsStale": true
-          },
-          {
-            "DependencyId": "NServiceBus.SqlServer",
-            "Version": "1.1.0",
-            "LatestKnownVersion": "3.0.0-beta0002",
-            "IsStale": true
+            "IsStale": true,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "RabbitMQ.Client",
             "Version": "3.3.5",
             "LatestKnownVersion": "3.6.2",
-            "IsStale": true
+            "IsStale": true,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "Serilog",
             "Version": "1.3.36",
             "LatestKnownVersion": "1.5.14",
-            "IsStale": true
+            "IsStale": true,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "Newtonsoft.Json",
             "Version": "6.0.3",
             "LatestKnownVersion": "8.0.3",
-            "IsStale": true
+            "IsStale": true,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "NLog",
             "Version": "2.1.0",
             "LatestKnownVersion": "4.3.5",
-            "IsStale": true
+            "IsStale": true,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "NServiceBus.Host",
-            "Version": "5.0.0-beta0005",
-            "LatestKnownVersion": "7.0.0-beta0003",
-            "IsStale": true
+            "Version": "4.6.4",
+            "LatestKnownVersion": "6.0.0",
+            "IsStale": true,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "NServiceBus.Interfaces",
             "Version": "4.6.3",
             "LatestKnownVersion": "4.7.12",
-            "IsStale": true
+            "IsStale": true,
+            "IsPrerelease": false
           },
           {
-            "DependencyId": "NServiceBus.NHibernate",
-            "Version": "6.2.2",
-            "LatestKnownVersion": "7.0.0-beta0004",
-            "IsStale": true
+            "DependencyId": "NServiceBus.RabbitMQ",
+            "Version": "2.0.1",
+            "LatestKnownVersion": "3.3.1",
+            "IsStale": true,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "Serilog",
             "Version": "1.3.4",
             "LatestKnownVersion": "1.5.14",
-            "IsStale": true
+            "IsStale": true,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "NLog",
             "Version": "2.0.0.2000",
             "LatestKnownVersion": "4.3.5",
-            "IsStale": true
+            "IsStale": true,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "NServiceBus.Interfaces",
             "Version": "4.6.1",
             "LatestKnownVersion": "4.7.12",
-            "IsStale": true
-          },
-          {
-            "DependencyId": "NServiceBus.RavenDB",
-            "Version": "1.0.0",
-            "LatestKnownVersion": "4.0.0-beta0005",
-            "IsStale": true
-          },
-          {
-            "DependencyId": "Serilog",
-            "Version": "1.3.3",
-            "LatestKnownVersion": "1.5.14",
-            "IsStale": true
-          },
-          {
-            "DependencyId": "Newtonsoft.Json",
-            "Version": "5.0.6",
-            "LatestKnownVersion": "8.0.3",
-            "IsStale": true
-          },
-          {
-            "DependencyId": "NServiceBus.Host",
-            "Version": "4.7.1",
-            "LatestKnownVersion": "7.0.0-beta0003",
-            "IsStale": true
-          },
-          {
-            "DependencyId": "NServiceBus.Interfaces",
-            "Version": "4.6.0",
-            "LatestKnownVersion": "4.7.12",
-            "IsStale": true
-          },
-          {
-            "DependencyId": "NServiceBus.RabbitMQ",
-            "Version": "2.0.1",
-            "LatestKnownVersion": "4.0.0-beta0004",
-            "IsStale": true
-          },
-          {
-            "DependencyId": "RabbitMQ.Client",
-            "Version": "3.0.4",
-            "LatestKnownVersion": "3.6.2",
-            "IsStale": true
+            "IsStale": true,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "RavenDB.Client",
             "Version": "2.5.2908",
             "LatestKnownVersion": "3.0.30143",
-            "IsStale": true
+            "IsStale": true,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "Serilog",
-            "Version": "1.0.1",
+            "Version": "1.3.3",
             "LatestKnownVersion": "1.5.14",
-            "IsStale": true
+            "IsStale": true,
+            "IsPrerelease": false
+          },
+          {
+            "DependencyId": "Newtonsoft.Json",
+            "Version": "5.0.6",
+            "LatestKnownVersion": "8.0.3",
+            "IsStale": true,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "NServiceBus.Host",
-            "Version": "4.6.4",
-            "LatestKnownVersion": "7.0.0-beta0003",
-            "IsStale": true
+            "Version": "4.6.1",
+            "LatestKnownVersion": "6.0.0",
+            "IsStale": true,
+            "IsPrerelease": false
+          },
+          {
+            "DependencyId": "NServiceBus.Interfaces",
+            "Version": "4.6.0",
+            "LatestKnownVersion": "4.7.12",
+            "IsStale": true,
+            "IsPrerelease": false
+          },
+          {
+            "DependencyId": "NServiceBus.RabbitMQ",
+            "Version": "1.1.2",
+            "LatestKnownVersion": "3.3.1",
+            "IsStale": true,
+            "IsPrerelease": false
+          },
+          {
+            "DependencyId": "RabbitMQ.Client",
+            "Version": "3.0.4",
+            "LatestKnownVersion": "3.6.2",
+            "IsStale": true,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "RavenDB.Client",
             "Version": "2.5.2907",
             "LatestKnownVersion": "3.0.30143",
-            "IsStale": true
+            "IsStale": true,
+            "IsPrerelease": false
           },
           {
-            "DependencyId": "NServiceBus.Interfaces",
-            "Version": "4.5.1",
-            "LatestKnownVersion": "4.7.12",
-            "IsStale": true
+            "DependencyId": "Serilog",
+            "Version": "1.0.1",
+            "LatestKnownVersion": "1.5.14",
+            "IsStale": true,
+            "IsPrerelease": false
+          },
+          {
+            "DependencyId": "NServiceBus.Host",
+            "Version": "4.6.0",
+            "LatestKnownVersion": "6.0.0",
+            "IsStale": true,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "NServiceBus.RabbitMQ",
-            "Version": "1.1.2",
-            "LatestKnownVersion": "4.0.0-beta0004",
-            "IsStale": true
+            "Version": "1.0.5",
+            "LatestKnownVersion": "3.3.1",
+            "IsStale": true,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "RavenDB.Client",
             "Version": "2.5.2879",
             "LatestKnownVersion": "3.0.30143",
-            "IsStale": true
-          },
-          {
-            "DependencyId": "NServiceBus.Host",
-            "Version": "4.6.1",
-            "LatestKnownVersion": "7.0.0-beta0003",
-            "IsStale": true
-          },
-          {
-            "DependencyId": "NServiceBus.Interfaces",
-            "Version": "4.5.0",
-            "LatestKnownVersion": "4.7.12",
-            "IsStale": true
-          },
-          {
-            "DependencyId": "NServiceBus.RabbitMQ",
-            "Version": "1.0.5",
-            "LatestKnownVersion": "4.0.0-beta0004",
-            "IsStale": true
-          },
-          {
-            "DependencyId": "NServiceBus.Host",
-            "Version": "4.6.0",
-            "LatestKnownVersion": "7.0.0-beta0003",
-            "IsStale": true
+            "IsStale": true,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "NServiceBus.Host",
             "Version": "4.5.1",
-            "LatestKnownVersion": "7.0.0-beta0003",
-            "IsStale": true
+            "LatestKnownVersion": "6.0.0",
+            "IsStale": true,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "NServiceBus.Interfaces",
-            "Version": "4.4.2",
+            "Version": "4.5.1",
             "LatestKnownVersion": "4.7.12",
-            "IsStale": true
+            "IsStale": true,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "NServiceBus.NHibernate",
             "Version": "4.4.0",
-            "LatestKnownVersion": "7.0.0-beta0004",
-            "IsStale": true
-          },
-          {
-            "DependencyId": "NServiceBus",
-            "Version": "5.2.5",
-            "LatestKnownVersion": "6.0.0-unstable1786",
-            "IsStale": true
-          },
-          {
-            "DependencyId": "NServiceBus.Host",
-            "Version": "4.5.0",
-            "LatestKnownVersion": "7.0.0-beta0003",
-            "IsStale": true
-          },
-          {
-            "DependencyId": "NServiceBus.Interfaces",
-            "Version": "4.4.0",
-            "LatestKnownVersion": "4.7.12",
-            "IsStale": true
-          },
-          {
-            "DependencyId": "NServiceBus.Host",
-            "Version": "4.4.0",
-            "LatestKnownVersion": "7.0.0-beta0003",
-            "IsStale": true
-          },
-          {
-            "DependencyId": "NServiceBus.Interfaces",
-            "Version": "4.4.0-Alpha0001-0002",
-            "LatestKnownVersion": "4.7.12",
-            "IsStale": true
-          },
-          {
-            "DependencyId": "NServiceBus.Host",
-            "Version": "4.4.0-Alpha0001-0002",
-            "LatestKnownVersion": "7.0.0-beta0003",
-            "IsStale": true
-          },
-          {
-            "DependencyId": "NServiceBus.Host",
-            "Version": "4.3.4",
-            "LatestKnownVersion": "7.0.0-beta0003",
-            "IsStale": true
-          },
-          {
-            "DependencyId": "NServiceBus.Interfaces",
-            "Version": "4.3.4",
-            "LatestKnownVersion": "4.7.12",
-            "IsStale": true
-          },
-          {
-            "DependencyId": "NServiceBus.Host",
-            "Version": "4.3.3",
-            "LatestKnownVersion": "7.0.0-beta0003",
-            "IsStale": true
-          },
-          {
-            "DependencyId": "NServiceBus.Interfaces",
-            "Version": "4.3.3",
-            "LatestKnownVersion": "4.7.12",
-            "IsStale": true
-          },
-          {
-            "DependencyId": "NServiceBus.Host",
-            "Version": "4.3.1",
-            "LatestKnownVersion": "7.0.0-beta0003",
-            "IsStale": true
-          },
-          {
-            "DependencyId": "NServiceBus.Interfaces",
-            "Version": "4.3.1",
-            "LatestKnownVersion": "4.7.12",
-            "IsStale": true
-          },
-          {
-            "DependencyId": "NServiceBus.Host",
-            "Version": "4.3.0",
-            "LatestKnownVersion": "7.0.0-beta0003",
-            "IsStale": true
-          },
-          {
-            "DependencyId": "NServiceBus.Interfaces",
-            "Version": "4.3.0",
-            "LatestKnownVersion": "4.7.12",
-            "IsStale": true
+            "LatestKnownVersion": "6.2.7",
+            "IsStale": true,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "NServiceBus",
             "Version": "5.1.0",
-            "LatestKnownVersion": "6.0.0-unstable1786",
-            "IsStale": true
+            "LatestKnownVersion": "5.2.14",
+            "IsStale": true,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "NServiceBus.Host",
-            "Version": "4.3.0-Beta0001-0020",
-            "LatestKnownVersion": "7.0.0-beta0003",
-            "IsStale": true
+            "Version": "4.5.0",
+            "LatestKnownVersion": "6.0.0",
+            "IsStale": true,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "NServiceBus.Interfaces",
-            "Version": "4.3.0-Beta0001-0020",
+            "Version": "4.5.0",
             "LatestKnownVersion": "4.7.12",
-            "IsStale": true
+            "IsStale": true,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "NServiceBus",
             "Version": "5.1.0-beta0001",
-            "LatestKnownVersion": "6.0.0-unstable1786",
-            "IsStale": true
+            "LatestKnownVersion": "5.2.14",
+            "IsStale": true,
+            "IsPrerelease": true
           },
           {
             "DependencyId": "NServiceBus.Host",
-            "Version": "4.2.0",
-            "LatestKnownVersion": "7.0.0-beta0003",
-            "IsStale": true
-          },
-          {
-            "DependencyId": "NServiceBus.Interfaces",
-            "Version": "4.2.0",
-            "LatestKnownVersion": "4.7.12",
-            "IsStale": true
+            "Version": "4.4.0",
+            "LatestKnownVersion": "6.0.0",
+            "IsStale": true,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "NServiceBus",
             "Version": "5.0.2",
-            "LatestKnownVersion": "6.0.0-unstable1786",
-            "IsStale": true
+            "LatestKnownVersion": "5.2.14",
+            "IsStale": true,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "NServiceBus.Host",
-            "Version": "3.3.8",
-            "LatestKnownVersion": "7.0.0-beta0003",
-            "IsStale": true
+            "Version": "4.4.0-Alpha0001-0002",
+            "LatestKnownVersion": "6.0.0",
+            "IsStale": true,
+            "IsPrerelease": true
+          },
+          {
+            "DependencyId": "NServiceBus.Host",
+            "Version": "4.3.4",
+            "LatestKnownVersion": "6.0.0",
+            "IsStale": true,
+            "IsPrerelease": false
+          },
+          {
+            "DependencyId": "NServiceBus.Interfaces",
+            "Version": "4.4.2",
+            "LatestKnownVersion": "4.7.12",
+            "IsStale": true,
+            "IsPrerelease": false
+          },
+          {
+            "DependencyId": "NServiceBus.Host",
+            "Version": "4.3.3",
+            "LatestKnownVersion": "6.0.0",
+            "IsStale": true,
+            "IsPrerelease": false
+          },
+          {
+            "DependencyId": "NServiceBus.Interfaces",
+            "Version": "4.4.0",
+            "LatestKnownVersion": "4.7.12",
+            "IsStale": true,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "NServiceBus",
             "Version": "5.0.0-beta0005",
-            "LatestKnownVersion": "6.0.0-unstable1786",
-            "IsStale": true
+            "LatestKnownVersion": "5.2.14",
+            "IsStale": true,
+            "IsPrerelease": true
+          },
+          {
+            "DependencyId": "NServiceBus.Host",
+            "Version": "4.3.1",
+            "LatestKnownVersion": "6.0.0",
+            "IsStale": true,
+            "IsPrerelease": false
+          },
+          {
+            "DependencyId": "NServiceBus.Interfaces",
+            "Version": "4.4.0-Alpha0001-0002",
+            "LatestKnownVersion": "4.7.12",
+            "IsStale": true,
+            "IsPrerelease": true
           },
           {
             "DependencyId": "NServiceBus",
             "Version": "4.7.1",
-            "LatestKnownVersion": "6.0.0-unstable1786",
-            "IsStale": true
+            "LatestKnownVersion": "5.2.14",
+            "IsStale": true,
+            "IsPrerelease": false
+          },
+          {
+            "DependencyId": "NServiceBus.Host",
+            "Version": "4.3.0",
+            "LatestKnownVersion": "6.0.0",
+            "IsStale": true,
+            "IsPrerelease": false
+          },
+          {
+            "DependencyId": "NServiceBus.Interfaces",
+            "Version": "4.3.4",
+            "LatestKnownVersion": "4.7.12",
+            "IsStale": true,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "NServiceBus",
             "Version": "4.7.0-unstable0608",
-            "LatestKnownVersion": "6.0.0-unstable1786",
-            "IsStale": true
+            "LatestKnownVersion": "5.2.14",
+            "IsStale": true,
+            "IsPrerelease": true
+          },
+          {
+            "DependencyId": "NServiceBus.Host",
+            "Version": "4.2.0",
+            "LatestKnownVersion": "6.0.0",
+            "IsStale": true,
+            "IsPrerelease": false
+          },
+          {
+            "DependencyId": "NServiceBus.Host",
+            "Version": "4.3.0-Beta0001-0020",
+            "LatestKnownVersion": "6.0.0",
+            "IsStale": true,
+            "IsPrerelease": true
+          },
+          {
+            "DependencyId": "NServiceBus.Interfaces",
+            "Version": "4.3.3",
+            "LatestKnownVersion": "4.7.12",
+            "IsStale": true,
+            "IsPrerelease": false
+          },
+          {
+            "DependencyId": "NServiceBus",
+            "Version": "4.6.7",
+            "LatestKnownVersion": "5.2.14",
+            "IsStale": true,
+            "IsPrerelease": false
+          },
+          {
+            "DependencyId": "NServiceBus.Interfaces",
+            "Version": "4.3.1",
+            "LatestKnownVersion": "4.7.12",
+            "IsStale": true,
+            "IsPrerelease": false
+          },
+          {
+            "DependencyId": "NServiceBus",
+            "Version": "4.6.5",
+            "LatestKnownVersion": "5.2.14",
+            "IsStale": true,
+            "IsPrerelease": false
+          },
+          {
+            "DependencyId": "NServiceBus.Host",
+            "Version": "3.3.8",
+            "LatestKnownVersion": "6.0.0",
+            "IsStale": true,
+            "IsPrerelease": false
+          },
+          {
+            "DependencyId": "NServiceBus.Interfaces",
+            "Version": "4.3.0",
+            "LatestKnownVersion": "4.7.12",
+            "IsStale": true,
+            "IsPrerelease": false
+          },
+          {
+            "DependencyId": "NServiceBus",
+            "Version": "4.6.4",
+            "LatestKnownVersion": "5.2.14",
+            "IsStale": true,
+            "IsPrerelease": false
+          },
+          {
+            "DependencyId": "NServiceBus.Interfaces",
+            "Version": "4.3.0-Beta0001-0020",
+            "LatestKnownVersion": "4.7.12",
+            "IsStale": true,
+            "IsPrerelease": true
+          },
+          {
+            "DependencyId": "NServiceBus",
+            "Version": "4.6.3",
+            "LatestKnownVersion": "5.2.14",
+            "IsStale": true,
+            "IsPrerelease": false
+          },
+          {
+            "DependencyId": "NServiceBus.Interfaces",
+            "Version": "4.2.0",
+            "LatestKnownVersion": "4.7.12",
+            "IsStale": true,
+            "IsPrerelease": false
+          },
+          {
+            "DependencyId": "NServiceBus",
+            "Version": "4.6.1",
+            "LatestKnownVersion": "5.2.14",
+            "IsStale": true,
+            "IsPrerelease": false
+          },
+          {
+            "DependencyId": "NServiceBus",
+            "Version": "4.6.0",
+            "LatestKnownVersion": "5.2.14",
+            "IsStale": true,
+            "IsPrerelease": false
+          },
+          {
+            "DependencyId": "NServiceBus",
+            "Version": "4.5.1",
+            "LatestKnownVersion": "5.2.14",
+            "IsStale": true,
+            "IsPrerelease": false
+          },
+          {
+            "DependencyId": "NServiceBus",
+            "Version": "4.5.0",
+            "LatestKnownVersion": "5.2.14",
+            "IsStale": true,
+            "IsPrerelease": false
+          },
+          {
+            "DependencyId": "NServiceBus",
+            "Version": "4.4.2",
+            "LatestKnownVersion": "5.2.14",
+            "IsStale": true,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "NServiceBus.Interfaces",
             "Version": "3.3.8",
             "LatestKnownVersion": "4.7.12",
-            "IsStale": true
-          },
-          {
-            "DependencyId": "NServiceBus",
-            "Version": "4.6.7",
-            "LatestKnownVersion": "6.0.0-unstable1786",
-            "IsStale": true
-          },
-          {
-            "DependencyId": "NServiceBus",
-            "Version": "4.6.5",
-            "LatestKnownVersion": "6.0.0-unstable1786",
-            "IsStale": true
-          },
-          {
-            "DependencyId": "NServiceBus",
-            "Version": "4.6.4",
-            "LatestKnownVersion": "6.0.0-unstable1786",
-            "IsStale": true
-          },
-          {
-            "DependencyId": "NServiceBus",
-            "Version": "4.6.3",
-            "LatestKnownVersion": "6.0.0-unstable1786",
-            "IsStale": true
-          },
-          {
-            "DependencyId": "NServiceBus",
-            "Version": "4.6.1",
-            "LatestKnownVersion": "6.0.0-unstable1786",
-            "IsStale": true
-          },
-          {
-            "DependencyId": "NServiceBus",
-            "Version": "4.6.0",
-            "LatestKnownVersion": "6.0.0-unstable1786",
-            "IsStale": true
-          },
-          {
-            "DependencyId": "NServiceBus",
-            "Version": "4.5.1",
-            "LatestKnownVersion": "6.0.0-unstable1786",
-            "IsStale": true
-          },
-          {
-            "DependencyId": "NServiceBus",
-            "Version": "4.5.0",
-            "LatestKnownVersion": "6.0.0-unstable1786",
-            "IsStale": true
-          },
-          {
-            "DependencyId": "NServiceBus",
-            "Version": "4.4.2",
-            "LatestKnownVersion": "6.0.0-unstable1786",
-            "IsStale": true
+            "IsStale": true,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "NServiceBus",
             "Version": "4.4.0",
-            "LatestKnownVersion": "6.0.0-unstable1786",
-            "IsStale": true
+            "LatestKnownVersion": "5.2.14",
+            "IsStale": true,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "NServiceBus",
             "Version": "4.4.0-Alpha0001-0002",
-            "LatestKnownVersion": "6.0.0-unstable1786",
-            "IsStale": true
+            "LatestKnownVersion": "5.2.14",
+            "IsStale": true,
+            "IsPrerelease": true
           },
           {
             "DependencyId": "NServiceBus",
             "Version": "4.3.4",
-            "LatestKnownVersion": "6.0.0-unstable1786",
-            "IsStale": true
+            "LatestKnownVersion": "5.2.14",
+            "IsStale": true,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "NServiceBus",
             "Version": "4.3.3",
-            "LatestKnownVersion": "6.0.0-unstable1786",
-            "IsStale": true
+            "LatestKnownVersion": "5.2.14",
+            "IsStale": true,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "NServiceBus",
             "Version": "4.3.1",
-            "LatestKnownVersion": "6.0.0-unstable1786",
-            "IsStale": true
+            "LatestKnownVersion": "5.2.14",
+            "IsStale": true,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "NServiceBus",
             "Version": "4.3.0",
-            "LatestKnownVersion": "6.0.0-unstable1786",
-            "IsStale": true
+            "LatestKnownVersion": "5.2.14",
+            "IsStale": true,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "NServiceBus",
             "Version": "4.3.0-Beta0001-0020",
-            "LatestKnownVersion": "6.0.0-unstable1786",
-            "IsStale": true
+            "LatestKnownVersion": "5.2.14",
+            "IsStale": true,
+            "IsPrerelease": true
           },
           {
             "DependencyId": "NServiceBus",
             "Version": "4.2.0",
-            "LatestKnownVersion": "6.0.0-unstable1786",
-            "IsStale": true
+            "LatestKnownVersion": "5.2.14",
+            "IsStale": true,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "NServiceBus",
             "Version": "3.3.8",
-            "LatestKnownVersion": "6.0.0-unstable1786",
-            "IsStale": true
+            "LatestKnownVersion": "5.2.14",
+            "IsStale": true,
+            "IsPrerelease": false
           }
         ]
       },
@@ -5998,43 +6196,50 @@ g_data = {
             "DependencyId": "CommandLineParser",
             "Version": "1.9.71",
             "LatestKnownVersion": "1.9.71",
-            "IsStale": false
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "Costura.Fody",
             "Version": "1.3.2.0",
             "LatestKnownVersion": "1.3.2.0",
-            "IsStale": false
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "TweetSharp",
             "Version": "2.3.1",
             "LatestKnownVersion": "2.3.1",
-            "IsStale": false
-          },
-          {
-            "DependencyId": "NuGetPackager",
-            "Version": "0.5.1",
-            "LatestKnownVersion": "0.6.0",
-            "IsStale": true
-          },
-          {
-            "DependencyId": "Fody",
-            "Version": "1.26.1",
-            "LatestKnownVersion": "1.29.4",
-            "IsStale": true
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "GitVersionTask",
             "Version": "2.0.1",
             "LatestKnownVersion": "3.5.4",
-            "IsStale": true
+            "IsStale": true,
+            "IsPrerelease": false
+          },
+          {
+            "DependencyId": "NuGetPackager",
+            "Version": "0.5.1",
+            "LatestKnownVersion": "0.6.0",
+            "IsStale": true,
+            "IsPrerelease": false
+          },
+          {
+            "DependencyId": "Fody",
+            "Version": "1.26.1",
+            "LatestKnownVersion": "1.29.4",
+            "IsStale": true,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "Newtonsoft.Json",
             "Version": "5.0.6",
             "LatestKnownVersion": "8.0.3",
-            "IsStale": true
+            "IsStale": true,
+            "IsPrerelease": false
           }
         ]
       },
@@ -6046,13 +6251,15 @@ g_data = {
             "DependencyId": "NuGet.CommandLine",
             "Version": "2.8.2",
             "LatestKnownVersion": "3.3.0",
-            "IsStale": true
+            "IsStale": true,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "GitVersionTask",
             "Version": "1.2.0",
             "LatestKnownVersion": "3.5.4",
-            "IsStale": true
+            "IsStale": true,
+            "IsPrerelease": false
           }
         ]
       },
@@ -6064,1243 +6271,1443 @@ g_data = {
             "DependencyId": "Anotar.NServiceBus.Fody",
             "Version": "3.0.1",
             "LatestKnownVersion": "3.0.1",
-            "IsStale": false
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "AsyncFriendlyStackTrace",
             "Version": "1.2.0",
             "LatestKnownVersion": "1.2.0",
-            "IsStale": false
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "Autofac",
             "Version": "3.5.2",
             "LatestKnownVersion": "3.5.2",
-            "IsStale": false
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "Autofac.Mvc5",
             "Version": "3.3.4",
             "LatestKnownVersion": "3.3.4",
-            "IsStale": false
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "Castle.Core",
             "Version": "3.3.3",
             "LatestKnownVersion": "3.3.3",
-            "IsStale": false
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "Castle.Windsor",
             "Version": "3.3.0",
             "LatestKnownVersion": "3.3.0",
-            "IsStale": false
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "Common.Logging",
             "Version": "3.3.1",
             "LatestKnownVersion": "3.3.1",
-            "IsStale": false
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "Common.Logging.Core",
             "Version": "3.3.1",
             "LatestKnownVersion": "3.3.1",
-            "IsStale": false
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "CommonServiceLocator",
             "Version": "1.3",
             "LatestKnownVersion": "1.3",
-            "IsStale": false
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "EntityFramework",
             "Version": "6.1.3",
             "LatestKnownVersion": "6.1.3",
-            "IsStale": false
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "FluentNHibernate",
             "Version": "2.0.3.0",
             "LatestKnownVersion": "2.0.3.0",
-            "IsStale": false
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "Fody",
             "Version": "1.29.4",
             "LatestKnownVersion": "1.29.4",
-            "IsStale": false
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "Iesi.Collections",
             "Version": "4.0.1.4000",
             "LatestKnownVersion": "4.0.1.4000",
-            "IsStale": false
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "Jil",
             "Version": "2.14.3",
             "LatestKnownVersion": "2.14.3",
-            "IsStale": false
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "log4net",
             "Version": "2.0.5",
             "LatestKnownVersion": "2.0.5",
-            "IsStale": false
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "Microsoft.AspNet.Cors",
             "Version": "5.2.3",
             "LatestKnownVersion": "5.2.3",
-            "IsStale": false
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "Microsoft.AspNet.Mvc",
             "Version": "5.2.3",
             "LatestKnownVersion": "5.2.3",
-            "IsStale": false
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "Microsoft.AspNet.Razor",
             "Version": "3.2.3",
             "LatestKnownVersion": "3.2.3",
-            "IsStale": false
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "Microsoft.AspNet.SignalR.Core",
             "Version": "2.2.0",
             "LatestKnownVersion": "2.2.0",
-            "IsStale": false
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "Microsoft.AspNet.SignalR.SystemWeb",
             "Version": "2.2.0",
             "LatestKnownVersion": "2.2.0",
-            "IsStale": false
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "Microsoft.AspNet.WebPages",
             "Version": "3.2.3",
             "LatestKnownVersion": "3.2.3",
-            "IsStale": false
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "Microsoft.Azure.KeyVault.Core",
             "Version": "1.0.0",
             "LatestKnownVersion": "1.0.0",
-            "IsStale": false
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "Microsoft.Data.Edm",
             "Version": "5.7.0",
             "LatestKnownVersion": "5.7.0",
-            "IsStale": false
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "Microsoft.Data.OData",
             "Version": "5.7.0",
             "LatestKnownVersion": "5.7.0",
-            "IsStale": false
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "Microsoft.Data.Services.Client",
             "Version": "5.7.0",
             "LatestKnownVersion": "5.7.0",
-            "IsStale": false
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "Microsoft.Owin",
             "Version": "3.0.1",
             "LatestKnownVersion": "3.0.1",
-            "IsStale": false
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "Microsoft.Owin.Cors",
             "Version": "3.0.1",
             "LatestKnownVersion": "3.0.1",
-            "IsStale": false
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "Microsoft.Owin.Diagnostics",
             "Version": "3.0.1",
             "LatestKnownVersion": "3.0.1",
-            "IsStale": false
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "Microsoft.Owin.Host.HttpListener",
             "Version": "3.0.1",
             "LatestKnownVersion": "3.0.1",
-            "IsStale": false
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "Microsoft.Owin.Host.SystemWeb",
             "Version": "3.0.1",
             "LatestKnownVersion": "3.0.1",
-            "IsStale": false
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "Microsoft.Owin.Hosting",
             "Version": "3.0.1",
             "LatestKnownVersion": "3.0.1",
-            "IsStale": false
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "Microsoft.Owin.Security",
             "Version": "3.0.1",
             "LatestKnownVersion": "3.0.1",
-            "IsStale": false
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "Microsoft.Owin.SelfHost",
             "Version": "3.0.1",
             "LatestKnownVersion": "3.0.1",
-            "IsStale": false
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "Microsoft.Web.Infrastructure",
             "Version": "1.0.0.0",
             "LatestKnownVersion": "1.0.0.0",
-            "IsStale": false
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "MongoDB.Bson",
             "Version": "2.2.4",
             "LatestKnownVersion": "2.2.4",
-            "IsStale": false
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "MongoDB.Driver",
             "Version": "2.2.4",
             "LatestKnownVersion": "2.2.4",
-            "IsStale": false
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "MongoDB.Driver.Core",
             "Version": "2.2.4",
             "LatestKnownVersion": "2.2.4",
-            "IsStale": false
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "MongoDB.Driver.GridFS",
             "Version": "2.2.4",
             "LatestKnownVersion": "2.2.4",
-            "IsStale": false
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "MsgPack.Cli",
             "Version": "0.6.8",
             "LatestKnownVersion": "0.6.8",
-            "IsStale": false
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "Newtonsoft.Json",
             "Version": "8.0.3",
             "LatestKnownVersion": "8.0.3",
-            "IsStale": false
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "NHibernate",
             "Version": "4.0.4.4000",
             "LatestKnownVersion": "4.0.4.4000",
-            "IsStale": false
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "NHibernate.Mapping.Attributes",
             "Version": "4.0.0.1",
             "LatestKnownVersion": "4.0.0.1",
-            "IsStale": false
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "Ninject",
             "Version": "3.2.2.0",
             "LatestKnownVersion": "3.2.2.0",
-            "IsStale": false
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "Ninject.Extensions.ChildKernel",
             "Version": "3.2.0.0",
             "LatestKnownVersion": "3.2.0.0",
-            "IsStale": false
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "Ninject.Extensions.ContextPreservation",
             "Version": "3.2.0.0",
             "LatestKnownVersion": "3.2.0.0",
-            "IsStale": false
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "Ninject.Extensions.NamedScope",
             "Version": "3.2.0.0",
             "LatestKnownVersion": "3.2.0.0",
-            "IsStale": false
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "NLog",
             "Version": "4.3.5",
             "LatestKnownVersion": "4.3.5",
-            "IsStale": false
+            "IsStale": false,
+            "IsPrerelease": false
+          },
+          {
+            "DependencyId": "NServiceBus",
+            "Version": "5.2.14",
+            "LatestKnownVersion": "5.2.14",
+            "IsStale": false,
+            "IsPrerelease": false
+          },
+          {
+            "DependencyId": "NServiceBus",
+            "Version": "6.0.0-beta0003",
+            "LatestKnownVersion": "5.2.14",
+            "IsStale": false,
+            "IsPrerelease": true
+          },
+          {
+            "DependencyId": "NServiceBus",
+            "Version": "6.0.0-beta0004",
+            "LatestKnownVersion": "5.2.14",
+            "IsStale": false,
+            "IsPrerelease": true
+          },
+          {
+            "DependencyId": "NServiceBus",
+            "Version": "6.0.0-beta0005",
+            "LatestKnownVersion": "5.2.14",
+            "IsStale": false,
+            "IsPrerelease": true
+          },
+          {
+            "DependencyId": "NServiceBus.Autofac",
+            "Version": "5.0.0",
+            "LatestKnownVersion": "5.0.0",
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "NServiceBus.Autofac",
             "Version": "6.0.0-beta0001",
-            "LatestKnownVersion": "6.0.0-beta0001",
-            "IsStale": false
+            "LatestKnownVersion": "5.0.0",
+            "IsStale": false,
+            "IsPrerelease": true
           },
           {
             "DependencyId": "NServiceBus.Azure",
             "Version": "6.2.4",
             "LatestKnownVersion": "6.2.4",
-            "IsStale": false
+            "IsStale": false,
+            "IsPrerelease": false
+          },
+          {
+            "DependencyId": "NServiceBus.Azure.Transports.WindowsAzureServiceBus",
+            "Version": "6.4.0",
+            "LatestKnownVersion": "6.4.0",
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "NServiceBus.Azure.Transports.WindowsAzureServiceBus",
             "Version": "7.0.0-beta0007",
-            "LatestKnownVersion": "7.0.0-beta0007",
-            "IsStale": false
+            "LatestKnownVersion": "6.4.0",
+            "IsStale": false,
+            "IsPrerelease": true
+          },
+          {
+            "DependencyId": "NServiceBus.Azure.Transports.WindowsAzureStorageQueues",
+            "Version": "6.2.1",
+            "LatestKnownVersion": "6.2.1",
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "NServiceBus.Azure.Transports.WindowsAzureStorageQueues",
             "Version": "7.0.0-beta0004",
-            "LatestKnownVersion": "7.0.0-beta0004",
-            "IsStale": false
+            "LatestKnownVersion": "6.2.1",
+            "IsStale": false,
+            "IsPrerelease": true
           },
           {
             "DependencyId": "NServiceBus.Callbacks",
             "Version": "1.0.0-beta0001",
             "LatestKnownVersion": "1.0.0-beta0001",
-            "IsStale": false
+            "IsStale": false,
+            "IsPrerelease": true
+          },
+          {
+            "DependencyId": "NServiceBus.CastleWindsor",
+            "Version": "5.0.0",
+            "LatestKnownVersion": "5.0.0",
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "NServiceBus.CastleWindsor",
             "Version": "6.0.0-beta0002",
-            "LatestKnownVersion": "6.0.0-beta0002",
-            "IsStale": false
+            "LatestKnownVersion": "5.0.0",
+            "IsStale": false,
+            "IsPrerelease": true
+          },
+          {
+            "DependencyId": "NServiceBus.CommonLogging",
+            "Version": "2.1.0",
+            "LatestKnownVersion": "2.1.0",
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "NServiceBus.CommonLogging",
             "Version": "3.0.0-beta0001",
-            "LatestKnownVersion": "3.0.0-beta0001",
-            "IsStale": false
+            "LatestKnownVersion": "2.1.0",
+            "IsStale": false,
+            "IsPrerelease": true
           },
           {
             "DependencyId": "NServiceBus.DataBus.AzureBlobStorage",
             "Version": "1.0.0-beta0002",
             "LatestKnownVersion": "1.0.0-beta0002",
-            "IsStale": false
+            "IsStale": false,
+            "IsPrerelease": true
           },
           {
             "DependencyId": "NServiceBus.Distributor.MSMQ",
             "Version": "5.0.4",
             "LatestKnownVersion": "5.0.4",
-            "IsStale": false
+            "IsStale": false,
+            "IsPrerelease": false
+          },
+          {
+            "DependencyId": "NServiceBus.Gateway",
+            "Version": "1.0.1",
+            "LatestKnownVersion": "1.0.1",
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "NServiceBus.Gateway",
             "Version": "2.0.0-beta0002",
-            "LatestKnownVersion": "2.0.0-beta0002",
-            "IsStale": false
+            "LatestKnownVersion": "1.0.1",
+            "IsStale": false,
+            "IsPrerelease": true
+          },
+          {
+            "DependencyId": "NServiceBus.Host",
+            "Version": "6.0.0",
+            "LatestKnownVersion": "6.0.0",
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "NServiceBus.Host",
             "Version": "7.0.0-beta0003",
-            "LatestKnownVersion": "7.0.0-beta0003",
-            "IsStale": false
+            "LatestKnownVersion": "6.0.0",
+            "IsStale": false,
+            "IsPrerelease": true
+          },
+          {
+            "DependencyId": "NServiceBus.Hosting.Azure",
+            "Version": "6.2.5",
+            "LatestKnownVersion": "6.2.5",
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "NServiceBus.Hosting.Azure",
             "Version": "7.0.0-beta0001",
-            "LatestKnownVersion": "7.0.0-beta0001",
-            "IsStale": false
+            "LatestKnownVersion": "6.2.5",
+            "IsStale": false,
+            "IsPrerelease": true
+          },
+          {
+            "DependencyId": "NServiceBus.Hosting.Azure.HostProcess",
+            "Version": "6.2.5",
+            "LatestKnownVersion": "6.2.5",
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "NServiceBus.Hosting.Azure.HostProcess",
             "Version": "7.0.0-beta0001",
-            "LatestKnownVersion": "7.0.0-beta0001",
-            "IsStale": false
+            "LatestKnownVersion": "6.2.5",
+            "IsStale": false,
+            "IsPrerelease": true
           },
           {
             "DependencyId": "NServiceBus.Interfaces",
             "Version": "4.7.12",
             "LatestKnownVersion": "4.7.12",
-            "IsStale": false
+            "IsStale": false,
+            "IsPrerelease": false
+          },
+          {
+            "DependencyId": "NServiceBus.Jil",
+            "Version": "1.0.0",
+            "LatestKnownVersion": "1.0.0",
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "NServiceBus.Jil",
             "Version": "2.0.0-beta0003",
-            "LatestKnownVersion": "2.0.0-beta0003",
-            "IsStale": false
+            "LatestKnownVersion": "1.0.0",
+            "IsStale": false,
+            "IsPrerelease": true
+          },
+          {
+            "DependencyId": "NServiceBus.Log4Net",
+            "Version": "1.0.0",
+            "LatestKnownVersion": "1.0.0",
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "NServiceBus.Log4Net",
             "Version": "2.0.0-beta0001",
-            "LatestKnownVersion": "2.0.0-beta0001",
-            "IsStale": false
+            "LatestKnownVersion": "1.0.0",
+            "IsStale": false,
+            "IsPrerelease": true
           },
           {
             "DependencyId": "NServiceBus.MessagePack",
             "Version": "1.0.0-beta0001",
             "LatestKnownVersion": "1.0.0-beta0001",
-            "IsStale": false
+            "IsStale": false,
+            "IsPrerelease": true
+          },
+          {
+            "DependencyId": "NServiceBus.Newtonsoft.Json",
+            "Version": "0.2.0",
+            "LatestKnownVersion": "0.2.0",
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "NServiceBus.Newtonsoft.Json",
             "Version": "1.0.0-beta0002",
-            "LatestKnownVersion": "1.0.0-beta0002",
-            "IsStale": false
+            "LatestKnownVersion": "0.2.0",
+            "IsStale": false,
+            "IsPrerelease": true
+          },
+          {
+            "DependencyId": "NServiceBus.NHibernate",
+            "Version": "6.2.7",
+            "LatestKnownVersion": "6.2.7",
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "NServiceBus.NHibernate",
             "Version": "7.0.0-beta0004",
-            "LatestKnownVersion": "7.0.0-beta0004",
-            "IsStale": false
+            "LatestKnownVersion": "6.2.7",
+            "IsStale": false,
+            "IsPrerelease": true
+          },
+          {
+            "DependencyId": "NServiceBus.Ninject",
+            "Version": "5.1.0",
+            "LatestKnownVersion": "5.1.0",
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "NServiceBus.Ninject",
             "Version": "6.0.0-beta0001",
-            "LatestKnownVersion": "6.0.0-beta0001",
-            "IsStale": false
+            "LatestKnownVersion": "5.1.0",
+            "IsStale": false,
+            "IsPrerelease": true
+          },
+          {
+            "DependencyId": "NServiceBus.NLog",
+            "Version": "1.1.0",
+            "LatestKnownVersion": "1.1.0",
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "NServiceBus.NLog",
             "Version": "2.0.0-beta0001",
-            "LatestKnownVersion": "2.0.0-beta0001",
-            "IsStale": false
+            "LatestKnownVersion": "1.1.0",
+            "IsStale": false,
+            "IsPrerelease": true
           },
           {
             "DependencyId": "NServiceBus.Persistence.AzureStorage",
             "Version": "1.0.0-beta0003",
             "LatestKnownVersion": "1.0.0-beta0003",
-            "IsStale": false
+            "IsStale": false,
+            "IsPrerelease": true
+          },
+          {
+            "DependencyId": "NServiceBus.Persistence.MongoDb",
+            "Version": "6.0.4.0",
+            "LatestKnownVersion": "6.0.4.0",
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "NServiceBus.Persistence.MongoDb",
             "Version": "7.0.0.17-beta1",
-            "LatestKnownVersion": "7.0.0.17-beta1",
-            "IsStale": false
+            "LatestKnownVersion": "6.0.4.0",
+            "IsStale": false,
+            "IsPrerelease": true
+          },
+          {
+            "DependencyId": "NServiceBus.RabbitMQ",
+            "Version": "3.3.1",
+            "LatestKnownVersion": "3.3.1",
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "NServiceBus.RabbitMQ",
             "Version": "4.0.0-beta0004",
-            "LatestKnownVersion": "4.0.0-beta0004",
-            "IsStale": false
+            "LatestKnownVersion": "3.3.1",
+            "IsStale": false,
+            "IsPrerelease": true
+          },
+          {
+            "DependencyId": "NServiceBus.RavenDB",
+            "Version": "3.0.10",
+            "LatestKnownVersion": "3.0.10",
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "NServiceBus.RavenDB",
             "Version": "4.0.0-beta0005",
-            "LatestKnownVersion": "4.0.0-beta0005",
-            "IsStale": false
+            "LatestKnownVersion": "3.0.10",
+            "IsStale": false,
+            "IsPrerelease": true
+          },
+          {
+            "DependencyId": "NServiceBus.Serilog",
+            "Version": "2.0.1.1",
+            "LatestKnownVersion": "2.0.1.1",
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "NServiceBus.Serilog",
             "Version": "3.0.0.0-beta0001",
-            "LatestKnownVersion": "3.0.0.0-beta0001",
-            "IsStale": false
+            "LatestKnownVersion": "2.0.1.1",
+            "IsStale": false,
+            "IsPrerelease": true
+          },
+          {
+            "DependencyId": "NServiceBus.Spring",
+            "Version": "6.0.0",
+            "LatestKnownVersion": "6.0.0",
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "NServiceBus.Spring",
             "Version": "7.0.0-beta0001",
-            "LatestKnownVersion": "7.0.0-beta0001",
-            "IsStale": false
+            "LatestKnownVersion": "6.0.0",
+            "IsStale": false,
+            "IsPrerelease": true
+          },
+          {
+            "DependencyId": "NServiceBus.SqlServer",
+            "Version": "2.2.3",
+            "LatestKnownVersion": "2.2.3",
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "NServiceBus.SqlServer",
             "Version": "3.0.0-beta0002",
-            "LatestKnownVersion": "3.0.0-beta0002",
-            "IsStale": false
+            "LatestKnownVersion": "2.2.3",
+            "IsStale": false,
+            "IsPrerelease": true
+          },
+          {
+            "DependencyId": "NServiceBus.StructureMap",
+            "Version": "5.0.1",
+            "LatestKnownVersion": "5.0.1",
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "NServiceBus.StructureMap",
             "Version": "6.0.0-beta0001",
-            "LatestKnownVersion": "6.0.0-beta0001",
-            "IsStale": false
+            "LatestKnownVersion": "5.0.1",
+            "IsStale": false,
+            "IsPrerelease": true
+          },
+          {
+            "DependencyId": "NServiceBus.Testing",
+            "Version": "5.1.1",
+            "LatestKnownVersion": "5.1.1",
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "NServiceBus.Testing",
             "Version": "6.0.0-beta0001",
-            "LatestKnownVersion": "6.0.0-beta0001",
-            "IsStale": false
+            "LatestKnownVersion": "5.1.1",
+            "IsStale": false,
+            "IsPrerelease": true
+          },
+          {
+            "DependencyId": "NServiceBus.Unity",
+            "Version": "6.2.0",
+            "LatestKnownVersion": "6.2.0",
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "NServiceBus.Unity",
             "Version": "7.0.0-beta0001",
-            "LatestKnownVersion": "7.0.0-beta0001",
-            "IsStale": false
+            "LatestKnownVersion": "6.2.0",
+            "IsStale": false,
+            "IsPrerelease": true
+          },
+          {
+            "DependencyId": "NServiceBus.Wire",
+            "Version": "1.0.0",
+            "LatestKnownVersion": "1.0.0",
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "NServiceBus.Wire",
             "Version": "2.0.1-beta001",
-            "LatestKnownVersion": "2.0.1-beta001",
-            "IsStale": false
-          },
-          {
-            "DependencyId": "NUnit",
-            "Version": "3.2.1",
-            "LatestKnownVersion": "3.2.1",
-            "IsStale": false
+            "LatestKnownVersion": "1.0.0",
+            "IsStale": false,
+            "IsPrerelease": true
           },
           {
             "DependencyId": "Octokit",
             "Version": "0.20.0",
             "LatestKnownVersion": "0.20.0",
-            "IsStale": false
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "Owin",
             "Version": "1.0",
             "LatestKnownVersion": "1.0",
-            "IsStale": false
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "RabbitMQ.Client",
             "Version": "3.6.2",
             "LatestKnownVersion": "3.6.2",
-            "IsStale": false
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "RavenDB.Bundles.UniqueConstraints",
             "Version": "3.0.30143",
             "LatestKnownVersion": "3.0.30143",
-            "IsStale": false
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "RavenDB.Client",
             "Version": "3.0.30143",
             "LatestKnownVersion": "3.0.30143",
-            "IsStale": false
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "RavenDB.Client.UniqueConstraints",
             "Version": "3.0.30143",
             "LatestKnownVersion": "3.0.30143",
-            "IsStale": false
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "RavenDB.Database",
             "Version": "3.0.30143",
             "LatestKnownVersion": "3.0.30143",
-            "IsStale": false
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "Rx-Core",
             "Version": "2.2.5",
             "LatestKnownVersion": "2.2.5",
-            "IsStale": false
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "Rx-Interfaces",
             "Version": "2.2.5",
             "LatestKnownVersion": "2.2.5",
-            "IsStale": false
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "Rx-Linq",
             "Version": "2.2.5",
             "LatestKnownVersion": "2.2.5",
-            "IsStale": false
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "Rx-Main",
             "Version": "2.2.5",
             "LatestKnownVersion": "2.2.5",
-            "IsStale": false
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "Rx-PlatformServices",
             "Version": "2.2.5",
             "LatestKnownVersion": "2.2.5",
-            "IsStale": false
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "Serilog",
             "Version": "1.5.14",
             "LatestKnownVersion": "1.5.14",
-            "IsStale": false
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "ServiceControl.Contracts",
             "Version": "1.2.0",
             "LatestKnownVersion": "1.2.0",
-            "IsStale": false
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "ServiceControl.Plugin.Nsb3.CustomChecks",
             "Version": "1.0.0",
             "LatestKnownVersion": "1.0.0",
-            "IsStale": false
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "ServiceControl.Plugin.Nsb4.CustomChecks",
             "Version": "1.0.0",
             "LatestKnownVersion": "1.0.0",
-            "IsStale": false
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "ServiceControl.Plugin.Nsb5.CustomChecks",
             "Version": "1.0.1",
             "LatestKnownVersion": "1.0.1",
-            "IsStale": false
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "ServiceControl.Plugin.Nsb6.CustomChecks",
             "Version": "1.0.0-beta0003",
             "LatestKnownVersion": "1.0.0-beta0003",
-            "IsStale": false
+            "IsStale": false,
+            "IsPrerelease": true
           },
           {
             "DependencyId": "Sigil",
             "Version": "4.6.1",
             "LatestKnownVersion": "4.6.1",
-            "IsStale": false
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "Spring.Core",
             "Version": "2.0.1",
             "LatestKnownVersion": "2.0.1",
-            "IsStale": false
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "structuremap",
             "Version": "4.2.0.402",
             "LatestKnownVersion": "4.2.0.402",
-            "IsStale": false
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "System.Spatial",
             "Version": "5.7.0",
             "LatestKnownVersion": "5.7.0",
-            "IsStale": false
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "Unity",
             "Version": "4.0.1",
             "LatestKnownVersion": "4.0.1",
-            "IsStale": false
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "Unity.Interception",
             "Version": "4.0.1",
             "LatestKnownVersion": "4.0.1",
-            "IsStale": false
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "Unofficial.Microsoft.WindowsAzure.Diagnostics",
             "Version": "2.7.0.0",
             "LatestKnownVersion": "2.7.0.0",
-            "IsStale": false
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "Unofficial.Microsoft.WindowsAzure.ServiceRuntime",
             "Version": "2.7.0.0",
             "LatestKnownVersion": "2.7.0.0",
-            "IsStale": false
+            "IsStale": false,
+            "IsPrerelease": false
+          },
+          {
+            "DependencyId": "WindowsAzure.Storage",
+            "Version": "7.0.0",
+            "LatestKnownVersion": "7.0.0",
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "Wire",
             "Version": "0.0.6",
             "LatestKnownVersion": "0.0.6",
-            "IsStale": false
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "CommonServiceLocator",
             "Version": "1.0",
             "LatestKnownVersion": "1.3",
-            "IsStale": true
+            "IsStale": true,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "Iesi.Collections",
             "Version": "3.4.1.4000",
             "LatestKnownVersion": "4.0.1.4000",
-            "IsStale": true
+            "IsStale": true,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "Microsoft.WindowsAzure.ConfigurationManager",
             "Version": "3.1.0",
             "LatestKnownVersion": "3.2.1",
-            "IsStale": true
+            "IsStale": true,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "NServiceBus.Autofac",
-            "Version": "5.0.0",
-            "LatestKnownVersion": "6.0.0-beta0001",
-            "IsStale": true
+            "Version": "4.7.12",
+            "LatestKnownVersion": "5.0.0",
+            "IsStale": true,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "NServiceBus.Azure.Transports.WindowsAzureServiceBus",
-            "Version": "6.4.0",
-            "LatestKnownVersion": "7.0.0-beta0007",
-            "IsStale": true
+            "Version": "6.3.3",
+            "LatestKnownVersion": "6.4.0",
+            "IsStale": true,
+            "IsPrerelease": false
+          },
+          {
+            "DependencyId": "NServiceBus.Azure.Transports.WindowsAzureStorageQueues",
+            "Version": "5.3.12",
+            "LatestKnownVersion": "6.2.1",
+            "IsStale": true,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "NServiceBus.CastleWindsor",
-            "Version": "5.0.0",
-            "LatestKnownVersion": "6.0.0-beta0002",
-            "IsStale": true
+            "Version": "4.7.12",
+            "LatestKnownVersion": "5.0.0",
+            "IsStale": true,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "NServiceBus.CommonLogging",
-            "Version": "2.1.0",
-            "LatestKnownVersion": "3.0.0-beta0001",
-            "IsStale": true
+            "Version": "1.0.0.0",
+            "LatestKnownVersion": "2.1.0",
+            "IsStale": true,
+            "IsPrerelease": false
           },
           {
-            "DependencyId": "NServiceBus.Gateway",
-            "Version": "1.0.1",
-            "LatestKnownVersion": "2.0.0-beta0002",
-            "IsStale": true
+            "DependencyId": "NServiceBus.Host",
+            "Version": "5.0.11",
+            "LatestKnownVersion": "6.0.0",
+            "IsStale": true,
+            "IsPrerelease": false
           },
           {
-            "DependencyId": "NServiceBus.Hosting.Azure",
-            "Version": "6.2.5",
-            "LatestKnownVersion": "7.0.0-beta0001",
-            "IsStale": true
-          },
-          {
-            "DependencyId": "NServiceBus.Hosting.Azure.HostProcess",
-            "Version": "6.2.5",
-            "LatestKnownVersion": "7.0.0-beta0001",
-            "IsStale": true
-          },
-          {
-            "DependencyId": "NServiceBus.Jil",
+            "DependencyId": "NServiceBus.NLog",
             "Version": "1.0.0",
-            "LatestKnownVersion": "2.0.0-beta0003",
-            "IsStale": true
+            "LatestKnownVersion": "1.1.0",
+            "IsStale": true,
+            "IsPrerelease": false
           },
           {
-            "DependencyId": "NServiceBus.Log4Net",
-            "Version": "1.0.0",
-            "LatestKnownVersion": "2.0.0-beta0001",
-            "IsStale": true
-          },
-          {
-            "DependencyId": "NServiceBus.Newtonsoft.Json",
-            "Version": "0.2.0",
-            "LatestKnownVersion": "1.0.0-beta0002",
-            "IsStale": true
-          },
-          {
-            "DependencyId": "NServiceBus.Ninject",
-            "Version": "5.1.0",
-            "LatestKnownVersion": "6.0.0-beta0001",
-            "IsStale": true
-          },
-          {
-            "DependencyId": "NServiceBus.Persistence.MongoDb",
-            "Version": "6.0.4.0",
-            "LatestKnownVersion": "7.0.0.17-beta1",
-            "IsStale": true
-          },
-          {
-            "DependencyId": "NServiceBus.Serilog",
-            "Version": "2.0.1.1",
-            "LatestKnownVersion": "3.0.0.0-beta0001",
-            "IsStale": true
+            "DependencyId": "NServiceBus.RavenDB",
+            "Version": "2.2.8",
+            "LatestKnownVersion": "3.0.10",
+            "IsStale": true,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "NServiceBus.Spring",
-            "Version": "6.0.0",
-            "LatestKnownVersion": "7.0.0-beta0001",
-            "IsStale": true
-          },
-          {
-            "DependencyId": "NServiceBus.SqlServer",
-            "Version": "2.2.3",
-            "LatestKnownVersion": "3.0.0-beta0002",
-            "IsStale": true
+            "Version": "5.0.0",
+            "LatestKnownVersion": "6.0.0",
+            "IsStale": true,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "NServiceBus.StructureMap",
-            "Version": "5.0.1",
-            "LatestKnownVersion": "6.0.0-beta0001",
-            "IsStale": true
+            "Version": "4.7.12",
+            "LatestKnownVersion": "5.0.1",
+            "IsStale": true,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "NServiceBus.Testing",
-            "Version": "5.1.1",
-            "LatestKnownVersion": "6.0.0-beta0001",
-            "IsStale": true
+            "Version": "4.7.12",
+            "LatestKnownVersion": "5.1.1",
+            "IsStale": true,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "NServiceBus.Unity",
-            "Version": "6.2.0",
-            "LatestKnownVersion": "7.0.0-beta0001",
-            "IsStale": true
+            "Version": "5.0.0",
+            "LatestKnownVersion": "6.2.0",
+            "IsStale": true,
+            "IsPrerelease": false
           },
           {
-            "DependencyId": "NServiceBus.Wire",
-            "Version": "1.0.0",
-            "LatestKnownVersion": "2.0.1-beta001",
-            "IsStale": true
-          },
-          {
-            "DependencyId": "Octokit",
-            "Version": "0.19.0",
-            "LatestKnownVersion": "0.20.0",
-            "IsStale": true
+            "DependencyId": "NUnit",
+            "Version": "3.2.1",
+            "LatestKnownVersion": "3.4.0",
+            "IsStale": true,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "Spring.Core",
             "Version": "1.3.2",
             "LatestKnownVersion": "2.0.1",
-            "IsStale": true
+            "IsStale": true,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "Unity",
             "Version": "3.5.1404.0",
             "LatestKnownVersion": "4.0.1",
-            "IsStale": true
+            "IsStale": true,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "Unity.Interception",
             "Version": "3.5.1404.0",
             "LatestKnownVersion": "4.0.1",
-            "IsStale": true
+            "IsStale": true,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "WindowsAzure.ServiceBus",
             "Version": "3.1.7",
-            "LatestKnownVersion": "3.2.2",
-            "IsStale": true
-          },
-          {
-            "DependencyId": "WindowsAzure.Storage",
-            "Version": "7.0.0",
-            "LatestKnownVersion": "7.0.1-preview",
-            "IsStale": true
+            "LatestKnownVersion": "3.3.0",
+            "IsStale": true,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "Autofac",
             "Version": "2.6.3.862",
             "LatestKnownVersion": "3.5.2",
-            "IsStale": true
+            "IsStale": true,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "Common.Logging",
             "Version": "2.3.1",
             "LatestKnownVersion": "3.3.1",
-            "IsStale": true
+            "IsStale": true,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "Microsoft.WindowsAzure.ConfigurationManager",
             "Version": "2.0.3",
             "LatestKnownVersion": "3.2.1",
-            "IsStale": true
+            "IsStale": true,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "Newtonsoft.Json",
             "Version": "7.0.1",
             "LatestKnownVersion": "8.0.3",
-            "IsStale": true
-          },
-          {
-            "DependencyId": "NServiceBus.Autofac",
-            "Version": "4.7.12",
-            "LatestKnownVersion": "6.0.0-beta0001",
-            "IsStale": true
+            "IsStale": true,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "NServiceBus.Azure",
             "Version": "5.3.12",
             "LatestKnownVersion": "6.2.4",
-            "IsStale": true
+            "IsStale": true,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "NServiceBus.Azure.Transports.WindowsAzureServiceBus",
-            "Version": "6.3.3",
-            "LatestKnownVersion": "7.0.0-beta0007",
-            "IsStale": true
+            "Version": "5.3.12",
+            "LatestKnownVersion": "6.4.0",
+            "IsStale": true,
+            "IsPrerelease": false
           },
           {
-            "DependencyId": "NServiceBus.CastleWindsor",
+            "DependencyId": "NServiceBus.Hosting.Azure",
+            "Version": "5.3.12",
+            "LatestKnownVersion": "6.2.5",
+            "IsStale": true,
+            "IsPrerelease": false
+          },
+          {
+            "DependencyId": "NServiceBus.Ninject",
             "Version": "4.7.12",
-            "LatestKnownVersion": "6.0.0-beta0002",
-            "IsStale": true
-          },
-          {
-            "DependencyId": "NServiceBus.CommonLogging",
-            "Version": "1.0.0.0",
-            "LatestKnownVersion": "3.0.0-beta0001",
-            "IsStale": true
-          },
-          {
-            "DependencyId": "NServiceBus.Host",
-            "Version": "6.0.0",
-            "LatestKnownVersion": "7.0.0-beta0003",
-            "IsStale": true
-          },
-          {
-            "DependencyId": "NServiceBus.NLog",
-            "Version": "1.1.0",
-            "LatestKnownVersion": "2.0.0-beta0001",
-            "IsStale": true
-          },
-          {
-            "DependencyId": "NServiceBus.RabbitMQ",
-            "Version": "3.3.1",
-            "LatestKnownVersion": "4.0.0-beta0004",
-            "IsStale": true
-          },
-          {
-            "DependencyId": "NServiceBus.RavenDB",
-            "Version": "3.0.10",
-            "LatestKnownVersion": "4.0.0-beta0005",
-            "IsStale": true
+            "LatestKnownVersion": "5.1.0",
+            "IsStale": true,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "NServiceBus.Spring",
-            "Version": "5.0.0",
-            "LatestKnownVersion": "7.0.0-beta0001",
-            "IsStale": true
+            "Version": "4.7.12",
+            "LatestKnownVersion": "6.0.0",
+            "IsStale": true,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "NServiceBus.StructureMap",
-            "Version": "4.7.12",
-            "LatestKnownVersion": "6.0.0-beta0001",
-            "IsStale": true
+            "Version": "3.3.18",
+            "LatestKnownVersion": "5.0.1",
+            "IsStale": true,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "NServiceBus.Testing",
-            "Version": "4.7.12",
-            "LatestKnownVersion": "6.0.0-beta0001",
-            "IsStale": true
+            "Version": "3.3.18",
+            "LatestKnownVersion": "5.1.1",
+            "IsStale": true,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "NServiceBus.Unity",
-            "Version": "5.0.0",
-            "LatestKnownVersion": "7.0.0-beta0001",
-            "IsStale": true
+            "Version": "4.7.13",
+            "LatestKnownVersion": "6.2.0",
+            "IsStale": true,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "RabbitMQ.Client",
             "Version": "3.5.7",
             "LatestKnownVersion": "3.6.2",
-            "IsStale": true
+            "IsStale": true,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "structuremap",
             "Version": "3.1.7.350",
             "LatestKnownVersion": "4.2.0.402",
-            "IsStale": true
+            "IsStale": true,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "Unity",
             "Version": "2.1.505.2",
             "LatestKnownVersion": "4.0.1",
-            "IsStale": true
+            "IsStale": true,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "Unity.Interception",
             "Version": "2.1.505.2",
             "LatestKnownVersion": "4.0.1",
-            "IsStale": true
+            "IsStale": true,
+            "IsPrerelease": false
+          },
+          {
+            "DependencyId": "WindowsAzure.Storage",
+            "Version": "4.3.0",
+            "LatestKnownVersion": "7.0.0",
+            "IsStale": true,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "Microsoft.WindowsAzure.ConfigurationManager",
             "Version": "1.8.0.0",
             "LatestKnownVersion": "3.2.1",
-            "IsStale": true
+            "IsStale": true,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "Newtonsoft.Json",
             "Version": "6.0.8",
             "LatestKnownVersion": "8.0.3",
-            "IsStale": true
+            "IsStale": true,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "NHibernate",
             "Version": "3.4.1.4000",
             "LatestKnownVersion": "4.0.4.4000",
-            "IsStale": true
+            "IsStale": true,
+            "IsPrerelease": false
           },
           {
-            "DependencyId": "NServiceBus.Azure.Transports.WindowsAzureServiceBus",
-            "Version": "5.3.12",
-            "LatestKnownVersion": "7.0.0-beta0007",
-            "IsStale": true
-          },
-          {
-            "DependencyId": "NServiceBus.Azure.Transports.WindowsAzureStorageQueues",
-            "Version": "6.2.1",
-            "LatestKnownVersion": "7.0.0-beta0004",
-            "IsStale": true
+            "DependencyId": "NServiceBus.Autofac",
+            "Version": "3.3.18",
+            "LatestKnownVersion": "5.0.0",
+            "IsStale": true,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "NServiceBus.Distributor.MSMQ",
             "Version": "4.4.9",
             "LatestKnownVersion": "5.0.4",
-            "IsStale": true
-          },
-          {
-            "DependencyId": "NServiceBus.Host",
-            "Version": "5.0.11",
-            "LatestKnownVersion": "7.0.0-beta0003",
-            "IsStale": true
-          },
-          {
-            "DependencyId": "NServiceBus.Hosting.Azure",
-            "Version": "5.3.12",
-            "LatestKnownVersion": "7.0.0-beta0001",
-            "IsStale": true
-          },
-          {
-            "DependencyId": "NServiceBus.NHibernate",
-            "Version": "6.2.7",
-            "LatestKnownVersion": "7.0.0-beta0004",
-            "IsStale": true
-          },
-          {
-            "DependencyId": "NServiceBus.Ninject",
-            "Version": "4.7.12",
-            "LatestKnownVersion": "6.0.0-beta0001",
-            "IsStale": true
-          },
-          {
-            "DependencyId": "NServiceBus.NLog",
-            "Version": "1.0.0",
-            "LatestKnownVersion": "2.0.0-beta0001",
-            "IsStale": true
-          },
-          {
-            "DependencyId": "NServiceBus.RavenDB",
-            "Version": "2.2.8",
-            "LatestKnownVersion": "4.0.0-beta0005",
-            "IsStale": true
-          },
-          {
-            "DependencyId": "NServiceBus.Spring",
-            "Version": "4.7.12",
-            "LatestKnownVersion": "7.0.0-beta0001",
-            "IsStale": true
-          },
-          {
-            "DependencyId": "NServiceBus.StructureMap",
-            "Version": "3.3.18",
-            "LatestKnownVersion": "6.0.0-beta0001",
-            "IsStale": true
-          },
-          {
-            "DependencyId": "NServiceBus.Testing",
-            "Version": "3.3.18",
-            "LatestKnownVersion": "6.0.0-beta0001",
-            "IsStale": true
-          },
-          {
-            "DependencyId": "NServiceBus.Unity",
-            "Version": "4.7.13",
-            "LatestKnownVersion": "7.0.0-beta0001",
-            "IsStale": true
-          },
-          {
-            "DependencyId": "structuremap",
-            "Version": "2.6.4.1",
-            "LatestKnownVersion": "4.2.0.402",
-            "IsStale": true
-          },
-          {
-            "DependencyId": "WindowsAzure.ServiceBus",
-            "Version": "2.8.2",
-            "LatestKnownVersion": "3.2.2",
-            "IsStale": true
-          },
-          {
-            "DependencyId": "WindowsAzure.Storage",
-            "Version": "4.3.0",
-            "LatestKnownVersion": "7.0.1-preview",
-            "IsStale": true
-          },
-          {
-            "DependencyId": "Common.Logging",
-            "Version": "1.2.0",
-            "LatestKnownVersion": "3.3.1",
-            "IsStale": true
-          },
-          {
-            "DependencyId": "log4net",
-            "Version": "1.2.11",
-            "LatestKnownVersion": "2.0.5",
-            "IsStale": true
-          },
-          {
-            "DependencyId": "NLog",
-            "Version": "3.2.1",
-            "LatestKnownVersion": "4.3.5",
-            "IsStale": true
-          },
-          {
-            "DependencyId": "NServiceBus.Autofac",
-            "Version": "3.3.18",
-            "LatestKnownVersion": "6.0.0-beta0001",
-            "IsStale": true
-          },
-          {
-            "DependencyId": "NServiceBus.Azure.Transports.WindowsAzureStorageQueues",
-            "Version": "5.3.12",
-            "LatestKnownVersion": "7.0.0-beta0004",
-            "IsStale": true
+            "IsStale": true,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "NServiceBus.Hosting.Azure",
             "Version": "4.2.1",
-            "LatestKnownVersion": "7.0.0-beta0001",
-            "IsStale": true
+            "LatestKnownVersion": "6.2.5",
+            "IsStale": true,
+            "IsPrerelease": false
+          },
+          {
+            "DependencyId": "NServiceBus.RavenDB",
+            "Version": "1.0.7",
+            "LatestKnownVersion": "3.0.10",
+            "IsStale": true,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "NServiceBus.Spring",
             "Version": "3.3.18",
-            "LatestKnownVersion": "7.0.0-beta0001",
-            "IsStale": true
+            "LatestKnownVersion": "6.0.0",
+            "IsStale": true,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "NServiceBus.Unity",
             "Version": "3.3.18",
-            "LatestKnownVersion": "7.0.0-beta0001",
-            "IsStale": true
+            "LatestKnownVersion": "6.2.0",
+            "IsStale": true,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "RavenDB.Client",
             "Version": "2.5.25001",
             "LatestKnownVersion": "3.0.30143",
-            "IsStale": true
+            "IsStale": true,
+            "IsPrerelease": false
+          },
+          {
+            "DependencyId": "structuremap",
+            "Version": "2.6.4.1",
+            "LatestKnownVersion": "4.2.0.402",
+            "IsStale": true,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "WindowsAzure.ServiceBus",
-            "Version": "2.7.6",
-            "LatestKnownVersion": "3.2.2",
-            "IsStale": true
+            "Version": "2.8.2",
+            "LatestKnownVersion": "3.3.0",
+            "IsStale": true,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "WindowsAzure.Storage",
             "Version": "3.2.1",
-            "LatestKnownVersion": "7.0.1-preview",
-            "IsStale": true
+            "LatestKnownVersion": "7.0.0",
+            "IsStale": true,
+            "IsPrerelease": false
+          },
+          {
+            "DependencyId": "Common.Logging",
+            "Version": "1.2.0",
+            "LatestKnownVersion": "3.3.1",
+            "IsStale": true,
+            "IsPrerelease": false
+          },
+          {
+            "DependencyId": "log4net",
+            "Version": "1.2.11",
+            "LatestKnownVersion": "2.0.5",
+            "IsStale": true,
+            "IsPrerelease": false
+          },
+          {
+            "DependencyId": "NLog",
+            "Version": "3.2.1",
+            "LatestKnownVersion": "4.3.5",
+            "IsStale": true,
+            "IsPrerelease": false
+          },
+          {
+            "DependencyId": "NServiceBus.CastleWindsor",
+            "Version": "3.3.18",
+            "LatestKnownVersion": "5.0.0",
+            "IsStale": true,
+            "IsPrerelease": false
+          },
+          {
+            "DependencyId": "NServiceBus.Host",
+            "Version": "4.7.12",
+            "LatestKnownVersion": "6.0.0",
+            "IsStale": true,
+            "IsPrerelease": false
+          },
+          {
+            "DependencyId": "NServiceBus.Ninject",
+            "Version": "3.3.18",
+            "LatestKnownVersion": "5.1.0",
+            "IsStale": true,
+            "IsPrerelease": false
+          },
+          {
+            "DependencyId": "NServiceBus.RabbitMQ",
+            "Version": "2.1.3",
+            "LatestKnownVersion": "3.3.1",
+            "IsStale": true,
+            "IsPrerelease": false
+          },
+          {
+            "DependencyId": "WindowsAzure.ServiceBus",
+            "Version": "2.7.6",
+            "LatestKnownVersion": "3.3.0",
+            "IsStale": true,
+            "IsPrerelease": false
+          },
+          {
+            "DependencyId": "WindowsAzure.Storage",
+            "Version": "2.1.0.4",
+            "LatestKnownVersion": "7.0.0",
+            "IsStale": true,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "log4net",
             "Version": "1.2.10",
             "LatestKnownVersion": "2.0.5",
-            "IsStale": true
-          },
-          {
-            "DependencyId": "NServiceBus",
-            "Version": "6.0.0-beta0005",
-            "LatestKnownVersion": "6.0.0-unstable1786",
-            "IsStale": true
-          },
-          {
-            "DependencyId": "NServiceBus.CastleWindsor",
-            "Version": "3.3.18",
-            "LatestKnownVersion": "6.0.0-beta0002",
-            "IsStale": true
-          },
-          {
-            "DependencyId": "NServiceBus.Ninject",
-            "Version": "3.3.18",
-            "LatestKnownVersion": "6.0.0-beta0001",
-            "IsStale": true
-          },
-          {
-            "DependencyId": "WindowsAzure.Storage",
-            "Version": "2.1.0.4",
-            "LatestKnownVersion": "7.0.1-preview",
-            "IsStale": true
+            "IsStale": true,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "NLog",
             "Version": "2.1.0",
             "LatestKnownVersion": "4.3.5",
-            "IsStale": true
-          },
-          {
-            "DependencyId": "NServiceBus",
-            "Version": "6.0.0-beta0004",
-            "LatestKnownVersion": "6.0.0-unstable1786",
-            "IsStale": true
-          },
-          {
-            "DependencyId": "NServiceBus.RabbitMQ",
-            "Version": "2.1.3",
-            "LatestKnownVersion": "4.0.0-beta0004",
-            "IsStale": true
-          },
-          {
-            "DependencyId": "NServiceBus.RavenDB",
-            "Version": "1.0.7",
-            "LatestKnownVersion": "4.0.0-beta0005",
-            "IsStale": true
+            "IsStale": true,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "RabbitMQ.Client",
             "Version": "3.2.4",
             "LatestKnownVersion": "3.6.2",
-            "IsStale": true
+            "IsStale": true,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "Newtonsoft.Json",
             "Version": "5.0.8",
             "LatestKnownVersion": "8.0.3",
-            "IsStale": true
-          },
-          {
-            "DependencyId": "NServiceBus",
-            "Version": "6.0.0-beta0003",
-            "LatestKnownVersion": "6.0.0-unstable1786",
-            "IsStale": true
-          },
-          {
-            "DependencyId": "NServiceBus.Host",
-            "Version": "4.7.12",
-            "LatestKnownVersion": "7.0.0-beta0003",
-            "IsStale": true
-          },
-          {
-            "DependencyId": "NServiceBus.RabbitMQ",
-            "Version": "1.1.5",
-            "LatestKnownVersion": "4.0.0-beta0004",
-            "IsStale": true
-          },
-          {
-            "DependencyId": "NServiceBus",
-            "Version": "5.2.14",
-            "LatestKnownVersion": "6.0.0-unstable1786",
-            "IsStale": true
+            "IsStale": true,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "NServiceBus.NHibernate",
             "Version": "5.0.3",
-            "LatestKnownVersion": "7.0.0-beta0004",
-            "IsStale": true
+            "LatestKnownVersion": "6.2.7",
+            "IsStale": true,
+            "IsPrerelease": false
+          },
+          {
+            "DependencyId": "NServiceBus.RabbitMQ",
+            "Version": "1.1.5",
+            "LatestKnownVersion": "3.3.1",
+            "IsStale": true,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "NServiceBus.NHibernate",
             "Version": "4.5.5",
-            "LatestKnownVersion": "7.0.0-beta0004",
-            "IsStale": true
+            "LatestKnownVersion": "6.2.7",
+            "IsStale": true,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "NServiceBus.NHibernate",
             "Version": "3.3.18",
-            "LatestKnownVersion": "7.0.0-beta0004",
-            "IsStale": true
+            "LatestKnownVersion": "6.2.7",
+            "IsStale": true,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "NServiceBus",
             "Version": "4.7.12",
-            "LatestKnownVersion": "6.0.0-unstable1786",
-            "IsStale": true
+            "LatestKnownVersion": "5.2.14",
+            "IsStale": true,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "NServiceBus.Interfaces",
             "Version": "3.3.18",
             "LatestKnownVersion": "4.7.12",
-            "IsStale": true
+            "IsStale": true,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "NServiceBus",
             "Version": "3.3.18",
-            "LatestKnownVersion": "6.0.0-unstable1786",
-            "IsStale": true
+            "LatestKnownVersion": "5.2.14",
+            "IsStale": true,
+            "IsPrerelease": false
           }
         ]
       },
@@ -7312,637 +7719,764 @@ g_data = {
             "DependencyId": "Autofac",
             "Version": "3.5.2",
             "LatestKnownVersion": "3.5.2",
-            "IsStale": false
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "Caseless.Fody",
-            "Version": "1.4.1",
-            "LatestKnownVersion": "1.4.1",
-            "IsStale": false
+            "Version": "1.4.2",
+            "LatestKnownVersion": "1.4.2",
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "CommandLineParser",
             "Version": "1.9.71",
             "LatestKnownVersion": "1.9.71",
-            "IsStale": false
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "Fody",
             "Version": "1.29.4",
             "LatestKnownVersion": "1.29.4",
-            "IsStale": false
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "FSharp.Core",
             "Version": "4.0.0.1",
             "LatestKnownVersion": "4.0.0.1",
-            "IsStale": false
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "Iesi.Collections",
             "Version": "4.0.1.4000",
             "LatestKnownVersion": "4.0.1.4000",
-            "IsStale": false
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "Microsoft.AspNet.Mvc",
             "Version": "5.2.3",
             "LatestKnownVersion": "5.2.3",
-            "IsStale": false
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "Microsoft.AspNet.Razor",
             "Version": "3.2.3",
             "LatestKnownVersion": "3.2.3",
-            "IsStale": false
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "Microsoft.AspNet.WebPages",
             "Version": "3.2.3",
             "LatestKnownVersion": "3.2.3",
-            "IsStale": false
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "Microsoft.Azure.KeyVault.Core",
             "Version": "1.0.0",
             "LatestKnownVersion": "1.0.0",
-            "IsStale": false
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "Microsoft.Data.Edm",
             "Version": "5.7.0",
             "LatestKnownVersion": "5.7.0",
-            "IsStale": false
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "Microsoft.Data.OData",
             "Version": "5.7.0",
             "LatestKnownVersion": "5.7.0",
-            "IsStale": false
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "Microsoft.Data.Services.Client",
             "Version": "5.7.0",
             "LatestKnownVersion": "5.7.0",
-            "IsStale": false
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "Microsoft.Web.Infrastructure",
             "Version": "1.0.0.0",
             "LatestKnownVersion": "1.0.0.0",
-            "IsStale": false
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "Microsoft.Web.Xdt",
             "Version": "2.1.1",
             "LatestKnownVersion": "2.1.1",
-            "IsStale": false
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "Newtonsoft.Json",
             "Version": "8.0.3",
             "LatestKnownVersion": "8.0.3",
-            "IsStale": false
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "NHibernate",
             "Version": "4.0.4.4000",
             "LatestKnownVersion": "4.0.4.4000",
-            "IsStale": false
+            "IsStale": false,
+            "IsPrerelease": false
+          },
+          {
+            "DependencyId": "NLog",
+            "Version": "4.3.5",
+            "LatestKnownVersion": "4.3.5",
+            "IsStale": false,
+            "IsPrerelease": false
+          },
+          {
+            "DependencyId": "NServiceBus",
+            "Version": "5.2.14",
+            "LatestKnownVersion": "5.2.14",
+            "IsStale": false,
+            "IsPrerelease": false
+          },
+          {
+            "DependencyId": "NServiceBus",
+            "Version": "6.0.0-beta0002",
+            "LatestKnownVersion": "5.2.14",
+            "IsStale": false,
+            "IsPrerelease": true
+          },
+          {
+            "DependencyId": "NServiceBus",
+            "Version": "6.0.0-beta0001",
+            "LatestKnownVersion": "5.2.14",
+            "IsStale": false,
+            "IsPrerelease": true
+          },
+          {
+            "DependencyId": "NServiceBus",
+            "Version": "6.0.0-beta0003",
+            "LatestKnownVersion": "5.2.14",
+            "IsStale": false,
+            "IsPrerelease": true
+          },
+          {
+            "DependencyId": "NServiceBus",
+            "Version": "6.0.0-beta0004",
+            "LatestKnownVersion": "5.2.14",
+            "IsStale": false,
+            "IsPrerelease": true
+          },
+          {
+            "DependencyId": "NServiceBus.Autofac",
+            "Version": "5.0.0",
+            "LatestKnownVersion": "5.0.0",
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "NServiceBus.Azure",
             "Version": "6.2.4",
             "LatestKnownVersion": "6.2.4",
-            "IsStale": false
+            "IsStale": false,
+            "IsPrerelease": false
+          },
+          {
+            "DependencyId": "NServiceBus.Azure.Transports.WindowsAzureServiceBus",
+            "Version": "6.4.0",
+            "LatestKnownVersion": "6.4.0",
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "NServiceBus.Azure.Transports.WindowsAzureServiceBus",
             "Version": "7.0.0-beta0007",
-            "LatestKnownVersion": "7.0.0-beta0007",
-            "IsStale": false
+            "LatestKnownVersion": "6.4.0",
+            "IsStale": false,
+            "IsPrerelease": true
+          },
+          {
+            "DependencyId": "NServiceBus.Azure.Transports.WindowsAzureStorageQueues",
+            "Version": "6.2.1",
+            "LatestKnownVersion": "6.2.1",
+            "IsStale": false,
+            "IsPrerelease": false
+          },
+          {
+            "DependencyId": "NServiceBus.Azure.Transports.WindowsAzureStorageQueues",
+            "Version": "7.0.0-beta0003",
+            "LatestKnownVersion": "6.2.1",
+            "IsStale": false,
+            "IsPrerelease": true
+          },
+          {
+            "DependencyId": "NServiceBus.Azure.Transports.WindowsAzureStorageQueues",
+            "Version": "7.0.0-beta0004",
+            "LatestKnownVersion": "6.2.1",
+            "IsStale": false,
+            "IsPrerelease": true
           },
           {
             "DependencyId": "NServiceBus.Callbacks",
             "Version": "1.0.0-beta0001",
             "LatestKnownVersion": "1.0.0-beta0001",
-            "IsStale": false
+            "IsStale": false,
+            "IsPrerelease": true
           },
           {
             "DependencyId": "NServiceBus.Distributor.MSMQ",
             "Version": "5.0.4",
             "LatestKnownVersion": "5.0.4",
-            "IsStale": false
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "NServiceBus.Interfaces",
             "Version": "4.7.12",
             "LatestKnownVersion": "4.7.12",
-            "IsStale": false
+            "IsStale": false,
+            "IsPrerelease": false
+          },
+          {
+            "DependencyId": "NServiceBus.Log4Net",
+            "Version": "1.0.0",
+            "LatestKnownVersion": "1.0.0",
+            "IsStale": false,
+            "IsPrerelease": false
+          },
+          {
+            "DependencyId": "NServiceBus.NHibernate",
+            "Version": "6.2.7",
+            "LatestKnownVersion": "6.2.7",
+            "IsStale": false,
+            "IsPrerelease": false
+          },
+          {
+            "DependencyId": "NServiceBus.NHibernate",
+            "Version": "7.0.0-beta0001",
+            "LatestKnownVersion": "6.2.7",
+            "IsStale": false,
+            "IsPrerelease": true
+          },
+          {
+            "DependencyId": "NServiceBus.NHibernate",
+            "Version": "7.0.0-beta0004",
+            "LatestKnownVersion": "6.2.7",
+            "IsStale": false,
+            "IsPrerelease": true
+          },
+          {
+            "DependencyId": "NServiceBus.NLog",
+            "Version": "1.1.0",
+            "LatestKnownVersion": "1.1.0",
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "NServiceBus.NLog",
             "Version": "2.0.0-beta0001",
-            "LatestKnownVersion": "2.0.0-beta0001",
-            "IsStale": false
+            "LatestKnownVersion": "1.1.0",
+            "IsStale": false,
+            "IsPrerelease": true
+          },
+          {
+            "DependencyId": "NServiceBus.Persistence.AzureStorage",
+            "Version": "1.0.0-beta0003",
+            "LatestKnownVersion": "1.0.0-beta0003",
+            "IsStale": false,
+            "IsPrerelease": true
+          },
+          {
+            "DependencyId": "NServiceBus.RabbitMQ",
+            "Version": "4.0.0-beta0003",
+            "LatestKnownVersion": "3.3.1",
+            "IsStale": false,
+            "IsPrerelease": true
+          },
+          {
+            "DependencyId": "NServiceBus.RabbitMQ",
+            "Version": "3.3.1",
+            "LatestKnownVersion": "3.3.1",
+            "IsStale": false,
+            "IsPrerelease": false
+          },
+          {
+            "DependencyId": "NServiceBus.RabbitMQ",
+            "Version": "4.0.0-beta0004",
+            "LatestKnownVersion": "3.3.1",
+            "IsStale": false,
+            "IsPrerelease": true
+          },
+          {
+            "DependencyId": "NServiceBus.RavenDB",
+            "Version": "3.0.10",
+            "LatestKnownVersion": "3.0.10",
+            "IsStale": false,
+            "IsPrerelease": false
+          },
+          {
+            "DependencyId": "NServiceBus.RavenDB",
+            "Version": "4.0.0-beta0005",
+            "LatestKnownVersion": "3.0.10",
+            "IsStale": false,
+            "IsPrerelease": true
+          },
+          {
+            "DependencyId": "NServiceBus.SqlServer",
+            "Version": "2.2.3",
+            "LatestKnownVersion": "2.2.3",
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "NServiceBus.SqlServer",
             "Version": "3.0.0-beta0002",
-            "LatestKnownVersion": "3.0.0-beta0002",
-            "IsStale": false
+            "LatestKnownVersion": "2.2.3",
+            "IsStale": false,
+            "IsPrerelease": true
           },
           {
             "DependencyId": "NuGet.Core",
             "Version": "2.11.1",
             "LatestKnownVersion": "2.11.1",
-            "IsStale": false
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "NUnit",
-            "Version": "3.2.1",
-            "LatestKnownVersion": "3.2.1",
-            "IsStale": false
+            "Version": "3.4.0",
+            "LatestKnownVersion": "3.4.0",
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "Paket.Core",
             "Version": "2.5.0",
             "LatestKnownVersion": "2.5.0",
-            "IsStale": false
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "RabbitMQ.Client",
             "Version": "3.6.2",
             "LatestKnownVersion": "3.6.2",
-            "IsStale": false
+            "IsStale": false,
+            "IsPrerelease": false
+          },
+          {
+            "DependencyId": "RavenDB.Client",
+            "Version": "3.0.30143",
+            "LatestKnownVersion": "3.0.30143",
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "SlowCheetah",
             "Version": "2.5.15",
             "LatestKnownVersion": "2.5.15",
-            "IsStale": false
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "System.Spatial",
             "Version": "5.7.0",
             "LatestKnownVersion": "5.7.0",
-            "IsStale": false
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "WindowsAzure.ServiceBus",
-            "Version": "3.2.2",
-            "LatestKnownVersion": "3.2.2",
-            "IsStale": false
+            "Version": "3.3.0",
+            "LatestKnownVersion": "3.3.0",
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "WindowsAzure.Storage",
             "Version": "7.0.1-preview",
-            "LatestKnownVersion": "7.0.1-preview",
-            "IsStale": false
+            "LatestKnownVersion": "7.0.0",
+            "IsStale": false,
+            "IsPrerelease": true
+          },
+          {
+            "DependencyId": "WindowsAzure.Storage",
+            "Version": "7.0.0",
+            "LatestKnownVersion": "7.0.0",
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "Iesi.Collections",
             "Version": "3.4.1.4000",
             "LatestKnownVersion": "4.0.1.4000",
-            "IsStale": true
+            "IsStale": true,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "log4net",
             "Version": "2.0.3",
             "LatestKnownVersion": "2.0.5",
-            "IsStale": true
-          },
-          {
-            "DependencyId": "NLog",
-            "Version": "4.3.4",
-            "LatestKnownVersion": "4.3.5",
-            "IsStale": true
-          },
-          {
-            "DependencyId": "NServiceBus.Autofac",
-            "Version": "5.0.0",
-            "LatestKnownVersion": "6.0.0-beta0001",
-            "IsStale": true
-          },
-          {
-            "DependencyId": "NServiceBus.Azure.Transports.WindowsAzureServiceBus",
-            "Version": "6.4.0",
-            "LatestKnownVersion": "7.0.0-beta0007",
-            "IsStale": true
-          },
-          {
-            "DependencyId": "NServiceBus.Azure.Transports.WindowsAzureStorageQueues",
-            "Version": "7.0.0-beta0003",
-            "LatestKnownVersion": "7.0.0-beta0004",
-            "IsStale": true
-          },
-          {
-            "DependencyId": "NServiceBus.Log4Net",
-            "Version": "1.0.0",
-            "LatestKnownVersion": "2.0.0-beta0001",
-            "IsStale": true
-          },
-          {
-            "DependencyId": "NServiceBus.NHibernate",
-            "Version": "7.0.0-beta0003",
-            "LatestKnownVersion": "7.0.0-beta0004",
-            "IsStale": true
-          },
-          {
-            "DependencyId": "NServiceBus.Persistence.AzureStorage",
-            "Version": "1.0.0-beta0002",
-            "LatestKnownVersion": "1.0.0-beta0003",
-            "IsStale": true
+            "IsStale": true,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "NServiceBus.RabbitMQ",
-            "Version": "4.0.0-beta0003",
-            "LatestKnownVersion": "4.0.0-beta0004",
-            "IsStale": true
-          },
-          {
-            "DependencyId": "NServiceBus.RavenDB",
-            "Version": "4.0.0-beta0004",
-            "LatestKnownVersion": "4.0.0-beta0005",
-            "IsStale": true
+            "Version": "3.2.0",
+            "LatestKnownVersion": "3.3.1",
+            "IsStale": true,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "NServiceBus.SqlServer",
-            "Version": "2.2.3",
-            "LatestKnownVersion": "3.0.0-beta0002",
-            "IsStale": true
+            "Version": "2.2.2",
+            "LatestKnownVersion": "2.2.3",
+            "IsStale": true,
+            "IsPrerelease": false
+          },
+          {
+            "DependencyId": "NUnit",
+            "Version": "3.2.1",
+            "LatestKnownVersion": "3.4.0",
+            "IsStale": true,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "RabbitMQ.Client",
             "Version": "3.6.1",
             "LatestKnownVersion": "3.6.2",
-            "IsStale": true
-          },
-          {
-            "DependencyId": "RavenDB.Client",
-            "Version": "3.0.30115",
-            "LatestKnownVersion": "3.0.30143",
-            "IsStale": true
-          },
-          {
-            "DependencyId": "WindowsAzure.Storage",
-            "Version": "7.0.0",
-            "LatestKnownVersion": "7.0.1-preview",
-            "IsStale": true
+            "IsStale": true,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "Microsoft.WindowsAzure.ConfigurationManager",
             "Version": "2.0.3",
             "LatestKnownVersion": "3.2.1",
-            "IsStale": true
+            "IsStale": true,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "Newtonsoft.Json",
             "Version": "7.0.1",
             "LatestKnownVersion": "8.0.3",
-            "IsStale": true
+            "IsStale": true,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "NServiceBus.Interfaces",
             "Version": "4.6.10",
             "LatestKnownVersion": "4.7.12",
-            "IsStale": true
-          },
-          {
-            "DependencyId": "NServiceBus.NHibernate",
-            "Version": "7.0.0-beta0001",
-            "LatestKnownVersion": "7.0.0-beta0004",
-            "IsStale": true
-          },
-          {
-            "DependencyId": "NServiceBus.NLog",
-            "Version": "1.1.0",
-            "LatestKnownVersion": "2.0.0-beta0001",
-            "IsStale": true
-          },
-          {
-            "DependencyId": "NServiceBus.RabbitMQ",
-            "Version": "3.3.1",
-            "LatestKnownVersion": "4.0.0-beta0004",
-            "IsStale": true
-          },
-          {
-            "DependencyId": "NServiceBus.RavenDB",
-            "Version": "3.0.10",
-            "LatestKnownVersion": "4.0.0-beta0005",
-            "IsStale": true
-          },
-          {
-            "DependencyId": "NServiceBus.SqlServer",
-            "Version": "2.2.2",
-            "LatestKnownVersion": "3.0.0-beta0002",
-            "IsStale": true
+            "IsStale": true,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "WindowsAzure.ServiceBus",
             "Version": "3.1.5",
-            "LatestKnownVersion": "3.2.2",
-            "IsStale": true
+            "LatestKnownVersion": "3.3.0",
+            "IsStale": true,
+            "IsPrerelease": false
+          },
+          {
+            "DependencyId": "WindowsAzure.Storage",
+            "Version": "4.3.0",
+            "LatestKnownVersion": "7.0.0",
+            "IsStale": true,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "log4net",
             "Version": "2.0.0",
             "LatestKnownVersion": "2.0.5",
-            "IsStale": true
+            "IsStale": true,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "Microsoft.WindowsAzure.ConfigurationManager",
             "Version": "1.8.0.0",
             "LatestKnownVersion": "3.2.1",
-            "IsStale": true
+            "IsStale": true,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "Newtonsoft.Json",
             "Version": "6.0.8",
             "LatestKnownVersion": "8.0.3",
-            "IsStale": true
+            "IsStale": true,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "NHibernate",
             "Version": "3.4.1.4000",
             "LatestKnownVersion": "4.0.4.4000",
-            "IsStale": true
-          },
-          {
-            "DependencyId": "NServiceBus.Azure.Transports.WindowsAzureStorageQueues",
-            "Version": "6.2.1",
-            "LatestKnownVersion": "7.0.0-beta0004",
-            "IsStale": true
-          },
-          {
-            "DependencyId": "NServiceBus.NHibernate",
-            "Version": "6.2.7",
-            "LatestKnownVersion": "7.0.0-beta0004",
-            "IsStale": true
-          },
-          {
-            "DependencyId": "NServiceBus.RabbitMQ",
-            "Version": "3.2.0",
-            "LatestKnownVersion": "4.0.0-beta0004",
-            "IsStale": true
-          },
-          {
-            "DependencyId": "WindowsAzure.ServiceBus",
-            "Version": "2.8.2",
-            "LatestKnownVersion": "3.2.2",
-            "IsStale": true
-          },
-          {
-            "DependencyId": "WindowsAzure.Storage",
-            "Version": "4.3.0",
-            "LatestKnownVersion": "7.0.1-preview",
-            "IsStale": true
+            "IsStale": true,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "NServiceBus.SqlServer",
             "Version": "1.2.4",
-            "LatestKnownVersion": "3.0.0-beta0002",
-            "IsStale": true
+            "LatestKnownVersion": "2.2.3",
+            "IsStale": true,
+            "IsPrerelease": false
+          },
+          {
+            "DependencyId": "WindowsAzure.ServiceBus",
+            "Version": "2.8.2",
+            "LatestKnownVersion": "3.3.0",
+            "IsStale": true,
+            "IsPrerelease": false
+          },
+          {
+            "DependencyId": "WindowsAzure.Storage",
+            "Version": "3.2.1",
+            "LatestKnownVersion": "7.0.0",
+            "IsStale": true,
+            "IsPrerelease": false
+          },
+          {
+            "DependencyId": "NServiceBus",
+            "Version": "5.2.5",
+            "LatestKnownVersion": "5.2.14",
+            "IsStale": true,
+            "IsPrerelease": false
+          },
+          {
+            "DependencyId": "NServiceBus.RabbitMQ",
+            "Version": "2.1.3",
+            "LatestKnownVersion": "3.3.1",
+            "IsStale": true,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "RabbitMQ.Client",
             "Version": "3.5.0",
             "LatestKnownVersion": "3.6.2",
-            "IsStale": true
+            "IsStale": true,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "WindowsAzure.ServiceBus",
             "Version": "2.7.6",
-            "LatestKnownVersion": "3.2.2",
-            "IsStale": true
-          },
-          {
-            "DependencyId": "WindowsAzure.Storage",
-            "Version": "3.2.1",
-            "LatestKnownVersion": "7.0.1-preview",
-            "IsStale": true
+            "LatestKnownVersion": "3.3.0",
+            "IsStale": true,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "log4net",
             "Version": "1.2.10",
             "LatestKnownVersion": "2.0.5",
-            "IsStale": true
+            "IsStale": true,
+            "IsPrerelease": false
           },
           {
-            "DependencyId": "NServiceBus",
-            "Version": "6.0.0-beta0004",
-            "LatestKnownVersion": "6.0.0-unstable1786",
-            "IsStale": true
+            "DependencyId": "NServiceBus.NHibernate",
+            "Version": "6.1.0",
+            "LatestKnownVersion": "6.2.7",
+            "IsStale": true,
+            "IsPrerelease": false
           },
           {
-            "DependencyId": "NServiceBus.RabbitMQ",
-            "Version": "2.1.3",
-            "LatestKnownVersion": "4.0.0-beta0004",
-            "IsStale": true
+            "DependencyId": "NServiceBus.NHibernate",
+            "Version": "6.0.0",
+            "LatestKnownVersion": "6.2.7",
+            "IsStale": true,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "Newtonsoft.Json",
             "Version": "5.0.8",
             "LatestKnownVersion": "8.0.3",
-            "IsStale": true
+            "IsStale": true,
+            "IsPrerelease": false
           },
           {
-            "DependencyId": "NServiceBus",
-            "Version": "6.0.0-beta0003",
-            "LatestKnownVersion": "6.0.0-unstable1786",
-            "IsStale": true
+            "DependencyId": "NServiceBus.NHibernate",
+            "Version": "5.0.3",
+            "LatestKnownVersion": "6.2.7",
+            "IsStale": true,
+            "IsPrerelease": false
+          },
+          {
+            "DependencyId": "NServiceBus.RabbitMQ",
+            "Version": "1.1.5",
+            "LatestKnownVersion": "3.3.1",
+            "IsStale": true,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "RabbitMQ.Client",
             "Version": "3.2.1",
             "LatestKnownVersion": "3.6.2",
-            "IsStale": true
-          },
-          {
-            "DependencyId": "NServiceBus",
-            "Version": "6.0.0-beta0002",
-            "LatestKnownVersion": "6.0.0-unstable1786",
-            "IsStale": true
-          },
-          {
-            "DependencyId": "NServiceBus.NHibernate",
-            "Version": "6.1.0",
-            "LatestKnownVersion": "7.0.0-beta0004",
-            "IsStale": true
-          },
-          {
-            "DependencyId": "NServiceBus",
-            "Version": "6.0.0-beta0001",
-            "LatestKnownVersion": "6.0.0-unstable1786",
-            "IsStale": true
-          },
-          {
-            "DependencyId": "NServiceBus.Interfaces",
-            "Version": "4.5.7",
-            "LatestKnownVersion": "4.7.12",
-            "IsStale": true
-          },
-          {
-            "DependencyId": "NServiceBus.NHibernate",
-            "Version": "6.0.0",
-            "LatestKnownVersion": "7.0.0-beta0004",
-            "IsStale": true
-          },
-          {
-            "DependencyId": "NServiceBus.RabbitMQ",
-            "Version": "1.1.5",
-            "LatestKnownVersion": "4.0.0-beta0004",
-            "IsStale": true
-          },
-          {
-            "DependencyId": "NServiceBus",
-            "Version": "5.2.14",
-            "LatestKnownVersion": "6.0.0-unstable1786",
-            "IsStale": true
-          },
-          {
-            "DependencyId": "NServiceBus.NHibernate",
-            "Version": "5.0.3",
-            "LatestKnownVersion": "7.0.0-beta0004",
-            "IsStale": true
-          },
-          {
-            "DependencyId": "NServiceBus.Interfaces",
-            "Version": "4.4.8",
-            "LatestKnownVersion": "4.7.12",
-            "IsStale": true
-          },
-          {
-            "DependencyId": "NServiceBus.NHibernate",
-            "Version": "4.5.2",
-            "LatestKnownVersion": "7.0.0-beta0004",
-            "IsStale": true
-          },
-          {
-            "DependencyId": "NServiceBus",
-            "Version": "5.2.5",
-            "LatestKnownVersion": "6.0.0-unstable1786",
-            "IsStale": true
-          },
-          {
-            "DependencyId": "NServiceBus.Interfaces",
-            "Version": "4.3.10",
-            "LatestKnownVersion": "4.7.12",
-            "IsStale": true
+            "IsStale": true,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "NServiceBus",
             "Version": "5.1.9",
-            "LatestKnownVersion": "6.0.0-unstable1786",
-            "IsStale": true
+            "LatestKnownVersion": "5.2.14",
+            "IsStale": true,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "NServiceBus.Interfaces",
-            "Version": "4.2.7",
+            "Version": "4.5.7",
             "LatestKnownVersion": "4.7.12",
-            "IsStale": true
+            "IsStale": true,
+            "IsPrerelease": false
+          },
+          {
+            "DependencyId": "NServiceBus.NHibernate",
+            "Version": "4.5.2",
+            "LatestKnownVersion": "6.2.7",
+            "IsStale": true,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "NServiceBus",
             "Version": "5.0.11",
-            "LatestKnownVersion": "6.0.0-unstable1786",
-            "IsStale": true
+            "LatestKnownVersion": "5.2.14",
+            "IsStale": true,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "NServiceBus.Interfaces",
-            "Version": "4.1.8",
+            "Version": "4.4.8",
             "LatestKnownVersion": "4.7.12",
-            "IsStale": true
-          },
-          {
-            "DependencyId": "NServiceBus.Interfaces",
-            "Version": "4.0.11",
-            "LatestKnownVersion": "4.7.12",
-            "IsStale": true
-          },
-          {
-            "DependencyId": "NServiceBus.Interfaces",
-            "Version": "4.0.10",
-            "LatestKnownVersion": "4.7.12",
-            "IsStale": true
+            "IsStale": true,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "NServiceBus",
             "Version": "4.7.12",
-            "LatestKnownVersion": "6.0.0-unstable1786",
-            "IsStale": true
+            "LatestKnownVersion": "5.2.14",
+            "IsStale": true,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "NServiceBus.Interfaces",
-            "Version": "3.3.18",
+            "Version": "4.3.10",
             "LatestKnownVersion": "4.7.12",
-            "IsStale": true
-          },
-          {
-            "DependencyId": "NServiceBus.Interfaces",
-            "Version": "3.3.15",
-            "LatestKnownVersion": "4.7.12",
-            "IsStale": true
+            "IsStale": true,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "NServiceBus",
             "Version": "4.6.10",
-            "LatestKnownVersion": "6.0.0-unstable1786",
-            "IsStale": true
+            "LatestKnownVersion": "5.2.14",
+            "IsStale": true,
+            "IsPrerelease": false
+          },
+          {
+            "DependencyId": "NServiceBus.Interfaces",
+            "Version": "4.2.7",
+            "LatestKnownVersion": "4.7.12",
+            "IsStale": true,
+            "IsPrerelease": false
+          },
+          {
+            "DependencyId": "NServiceBus.Interfaces",
+            "Version": "4.1.8",
+            "LatestKnownVersion": "4.7.12",
+            "IsStale": true,
+            "IsPrerelease": false
+          },
+          {
+            "DependencyId": "NServiceBus.Interfaces",
+            "Version": "4.0.11",
+            "LatestKnownVersion": "4.7.12",
+            "IsStale": true,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "NServiceBus",
             "Version": "4.5.7",
-            "LatestKnownVersion": "6.0.0-unstable1786",
-            "IsStale": true
+            "LatestKnownVersion": "5.2.14",
+            "IsStale": true,
+            "IsPrerelease": false
+          },
+          {
+            "DependencyId": "NServiceBus.Interfaces",
+            "Version": "4.0.10",
+            "LatestKnownVersion": "4.7.12",
+            "IsStale": true,
+            "IsPrerelease": false
+          },
+          {
+            "DependencyId": "NServiceBus.Interfaces",
+            "Version": "3.3.18",
+            "LatestKnownVersion": "4.7.12",
+            "IsStale": true,
+            "IsPrerelease": false
+          },
+          {
+            "DependencyId": "NServiceBus.Interfaces",
+            "Version": "3.3.15",
+            "LatestKnownVersion": "4.7.12",
+            "IsStale": true,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "NServiceBus",
             "Version": "4.4.8",
-            "LatestKnownVersion": "6.0.0-unstable1786",
-            "IsStale": true
+            "LatestKnownVersion": "5.2.14",
+            "IsStale": true,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "NServiceBus",
             "Version": "4.3.10",
-            "LatestKnownVersion": "6.0.0-unstable1786",
-            "IsStale": true
+            "LatestKnownVersion": "5.2.14",
+            "IsStale": true,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "NServiceBus",
             "Version": "4.2.7",
-            "LatestKnownVersion": "6.0.0-unstable1786",
-            "IsStale": true
+            "LatestKnownVersion": "5.2.14",
+            "IsStale": true,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "NServiceBus",
             "Version": "4.1.8",
-            "LatestKnownVersion": "6.0.0-unstable1786",
-            "IsStale": true
+            "LatestKnownVersion": "5.2.14",
+            "IsStale": true,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "NServiceBus",
             "Version": "4.0.11",
-            "LatestKnownVersion": "6.0.0-unstable1786",
-            "IsStale": true
+            "LatestKnownVersion": "5.2.14",
+            "IsStale": true,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "NServiceBus",
             "Version": "4.0.10",
-            "LatestKnownVersion": "6.0.0-unstable1786",
-            "IsStale": true
+            "LatestKnownVersion": "5.2.14",
+            "IsStale": true,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "NServiceBus",
             "Version": "3.3.18",
-            "LatestKnownVersion": "6.0.0-unstable1786",
-            "IsStale": true
+            "LatestKnownVersion": "5.2.14",
+            "IsStale": true,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "NServiceBus",
             "Version": "3.3.15",
-            "LatestKnownVersion": "6.0.0-unstable1786",
-            "IsStale": true
+            "LatestKnownVersion": "5.2.14",
+            "IsStale": true,
+            "IsPrerelease": false
           }
         ]
       },
@@ -7954,67 +8488,78 @@ g_data = {
             "DependencyId": "CommandLineParser",
             "Version": "1.9.71",
             "LatestKnownVersion": "1.9.71",
-            "IsStale": false
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "Costura.Fody",
             "Version": "1.3.2.0",
             "LatestKnownVersion": "1.3.2.0",
-            "IsStale": false
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "ApprovalTests",
             "Version": "3.0.7",
             "LatestKnownVersion": "3.0.11",
-            "IsStale": true
+            "IsStale": true,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "ApprovalUtilities",
             "Version": "3.0.7",
             "LatestKnownVersion": "3.0.11",
-            "IsStale": true
-          },
-          {
-            "DependencyId": "Caseless.Fody",
-            "Version": "1.3.3.0",
-            "LatestKnownVersion": "1.4.1",
-            "IsStale": true
-          },
-          {
-            "DependencyId": "NUnit",
-            "Version": "2.6.3",
-            "LatestKnownVersion": "3.2.1",
-            "IsStale": true
-          },
-          {
-            "DependencyId": "Fody",
-            "Version": "1.28.3",
-            "LatestKnownVersion": "1.29.4",
-            "IsStale": true
+            "IsStale": true,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "Octokit",
             "Version": "0.16.0",
             "LatestKnownVersion": "0.20.0",
-            "IsStale": true
+            "IsStale": true,
+            "IsPrerelease": false
+          },
+          {
+            "DependencyId": "Caseless.Fody",
+            "Version": "1.3.3.0",
+            "LatestKnownVersion": "1.4.2",
+            "IsStale": true,
+            "IsPrerelease": false
+          },
+          {
+            "DependencyId": "Fody",
+            "Version": "1.28.3",
+            "LatestKnownVersion": "1.29.4",
+            "IsStale": true,
+            "IsPrerelease": false
+          },
+          {
+            "DependencyId": "NUnit",
+            "Version": "2.6.3",
+            "LatestKnownVersion": "3.4.0",
+            "IsStale": true,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "NuGet.CommandLine",
             "Version": "2.8.2",
             "LatestKnownVersion": "3.3.0",
-            "IsStale": true
+            "IsStale": true,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "GitVersionTask",
             "Version": "1.2.0",
             "LatestKnownVersion": "3.5.4",
-            "IsStale": true
+            "IsStale": true,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "NuGetPackager",
             "Version": "0.1.3",
             "LatestKnownVersion": "0.6.0",
-            "IsStale": true
+            "IsStale": true,
+            "IsPrerelease": false
           }
         ]
       },
@@ -8023,250 +8568,288 @@ g_data = {
         "Score": 5,
         "Dependencies": [
           {
+            "DependencyId": "NServiceBus.Host",
+            "Version": "6.0.0",
+            "LatestKnownVersion": "6.0.0",
+            "IsStale": false,
+            "IsPrerelease": false
+          },
+          {
             "DependencyId": "NServiceBus.Distributor.MSMQ",
             "Version": "5.0.1",
             "LatestKnownVersion": "5.0.4",
-            "IsStale": true
-          },
-          {
-            "DependencyId": "NServiceBus.Host",
-            "Version": "6.0.0",
-            "LatestKnownVersion": "7.0.0-beta0003",
-            "IsStale": true
+            "IsStale": true,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "NServiceBus.SqlServer",
             "Version": "2.0.2",
-            "LatestKnownVersion": "3.0.0-beta0002",
-            "IsStale": true
+            "LatestKnownVersion": "2.2.3",
+            "IsStale": true,
+            "IsPrerelease": false
+          },
+          {
+            "DependencyId": "NServiceBus.RabbitMQ",
+            "Version": "2.0.4",
+            "LatestKnownVersion": "3.3.1",
+            "IsStale": true,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "RabbitMQ.Client",
             "Version": "3.3.5",
             "LatestKnownVersion": "3.6.2",
-            "IsStale": true
-          },
-          {
-            "DependencyId": "NServiceBus.RabbitMQ",
-            "Version": "2.0.4",
-            "LatestKnownVersion": "4.0.0-beta0004",
-            "IsStale": true
+            "IsStale": true,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "NServiceBus",
             "Version": "5.1.2",
-            "LatestKnownVersion": "6.0.0-unstable1786",
-            "IsStale": true
+            "LatestKnownVersion": "5.2.14",
+            "IsStale": true,
+            "IsPrerelease": false
           }
         ]
       },
       {
         "ServiceId": "HashBus",
-        "Score": 2,
+        "Score": 1,
         "Dependencies": [
           {
             "DependencyId": "Autofac",
             "Version": "3.5.2",
             "LatestKnownVersion": "3.5.2",
-            "IsStale": false
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "ColoredConsole",
             "Version": "0.4.0",
             "LatestKnownVersion": "0.4.0",
-            "IsStale": false
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "Humanizer",
             "Version": "1.37.7",
             "LatestKnownVersion": "1.37.7",
-            "IsStale": false
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "Iesi.Collections",
             "Version": "4.0.1.4000",
             "LatestKnownVersion": "4.0.1.4000",
-            "IsStale": false
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "LiteGuard",
             "Version": "0.10.0",
             "LatestKnownVersion": "0.10.0",
-            "IsStale": false
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "Microsoft.Bcl",
             "Version": "1.1.10",
             "LatestKnownVersion": "1.1.10",
-            "IsStale": false
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "Microsoft.Bcl.Async",
             "Version": "1.0.168",
             "LatestKnownVersion": "1.0.168",
-            "IsStale": false
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "Microsoft.Bcl.Build",
             "Version": "1.0.21",
             "LatestKnownVersion": "1.0.21",
-            "IsStale": false
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "Microsoft.Net.Http",
             "Version": "2.2.29",
             "LatestKnownVersion": "2.2.29",
-            "IsStale": false
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "NHibernate",
             "Version": "4.0.4.4000",
             "LatestKnownVersion": "4.0.4.4000",
-            "IsStale": false
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "RestSharp",
             "Version": "105.2.3",
             "LatestKnownVersion": "105.2.3",
-            "IsStale": false
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "TweetinviAPI",
             "Version": "0.9.10.0",
             "LatestKnownVersion": "0.9.10.0",
-            "IsStale": false
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "MongoDB.Bson",
             "Version": "2.1.0",
             "LatestKnownVersion": "2.2.4",
-            "IsStale": true
+            "IsStale": true,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "MongoDB.Driver",
             "Version": "2.1.0",
             "LatestKnownVersion": "2.2.4",
-            "IsStale": true
+            "IsStale": true,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "MongoDB.Driver.Core",
             "Version": "2.1.0",
             "LatestKnownVersion": "2.2.4",
-            "IsStale": true
+            "IsStale": true,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "Nancy.Hosting.Self",
             "Version": "1.4.0",
             "LatestKnownVersion": "1.4.1",
-            "IsStale": true
+            "IsStale": true,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "Newtonsoft.Json",
             "Version": "7.0.1",
             "LatestKnownVersion": "8.0.3",
-            "IsStale": true
+            "IsStale": true,
+            "IsPrerelease": false
+          },
+          {
+            "DependencyId": "NServiceBus",
+            "Version": "5.2.9",
+            "LatestKnownVersion": "5.2.14",
+            "IsStale": true,
+            "IsPrerelease": false
+          },
+          {
+            "DependencyId": "NServiceBus.NHibernate",
+            "Version": "6.2.4",
+            "LatestKnownVersion": "6.2.7",
+            "IsStale": true,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "Nancy",
             "Version": "1.4.0",
             "LatestKnownVersion": "1.4.3",
-            "IsStale": true
-          },
-          {
-            "DependencyId": "NServiceBus.NHibernate",
-            "Version": "6.2.4",
-            "LatestKnownVersion": "7.0.0-beta0004",
-            "IsStale": true
-          },
-          {
-            "DependencyId": "NServiceBus",
-            "Version": "5.2.9",
-            "LatestKnownVersion": "6.0.0-unstable1786",
-            "IsStale": true
+            "IsStale": true,
+            "IsPrerelease": false
           }
         ]
       },
       {
         "ServiceId": "IssueDetection",
-        "Score": 3,
+        "Score": 2,
         "Dependencies": [
           {
             "DependencyId": "Microsoft.Azure.KeyVault.Core",
             "Version": "1.0.0",
             "LatestKnownVersion": "1.0.0",
-            "IsStale": false
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "Microsoft.Data.Edm",
             "Version": "5.7.0",
             "LatestKnownVersion": "5.7.0",
-            "IsStale": false
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "Microsoft.Data.OData",
             "Version": "5.7.0",
             "LatestKnownVersion": "5.7.0",
-            "IsStale": false
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "Microsoft.Data.Services.Client",
             "Version": "5.7.0",
             "LatestKnownVersion": "5.7.0",
-            "IsStale": false
+            "IsStale": false,
+            "IsPrerelease": false
+          },
+          {
+            "DependencyId": "NServiceBus",
+            "Version": "5.2.14",
+            "LatestKnownVersion": "5.2.14",
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "System.Spatial",
             "Version": "5.7.0",
             "LatestKnownVersion": "5.7.0",
-            "IsStale": false
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "WindowsAzure.Storage",
             "Version": "6.2.0",
-            "LatestKnownVersion": "7.0.1-preview",
-            "IsStale": true
-          },
-          {
-            "DependencyId": "Newtonsoft.Json",
-            "Version": "6.0.8",
-            "LatestKnownVersion": "8.0.3",
-            "IsStale": true
+            "LatestKnownVersion": "7.0.0",
+            "IsStale": true,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "RavenDB.Client",
             "Version": "3.0.3800",
             "LatestKnownVersion": "3.0.30143",
-            "IsStale": true
+            "IsStale": true,
+            "IsPrerelease": false
+          },
+          {
+            "DependencyId": "Newtonsoft.Json",
+            "Version": "6.0.8",
+            "LatestKnownVersion": "8.0.3",
+            "IsStale": true,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "RavenDB.Client",
             "Version": "2.5.25001",
             "LatestKnownVersion": "3.0.30143",
-            "IsStale": true
+            "IsStale": true,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "RavenDB.Client",
             "Version": "2.5.2962",
             "LatestKnownVersion": "3.0.30143",
-            "IsStale": true
-          },
-          {
-            "DependencyId": "NServiceBus",
-            "Version": "5.2.14",
-            "LatestKnownVersion": "6.0.0-unstable1786",
-            "IsStale": true
+            "IsStale": true,
+            "IsPrerelease": false
           }
         ]
       },
       {
         "ServiceId": "NSBCon2015.Hackathon",
-        "Score": 5,
+        "Score": 3,
         "Dependencies": [
           {
             "DependencyId": "NServiceBus",
             "Version": "5.2.9",
-            "LatestKnownVersion": "6.0.0-unstable1786",
-            "IsStale": true
+            "LatestKnownVersion": "5.2.14",
+            "IsStale": true,
+            "IsPrerelease": false
           }
         ]
       },
@@ -8278,67 +8861,78 @@ g_data = {
             "DependencyId": "Autofac",
             "Version": "3.5.2",
             "LatestKnownVersion": "3.5.2",
-            "IsStale": false
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "Fody",
             "Version": "1.29.4",
             "LatestKnownVersion": "1.29.4",
-            "IsStale": false
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "NuGetPackager",
             "Version": "0.6.0",
             "LatestKnownVersion": "0.6.0",
-            "IsStale": false
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "Particular.CodeRules",
             "Version": "0.1.1",
             "LatestKnownVersion": "0.1.1",
-            "IsStale": false
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "Newtonsoft.Json",
             "Version": "8.0.2",
             "LatestKnownVersion": "8.0.3",
-            "IsStale": true
-          },
-          {
-            "DependencyId": "NUnit",
-            "Version": "2.6.4",
-            "LatestKnownVersion": "3.2.1",
-            "IsStale": true
-          },
-          {
-            "DependencyId": "Janitor.Fody",
-            "Version": "1.1.6.0",
-            "LatestKnownVersion": "1.2.1.0",
-            "IsStale": true
-          },
-          {
-            "DependencyId": "Obsolete.Fody",
-            "Version": "4.0.4",
-            "LatestKnownVersion": "4.1.0",
-            "IsStale": true
-          },
-          {
-            "DependencyId": "Particular.Licensing.Sources",
-            "Version": "0.1.54",
-            "LatestKnownVersion": "0.1.60",
-            "IsStale": true
+            "IsStale": true,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "GitVersionTask",
             "Version": "3.4.1",
             "LatestKnownVersion": "3.5.4",
-            "IsStale": true
+            "IsStale": true,
+            "IsPrerelease": false
+          },
+          {
+            "DependencyId": "Janitor.Fody",
+            "Version": "1.1.6.0",
+            "LatestKnownVersion": "1.2.1.0",
+            "IsStale": true,
+            "IsPrerelease": false
+          },
+          {
+            "DependencyId": "NUnit",
+            "Version": "2.6.4",
+            "LatestKnownVersion": "3.4.0",
+            "IsStale": true,
+            "IsPrerelease": false
+          },
+          {
+            "DependencyId": "Obsolete.Fody",
+            "Version": "4.0.4",
+            "LatestKnownVersion": "4.1.0",
+            "IsStale": true,
+            "IsPrerelease": false
+          },
+          {
+            "DependencyId": "Particular.Licensing.Sources",
+            "Version": "0.1.54",
+            "LatestKnownVersion": "0.1.60",
+            "IsStale": true,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "NuGet.CommandLine",
             "Version": "2.8.2",
             "LatestKnownVersion": "3.3.0",
-            "IsStale": true
+            "IsStale": true,
+            "IsPrerelease": false
           }
         ]
       },
@@ -8350,385 +8944,447 @@ g_data = {
             "DependencyId": "Autofac",
             "Version": "3.5.2",
             "LatestKnownVersion": "3.5.2",
-            "IsStale": false
+            "IsStale": false,
+            "IsPrerelease": false
+          },
+          {
+            "DependencyId": "NServiceBus",
+            "Version": "6.0.0-unstable1782",
+            "LatestKnownVersion": "5.2.14",
+            "IsStale": false,
+            "IsPrerelease": true
           },
           {
             "DependencyId": "NServiceBus.AcceptanceTesting",
             "Version": "6.0.0-unstable1782",
-            "LatestKnownVersion": "6.0.0-unstable1782",
-            "IsStale": false
+            "LatestKnownVersion": "5.2.4",
+            "IsStale": false,
+            "IsPrerelease": true
           },
           {
             "DependencyId": "NuGetPackager",
             "Version": "0.6.0",
             "LatestKnownVersion": "0.6.0",
-            "IsStale": false
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "Particular.CodeRules",
             "Version": "0.1.1",
             "LatestKnownVersion": "0.1.1",
-            "IsStale": false
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "Fody",
             "Version": "1.29.3",
             "LatestKnownVersion": "1.29.4",
-            "IsStale": true
-          },
-          {
-            "DependencyId": "NServiceBus",
-            "Version": "6.0.0-unstable1782",
-            "LatestKnownVersion": "6.0.0-unstable1786",
-            "IsStale": true
+            "IsStale": true,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "NuGet.CommandLine",
             "Version": "2.8.6",
             "LatestKnownVersion": "3.3.0",
-            "IsStale": true
-          },
-          {
-            "DependencyId": "NUnit",
-            "Version": "2.6.4",
-            "LatestKnownVersion": "3.2.1",
-            "IsStale": true
+            "IsStale": true,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "GitVersionTask",
             "Version": "3.4.1",
             "LatestKnownVersion": "3.5.4",
-            "IsStale": true
+            "IsStale": true,
+            "IsPrerelease": false
+          },
+          {
+            "DependencyId": "NUnit",
+            "Version": "2.6.4",
+            "LatestKnownVersion": "3.4.0",
+            "IsStale": true,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "Obsolete.Fody",
             "Version": "4.0.3",
             "LatestKnownVersion": "4.1.0",
-            "IsStale": true
+            "IsStale": true,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "Janitor.Fody",
             "Version": "1.1.3.0",
             "LatestKnownVersion": "1.2.1.0",
-            "IsStale": true
+            "IsStale": true,
+            "IsPrerelease": false
           }
         ]
       },
       {
         "ServiceId": "NServiceBus.AzureServiceBus",
-        "Score": 2,
+        "Score": 1,
         "Dependencies": [
           {
             "DependencyId": "ApiApprover",
             "Version": "3.0.1",
             "LatestKnownVersion": "3.0.1",
-            "IsStale": false
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "ApprovalTests",
             "Version": "3.0.11",
             "LatestKnownVersion": "3.0.11",
-            "IsStale": false
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "ApprovalUtilities",
             "Version": "3.0.11",
             "LatestKnownVersion": "3.0.11",
-            "IsStale": false
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "FakeItEasy",
             "Version": "1.25.3",
             "LatestKnownVersion": "1.25.3",
-            "IsStale": false
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "Fody",
             "Version": "1.29.4",
             "LatestKnownVersion": "1.29.4",
-            "IsStale": false
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "Microsoft.Azure.KeyVault.Core",
             "Version": "1.0.0",
             "LatestKnownVersion": "1.0.0",
-            "IsStale": false
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "Microsoft.Data.Edm",
             "Version": "5.7.0",
             "LatestKnownVersion": "5.7.0",
-            "IsStale": false
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "Microsoft.Data.OData",
             "Version": "5.7.0",
             "LatestKnownVersion": "5.7.0",
-            "IsStale": false
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "Microsoft.Data.Services.Client",
             "Version": "5.7.0",
             "LatestKnownVersion": "5.7.0",
-            "IsStale": false
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "Microsoft.WindowsAzure.ConfigurationManager",
             "Version": "3.2.1",
             "LatestKnownVersion": "3.2.1",
-            "IsStale": false
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "Mono.Cecil",
             "Version": "0.9.6.1",
             "LatestKnownVersion": "0.9.6.1",
-            "IsStale": false
+            "IsStale": false,
+            "IsPrerelease": false
+          },
+          {
+            "DependencyId": "NServiceBus",
+            "Version": "6.0.0-beta0001",
+            "LatestKnownVersion": "5.2.14",
+            "IsStale": false,
+            "IsPrerelease": true
+          },
+          {
+            "DependencyId": "NServiceBus",
+            "Version": "6.0.0-beta0002",
+            "LatestKnownVersion": "5.2.14",
+            "IsStale": false,
+            "IsPrerelease": true
+          },
+          {
+            "DependencyId": "NServiceBus.AcceptanceTesting",
+            "Version": "6.0.0-beta0002",
+            "LatestKnownVersion": "5.2.4",
+            "IsStale": false,
+            "IsPrerelease": true
+          },
+          {
+            "DependencyId": "NServiceBus.AcceptanceTests.Sources",
+            "Version": "6.0.0-beta0002",
+            "LatestKnownVersion": "6.0.0-beta0004",
+            "IsStale": false,
+            "IsPrerelease": true
+          },
+          {
+            "DependencyId": "NServiceBus.NLog",
+            "Version": "1.2.0-beta0001",
+            "LatestKnownVersion": "1.1.0",
+            "IsStale": false,
+            "IsPrerelease": true
           },
           {
             "DependencyId": "NuGetPackager",
             "Version": "0.6.0",
             "LatestKnownVersion": "0.6.0",
-            "IsStale": false
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "Obsolete.Fody",
             "Version": "4.1.0",
             "LatestKnownVersion": "4.1.0",
-            "IsStale": false
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "Particular.CodeRules",
             "Version": "0.1.1",
             "LatestKnownVersion": "0.1.1",
-            "IsStale": false
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "System.Spatial",
             "Version": "5.7.0",
             "LatestKnownVersion": "5.7.0",
-            "IsStale": false
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "Janitor.Fody",
             "Version": "1.2.0.0",
             "LatestKnownVersion": "1.2.1.0",
-            "IsStale": true
+            "IsStale": true,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "Newtonsoft.Json",
             "Version": "8.0.2",
             "LatestKnownVersion": "8.0.3",
-            "IsStale": true
-          },
-          {
-            "DependencyId": "NServiceBus.AcceptanceTests.Sources",
-            "Version": "6.0.0-beta0002",
-            "LatestKnownVersion": "6.0.0-beta0004",
-            "IsStale": true
-          },
-          {
-            "DependencyId": "NServiceBus.NLog",
-            "Version": "1.2.0-beta0001",
-            "LatestKnownVersion": "2.0.0-beta0001",
-            "IsStale": true
-          },
-          {
-            "DependencyId": "NUnit",
-            "Version": "2.6.4",
-            "LatestKnownVersion": "3.2.1",
-            "IsStale": true
+            "IsStale": true,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "WindowsAzure.ServiceBus",
             "Version": "3.1.7",
-            "LatestKnownVersion": "3.2.2",
-            "IsStale": true
+            "LatestKnownVersion": "3.3.0",
+            "IsStale": true,
+            "IsPrerelease": false
+          },
+          {
+            "DependencyId": "WindowsAzure.Storage",
+            "Version": "6.2.0",
+            "LatestKnownVersion": "7.0.0",
+            "IsStale": true,
+            "IsPrerelease": false
+          },
+          {
+            "DependencyId": "GitVersionTask",
+            "Version": "3.4.1",
+            "LatestKnownVersion": "3.5.4",
+            "IsStale": true,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "NLog",
             "Version": "4.2.3",
             "LatestKnownVersion": "4.3.5",
-            "IsStale": true
+            "IsStale": true,
+            "IsPrerelease": false
+          },
+          {
+            "DependencyId": "NUnit",
+            "Version": "2.6.4",
+            "LatestKnownVersion": "3.4.0",
+            "IsStale": true,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "WindowsAzure.ServiceBus",
             "Version": "3.1.5",
-            "LatestKnownVersion": "3.2.2",
-            "IsStale": true
-          },
-          {
-            "DependencyId": "WindowsAzure.Storage",
-            "Version": "6.2.0",
-            "LatestKnownVersion": "7.0.1-preview",
-            "IsStale": true
-          },
-          {
-            "DependencyId": "GitVersionTask",
-            "Version": "3.4.1",
-            "LatestKnownVersion": "3.5.4",
-            "IsStale": true
+            "LatestKnownVersion": "3.3.0",
+            "IsStale": true,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "Microsoft.WindowsAzure.ConfigurationManager",
             "Version": "1.7.0.0",
             "LatestKnownVersion": "3.2.1",
-            "IsStale": true
-          },
-          {
-            "DependencyId": "NServiceBus.AcceptanceTesting",
-            "Version": "6.0.0-beta0002",
-            "LatestKnownVersion": "6.0.0-unstable1782",
-            "IsStale": true
-          },
-          {
-            "DependencyId": "NServiceBus",
-            "Version": "6.0.0-beta0002",
-            "LatestKnownVersion": "6.0.0-unstable1786",
-            "IsStale": true
-          },
-          {
-            "DependencyId": "NServiceBus",
-            "Version": "6.0.0-beta0001",
-            "LatestKnownVersion": "6.0.0-unstable1786",
-            "IsStale": true
+            "IsStale": true,
+            "IsPrerelease": false
           }
         ]
       },
       {
         "ServiceId": "NServiceBus.AzureStorageQueues",
-        "Score": 2,
+        "Score": 1,
         "Dependencies": [
           {
             "DependencyId": "ApiApprover",
             "Version": "3.0.1",
             "LatestKnownVersion": "3.0.1",
-            "IsStale": false
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "ApprovalTests",
             "Version": "3.0.11",
             "LatestKnownVersion": "3.0.11",
-            "IsStale": false
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "ApprovalUtilities",
             "Version": "3.0.11",
             "LatestKnownVersion": "3.0.11",
-            "IsStale": false
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "Fody",
             "Version": "1.29.4",
             "LatestKnownVersion": "1.29.4",
-            "IsStale": false
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "Microsoft.Azure.KeyVault.Core",
             "Version": "1.0.0",
             "LatestKnownVersion": "1.0.0",
-            "IsStale": false
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "Microsoft.Data.Edm",
             "Version": "5.7.0",
             "LatestKnownVersion": "5.7.0",
-            "IsStale": false
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "Microsoft.Data.OData",
             "Version": "5.7.0",
             "LatestKnownVersion": "5.7.0",
-            "IsStale": false
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "Microsoft.Data.Services.Client",
             "Version": "5.7.0",
             "LatestKnownVersion": "5.7.0",
-            "IsStale": false
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "Mono.Cecil",
             "Version": "0.9.6.1",
             "LatestKnownVersion": "0.9.6.1",
-            "IsStale": false
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
-            "DependencyId": "NuGetPackager",
-            "Version": "0.6.0",
-            "LatestKnownVersion": "0.6.0",
-            "IsStale": false
+            "DependencyId": "NServiceBus",
+            "Version": "6.0.0-beta0001",
+            "LatestKnownVersion": "5.2.14",
+            "IsStale": false,
+            "IsPrerelease": true
           },
           {
-            "DependencyId": "Obsolete.Fody",
-            "Version": "4.1.0",
-            "LatestKnownVersion": "4.1.0",
-            "IsStale": false
-          },
-          {
-            "DependencyId": "Particular.CodeRules",
-            "Version": "0.1.1",
-            "LatestKnownVersion": "0.1.1",
-            "IsStale": false
-          },
-          {
-            "DependencyId": "RhinoMocks",
-            "Version": "3.6.1",
-            "LatestKnownVersion": "3.6.1",
-            "IsStale": false
-          },
-          {
-            "DependencyId": "System.Spatial",
-            "Version": "5.7.0",
-            "LatestKnownVersion": "5.7.0",
-            "IsStale": false
-          },
-          {
-            "DependencyId": "Janitor.Fody",
-            "Version": "1.2.0.0",
-            "LatestKnownVersion": "1.2.1.0",
-            "IsStale": true
-          },
-          {
-            "DependencyId": "NUnit",
-            "Version": "2.6.4",
-            "LatestKnownVersion": "3.2.1",
-            "IsStale": true
-          },
-          {
-            "DependencyId": "WindowsAzure.Storage",
-            "Version": "7.0.0",
-            "LatestKnownVersion": "7.0.1-preview",
-            "IsStale": true
+            "DependencyId": "NServiceBus.AcceptanceTesting",
+            "Version": "6.0.0-beta0001",
+            "LatestKnownVersion": "5.2.4",
+            "IsStale": false,
+            "IsPrerelease": true
           },
           {
             "DependencyId": "NServiceBus.AcceptanceTests.Sources",
             "Version": "6.0.0-beta0001",
             "LatestKnownVersion": "6.0.0-beta0004",
-            "IsStale": true
+            "IsStale": false,
+            "IsPrerelease": true
+          },
+          {
+            "DependencyId": "NuGetPackager",
+            "Version": "0.6.0",
+            "LatestKnownVersion": "0.6.0",
+            "IsStale": false,
+            "IsPrerelease": false
+          },
+          {
+            "DependencyId": "Obsolete.Fody",
+            "Version": "4.1.0",
+            "LatestKnownVersion": "4.1.0",
+            "IsStale": false,
+            "IsPrerelease": false
+          },
+          {
+            "DependencyId": "Particular.CodeRules",
+            "Version": "0.1.1",
+            "LatestKnownVersion": "0.1.1",
+            "IsStale": false,
+            "IsPrerelease": false
+          },
+          {
+            "DependencyId": "RhinoMocks",
+            "Version": "3.6.1",
+            "LatestKnownVersion": "3.6.1",
+            "IsStale": false,
+            "IsPrerelease": false
+          },
+          {
+            "DependencyId": "System.Spatial",
+            "Version": "5.7.0",
+            "LatestKnownVersion": "5.7.0",
+            "IsStale": false,
+            "IsPrerelease": false
+          },
+          {
+            "DependencyId": "WindowsAzure.Storage",
+            "Version": "7.0.0",
+            "LatestKnownVersion": "7.0.0",
+            "IsStale": false,
+            "IsPrerelease": false
+          },
+          {
+            "DependencyId": "Janitor.Fody",
+            "Version": "1.2.0.0",
+            "LatestKnownVersion": "1.2.1.0",
+            "IsStale": true,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "GitVersionTask",
             "Version": "3.4.1",
             "LatestKnownVersion": "3.5.4",
-            "IsStale": true
+            "IsStale": true,
+            "IsPrerelease": false
+          },
+          {
+            "DependencyId": "NUnit",
+            "Version": "2.6.4",
+            "LatestKnownVersion": "3.4.0",
+            "IsStale": true,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "Newtonsoft.Json",
             "Version": "6.0.8",
             "LatestKnownVersion": "8.0.3",
-            "IsStale": true
-          },
-          {
-            "DependencyId": "NServiceBus.AcceptanceTesting",
-            "Version": "6.0.0-beta0001",
-            "LatestKnownVersion": "6.0.0-unstable1782",
-            "IsStale": true
-          },
-          {
-            "DependencyId": "NServiceBus",
-            "Version": "6.0.0-beta0001",
-            "LatestKnownVersion": "6.0.0-unstable1786",
-            "IsStale": true
+            "IsStale": true,
+            "IsPrerelease": false
           }
         ]
       },
@@ -8739,56 +9395,64 @@ g_data = {
           {
             "DependencyId": "NServiceBus",
             "Version": "6.0.0-unstable1786",
-            "LatestKnownVersion": "6.0.0-unstable1786",
-            "IsStale": false
+            "LatestKnownVersion": "5.2.14",
+            "IsStale": false,
+            "IsPrerelease": true
           },
           {
             "DependencyId": "NuGetPackager",
             "Version": "0.5.5",
             "LatestKnownVersion": "0.6.0",
-            "IsStale": true
+            "IsStale": true,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "GitVersionTask",
             "Version": "2.0.1",
             "LatestKnownVersion": "3.5.4",
-            "IsStale": true
+            "IsStale": true,
+            "IsPrerelease": false
           }
         ]
       },
       {
         "ServiceId": "NServiceBus.Callbacks",
-        "Score": 4,
+        "Score": 1,
         "Dependencies": [
+          {
+            "DependencyId": "NServiceBus",
+            "Version": "6.0.0-beta0001",
+            "LatestKnownVersion": "5.2.14",
+            "IsStale": false,
+            "IsPrerelease": true
+          },
+          {
+            "DependencyId": "NServiceBus.AcceptanceTesting",
+            "Version": "6.0.0-beta0001",
+            "LatestKnownVersion": "5.2.4",
+            "IsStale": false,
+            "IsPrerelease": true
+          },
           {
             "DependencyId": "NuGetPackager",
             "Version": "0.6.0",
             "LatestKnownVersion": "0.6.0",
-            "IsStale": false
-          },
-          {
-            "DependencyId": "NUnit",
-            "Version": "2.6.4",
-            "LatestKnownVersion": "3.2.1",
-            "IsStale": true
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "GitVersionTask",
             "Version": "3.4.1",
             "LatestKnownVersion": "3.5.4",
-            "IsStale": true
+            "IsStale": true,
+            "IsPrerelease": false
           },
           {
-            "DependencyId": "NServiceBus.AcceptanceTesting",
-            "Version": "6.0.0-beta0001",
-            "LatestKnownVersion": "6.0.0-unstable1782",
-            "IsStale": true
-          },
-          {
-            "DependencyId": "NServiceBus",
-            "Version": "6.0.0-beta0001",
-            "LatestKnownVersion": "6.0.0-unstable1786",
-            "IsStale": true
+            "DependencyId": "NUnit",
+            "Version": "2.6.4",
+            "LatestKnownVersion": "3.4.0",
+            "IsStale": true,
+            "IsPrerelease": false
           }
         ]
       },
@@ -8800,115 +9464,133 @@ g_data = {
             "DependencyId": "Castle.Core",
             "Version": "3.3.3",
             "LatestKnownVersion": "3.3.3",
-            "IsStale": false
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "Castle.Windsor",
             "Version": "3.3.0",
             "LatestKnownVersion": "3.3.0",
-            "IsStale": false
+            "IsStale": false,
+            "IsPrerelease": false
+          },
+          {
+            "DependencyId": "NServiceBus",
+            "Version": "6.0.0-unstable1776",
+            "LatestKnownVersion": "5.2.14",
+            "IsStale": false,
+            "IsPrerelease": true
+          },
+          {
+            "DependencyId": "NServiceBus.AcceptanceTesting",
+            "Version": "6.0.0-unstable1776",
+            "LatestKnownVersion": "5.2.4",
+            "IsStale": false,
+            "IsPrerelease": true
           },
           {
             "DependencyId": "NuGetPackager",
             "Version": "0.6.0",
             "LatestKnownVersion": "0.6.0",
-            "IsStale": false
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "Particular.CodeRules",
             "Version": "0.1.1",
             "LatestKnownVersion": "0.1.1",
-            "IsStale": false
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "Fody",
             "Version": "1.29.3",
             "LatestKnownVersion": "1.29.4",
-            "IsStale": true
-          },
-          {
-            "DependencyId": "NServiceBus.AcceptanceTesting",
-            "Version": "6.0.0-unstable1776",
-            "LatestKnownVersion": "6.0.0-unstable1782",
-            "IsStale": true
+            "IsStale": true,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "NuGet.CommandLine",
             "Version": "2.8.6",
             "LatestKnownVersion": "3.3.0",
-            "IsStale": true
-          },
-          {
-            "DependencyId": "NUnit",
-            "Version": "2.6.4",
-            "LatestKnownVersion": "3.2.1",
-            "IsStale": true
-          },
-          {
-            "DependencyId": "NServiceBus",
-            "Version": "6.0.0-unstable1776",
-            "LatestKnownVersion": "6.0.0-unstable1786",
-            "IsStale": true
+            "IsStale": true,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "GitVersionTask",
             "Version": "3.4.1",
             "LatestKnownVersion": "3.5.4",
-            "IsStale": true
+            "IsStale": true,
+            "IsPrerelease": false
+          },
+          {
+            "DependencyId": "NUnit",
+            "Version": "2.6.4",
+            "LatestKnownVersion": "3.4.0",
+            "IsStale": true,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "Obsolete.Fody",
             "Version": "4.0.3",
             "LatestKnownVersion": "4.1.0",
-            "IsStale": true
+            "IsStale": true,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "Janitor.Fody",
             "Version": "1.1.3.0",
             "LatestKnownVersion": "1.2.1.0",
-            "IsStale": true
+            "IsStale": true,
+            "IsPrerelease": false
           }
         ]
       },
       {
         "ServiceId": "NServiceBus.CommonLogging",
-        "Score": 4,
+        "Score": 2,
         "Dependencies": [
+          {
+            "DependencyId": "NServiceBus",
+            "Version": "6.0.0-beta0001",
+            "LatestKnownVersion": "5.2.14",
+            "IsStale": false,
+            "IsPrerelease": true
+          },
           {
             "DependencyId": "NuGetPackager",
             "Version": "0.6.0",
             "LatestKnownVersion": "0.6.0",
-            "IsStale": false
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "Common.Logging",
             "Version": "3.0.0",
             "LatestKnownVersion": "3.3.1",
-            "IsStale": true
+            "IsStale": true,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "Common.Logging.Core",
             "Version": "3.0.0",
             "LatestKnownVersion": "3.3.1",
-            "IsStale": true
+            "IsStale": true,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "GitVersionTask",
             "Version": "3.4.1",
             "LatestKnownVersion": "3.5.4",
-            "IsStale": true
+            "IsStale": true,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "NuGet.CommandLine",
             "Version": "2.8.2",
             "LatestKnownVersion": "3.3.0",
-            "IsStale": true
-          },
-          {
-            "DependencyId": "NServiceBus",
-            "Version": "6.0.0-beta0001",
-            "LatestKnownVersion": "6.0.0-unstable1786",
-            "IsStale": true
+            "IsStale": true,
+            "IsPrerelease": false
           }
         ]
       },
@@ -8920,805 +9602,929 @@ g_data = {
             "DependencyId": "ApiApprover",
             "Version": "3.0.1",
             "LatestKnownVersion": "3.0.1",
-            "IsStale": false
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "ApprovalTests",
             "Version": "3.0.11",
             "LatestKnownVersion": "3.0.11",
-            "IsStale": false
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "ApprovalUtilities",
             "Version": "3.0.11",
             "LatestKnownVersion": "3.0.11",
-            "IsStale": false
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "Fody",
             "Version": "1.29.4",
             "LatestKnownVersion": "1.29.4",
-            "IsStale": false
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "Microsoft.Azure.KeyVault.Core",
             "Version": "1.0.0",
             "LatestKnownVersion": "1.0.0",
-            "IsStale": false
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "Microsoft.Data.Edm",
             "Version": "5.7.0",
             "LatestKnownVersion": "5.7.0",
-            "IsStale": false
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "Microsoft.Data.OData",
             "Version": "5.7.0",
             "LatestKnownVersion": "5.7.0",
-            "IsStale": false
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "Microsoft.Data.Services.Client",
             "Version": "5.7.0",
             "LatestKnownVersion": "5.7.0",
-            "IsStale": false
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "Mono.Cecil",
             "Version": "0.9.6.1",
             "LatestKnownVersion": "0.9.6.1",
-            "IsStale": false
+            "IsStale": false,
+            "IsPrerelease": false
+          },
+          {
+            "DependencyId": "NServiceBus",
+            "Version": "6.0.0-beta0001",
+            "LatestKnownVersion": "5.2.14",
+            "IsStale": false,
+            "IsPrerelease": true
           },
           {
             "DependencyId": "NuGetPackager",
             "Version": "0.6.0",
             "LatestKnownVersion": "0.6.0",
-            "IsStale": false
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "Obsolete.Fody",
             "Version": "4.1.0",
             "LatestKnownVersion": "4.1.0",
-            "IsStale": false
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "RhinoMocks",
             "Version": "3.6.1",
             "LatestKnownVersion": "3.6.1",
-            "IsStale": false
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "System.Spatial",
             "Version": "5.7.0",
             "LatestKnownVersion": "5.7.0",
-            "IsStale": false
+            "IsStale": false,
+            "IsPrerelease": false
+          },
+          {
+            "DependencyId": "WindowsAzure.Storage",
+            "Version": "7.0.0",
+            "LatestKnownVersion": "7.0.0",
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "GitVersionTask",
             "Version": "3.5.2",
             "LatestKnownVersion": "3.5.4",
-            "IsStale": true
+            "IsStale": true,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "NUnit",
             "Version": "2.6.4",
-            "LatestKnownVersion": "3.2.1",
-            "IsStale": true
-          },
-          {
-            "DependencyId": "WindowsAzure.Storage",
-            "Version": "7.0.0",
-            "LatestKnownVersion": "7.0.1-preview",
-            "IsStale": true
-          },
-          {
-            "DependencyId": "NServiceBus",
-            "Version": "6.0.0-beta0001",
-            "LatestKnownVersion": "6.0.0-unstable1786",
-            "IsStale": true
+            "LatestKnownVersion": "3.4.0",
+            "IsStale": true,
+            "IsPrerelease": false
           }
         ]
       },
       {
         "ServiceId": "NServiceBus.Distributor.Msmq",
-        "Score": 4,
+        "Score": 2,
         "Dependencies": [
           {
             "DependencyId": "ConsoleTweet",
             "Version": "0.1.0",
             "LatestKnownVersion": "0.1.0",
-            "IsStale": false
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "Fody",
             "Version": "1.29.4",
             "LatestKnownVersion": "1.29.4",
-            "IsStale": false
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "GitHubReleaseNotes",
             "Version": "0.1.1",
             "LatestKnownVersion": "0.1.1",
-            "IsStale": false
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "Janitor.Fody",
             "Version": "1.2.1.0",
             "LatestKnownVersion": "1.2.1.0",
-            "IsStale": false
-          },
-          {
-            "DependencyId": "NUnit",
-            "Version": "3.2.1",
-            "LatestKnownVersion": "3.2.1",
-            "IsStale": false
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "Obsolete.Fody",
             "Version": "4.1.0",
             "LatestKnownVersion": "4.1.0",
-            "IsStale": false
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "Particular.CodeRules",
             "Version": "0.1.1",
             "LatestKnownVersion": "0.1.1",
-            "IsStale": false
+            "IsStale": false,
+            "IsPrerelease": false
+          },
+          {
+            "DependencyId": "NServiceBus.AcceptanceTesting",
+            "Version": "5.0.2",
+            "LatestKnownVersion": "5.2.4",
+            "IsStale": true,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "NuGetPackager",
             "Version": "0.5.5",
             "LatestKnownVersion": "0.6.0",
-            "IsStale": true
+            "IsStale": true,
+            "IsPrerelease": false
           },
           {
-            "DependencyId": "NuGet.CommandLine",
-            "Version": "2.8.3",
-            "LatestKnownVersion": "3.3.0",
-            "IsStale": true
+            "DependencyId": "NUnit",
+            "Version": "3.2.1",
+            "LatestKnownVersion": "3.4.0",
+            "IsStale": true,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "GitVersionTask",
             "Version": "2.0.1",
             "LatestKnownVersion": "3.5.4",
-            "IsStale": true
-          },
-          {
-            "DependencyId": "NServiceBus.AcceptanceTesting",
-            "Version": "5.0.2",
-            "LatestKnownVersion": "6.0.0-unstable1782",
-            "IsStale": true
-          },
-          {
-            "DependencyId": "NServiceBus",
-            "Version": "5.0.2",
-            "LatestKnownVersion": "6.0.0-unstable1786",
-            "IsStale": true
-          }
-        ]
-      },
-      {
-        "ServiceId": "NServiceBus.Gateway",
-        "Score": 3,
-        "Dependencies": [
-          {
-            "DependencyId": "Fody",
-            "Version": "1.29.4",
-            "LatestKnownVersion": "1.29.4",
-            "IsStale": false
-          },
-          {
-            "DependencyId": "NServiceBus.Callbacks",
-            "Version": "1.0.0-beta0001",
-            "LatestKnownVersion": "1.0.0-beta0001",
-            "IsStale": false
-          },
-          {
-            "DependencyId": "NuGetPackager",
-            "Version": "0.6.0",
-            "LatestKnownVersion": "0.6.0",
-            "IsStale": false
-          },
-          {
-            "DependencyId": "Particular.CodeRules",
-            "Version": "0.1.1",
-            "LatestKnownVersion": "0.1.1",
-            "IsStale": false
-          },
-          {
-            "DependencyId": "Obsolete.Fody",
-            "Version": "4.0.5",
-            "LatestKnownVersion": "4.1.0",
-            "IsStale": true
-          },
-          {
-            "DependencyId": "NUnit",
-            "Version": "2.6.3",
-            "LatestKnownVersion": "3.2.1",
-            "IsStale": true
-          },
-          {
-            "DependencyId": "GitVersionTask",
-            "Version": "3.4.1",
-            "LatestKnownVersion": "3.5.4",
-            "IsStale": true
-          },
-          {
-            "DependencyId": "NServiceBus.AcceptanceTesting",
-            "Version": "6.0.0-beta0002",
-            "LatestKnownVersion": "6.0.0-unstable1782",
-            "IsStale": true
-          },
-          {
-            "DependencyId": "NServiceBus",
-            "Version": "6.0.0-beta0002",
-            "LatestKnownVersion": "6.0.0-unstable1786",
-            "IsStale": true
-          }
-        ]
-      },
-      {
-        "ServiceId": "NServiceBus.Host",
-        "Score": 3,
-        "Dependencies": [
-          {
-            "DependencyId": "NuGetPackager",
-            "Version": "0.6.0",
-            "LatestKnownVersion": "0.6.0",
-            "IsStale": false
-          },
-          {
-            "DependencyId": "CommonServiceLocator",
-            "Version": "1.0",
-            "LatestKnownVersion": "1.3",
-            "IsStale": true
-          },
-          {
-            "DependencyId": "Fody",
-            "Version": "1.29.3",
-            "LatestKnownVersion": "1.29.4",
-            "IsStale": true
-          },
-          {
-            "DependencyId": "NUnit",
-            "Version": "2.6.4",
-            "LatestKnownVersion": "3.2.1",
-            "IsStale": true
-          },
-          {
-            "DependencyId": "GitVersionTask",
-            "Version": "3.4.1",
-            "LatestKnownVersion": "3.5.4",
-            "IsStale": true
+            "IsStale": true,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "NuGet.CommandLine",
             "Version": "2.8.3",
             "LatestKnownVersion": "3.3.0",
-            "IsStale": true
+            "IsStale": true,
+            "IsPrerelease": false
+          },
+          {
+            "DependencyId": "NServiceBus",
+            "Version": "5.0.2",
+            "LatestKnownVersion": "5.2.14",
+            "IsStale": true,
+            "IsPrerelease": false
+          }
+        ]
+      },
+      {
+        "ServiceId": "NServiceBus.Gateway",
+        "Score": 1,
+        "Dependencies": [
+          {
+            "DependencyId": "Fody",
+            "Version": "1.29.4",
+            "LatestKnownVersion": "1.29.4",
+            "IsStale": false,
+            "IsPrerelease": false
+          },
+          {
+            "DependencyId": "NServiceBus",
+            "Version": "6.0.0-beta0002",
+            "LatestKnownVersion": "5.2.14",
+            "IsStale": false,
+            "IsPrerelease": true
+          },
+          {
+            "DependencyId": "NServiceBus.AcceptanceTesting",
+            "Version": "6.0.0-beta0002",
+            "LatestKnownVersion": "5.2.4",
+            "IsStale": false,
+            "IsPrerelease": true
+          },
+          {
+            "DependencyId": "NServiceBus.Callbacks",
+            "Version": "1.0.0-beta0001",
+            "LatestKnownVersion": "1.0.0-beta0001",
+            "IsStale": false,
+            "IsPrerelease": true
+          },
+          {
+            "DependencyId": "NuGetPackager",
+            "Version": "0.6.0",
+            "LatestKnownVersion": "0.6.0",
+            "IsStale": false,
+            "IsPrerelease": false
+          },
+          {
+            "DependencyId": "Particular.CodeRules",
+            "Version": "0.1.1",
+            "LatestKnownVersion": "0.1.1",
+            "IsStale": false,
+            "IsPrerelease": false
+          },
+          {
+            "DependencyId": "Obsolete.Fody",
+            "Version": "4.0.5",
+            "LatestKnownVersion": "4.1.0",
+            "IsStale": true,
+            "IsPrerelease": false
+          },
+          {
+            "DependencyId": "GitVersionTask",
+            "Version": "3.4.1",
+            "LatestKnownVersion": "3.5.4",
+            "IsStale": true,
+            "IsPrerelease": false
+          },
+          {
+            "DependencyId": "NUnit",
+            "Version": "2.6.3",
+            "LatestKnownVersion": "3.4.0",
+            "IsStale": true,
+            "IsPrerelease": false
+          }
+        ]
+      },
+      {
+        "ServiceId": "NServiceBus.Host",
+        "Score": 2,
+        "Dependencies": [
+          {
+            "DependencyId": "NServiceBus",
+            "Version": "6.0.0-beta0001",
+            "LatestKnownVersion": "5.2.14",
+            "IsStale": false,
+            "IsPrerelease": true
+          },
+          {
+            "DependencyId": "NuGetPackager",
+            "Version": "0.6.0",
+            "LatestKnownVersion": "0.6.0",
+            "IsStale": false,
+            "IsPrerelease": false
+          },
+          {
+            "DependencyId": "CommonServiceLocator",
+            "Version": "1.0",
+            "LatestKnownVersion": "1.3",
+            "IsStale": true,
+            "IsPrerelease": false
+          },
+          {
+            "DependencyId": "Fody",
+            "Version": "1.29.3",
+            "LatestKnownVersion": "1.29.4",
+            "IsStale": true,
+            "IsPrerelease": false
+          },
+          {
+            "DependencyId": "GitVersionTask",
+            "Version": "3.4.1",
+            "LatestKnownVersion": "3.5.4",
+            "IsStale": true,
+            "IsPrerelease": false
+          },
+          {
+            "DependencyId": "NUnit",
+            "Version": "2.6.4",
+            "LatestKnownVersion": "3.4.0",
+            "IsStale": true,
+            "IsPrerelease": false
+          },
+          {
+            "DependencyId": "NuGet.CommandLine",
+            "Version": "2.8.3",
+            "LatestKnownVersion": "3.3.0",
+            "IsStale": true,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "Obsolete.Fody",
             "Version": "4.0.3",
             "LatestKnownVersion": "4.1.0",
-            "IsStale": true
+            "IsStale": true,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "log4net",
             "Version": "1.2.10",
             "LatestKnownVersion": "2.0.5",
-            "IsStale": true
-          },
-          {
-            "DependencyId": "NServiceBus",
-            "Version": "6.0.0-beta0001",
-            "LatestKnownVersion": "6.0.0-unstable1786",
-            "IsStale": true
+            "IsStale": true,
+            "IsPrerelease": false
           }
         ]
       },
       {
         "ServiceId": "NServiceBus.Host.AzureCloudService",
-        "Score": 2,
+        "Score": 1,
         "Dependencies": [
           {
             "DependencyId": "Fody",
             "Version": "1.29.4",
             "LatestKnownVersion": "1.29.4",
-            "IsStale": false
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "Microsoft.Azure.KeyVault.Core",
             "Version": "1.0.0",
             "LatestKnownVersion": "1.0.0",
-            "IsStale": false
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "Microsoft.Data.Edm",
             "Version": "5.7.0",
             "LatestKnownVersion": "5.7.0",
-            "IsStale": false
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "Microsoft.Data.OData",
             "Version": "5.7.0",
             "LatestKnownVersion": "5.7.0",
-            "IsStale": false
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "Microsoft.Data.Services.Client",
             "Version": "5.7.0",
             "LatestKnownVersion": "5.7.0",
-            "IsStale": false
+            "IsStale": false,
+            "IsPrerelease": false
+          },
+          {
+            "DependencyId": "NServiceBus",
+            "Version": "6.0.0-beta0003",
+            "LatestKnownVersion": "5.2.14",
+            "IsStale": false,
+            "IsPrerelease": true
           },
           {
             "DependencyId": "NuGetPackager",
             "Version": "0.6.0",
             "LatestKnownVersion": "0.6.0",
-            "IsStale": false
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "Obsolete.Fody",
             "Version": "4.1.0",
             "LatestKnownVersion": "4.1.0",
-            "IsStale": false
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "System.Spatial",
             "Version": "5.7.0",
             "LatestKnownVersion": "5.7.0",
-            "IsStale": false
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "WindowsAzure.Storage",
             "Version": "7.0.0",
-            "LatestKnownVersion": "7.0.1-preview",
-            "IsStale": true
+            "LatestKnownVersion": "7.0.0",
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "GitVersionTask",
             "Version": "3.4.1",
             "LatestKnownVersion": "3.5.4",
-            "IsStale": true
+            "IsStale": true,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "Newtonsoft.Json",
             "Version": "6.0.8",
             "LatestKnownVersion": "8.0.3",
-            "IsStale": true
-          },
-          {
-            "DependencyId": "NServiceBus",
-            "Version": "6.0.0-beta0003",
-            "LatestKnownVersion": "6.0.0-unstable1786",
-            "IsStale": true
+            "IsStale": true,
+            "IsPrerelease": false
           }
         ]
       },
       {
         "ServiceId": "NServiceBus.Log4Net",
-        "Score": 4,
+        "Score": 2,
         "Dependencies": [
+          {
+            "DependencyId": "NServiceBus",
+            "Version": "6.0.0-beta0001",
+            "LatestKnownVersion": "5.2.14",
+            "IsStale": false,
+            "IsPrerelease": true
+          },
           {
             "DependencyId": "NuGetPackager",
             "Version": "0.6.0",
             "LatestKnownVersion": "0.6.0",
-            "IsStale": false
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "GitVersionTask",
             "Version": "3.4.1",
             "LatestKnownVersion": "3.5.4",
-            "IsStale": true
+            "IsStale": true,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "log4net",
             "Version": "2.0.0",
             "LatestKnownVersion": "2.0.5",
-            "IsStale": true
+            "IsStale": true,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "NuGet.CommandLine",
             "Version": "2.8.2",
             "LatestKnownVersion": "3.3.0",
-            "IsStale": true
-          },
-          {
-            "DependencyId": "NServiceBus",
-            "Version": "6.0.0-beta0001",
-            "LatestKnownVersion": "6.0.0-unstable1786",
-            "IsStale": true
+            "IsStale": true,
+            "IsPrerelease": false
           }
         ]
       },
       {
         "ServiceId": "NServiceBus.Newtonsoft.Json",
-        "Score": 2,
+        "Score": 1,
         "Dependencies": [
           {
             "DependencyId": "ApiApprover",
             "Version": "3.0.1",
             "LatestKnownVersion": "3.0.1",
-            "IsStale": false
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "ApprovalTests",
             "Version": "3.0.11",
             "LatestKnownVersion": "3.0.11",
-            "IsStale": false
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "ApprovalUtilities",
             "Version": "3.0.11",
             "LatestKnownVersion": "3.0.11",
-            "IsStale": false
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "Mono.Cecil",
             "Version": "0.9.6.1",
             "LatestKnownVersion": "0.9.6.1",
-            "IsStale": false
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "Newtonsoft.Json",
             "Version": "8.0.3",
             "LatestKnownVersion": "8.0.3",
-            "IsStale": false
+            "IsStale": false,
+            "IsPrerelease": false
+          },
+          {
+            "DependencyId": "NServiceBus",
+            "Version": "6.0.0-beta0001",
+            "LatestKnownVersion": "5.2.14",
+            "IsStale": false,
+            "IsPrerelease": true
           },
           {
             "DependencyId": "NuGetPackager",
             "Version": "0.6.0",
             "LatestKnownVersion": "0.6.0",
-            "IsStale": false
-          },
-          {
-            "DependencyId": "NUnit",
-            "Version": "2.6.4",
-            "LatestKnownVersion": "3.2.1",
-            "IsStale": true
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "GitVersionTask",
             "Version": "3.4.1",
             "LatestKnownVersion": "3.5.4",
-            "IsStale": true
+            "IsStale": true,
+            "IsPrerelease": false
           },
           {
-            "DependencyId": "NServiceBus",
-            "Version": "6.0.0-beta0001",
-            "LatestKnownVersion": "6.0.0-unstable1786",
-            "IsStale": true
+            "DependencyId": "NUnit",
+            "Version": "2.6.4",
+            "LatestKnownVersion": "3.4.0",
+            "IsStale": true,
+            "IsPrerelease": false
           }
         ]
       },
       {
         "ServiceId": "NServiceBus.NHibernate",
-        "Score": 3,
+        "Score": 2,
         "Dependencies": [
           {
             "DependencyId": "Fody",
             "Version": "1.29.4",
             "LatestKnownVersion": "1.29.4",
-            "IsStale": false
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "Iesi.Collections",
             "Version": "4.0.1.4000",
             "LatestKnownVersion": "4.0.1.4000",
-            "IsStale": false
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "NHibernate",
             "Version": "4.0.4.4000",
             "LatestKnownVersion": "4.0.4.4000",
-            "IsStale": false
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
-            "DependencyId": "NuGetPackager",
-            "Version": "0.6.0",
-            "LatestKnownVersion": "0.6.0",
-            "IsStale": false
+            "DependencyId": "NServiceBus",
+            "Version": "6.0.0-beta0001",
+            "LatestKnownVersion": "5.2.14",
+            "IsStale": false,
+            "IsPrerelease": true
           },
           {
-            "DependencyId": "Oracle.ManagedDataAccess",
-            "Version": "12.1.2400",
-            "LatestKnownVersion": "12.1.2400",
-            "IsStale": false
-          },
-          {
-            "DependencyId": "Particular.CodeRules",
-            "Version": "0.1.1",
-            "LatestKnownVersion": "0.1.1",
-            "IsStale": false
-          },
-          {
-            "DependencyId": "NUnit",
-            "Version": "2.6.4",
-            "LatestKnownVersion": "3.2.1",
-            "IsStale": true
+            "DependencyId": "NServiceBus.AcceptanceTesting",
+            "Version": "6.0.0-beta0001",
+            "LatestKnownVersion": "5.2.4",
+            "IsStale": false,
+            "IsPrerelease": true
           },
           {
             "DependencyId": "NServiceBus.AcceptanceTests.Sources",
             "Version": "6.0.0-beta0001",
             "LatestKnownVersion": "6.0.0-beta0004",
-            "IsStale": true
+            "IsStale": false,
+            "IsPrerelease": true
+          },
+          {
+            "DependencyId": "NuGetPackager",
+            "Version": "0.6.0",
+            "LatestKnownVersion": "0.6.0",
+            "IsStale": false,
+            "IsPrerelease": false
+          },
+          {
+            "DependencyId": "Oracle.ManagedDataAccess",
+            "Version": "12.1.2400",
+            "LatestKnownVersion": "12.1.2400",
+            "IsStale": false,
+            "IsPrerelease": false
+          },
+          {
+            "DependencyId": "Particular.CodeRules",
+            "Version": "0.1.1",
+            "LatestKnownVersion": "0.1.1",
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "GitVersionTask",
             "Version": "3.4.1",
             "LatestKnownVersion": "3.5.4",
-            "IsStale": true
+            "IsStale": true,
+            "IsPrerelease": false
+          },
+          {
+            "DependencyId": "NUnit",
+            "Version": "2.6.4",
+            "LatestKnownVersion": "3.4.0",
+            "IsStale": true,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "Janitor.Fody",
             "Version": "1.1.4.0",
             "LatestKnownVersion": "1.2.1.0",
-            "IsStale": true
+            "IsStale": true,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "Obsolete.Fody",
             "Version": "4.0.3",
             "LatestKnownVersion": "4.1.0",
-            "IsStale": true
+            "IsStale": true,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "NuGet.CommandLine",
             "Version": "2.8.2",
             "LatestKnownVersion": "3.3.0",
-            "IsStale": true
-          },
-          {
-            "DependencyId": "NServiceBus.AcceptanceTesting",
-            "Version": "6.0.0-beta0001",
-            "LatestKnownVersion": "6.0.0-unstable1782",
-            "IsStale": true
-          },
-          {
-            "DependencyId": "NServiceBus",
-            "Version": "6.0.0-beta0001",
-            "LatestKnownVersion": "6.0.0-unstable1786",
-            "IsStale": true
+            "IsStale": true,
+            "IsPrerelease": false
           }
         ]
       },
       {
         "ServiceId": "NServiceBus.Ninject",
-        "Score": 2,
+        "Score": 1,
         "Dependencies": [
           {
             "DependencyId": "Fody",
             "Version": "1.29.4",
             "LatestKnownVersion": "1.29.4",
-            "IsStale": false
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "Ninject",
             "Version": "3.2.2.0",
             "LatestKnownVersion": "3.2.2.0",
-            "IsStale": false
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "Ninject.Extensions.ContextPreservation",
             "Version": "3.2.0.0",
             "LatestKnownVersion": "3.2.0.0",
-            "IsStale": false
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "Ninject.Extensions.NamedScope",
             "Version": "3.2.0.0",
             "LatestKnownVersion": "3.2.0.0",
-            "IsStale": false
+            "IsStale": false,
+            "IsPrerelease": false
+          },
+          {
+            "DependencyId": "NServiceBus",
+            "Version": "6.0.0-unstable1776",
+            "LatestKnownVersion": "5.2.14",
+            "IsStale": false,
+            "IsPrerelease": true
+          },
+          {
+            "DependencyId": "NServiceBus.AcceptanceTesting",
+            "Version": "6.0.0-unstable1776",
+            "LatestKnownVersion": "5.2.4",
+            "IsStale": false,
+            "IsPrerelease": true
           },
           {
             "DependencyId": "NuGetPackager",
             "Version": "0.6.0",
             "LatestKnownVersion": "0.6.0",
-            "IsStale": false
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "Particular.CodeRules",
             "Version": "0.1.1",
             "LatestKnownVersion": "0.1.1",
-            "IsStale": false
-          },
-          {
-            "DependencyId": "NServiceBus.AcceptanceTesting",
-            "Version": "6.0.0-unstable1776",
-            "LatestKnownVersion": "6.0.0-unstable1782",
-            "IsStale": true
-          },
-          {
-            "DependencyId": "NUnit",
-            "Version": "2.6.4",
-            "LatestKnownVersion": "3.2.1",
-            "IsStale": true
-          },
-          {
-            "DependencyId": "NServiceBus",
-            "Version": "6.0.0-unstable1776",
-            "LatestKnownVersion": "6.0.0-unstable1786",
-            "IsStale": true
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "GitVersionTask",
             "Version": "3.4.1",
             "LatestKnownVersion": "3.5.4",
-            "IsStale": true
+            "IsStale": true,
+            "IsPrerelease": false
+          },
+          {
+            "DependencyId": "NUnit",
+            "Version": "2.6.4",
+            "LatestKnownVersion": "3.4.0",
+            "IsStale": true,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "Janitor.Fody",
             "Version": "1.1.4.0",
             "LatestKnownVersion": "1.2.1.0",
-            "IsStale": true
+            "IsStale": true,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "Obsolete.Fody",
             "Version": "4.0.3",
             "LatestKnownVersion": "4.1.0",
-            "IsStale": true
+            "IsStale": true,
+            "IsPrerelease": false
           }
         ]
       },
       {
         "ServiceId": "NServiceBus.NLog",
-        "Score": 4,
+        "Score": 2,
         "Dependencies": [
+          {
+            "DependencyId": "NServiceBus",
+            "Version": "6.0.0-beta0001",
+            "LatestKnownVersion": "5.2.14",
+            "IsStale": false,
+            "IsPrerelease": true
+          },
           {
             "DependencyId": "NuGetPackager",
             "Version": "0.6.0",
             "LatestKnownVersion": "0.6.0",
-            "IsStale": false
+            "IsStale": false,
+            "IsPrerelease": false
+          },
+          {
+            "DependencyId": "GitVersionTask",
+            "Version": "3.4.1",
+            "LatestKnownVersion": "3.5.4",
+            "IsStale": true,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "NuGet.CommandLine",
             "Version": "2.8.5",
             "LatestKnownVersion": "3.3.0",
-            "IsStale": true
-          },
-          {
-            "DependencyId": "GitVersionTask",
-            "Version": "3.4.1",
-            "LatestKnownVersion": "3.5.4",
-            "IsStale": true
+            "IsStale": true,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "NLog",
             "Version": "4.0.0",
             "LatestKnownVersion": "4.3.5",
-            "IsStale": true
-          },
-          {
-            "DependencyId": "NServiceBus",
-            "Version": "6.0.0-beta0001",
-            "LatestKnownVersion": "6.0.0-unstable1786",
-            "IsStale": true
+            "IsStale": true,
+            "IsPrerelease": false
           }
         ]
       },
       {
         "ServiceId": "NServiceBus.Persistence.AzureStorage",
-        "Score": 2,
+        "Score": 1,
         "Dependencies": [
           {
             "DependencyId": "ApiApprover",
             "Version": "3.0.1",
             "LatestKnownVersion": "3.0.1",
-            "IsStale": false
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "ApprovalTests",
             "Version": "3.0.11",
             "LatestKnownVersion": "3.0.11",
-            "IsStale": false
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "ApprovalUtilities",
             "Version": "3.0.11",
             "LatestKnownVersion": "3.0.11",
-            "IsStale": false
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "Microsoft.Azure.KeyVault.Core",
             "Version": "1.0.0",
             "LatestKnownVersion": "1.0.0",
-            "IsStale": false
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "Microsoft.Data.Edm",
             "Version": "5.7.0",
             "LatestKnownVersion": "5.7.0",
-            "IsStale": false
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "Microsoft.Data.OData",
             "Version": "5.7.0",
             "LatestKnownVersion": "5.7.0",
-            "IsStale": false
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "Microsoft.Data.Services.Client",
             "Version": "5.7.0",
             "LatestKnownVersion": "5.7.0",
-            "IsStale": false
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "Mono.Cecil",
             "Version": "0.9.6.1",
             "LatestKnownVersion": "0.9.6.1",
-            "IsStale": false
+            "IsStale": false,
+            "IsPrerelease": false
+          },
+          {
+            "DependencyId": "NServiceBus",
+            "Version": "6.0.0-beta0001",
+            "LatestKnownVersion": "5.2.14",
+            "IsStale": false,
+            "IsPrerelease": true
+          },
+          {
+            "DependencyId": "NServiceBus",
+            "Version": "5.2.14",
+            "LatestKnownVersion": "5.2.14",
+            "IsStale": false,
+            "IsPrerelease": false
+          },
+          {
+            "DependencyId": "NServiceBus.AcceptanceTesting",
+            "Version": "6.0.0-beta0001",
+            "LatestKnownVersion": "5.2.4",
+            "IsStale": false,
+            "IsPrerelease": true
+          },
+          {
+            "DependencyId": "NServiceBus.Azure.Transports.WindowsAzureStorageQueues",
+            "Version": "7.0.0-alpha0111",
+            "LatestKnownVersion": "6.2.1",
+            "IsStale": false,
+            "IsPrerelease": true
           },
           {
             "DependencyId": "NuGetPackager",
             "Version": "0.6.0",
             "LatestKnownVersion": "0.6.0",
-            "IsStale": false
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "Particular.CodeRules",
             "Version": "0.1.1",
             "LatestKnownVersion": "0.1.1",
-            "IsStale": false
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "RhinoMocks",
             "Version": "3.6.1",
             "LatestKnownVersion": "3.6.1",
-            "IsStale": false
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "System.Spatial",
             "Version": "5.7.0",
             "LatestKnownVersion": "5.7.0",
-            "IsStale": false
-          },
-          {
-            "DependencyId": "NUnit",
-            "Version": "2.6.4",
-            "LatestKnownVersion": "3.2.1",
-            "IsStale": true
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "WindowsAzure.Storage",
             "Version": "7.0.0",
-            "LatestKnownVersion": "7.0.1-preview",
-            "IsStale": true
-          },
-          {
-            "DependencyId": "NServiceBus.Azure.Transports.WindowsAzureStorageQueues",
-            "Version": "7.0.0-alpha0111",
-            "LatestKnownVersion": "7.0.0-beta0004",
-            "IsStale": true
+            "LatestKnownVersion": "7.0.0",
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "GitVersionTask",
             "Version": "3.4.1",
             "LatestKnownVersion": "3.5.4",
-            "IsStale": true
+            "IsStale": true,
+            "IsPrerelease": false
+          },
+          {
+            "DependencyId": "NUnit",
+            "Version": "2.6.4",
+            "LatestKnownVersion": "3.4.0",
+            "IsStale": true,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "Newtonsoft.Json",
             "Version": "6.0.8",
             "LatestKnownVersion": "8.0.3",
-            "IsStale": true
-          },
-          {
-            "DependencyId": "NServiceBus.AcceptanceTesting",
-            "Version": "6.0.0-beta0001",
-            "LatestKnownVersion": "6.0.0-unstable1782",
-            "IsStale": true
-          },
-          {
-            "DependencyId": "NServiceBus",
-            "Version": "6.0.0-beta0001",
-            "LatestKnownVersion": "6.0.0-unstable1786",
-            "IsStale": true
-          },
-          {
-            "DependencyId": "NServiceBus",
-            "Version": "5.2.14",
-            "LatestKnownVersion": "6.0.0-unstable1786",
-            "IsStale": true
+            "IsStale": true,
+            "IsPrerelease": false
           }
         ]
       },
@@ -9730,7 +10536,8 @@ g_data = {
             "DependencyId": "NuGet.CommandLine",
             "Version": "2.8.2",
             "LatestKnownVersion": "3.3.0",
-            "IsStale": true
+            "IsStale": true,
+            "IsPrerelease": false
           }
         ]
       },
@@ -9742,643 +10549,742 @@ g_data = {
             "DependencyId": "ConsoleTweet",
             "Version": "0.1.0",
             "LatestKnownVersion": "0.1.0",
-            "IsStale": false
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "Fody",
             "Version": "1.29.4",
             "LatestKnownVersion": "1.29.4",
-            "IsStale": false
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "GitHubReleaseNotes",
             "Version": "0.1.1",
             "LatestKnownVersion": "0.1.1",
-            "IsStale": false
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "GitVersionTask",
             "Version": "3.5.4",
             "LatestKnownVersion": "3.5.4",
-            "IsStale": false
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "Janitor.Fody",
             "Version": "1.2.1.0",
             "LatestKnownVersion": "1.2.1.0",
-            "IsStale": false
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "Newtonsoft.Json",
             "Version": "8.0.3",
             "LatestKnownVersion": "8.0.3",
-            "IsStale": false
+            "IsStale": false,
+            "IsPrerelease": false
+          },
+          {
+            "DependencyId": "NServiceBus",
+            "Version": "6.0.0-beta0004",
+            "LatestKnownVersion": "5.2.14",
+            "IsStale": false,
+            "IsPrerelease": true
+          },
+          {
+            "DependencyId": "NServiceBus.AcceptanceTesting",
+            "Version": "6.0.0-beta0004",
+            "LatestKnownVersion": "5.2.4",
+            "IsStale": false,
+            "IsPrerelease": true
           },
           {
             "DependencyId": "NServiceBus.AcceptanceTests.Sources",
             "Version": "6.0.0-beta0004",
             "LatestKnownVersion": "6.0.0-beta0004",
-            "IsStale": false
+            "IsStale": false,
+            "IsPrerelease": true
           },
           {
             "DependencyId": "NuGetPackager",
             "Version": "0.6.0",
             "LatestKnownVersion": "0.6.0",
-            "IsStale": false
-          },
-          {
-            "DependencyId": "NUnit",
-            "Version": "3.2.1",
-            "LatestKnownVersion": "3.2.1",
-            "IsStale": false
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "Obsolete.Fody",
             "Version": "4.1.0",
             "LatestKnownVersion": "4.1.0",
-            "IsStale": false
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "Particular.CodeRules",
             "Version": "0.1.1",
             "LatestKnownVersion": "0.1.1",
-            "IsStale": false
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "RabbitMQ.Client",
             "Version": "3.6.2",
             "LatestKnownVersion": "3.6.2",
-            "IsStale": false
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
-            "DependencyId": "NServiceBus.AcceptanceTesting",
-            "Version": "6.0.0-beta0004",
-            "LatestKnownVersion": "6.0.0-unstable1782",
-            "IsStale": true
+            "DependencyId": "NUnit",
+            "Version": "3.2.1",
+            "LatestKnownVersion": "3.4.0",
+            "IsStale": true,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "NuGet.CommandLine",
             "Version": "2.8.3",
             "LatestKnownVersion": "3.3.0",
-            "IsStale": true
-          },
-          {
-            "DependencyId": "NServiceBus",
-            "Version": "6.0.0-beta0004",
-            "LatestKnownVersion": "6.0.0-unstable1786",
-            "IsStale": true
+            "IsStale": true,
+            "IsPrerelease": false
           }
         ]
       },
       {
         "ServiceId": "NServiceBus.RabbitMQ-Issue-102",
-        "Score": 5,
+        "Score": 4,
         "Dependencies": [
           {
-            "DependencyId": "RabbitMQ.Client",
-            "Version": "3.5.5",
-            "LatestKnownVersion": "3.6.2",
-            "IsStale": true
+            "DependencyId": "NServiceBus",
+            "Version": "5.2.7",
+            "LatestKnownVersion": "5.2.14",
+            "IsStale": true,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "NServiceBus.RabbitMQ",
             "Version": "3.0.0",
-            "LatestKnownVersion": "4.0.0-beta0004",
-            "IsStale": true
+            "LatestKnownVersion": "3.3.1",
+            "IsStale": true,
+            "IsPrerelease": false
           },
           {
-            "DependencyId": "NServiceBus",
-            "Version": "5.2.7",
-            "LatestKnownVersion": "6.0.0-unstable1786",
-            "IsStale": true
+            "DependencyId": "RabbitMQ.Client",
+            "Version": "3.5.5",
+            "LatestKnownVersion": "3.6.2",
+            "IsStale": true,
+            "IsPrerelease": false
           }
         ]
       },
       {
         "ServiceId": "NServiceBus.RavenDB",
-        "Score": 2,
+        "Score": 1,
         "Dependencies": [
           {
             "DependencyId": "Moq",
             "Version": "4.2.1510.2205",
             "LatestKnownVersion": "4.2.1510.2205",
-            "IsStale": false
+            "IsStale": false,
+            "IsPrerelease": false
+          },
+          {
+            "DependencyId": "NServiceBus",
+            "Version": "6.0.0-beta0002",
+            "LatestKnownVersion": "5.2.14",
+            "IsStale": false,
+            "IsPrerelease": true
+          },
+          {
+            "DependencyId": "NServiceBus.AcceptanceTesting",
+            "Version": "6.0.0-beta0002",
+            "LatestKnownVersion": "5.2.4",
+            "IsStale": false,
+            "IsPrerelease": true
+          },
+          {
+            "DependencyId": "NServiceBus.AcceptanceTests.Sources",
+            "Version": "6.0.0-beta0002",
+            "LatestKnownVersion": "6.0.0-beta0004",
+            "IsStale": false,
+            "IsPrerelease": true
           },
           {
             "DependencyId": "NuGetPackager",
             "Version": "0.6.0",
             "LatestKnownVersion": "0.6.0",
-            "IsStale": false
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "Particular.CodeRules",
             "Version": "0.1.1",
             "LatestKnownVersion": "0.1.1",
-            "IsStale": false
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "Rx-Core",
             "Version": "2.2.5",
             "LatestKnownVersion": "2.2.5",
-            "IsStale": false
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "Rx-Interfaces",
             "Version": "2.2.5",
             "LatestKnownVersion": "2.2.5",
-            "IsStale": false
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "Rx-Linq",
             "Version": "2.2.5",
             "LatestKnownVersion": "2.2.5",
-            "IsStale": false
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "Rx-Main",
             "Version": "2.2.5",
             "LatestKnownVersion": "2.2.5",
-            "IsStale": false
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "Rx-PlatformServices",
             "Version": "2.2.5",
             "LatestKnownVersion": "2.2.5",
-            "IsStale": false
-          },
-          {
-            "DependencyId": "NServiceBus.AcceptanceTests.Sources",
-            "Version": "6.0.0-beta0002",
-            "LatestKnownVersion": "6.0.0-beta0004",
-            "IsStale": true
-          },
-          {
-            "DependencyId": "Fody",
-            "Version": "1.29.2",
-            "LatestKnownVersion": "1.29.4",
-            "IsStale": true
-          },
-          {
-            "DependencyId": "GitVersionTask",
-            "Version": "3.4.2-disable-base-ver0001",
-            "LatestKnownVersion": "3.5.4",
-            "IsStale": true
-          },
-          {
-            "DependencyId": "NUnit",
-            "Version": "2.6.3",
-            "LatestKnownVersion": "3.2.1",
-            "IsStale": true
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "RavenDB.Client",
             "Version": "3.0.30000",
             "LatestKnownVersion": "3.0.30143",
-            "IsStale": true
+            "IsStale": true,
+            "IsPrerelease": false
+          },
+          {
+            "DependencyId": "Fody",
+            "Version": "1.29.2",
+            "LatestKnownVersion": "1.29.4",
+            "IsStale": true,
+            "IsPrerelease": false
+          },
+          {
+            "DependencyId": "GitVersionTask",
+            "Version": "3.4.2-disable-base-ver0001",
+            "LatestKnownVersion": "3.5.4",
+            "IsStale": true,
+            "IsPrerelease": true
+          },
+          {
+            "DependencyId": "NUnit",
+            "Version": "2.6.3",
+            "LatestKnownVersion": "3.4.0",
+            "IsStale": true,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "Obsolete.Fody",
             "Version": "4.0.3",
             "LatestKnownVersion": "4.1.0",
-            "IsStale": true
-          },
-          {
-            "DependencyId": "NServiceBus.AcceptanceTesting",
-            "Version": "6.0.0-beta0002",
-            "LatestKnownVersion": "6.0.0-unstable1782",
-            "IsStale": true
-          },
-          {
-            "DependencyId": "NServiceBus",
-            "Version": "6.0.0-beta0002",
-            "LatestKnownVersion": "6.0.0-unstable1786",
-            "IsStale": true
+            "IsStale": true,
+            "IsPrerelease": false
           }
         ]
       },
       {
         "ServiceId": "NServiceBus.ScenarioTests",
-        "Score": 4,
+        "Score": 2,
         "Dependencies": [
           {
             "DependencyId": "Autofac",
             "Version": "3.5.2",
             "LatestKnownVersion": "3.5.2",
-            "IsStale": false
+            "IsStale": false,
+            "IsPrerelease": false
+          },
+          {
+            "DependencyId": "NServiceBus",
+            "Version": "6.0.0-sendersidedistributi",
+            "LatestKnownVersion": "5.2.14",
+            "IsStale": false,
+            "IsPrerelease": true
           },
           {
             "DependencyId": "NServiceBus.Distributor.MSMQ",
             "Version": "5.0.3",
             "LatestKnownVersion": "5.0.4",
-            "IsStale": true
-          },
-          {
-            "DependencyId": "NUnit",
-            "Version": "2.6.4",
-            "LatestKnownVersion": "3.2.1",
-            "IsStale": true
-          },
-          {
-            "DependencyId": "NServiceBus",
-            "Version": "6.0.0-sendersidedistributi",
-            "LatestKnownVersion": "6.0.0-unstable1786",
-            "IsStale": true
+            "IsStale": true,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "NServiceBus",
             "Version": "5.2.9",
-            "LatestKnownVersion": "6.0.0-unstable1786",
-            "IsStale": true
+            "LatestKnownVersion": "5.2.14",
+            "IsStale": true,
+            "IsPrerelease": false
+          },
+          {
+            "DependencyId": "NUnit",
+            "Version": "2.6.4",
+            "LatestKnownVersion": "3.4.0",
+            "IsStale": true,
+            "IsPrerelease": false
           }
         ]
       },
       {
         "ServiceId": "NServiceBus.Spring",
-        "Score": 2,
+        "Score": 1,
         "Dependencies": [
           {
             "DependencyId": "Fody",
             "Version": "1.29.4",
             "LatestKnownVersion": "1.29.4",
-            "IsStale": false
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "Janitor.Fody",
             "Version": "1.2.1.0",
             "LatestKnownVersion": "1.2.1.0",
-            "IsStale": false
+            "IsStale": false,
+            "IsPrerelease": false
+          },
+          {
+            "DependencyId": "NServiceBus",
+            "Version": "6.0.0-beta0002",
+            "LatestKnownVersion": "5.2.14",
+            "IsStale": false,
+            "IsPrerelease": true
+          },
+          {
+            "DependencyId": "NServiceBus.AcceptanceTesting",
+            "Version": "6.0.0-beta0002",
+            "LatestKnownVersion": "5.2.4",
+            "IsStale": false,
+            "IsPrerelease": true
           },
           {
             "DependencyId": "NuGetPackager",
             "Version": "0.6.0",
             "LatestKnownVersion": "0.6.0",
-            "IsStale": false
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "Particular.CodeRules",
             "Version": "0.1.1",
             "LatestKnownVersion": "0.1.1",
-            "IsStale": false
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "Spring.Core",
             "Version": "2.0.1",
             "LatestKnownVersion": "2.0.1",
-            "IsStale": false
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "Common.Logging",
             "Version": "3.0.0",
             "LatestKnownVersion": "3.3.1",
-            "IsStale": true
+            "IsStale": true,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "Common.Logging.Core",
             "Version": "3.0.0",
             "LatestKnownVersion": "3.3.1",
-            "IsStale": true
-          },
-          {
-            "DependencyId": "NUnit",
-            "Version": "2.6.3",
-            "LatestKnownVersion": "3.2.1",
-            "IsStale": true
+            "IsStale": true,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "GitVersionTask",
             "Version": "3.4.1",
             "LatestKnownVersion": "3.5.4",
-            "IsStale": true
+            "IsStale": true,
+            "IsPrerelease": false
           },
           {
-            "DependencyId": "NServiceBus.AcceptanceTesting",
-            "Version": "6.0.0-beta0002",
-            "LatestKnownVersion": "6.0.0-unstable1782",
-            "IsStale": true
-          },
-          {
-            "DependencyId": "NServiceBus",
-            "Version": "6.0.0-beta0002",
-            "LatestKnownVersion": "6.0.0-unstable1786",
-            "IsStale": true
+            "DependencyId": "NUnit",
+            "Version": "2.6.3",
+            "LatestKnownVersion": "3.4.0",
+            "IsStale": true,
+            "IsPrerelease": false
           }
         ]
       },
       {
         "ServiceId": "NServiceBus.SqlServer",
-        "Score": 2,
+        "Score": 1,
         "Dependencies": [
           {
             "DependencyId": "ApiApprover",
             "Version": "3.0.1",
             "LatestKnownVersion": "3.0.1",
-            "IsStale": false
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "ApprovalTests",
             "Version": "3.0.11",
             "LatestKnownVersion": "3.0.11",
-            "IsStale": false
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "ApprovalUtilities",
             "Version": "3.0.11",
             "LatestKnownVersion": "3.0.11",
-            "IsStale": false
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "Fody",
             "Version": "1.29.4",
             "LatestKnownVersion": "1.29.4",
-            "IsStale": false
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "HdrHistogram",
             "Version": "1.0.120-prerelease",
             "LatestKnownVersion": "1.0.120-prerelease",
-            "IsStale": false
+            "IsStale": false,
+            "IsPrerelease": true
           },
           {
             "DependencyId": "Iesi.Collections",
             "Version": "4.0.1.4000",
             "LatestKnownVersion": "4.0.1.4000",
-            "IsStale": false
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "Mono.Cecil",
             "Version": "0.9.6.1",
             "LatestKnownVersion": "0.9.6.1",
-            "IsStale": false
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "NHibernate",
             "Version": "4.0.4.4000",
             "LatestKnownVersion": "4.0.4.4000",
-            "IsStale": false
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
-            "DependencyId": "NuGetPackager",
-            "Version": "0.6.0",
-            "LatestKnownVersion": "0.6.0",
-            "IsStale": false
+            "DependencyId": "NServiceBus",
+            "Version": "6.0.0-beta0002",
+            "LatestKnownVersion": "5.2.14",
+            "IsStale": false,
+            "IsPrerelease": true
           },
           {
-            "DependencyId": "Obsolete.Fody",
-            "Version": "4.1.0",
-            "LatestKnownVersion": "4.1.0",
-            "IsStale": false
-          },
-          {
-            "DependencyId": "Particular.CodeRules",
-            "Version": "0.1.1",
-            "LatestKnownVersion": "0.1.1",
-            "IsStale": false
-          },
-          {
-            "DependencyId": "Janitor.Fody",
-            "Version": "1.2.0.0",
-            "LatestKnownVersion": "1.2.1.0",
-            "IsStale": true
+            "DependencyId": "NServiceBus.AcceptanceTesting",
+            "Version": "6.0.0-beta0002",
+            "LatestKnownVersion": "5.2.4",
+            "IsStale": false,
+            "IsPrerelease": true
           },
           {
             "DependencyId": "NServiceBus.AcceptanceTests.Sources",
             "Version": "6.0.0-beta0002",
             "LatestKnownVersion": "6.0.0-beta0004",
-            "IsStale": true
-          },
-          {
-            "DependencyId": "NUnit",
-            "Version": "2.6.4",
-            "LatestKnownVersion": "3.2.1",
-            "IsStale": true
+            "IsStale": false,
+            "IsPrerelease": true
           },
           {
             "DependencyId": "NServiceBus.NHibernate",
             "Version": "7.0.0-beta0001",
-            "LatestKnownVersion": "7.0.0-beta0004",
-            "IsStale": true
-          },
-          {
-            "DependencyId": "NUnit",
-            "Version": "2.6.3",
-            "LatestKnownVersion": "3.2.1",
-            "IsStale": true
-          },
-          {
-            "DependencyId": "GitVersionTask",
-            "Version": "3.4.1",
-            "LatestKnownVersion": "3.5.4",
-            "IsStale": true
-          },
-          {
-            "DependencyId": "NServiceBus.AcceptanceTesting",
-            "Version": "6.0.0-beta0002",
-            "LatestKnownVersion": "6.0.0-unstable1782",
-            "IsStale": true
-          },
-          {
-            "DependencyId": "NServiceBus",
-            "Version": "6.0.0-beta0002",
-            "LatestKnownVersion": "6.0.0-unstable1786",
-            "IsStale": true
-          }
-        ]
-      },
-      {
-        "ServiceId": "NServiceBus.StructureMap",
-        "Score": 3,
-        "Dependencies": [
-          {
-            "DependencyId": "Fody",
-            "Version": "1.29.4",
-            "LatestKnownVersion": "1.29.4",
-            "IsStale": false
+            "LatestKnownVersion": "6.2.7",
+            "IsStale": false,
+            "IsPrerelease": true
           },
           {
             "DependencyId": "NuGetPackager",
             "Version": "0.6.0",
             "LatestKnownVersion": "0.6.0",
-            "IsStale": false
-          },
-          {
-            "DependencyId": "Particular.CodeRules",
-            "Version": "0.1.1",
-            "LatestKnownVersion": "0.1.1",
-            "IsStale": false
-          },
-          {
-            "DependencyId": "NUnit",
-            "Version": "2.6.4",
-            "LatestKnownVersion": "3.2.1",
-            "IsStale": true
-          },
-          {
-            "DependencyId": "structuremap",
-            "Version": "4.1.3.394",
-            "LatestKnownVersion": "4.2.0.402",
-            "IsStale": true
-          },
-          {
-            "DependencyId": "Janitor.Fody",
-            "Version": "1.1.6.0",
-            "LatestKnownVersion": "1.2.1.0",
-            "IsStale": true
-          },
-          {
-            "DependencyId": "GitVersionTask",
-            "Version": "3.4.1",
-            "LatestKnownVersion": "3.5.4",
-            "IsStale": true
-          },
-          {
-            "DependencyId": "NServiceBus.AcceptanceTesting",
-            "Version": "6.0.0-beta0001",
-            "LatestKnownVersion": "6.0.0-unstable1782",
-            "IsStale": true
-          },
-          {
-            "DependencyId": "NServiceBus",
-            "Version": "6.0.0-beta0001",
-            "LatestKnownVersion": "6.0.0-unstable1786",
-            "IsStale": true
-          }
-        ]
-      },
-      {
-        "ServiceId": "NServiceBus.Testing",
-        "Score": 2,
-        "Dependencies": [
-          {
-            "DependencyId": "ConsoleTweet",
-            "Version": "0.1.0",
-            "LatestKnownVersion": "0.1.0",
-            "IsStale": false
-          },
-          {
-            "DependencyId": "Fody",
-            "Version": "1.29.4",
-            "LatestKnownVersion": "1.29.4",
-            "IsStale": false
-          },
-          {
-            "DependencyId": "GitHubReleaseNotes",
-            "Version": "0.1.1",
-            "LatestKnownVersion": "0.1.1",
-            "IsStale": false
-          },
-          {
-            "DependencyId": "NServiceBus.Testing.Fakes.Sources",
-            "Version": "6.0.0-beta0002",
-            "LatestKnownVersion": "6.0.0-beta0002",
-            "IsStale": false
-          },
-          {
-            "DependencyId": "NuGetPackager",
-            "Version": "0.6.0",
-            "LatestKnownVersion": "0.6.0",
-            "IsStale": false
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "Obsolete.Fody",
             "Version": "4.1.0",
             "LatestKnownVersion": "4.1.0",
-            "IsStale": false
-          },
-          {
-            "DependencyId": "GitVersionTask",
-            "Version": "3.4.1",
-            "LatestKnownVersion": "3.5.4",
-            "IsStale": true
-          },
-          {
-            "DependencyId": "NuGet.CommandLine",
-            "Version": "2.8.3",
-            "LatestKnownVersion": "3.3.0",
-            "IsStale": true
-          },
-          {
-            "DependencyId": "NServiceBus",
-            "Version": "6.0.0-beta0002",
-            "LatestKnownVersion": "6.0.0-unstable1786",
-            "IsStale": true
-          }
-        ]
-      },
-      {
-        "ServiceId": "NServiceBus.Unity",
-        "Score": 3,
-        "Dependencies": [
-          {
-            "DependencyId": "CommonServiceLocator",
-            "Version": "1.3",
-            "LatestKnownVersion": "1.3",
-            "IsStale": false
-          },
-          {
-            "DependencyId": "NuGetPackager",
-            "Version": "0.6.0",
-            "LatestKnownVersion": "0.6.0",
-            "IsStale": false
-          },
-          {
-            "DependencyId": "NUnit",
-            "Version": "3.2.1",
-            "LatestKnownVersion": "3.2.1",
-            "IsStale": false
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "Particular.CodeRules",
             "Version": "0.1.1",
             "LatestKnownVersion": "0.1.1",
-            "IsStale": false
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
-            "DependencyId": "Unity",
-            "Version": "4.0.1",
-            "LatestKnownVersion": "4.0.1",
-            "IsStale": false
-          },
-          {
-            "DependencyId": "Unity.Interception",
-            "Version": "4.0.1",
-            "LatestKnownVersion": "4.0.1",
-            "IsStale": false
-          },
-          {
-            "DependencyId": "Fody",
-            "Version": "1.29.3",
-            "LatestKnownVersion": "1.29.4",
-            "IsStale": true
+            "DependencyId": "Janitor.Fody",
+            "Version": "1.2.0.0",
+            "LatestKnownVersion": "1.2.1.0",
+            "IsStale": true,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "GitVersionTask",
             "Version": "3.4.1",
             "LatestKnownVersion": "3.5.4",
-            "IsStale": true
+            "IsStale": true,
+            "IsPrerelease": false
+          },
+          {
+            "DependencyId": "NUnit",
+            "Version": "2.6.4",
+            "LatestKnownVersion": "3.4.0",
+            "IsStale": true,
+            "IsPrerelease": false
+          },
+          {
+            "DependencyId": "NUnit",
+            "Version": "2.6.3",
+            "LatestKnownVersion": "3.4.0",
+            "IsStale": true,
+            "IsPrerelease": false
+          }
+        ]
+      },
+      {
+        "ServiceId": "NServiceBus.StructureMap",
+        "Score": 1,
+        "Dependencies": [
+          {
+            "DependencyId": "Fody",
+            "Version": "1.29.4",
+            "LatestKnownVersion": "1.29.4",
+            "IsStale": false,
+            "IsPrerelease": false
+          },
+          {
+            "DependencyId": "NServiceBus",
+            "Version": "6.0.0-beta0001",
+            "LatestKnownVersion": "5.2.14",
+            "IsStale": false,
+            "IsPrerelease": true
+          },
+          {
+            "DependencyId": "NServiceBus.AcceptanceTesting",
+            "Version": "6.0.0-beta0001",
+            "LatestKnownVersion": "5.2.4",
+            "IsStale": false,
+            "IsPrerelease": true
+          },
+          {
+            "DependencyId": "NuGetPackager",
+            "Version": "0.6.0",
+            "LatestKnownVersion": "0.6.0",
+            "IsStale": false,
+            "IsPrerelease": false
+          },
+          {
+            "DependencyId": "Particular.CodeRules",
+            "Version": "0.1.1",
+            "LatestKnownVersion": "0.1.1",
+            "IsStale": false,
+            "IsPrerelease": false
+          },
+          {
+            "DependencyId": "structuremap",
+            "Version": "4.1.3.394",
+            "LatestKnownVersion": "4.2.0.402",
+            "IsStale": true,
+            "IsPrerelease": false
+          },
+          {
+            "DependencyId": "GitVersionTask",
+            "Version": "3.4.1",
+            "LatestKnownVersion": "3.5.4",
+            "IsStale": true,
+            "IsPrerelease": false
+          },
+          {
+            "DependencyId": "Janitor.Fody",
+            "Version": "1.1.6.0",
+            "LatestKnownVersion": "1.2.1.0",
+            "IsStale": true,
+            "IsPrerelease": false
+          },
+          {
+            "DependencyId": "NUnit",
+            "Version": "2.6.4",
+            "LatestKnownVersion": "3.4.0",
+            "IsStale": true,
+            "IsPrerelease": false
+          }
+        ]
+      },
+      {
+        "ServiceId": "NServiceBus.Testing",
+        "Score": 1,
+        "Dependencies": [
+          {
+            "DependencyId": "ConsoleTweet",
+            "Version": "0.1.0",
+            "LatestKnownVersion": "0.1.0",
+            "IsStale": false,
+            "IsPrerelease": false
+          },
+          {
+            "DependencyId": "Fody",
+            "Version": "1.29.4",
+            "LatestKnownVersion": "1.29.4",
+            "IsStale": false,
+            "IsPrerelease": false
+          },
+          {
+            "DependencyId": "GitHubReleaseNotes",
+            "Version": "0.1.1",
+            "LatestKnownVersion": "0.1.1",
+            "IsStale": false,
+            "IsPrerelease": false
+          },
+          {
+            "DependencyId": "NServiceBus",
+            "Version": "6.0.0-beta0002",
+            "LatestKnownVersion": "5.2.14",
+            "IsStale": false,
+            "IsPrerelease": true
+          },
+          {
+            "DependencyId": "NServiceBus.Testing.Fakes.Sources",
+            "Version": "6.0.0-beta0002",
+            "LatestKnownVersion": "6.0.0-beta0002",
+            "IsStale": false,
+            "IsPrerelease": true
+          },
+          {
+            "DependencyId": "NuGetPackager",
+            "Version": "0.6.0",
+            "LatestKnownVersion": "0.6.0",
+            "IsStale": false,
+            "IsPrerelease": false
+          },
+          {
+            "DependencyId": "Obsolete.Fody",
+            "Version": "4.1.0",
+            "LatestKnownVersion": "4.1.0",
+            "IsStale": false,
+            "IsPrerelease": false
+          },
+          {
+            "DependencyId": "GitVersionTask",
+            "Version": "3.4.1",
+            "LatestKnownVersion": "3.5.4",
+            "IsStale": true,
+            "IsPrerelease": false
+          },
+          {
+            "DependencyId": "NuGet.CommandLine",
+            "Version": "2.8.3",
+            "LatestKnownVersion": "3.3.0",
+            "IsStale": true,
+            "IsPrerelease": false
+          }
+        ]
+      },
+      {
+        "ServiceId": "NServiceBus.Unity",
+        "Score": 1,
+        "Dependencies": [
+          {
+            "DependencyId": "CommonServiceLocator",
+            "Version": "1.3",
+            "LatestKnownVersion": "1.3",
+            "IsStale": false,
+            "IsPrerelease": false
+          },
+          {
+            "DependencyId": "NServiceBus",
+            "Version": "6.0.0-beta0001",
+            "LatestKnownVersion": "5.2.14",
+            "IsStale": false,
+            "IsPrerelease": true
+          },
+          {
+            "DependencyId": "NServiceBus",
+            "Version": "6.0.0-beta0003",
+            "LatestKnownVersion": "5.2.14",
+            "IsStale": false,
+            "IsPrerelease": true
           },
           {
             "DependencyId": "NServiceBus.AcceptanceTesting",
             "Version": "6.0.0-beta0003",
-            "LatestKnownVersion": "6.0.0-unstable1782",
-            "IsStale": true
+            "LatestKnownVersion": "5.2.4",
+            "IsStale": false,
+            "IsPrerelease": true
+          },
+          {
+            "DependencyId": "NuGetPackager",
+            "Version": "0.6.0",
+            "LatestKnownVersion": "0.6.0",
+            "IsStale": false,
+            "IsPrerelease": false
+          },
+          {
+            "DependencyId": "Particular.CodeRules",
+            "Version": "0.1.1",
+            "LatestKnownVersion": "0.1.1",
+            "IsStale": false,
+            "IsPrerelease": false
+          },
+          {
+            "DependencyId": "Unity",
+            "Version": "4.0.1",
+            "LatestKnownVersion": "4.0.1",
+            "IsStale": false,
+            "IsPrerelease": false
+          },
+          {
+            "DependencyId": "Unity.Interception",
+            "Version": "4.0.1",
+            "LatestKnownVersion": "4.0.1",
+            "IsStale": false,
+            "IsPrerelease": false
+          },
+          {
+            "DependencyId": "Fody",
+            "Version": "1.29.3",
+            "LatestKnownVersion": "1.29.4",
+            "IsStale": true,
+            "IsPrerelease": false
+          },
+          {
+            "DependencyId": "NUnit",
+            "Version": "3.2.1",
+            "LatestKnownVersion": "3.4.0",
+            "IsStale": true,
+            "IsPrerelease": false
+          },
+          {
+            "DependencyId": "GitVersionTask",
+            "Version": "3.4.1",
+            "LatestKnownVersion": "3.5.4",
+            "IsStale": true,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "Janitor.Fody",
             "Version": "1.1.3.0",
             "LatestKnownVersion": "1.2.1.0",
-            "IsStale": true
-          },
-          {
-            "DependencyId": "NServiceBus",
-            "Version": "6.0.0-beta0003",
-            "LatestKnownVersion": "6.0.0-unstable1786",
-            "IsStale": true
-          },
-          {
-            "DependencyId": "NServiceBus",
-            "Version": "6.0.0-beta0001",
-            "LatestKnownVersion": "6.0.0-unstable1786",
-            "IsStale": true
+            "IsStale": true,
+            "IsPrerelease": false
           }
         ]
       },
@@ -10390,37 +11296,43 @@ g_data = {
             "DependencyId": "ConsoleTweet",
             "Version": "0.1.0",
             "LatestKnownVersion": "0.1.0",
-            "IsStale": false
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "GitHubReleaseNotes",
             "Version": "0.1.1",
             "LatestKnownVersion": "0.1.1",
-            "IsStale": false
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "Microsoft.Web.Xdt",
             "Version": "2.1.1",
             "LatestKnownVersion": "2.1.1",
-            "IsStale": false
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "Nuget.Core",
             "Version": "2.8.2",
             "LatestKnownVersion": "2.8.3",
-            "IsStale": true
+            "IsStale": true,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "GitVersionTask",
             "Version": "3.4.1",
             "LatestKnownVersion": "3.5.4",
-            "IsStale": true
+            "IsStale": true,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "NuGet.CommandLine",
             "Version": "2.8.2",
             "LatestKnownVersion": "3.3.0",
-            "IsStale": true
+            "IsStale": true,
+            "IsPrerelease": false
           }
         ]
       },
@@ -10432,31 +11344,36 @@ g_data = {
             "DependencyId": "NuGetpackager",
             "Version": "0.2.1",
             "LatestKnownVersion": "0.2.1",
-            "IsStale": false
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "OctopusConfigUpdater",
             "Version": "0.1.1",
             "LatestKnownVersion": "0.1.1",
-            "IsStale": false
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "GitHubReleaseNotes",
             "Version": "0.1.0",
             "LatestKnownVersion": "0.1.1",
-            "IsStale": true
+            "IsStale": true,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "NuGet.CommandLine",
             "Version": "2.8.2",
             "LatestKnownVersion": "3.3.0",
-            "IsStale": true
+            "IsStale": true,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "GitVersionTask",
             "Version": "1.3.2",
             "LatestKnownVersion": "3.5.4",
-            "IsStale": true
+            "IsStale": true,
+            "IsPrerelease": false
           }
         ]
       },
@@ -10468,31 +11385,36 @@ g_data = {
             "DependencyId": "Octopus.Client",
             "Version": "2.6.3.886",
             "LatestKnownVersion": "2.6.3.886",
-            "IsStale": false
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "Sprache",
             "Version": "2.0.0.45",
             "LatestKnownVersion": "2.0.0.45",
-            "IsStale": false
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "NuGetPackager",
             "Version": "0.5.2",
             "LatestKnownVersion": "0.6.0",
-            "IsStale": true
-          },
-          {
-            "DependencyId": "Newtonsoft.Json",
-            "Version": "6.0.8",
-            "LatestKnownVersion": "8.0.3",
-            "IsStale": true
+            "IsStale": true,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "GitVersionTask",
             "Version": "2.0.1",
             "LatestKnownVersion": "3.5.4",
-            "IsStale": true
+            "IsStale": true,
+            "IsPrerelease": false
+          },
+          {
+            "DependencyId": "Newtonsoft.Json",
+            "Version": "6.0.8",
+            "LatestKnownVersion": "8.0.3",
+            "IsStale": true,
+            "IsPrerelease": false
           }
         ]
       },
@@ -10504,43 +11426,50 @@ g_data = {
             "DependencyId": "ConsoleTweet",
             "Version": "0.1.0",
             "LatestKnownVersion": "0.1.0",
-            "IsStale": false
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "GitHubReleaseNotes",
             "Version": "0.1.1",
             "LatestKnownVersion": "0.1.1",
-            "IsStale": false
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "Microsoft.Web.Xdt",
             "Version": "2.1.1",
             "LatestKnownVersion": "2.1.1",
-            "IsStale": false
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "Nuget.Core",
             "Version": "2.8.3",
             "LatestKnownVersion": "2.8.3",
-            "IsStale": false
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "GitVersionTask",
             "Version": "2.0.1",
             "LatestKnownVersion": "3.5.4",
-            "IsStale": true
+            "IsStale": true,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "NuGet.CommandLine",
             "Version": "2.8.2",
             "LatestKnownVersion": "3.3.0",
-            "IsStale": true
+            "IsStale": true,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "NuGetPackager",
             "Version": "0.5.0",
             "LatestKnownVersion": "0.6.0",
-            "IsStale": true
+            "IsStale": true,
+            "IsPrerelease": false
           }
         ]
       },
@@ -10552,175 +11481,204 @@ g_data = {
             "DependencyId": "Microsoft.CodeAnalysis",
             "Version": "1.1.1",
             "LatestKnownVersion": "1.1.1",
-            "IsStale": false
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "Microsoft.CodeAnalysis.Analyzers",
             "Version": "1.1.0",
             "LatestKnownVersion": "1.1.0",
-            "IsStale": false
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "Microsoft.CodeAnalysis.Common",
             "Version": "1.1.1",
             "LatestKnownVersion": "1.1.1",
-            "IsStale": false
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "Microsoft.CodeAnalysis.CSharp",
             "Version": "1.1.1",
             "LatestKnownVersion": "1.1.1",
-            "IsStale": false
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "Microsoft.CodeAnalysis.CSharp.Workspaces",
             "Version": "1.1.1",
             "LatestKnownVersion": "1.1.1",
-            "IsStale": false
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "Microsoft.CodeAnalysis.VisualBasic",
             "Version": "1.1.1",
             "LatestKnownVersion": "1.1.1",
-            "IsStale": false
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "Microsoft.CodeAnalysis.VisualBasic.Workspaces",
             "Version": "1.1.1",
             "LatestKnownVersion": "1.1.1",
-            "IsStale": false
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "Microsoft.CodeAnalysis.Workspaces.Common",
             "Version": "1.1.1",
             "LatestKnownVersion": "1.1.1",
-            "IsStale": false
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "Microsoft.Composition",
             "Version": "1.0.27",
             "LatestKnownVersion": "1.0.27",
-            "IsStale": false
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "NuGet.CommandLine",
             "Version": "3.3.0",
             "LatestKnownVersion": "3.3.0",
-            "IsStale": false
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "System.Collections",
             "Version": "4.0.0",
             "LatestKnownVersion": "4.0.0",
-            "IsStale": false
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "System.Collections.Immutable",
             "Version": "1.1.37",
             "LatestKnownVersion": "1.1.37",
-            "IsStale": false
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "System.Diagnostics.Debug",
             "Version": "4.0.0",
             "LatestKnownVersion": "4.0.0",
-            "IsStale": false
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "System.Globalization",
             "Version": "4.0.0",
             "LatestKnownVersion": "4.0.0",
-            "IsStale": false
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "System.IO",
             "Version": "4.0.0",
             "LatestKnownVersion": "4.0.0",
-            "IsStale": false
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "System.Linq",
             "Version": "4.0.0",
             "LatestKnownVersion": "4.0.0",
-            "IsStale": false
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "System.Reflection",
             "Version": "4.0.0",
             "LatestKnownVersion": "4.0.0",
-            "IsStale": false
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "System.Reflection.Extensions",
             "Version": "4.0.0",
             "LatestKnownVersion": "4.0.0",
-            "IsStale": false
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "System.Reflection.Metadata",
             "Version": "1.1.0",
             "LatestKnownVersion": "1.1.0",
-            "IsStale": false
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "System.Reflection.Primitives",
             "Version": "4.0.0",
             "LatestKnownVersion": "4.0.0",
-            "IsStale": false
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "System.Resources.ResourceManager",
             "Version": "4.0.0",
             "LatestKnownVersion": "4.0.0",
-            "IsStale": false
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "System.Runtime",
             "Version": "4.0.0",
             "LatestKnownVersion": "4.0.0",
-            "IsStale": false
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "System.Runtime.Extensions",
             "Version": "4.0.0",
             "LatestKnownVersion": "4.0.0",
-            "IsStale": false
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "System.Runtime.InteropServices",
             "Version": "4.0.0",
             "LatestKnownVersion": "4.0.0",
-            "IsStale": false
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "System.Text.Encoding",
             "Version": "4.0.0",
             "LatestKnownVersion": "4.0.0",
-            "IsStale": false
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "System.Text.Encoding.Extensions",
             "Version": "4.0.0",
             "LatestKnownVersion": "4.0.0",
-            "IsStale": false
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "System.Threading",
             "Version": "4.0.0",
             "LatestKnownVersion": "4.0.0",
-            "IsStale": false
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "NuGetPackager",
             "Version": "0.5.5",
             "LatestKnownVersion": "0.6.0",
-            "IsStale": true
+            "IsStale": true,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "GitVersionTask",
             "Version": "1.3.2",
             "LatestKnownVersion": "3.5.4",
-            "IsStale": true
+            "IsStale": true,
+            "IsPrerelease": false
           }
         ]
       },
@@ -10732,259 +11690,302 @@ g_data = {
             "DependencyId": "akavache",
             "Version": "3.2.0",
             "LatestKnownVersion": "3.2.0",
-            "IsStale": false
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "Autofac",
             "Version": "3.5.2",
             "LatestKnownVersion": "3.5.2",
-            "IsStale": false
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "Autofac.Mef",
             "Version": "3.0.3",
             "LatestKnownVersion": "3.0.3",
-            "IsStale": false
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "Common.Logging.Log4Net",
             "Version": "2.0.1",
             "LatestKnownVersion": "2.0.1",
-            "IsStale": false
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "ConsoleTweet",
             "Version": "0.1.0",
             "LatestKnownVersion": "0.1.0",
-            "IsStale": false
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "GitHubReleaseNotes",
             "Version": "0.1.1",
             "LatestKnownVersion": "0.1.1",
-            "IsStale": false
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "HtmlAgilityPack",
             "Version": "1.4.9",
             "LatestKnownVersion": "1.4.9",
-            "IsStale": false
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "Humanizer",
             "Version": "1.37.7",
             "LatestKnownVersion": "1.37.7",
-            "IsStale": false
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "Microsoft.Web.Xdt",
             "Version": "2.1.1",
             "LatestKnownVersion": "2.1.1",
-            "IsStale": false
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "MMBot.Core",
             "Version": "0.9.8.6",
             "LatestKnownVersion": "0.9.8.6",
-            "IsStale": false
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "Octopus.Client",
             "Version": "2.6.3.886",
             "LatestKnownVersion": "2.6.3.886",
-            "IsStale": false
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "OctopusProjectUpdater",
             "Version": "0.1.4",
             "LatestKnownVersion": "0.1.4",
-            "IsStale": false
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "Owin",
             "Version": "1.0",
             "LatestKnownVersion": "1.0",
-            "IsStale": false
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "reactiveui-core",
             "Version": "5.5.1",
             "LatestKnownVersion": "5.5.1",
-            "IsStale": false
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "Roslyn.Compilers.Common",
             "Version": "1.2.20906.2",
             "LatestKnownVersion": "1.2.20906.2",
-            "IsStale": false
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "Roslyn.Compilers.CSharp",
             "Version": "1.2.20906.2",
             "LatestKnownVersion": "1.2.20906.2",
-            "IsStale": false
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "Rx-Core",
             "Version": "2.2.5",
             "LatestKnownVersion": "2.2.5",
-            "IsStale": false
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "Rx-Interfaces",
             "Version": "2.2.5",
             "LatestKnownVersion": "2.2.5",
-            "IsStale": false
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "Rx-Linq",
             "Version": "2.2.5",
             "LatestKnownVersion": "2.2.5",
-            "IsStale": false
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "Rx-Main",
             "Version": "2.2.5",
             "LatestKnownVersion": "2.2.5",
-            "IsStale": false
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "Rx-PlatformServices",
             "Version": "2.2.5",
             "LatestKnownVersion": "2.2.5",
-            "IsStale": false
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "ScriptCs.Contracts",
             "Version": "0.10.2",
             "LatestKnownVersion": "0.10.2",
-            "IsStale": false
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "ScriptCs.Core",
             "Version": "0.10.2",
             "LatestKnownVersion": "0.10.2",
-            "IsStale": false
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "ScriptCs.Engine.Roslyn",
             "Version": "0.10.2",
             "LatestKnownVersion": "0.10.2",
-            "IsStale": false
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "ScriptCs.Hosting",
             "Version": "0.10.2",
             "LatestKnownVersion": "0.10.2",
-            "IsStale": false
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "Splat",
             "Version": "1.5.1",
             "LatestKnownVersion": "1.5.1",
-            "IsStale": false
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "Sprache",
             "Version": "2.0.0.45",
             "LatestKnownVersion": "2.0.0.45",
-            "IsStale": false
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "SyncOMatic",
             "Version": "0.1.6",
             "LatestKnownVersion": "0.1.6",
-            "IsStale": false
-          },
-          {
-            "DependencyId": "Caseless.Fody",
-            "Version": "1.3.7",
-            "LatestKnownVersion": "1.4.1",
-            "IsStale": true
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "Microsoft.Owin",
             "Version": "2.1.0",
             "LatestKnownVersion": "3.0.1",
-            "IsStale": true
+            "IsStale": true,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "NuGet.Core",
             "Version": "2.8.3",
             "LatestKnownVersion": "2.11.1",
-            "IsStale": true
-          },
-          {
-            "DependencyId": "RestSharp",
-            "Version": "105.0.1",
-            "LatestKnownVersion": "105.2.3",
-            "IsStale": true
-          },
-          {
-            "DependencyId": "Common.Logging.Core",
-            "Version": "2.2.0",
-            "LatestKnownVersion": "3.3.1",
-            "IsStale": true
-          },
-          {
-            "DependencyId": "Fody",
-            "Version": "1.29.2",
-            "LatestKnownVersion": "1.29.4",
-            "IsStale": true
+            "IsStale": true,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "Octokit",
             "Version": "0.18.0",
             "LatestKnownVersion": "0.20.0",
-            "IsStale": true
+            "IsStale": true,
+            "IsPrerelease": false
+          },
+          {
+            "DependencyId": "RestSharp",
+            "Version": "105.0.1",
+            "LatestKnownVersion": "105.2.3",
+            "IsStale": true,
+            "IsPrerelease": false
+          },
+          {
+            "DependencyId": "Caseless.Fody",
+            "Version": "1.3.7",
+            "LatestKnownVersion": "1.4.2",
+            "IsStale": true,
+            "IsPrerelease": false
+          },
+          {
+            "DependencyId": "Common.Logging.Core",
+            "Version": "2.2.0",
+            "LatestKnownVersion": "3.3.1",
+            "IsStale": true,
+            "IsPrerelease": false
+          },
+          {
+            "DependencyId": "Fody",
+            "Version": "1.29.2",
+            "LatestKnownVersion": "1.29.4",
+            "IsStale": true,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "Common.Logging",
             "Version": "2.2.0",
             "LatestKnownVersion": "3.3.1",
-            "IsStale": true
+            "IsStale": true,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "NuGet.CommandLine",
             "Version": "2.8.3",
             "LatestKnownVersion": "3.3.0",
-            "IsStale": true
+            "IsStale": true,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "Newtonsoft.Json",
             "Version": "6.0.6",
             "LatestKnownVersion": "8.0.3",
-            "IsStale": true
+            "IsStale": true,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "NuGet.CommandLine",
             "Version": "2.8.2",
             "LatestKnownVersion": "3.3.0",
-            "IsStale": true
-          },
-          {
-            "DependencyId": "log4net",
-            "Version": "1.2.10",
-            "LatestKnownVersion": "2.0.5",
-            "IsStale": true
-          },
-          {
-            "DependencyId": "Nancy",
-            "Version": "0.23.2",
-            "LatestKnownVersion": "1.4.3",
-            "IsStale": true
+            "IsStale": true,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "GitVersionTask",
             "Version": "1.3.2",
             "LatestKnownVersion": "3.5.4",
-            "IsStale": true
+            "IsStale": true,
+            "IsPrerelease": false
+          },
+          {
+            "DependencyId": "log4net",
+            "Version": "1.2.10",
+            "LatestKnownVersion": "2.0.5",
+            "IsStale": true,
+            "IsPrerelease": false
+          },
+          {
+            "DependencyId": "Nancy",
+            "Version": "0.23.2",
+            "LatestKnownVersion": "1.4.3",
+            "IsStale": true,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "NuGetPackager",
             "Version": "0.4.10",
             "LatestKnownVersion": "0.6.0",
-            "IsStale": true
+            "IsStale": true,
+            "IsPrerelease": false
           }
         ]
       },
@@ -10996,91 +11997,106 @@ g_data = {
             "DependencyId": "Anotar.Serilog.Fody",
             "Version": "3.0.1",
             "LatestKnownVersion": "3.0.1",
-            "IsStale": false
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "AsyncErrorHandler.Fody",
             "Version": "1.0.11.0",
             "LatestKnownVersion": "1.0.11.0",
-            "IsStale": false
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "Autofac",
             "Version": "3.5.2",
             "LatestKnownVersion": "3.5.2",
-            "IsStale": false
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "Caliburn.Micro",
             "Version": "3.0.0",
             "LatestKnownVersion": "3.0.0",
-            "IsStale": false
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "Caliburn.Micro.Core",
             "Version": "3.0.0",
             "LatestKnownVersion": "3.0.0",
-            "IsStale": false
-          },
-          {
-            "DependencyId": "Caseless.Fody",
-            "Version": "1.4.1",
-            "LatestKnownVersion": "1.4.1",
-            "IsStale": false
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "Fielder.Fody",
             "Version": "1.0.12",
             "LatestKnownVersion": "1.0.12",
-            "IsStale": false
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "Fody",
             "Version": "1.29.4",
             "LatestKnownVersion": "1.29.4",
-            "IsStale": false
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "Janitor.Fody",
             "Version": "1.2.1.0",
             "LatestKnownVersion": "1.2.1.0",
-            "IsStale": false
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "Mindscape.Raygun4Net",
             "Version": "5.3.0",
             "LatestKnownVersion": "5.3.0",
-            "IsStale": false
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "MSFT.ParallelExtensionsExtras",
             "Version": "1.2.0",
             "LatestKnownVersion": "1.2.0",
-            "IsStale": false
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "Newtonsoft.Json",
             "Version": "8.0.3",
             "LatestKnownVersion": "8.0.3",
-            "IsStale": false
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "PropertyChanged.Fody",
             "Version": "1.51.0",
             "LatestKnownVersion": "1.51.0",
-            "IsStale": false
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "Resourcer.Fody",
             "Version": "1.4.1",
             "LatestKnownVersion": "1.4.1",
-            "IsStale": false
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "Serilog",
             "Version": "1.5.14",
             "LatestKnownVersion": "1.5.14",
-            "IsStale": false
+            "IsStale": false,
+            "IsPrerelease": false
+          },
+          {
+            "DependencyId": "Caseless.Fody",
+            "Version": "1.4.1",
+            "LatestKnownVersion": "1.4.2",
+            "IsStale": true,
+            "IsPrerelease": false
           }
         ]
       },
@@ -11092,661 +12108,768 @@ g_data = {
             "DependencyId": "Microsoft.AspNet.Mvc",
             "Version": "5.2.3",
             "LatestKnownVersion": "5.2.3",
-            "IsStale": false
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "Microsoft.AspNet.Razor",
             "Version": "3.2.3",
             "LatestKnownVersion": "3.2.3",
-            "IsStale": false
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "Microsoft.AspNet.SignalR.Core",
             "Version": "2.2.0",
             "LatestKnownVersion": "2.2.0",
-            "IsStale": false
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "Microsoft.AspNet.SignalR.SystemWeb",
             "Version": "2.2.0",
             "LatestKnownVersion": "2.2.0",
-            "IsStale": false
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "Microsoft.AspNet.WebPages",
             "Version": "3.2.3",
             "LatestKnownVersion": "3.2.3",
-            "IsStale": false
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "Microsoft.Owin",
             "Version": "3.0.1",
             "LatestKnownVersion": "3.0.1",
-            "IsStale": false
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "Microsoft.Owin.Host.SystemWeb",
             "Version": "3.0.1",
             "LatestKnownVersion": "3.0.1",
-            "IsStale": false
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "Microsoft.Owin.Security",
             "Version": "3.0.1",
             "LatestKnownVersion": "3.0.1",
-            "IsStale": false
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "Microsoft.Web.Infrastructure",
             "Version": "1.0.0.0",
             "LatestKnownVersion": "1.0.0.0",
-            "IsStale": false
+            "IsStale": false,
+            "IsPrerelease": false
+          },
+          {
+            "DependencyId": "NServiceBus",
+            "Version": "6.0.0-unstable1554",
+            "LatestKnownVersion": "5.2.14",
+            "IsStale": false,
+            "IsPrerelease": true
           },
           {
             "DependencyId": "Owin",
             "Version": "1.0",
             "LatestKnownVersion": "1.0",
-            "IsStale": false
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "Newtonsoft.Json",
             "Version": "6.0.8",
             "LatestKnownVersion": "8.0.3",
-            "IsStale": true
-          },
-          {
-            "DependencyId": "NServiceBus",
-            "Version": "6.0.0-unstable1554",
-            "LatestKnownVersion": "6.0.0-unstable1786",
-            "IsStale": true
+            "IsStale": true,
+            "IsPrerelease": false
           }
         ]
       },
       {
         "ServiceId": "SagaMasterClass",
-        "Score": 4,
+        "Score": 1,
         "Dependencies": [
           {
             "DependencyId": "Iesi.Collections",
             "Version": "4.0.1.4000",
             "LatestKnownVersion": "4.0.1.4000",
-            "IsStale": false
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "Nancy.Hosting.Self",
             "Version": "1.4.1",
             "LatestKnownVersion": "1.4.1",
-            "IsStale": false
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "NHibernate",
             "Version": "4.0.4.4000",
             "LatestKnownVersion": "4.0.4.4000",
-            "IsStale": false
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "Nancy",
             "Version": "1.4.2",
             "LatestKnownVersion": "1.4.3",
-            "IsStale": true
+            "IsStale": true,
+            "IsPrerelease": false
+          },
+          {
+            "DependencyId": "NServiceBus",
+            "Version": "5.2.10",
+            "LatestKnownVersion": "5.2.14",
+            "IsStale": true,
+            "IsPrerelease": false
+          },
+          {
+            "DependencyId": "NServiceBus.NHibernate",
+            "Version": "6.2.5",
+            "LatestKnownVersion": "6.2.7",
+            "IsStale": true,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "NHibernate",
             "Version": "4.0.1.4000",
             "LatestKnownVersion": "4.0.4.4000",
-            "IsStale": true
-          },
-          {
-            "DependencyId": "NServiceBus.NHibernate",
-            "Version": "6.2.5",
-            "LatestKnownVersion": "7.0.0-beta0004",
-            "IsStale": true
-          },
-          {
-            "DependencyId": "NServiceBus",
-            "Version": "5.2.10",
-            "LatestKnownVersion": "6.0.0-unstable1786",
-            "IsStale": true
+            "IsStale": true,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "NServiceBus",
             "Version": "5.2.9",
-            "LatestKnownVersion": "6.0.0-unstable1786",
-            "IsStale": true
+            "LatestKnownVersion": "5.2.14",
+            "IsStale": true,
+            "IsPrerelease": false
           }
         ]
       },
       {
         "ServiceId": "SagaMasterClass.Skeleton",
-        "Score": 4,
+        "Score": 1,
         "Dependencies": [
           {
             "DependencyId": "Iesi.Collections",
             "Version": "4.0.1.4000",
             "LatestKnownVersion": "4.0.1.4000",
-            "IsStale": false
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "Nancy.Hosting.Self",
             "Version": "1.4.1",
             "LatestKnownVersion": "1.4.1",
-            "IsStale": false
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "NHibernate",
             "Version": "4.0.4.4000",
             "LatestKnownVersion": "4.0.4.4000",
-            "IsStale": false
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "Nancy",
             "Version": "1.4.2",
             "LatestKnownVersion": "1.4.3",
-            "IsStale": true
+            "IsStale": true,
+            "IsPrerelease": false
+          },
+          {
+            "DependencyId": "NServiceBus",
+            "Version": "5.2.10",
+            "LatestKnownVersion": "5.2.14",
+            "IsStale": true,
+            "IsPrerelease": false
+          },
+          {
+            "DependencyId": "NServiceBus.NHibernate",
+            "Version": "6.2.5",
+            "LatestKnownVersion": "6.2.7",
+            "IsStale": true,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "NHibernate",
             "Version": "4.0.1.4000",
             "LatestKnownVersion": "4.0.4.4000",
-            "IsStale": true
-          },
-          {
-            "DependencyId": "NServiceBus.NHibernate",
-            "Version": "6.2.5",
-            "LatestKnownVersion": "7.0.0-beta0004",
-            "IsStale": true
-          },
-          {
-            "DependencyId": "NServiceBus",
-            "Version": "5.2.10",
-            "LatestKnownVersion": "6.0.0-unstable1786",
-            "IsStale": true
+            "IsStale": true,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "NServiceBus",
             "Version": "5.2.9",
-            "LatestKnownVersion": "6.0.0-unstable1786",
-            "IsStale": true
+            "LatestKnownVersion": "5.2.14",
+            "IsStale": true,
+            "IsPrerelease": false
           }
         ]
       },
       {
         "ServiceId": "ServiceControl",
-        "Score": 2,
+        "Score": 1,
         "Dependencies": [
           {
             "DependencyId": "ApprovalTests",
             "Version": "3.0.11",
             "LatestKnownVersion": "3.0.11",
-            "IsStale": false
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "ApprovalUtilities",
             "Version": "3.0.11",
             "LatestKnownVersion": "3.0.11",
-            "IsStale": false
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "Autofac",
             "Version": "3.5.2",
             "LatestKnownVersion": "3.5.2",
-            "IsStale": false
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "DotNetZip",
             "Version": "1.9.8",
             "LatestKnownVersion": "1.9.8",
-            "IsStale": false
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "FluentValidation",
             "Version": "5.6.2.0",
             "LatestKnownVersion": "5.6.2.0",
-            "IsStale": false
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "Lucene.Net",
             "Version": "3.0.3",
             "LatestKnownVersion": "3.0.3",
-            "IsStale": false
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "Microsoft.AspNet.Cors",
             "Version": "5.2.3",
             "LatestKnownVersion": "5.2.3",
-            "IsStale": false
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "Microsoft.AspNet.SignalR.Client",
             "Version": "2.2.0",
             "LatestKnownVersion": "2.2.0",
-            "IsStale": false
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "Microsoft.AspNet.SignalR.Core",
             "Version": "2.2.0",
             "LatestKnownVersion": "2.2.0",
-            "IsStale": false
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "Microsoft.AspNet.SignalR.Owin",
             "Version": "1.2.2",
             "LatestKnownVersion": "1.2.2",
-            "IsStale": false
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "Microsoft.Owin",
             "Version": "3.0.1",
             "LatestKnownVersion": "3.0.1",
-            "IsStale": false
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "Microsoft.Owin.Cors",
             "Version": "3.0.1",
             "LatestKnownVersion": "3.0.1",
-            "IsStale": false
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "Microsoft.Owin.Diagnostics",
             "Version": "3.0.1",
             "LatestKnownVersion": "3.0.1",
-            "IsStale": false
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "Microsoft.Owin.Host.HttpListener",
             "Version": "3.0.1",
             "LatestKnownVersion": "3.0.1",
-            "IsStale": false
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "Microsoft.Owin.Hosting",
             "Version": "3.0.1",
             "LatestKnownVersion": "3.0.1",
-            "IsStale": false
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "Microsoft.Owin.Security",
             "Version": "3.0.1",
             "LatestKnownVersion": "3.0.1",
-            "IsStale": false
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "Nancy",
             "Version": "1.4.3",
             "LatestKnownVersion": "1.4.3",
-            "IsStale": false
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "Nancy.Bootstrappers.Autofac",
             "Version": "1.4.1",
             "LatestKnownVersion": "1.4.1",
-            "IsStale": false
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "Nancy.Owin",
             "Version": "1.4.1",
             "LatestKnownVersion": "1.4.1",
-            "IsStale": false
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "Newtonsoft.Json",
             "Version": "8.0.3",
             "LatestKnownVersion": "8.0.3",
-            "IsStale": false
+            "IsStale": false,
+            "IsPrerelease": false
+          },
+          {
+            "DependencyId": "NServiceBus",
+            "Version": "5.2.14",
+            "LatestKnownVersion": "5.2.14",
+            "IsStale": false,
+            "IsPrerelease": false
+          },
+          {
+            "DependencyId": "NServiceBus.Autofac",
+            "Version": "5.0.0",
+            "LatestKnownVersion": "5.0.0",
+            "IsStale": false,
+            "IsPrerelease": false
+          },
+          {
+            "DependencyId": "NServiceBus.Azure.Transports.WindowsAzureServiceBus",
+            "Version": "6.4.0",
+            "LatestKnownVersion": "6.4.0",
+            "IsStale": false,
+            "IsPrerelease": false
+          },
+          {
+            "DependencyId": "NServiceBus.Azure.Transports.WindowsAzureStorageQueues",
+            "Version": "6.2.1",
+            "LatestKnownVersion": "6.2.1",
+            "IsStale": false,
+            "IsPrerelease": false
+          },
+          {
+            "DependencyId": "NServiceBus.Host",
+            "Version": "6.0.0",
+            "LatestKnownVersion": "6.0.0",
+            "IsStale": false,
+            "IsPrerelease": false
+          },
+          {
+            "DependencyId": "NServiceBus.NLog",
+            "Version": "1.1.0",
+            "LatestKnownVersion": "1.1.0",
+            "IsStale": false,
+            "IsPrerelease": false
+          },
+          {
+            "DependencyId": "NServiceBus.RabbitMQ",
+            "Version": "3.3.1",
+            "LatestKnownVersion": "3.3.1",
+            "IsStale": false,
+            "IsPrerelease": false
+          },
+          {
+            "DependencyId": "NServiceBus.SqlServer",
+            "Version": "2.2.3",
+            "LatestKnownVersion": "2.2.3",
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "Owin",
             "Version": "1.0",
             "LatestKnownVersion": "1.0",
-            "IsStale": false
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "PropertyChanging.Fody",
             "Version": "1.27.0.0",
             "LatestKnownVersion": "1.27.0.0",
-            "IsStale": false
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "RabbitMQ.Client",
             "Version": "3.6.2",
             "LatestKnownVersion": "3.6.2",
-            "IsStale": false
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "RavenDB.Embedded",
             "Version": "2.5.2996",
             "LatestKnownVersion": "2.5.2996",
-            "IsStale": false
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "reactiveui",
             "Version": "5.5.1",
             "LatestKnownVersion": "5.5.1",
-            "IsStale": false
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "reactiveui-core",
             "Version": "5.5.1",
             "LatestKnownVersion": "5.5.1",
-            "IsStale": false
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "reactiveui-platforms",
             "Version": "5.5.1",
             "LatestKnownVersion": "5.5.1",
-            "IsStale": false
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "Rx-Core",
             "Version": "2.2.5",
             "LatestKnownVersion": "2.2.5",
-            "IsStale": false
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "Rx-Interfaces",
             "Version": "2.2.5",
             "LatestKnownVersion": "2.2.5",
-            "IsStale": false
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "Rx-Linq",
             "Version": "2.2.5",
             "LatestKnownVersion": "2.2.5",
-            "IsStale": false
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "Rx-Main",
             "Version": "2.2.5",
             "LatestKnownVersion": "2.2.5",
-            "IsStale": false
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "Rx-PlatformServices",
             "Version": "2.2.5",
             "LatestKnownVersion": "2.2.5",
-            "IsStale": false
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "Rx-XAML",
             "Version": "2.2.5",
             "LatestKnownVersion": "2.2.5",
-            "IsStale": false
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "ServiceControl.Plugin.Nsb5.CustomChecks",
             "Version": "1.0.1",
             "LatestKnownVersion": "1.0.1",
-            "IsStale": false
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "ServiceControl.Plugin.Nsb5.DebugSession",
             "Version": "1.0.0",
             "LatestKnownVersion": "1.0.0",
-            "IsStale": false
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "ServiceControl.Plugin.Nsb5.Heartbeat",
             "Version": "2.0.1",
             "LatestKnownVersion": "2.0.1",
-            "IsStale": false
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "ServiceControl.Plugin.Nsb5.SagaAudit",
             "Version": "1.0.1",
             "LatestKnownVersion": "1.0.1",
-            "IsStale": false
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "SharpZipLib",
             "Version": "0.86.0",
             "LatestKnownVersion": "0.86.0",
-            "IsStale": false
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "Validar.Fody",
             "Version": "1.4.10.0",
             "LatestKnownVersion": "1.4.10.0",
-            "IsStale": false
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "Windows7APICodePack-Core",
             "Version": "1.1.0.0",
             "LatestKnownVersion": "1.1.0.0",
-            "IsStale": false
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "Windows7APICodePack-Shell",
             "Version": "1.1.0.0",
             "LatestKnownVersion": "1.1.0.0",
-            "IsStale": false
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "Caliburn.Micro",
             "Version": "2.0.2",
             "LatestKnownVersion": "3.0.0",
-            "IsStale": true
+            "IsStale": true,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "Caliburn.Micro.Core",
             "Version": "2.0.2",
             "LatestKnownVersion": "3.0.0",
-            "IsStale": true
+            "IsStale": true,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "Microsoft.Data.Edm",
             "Version": "5.6.4",
             "LatestKnownVersion": "5.7.0",
-            "IsStale": true
+            "IsStale": true,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "Microsoft.Data.OData",
             "Version": "5.6.4",
             "LatestKnownVersion": "5.7.0",
-            "IsStale": true
+            "IsStale": true,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "Microsoft.Data.Services.Client",
             "Version": "5.6.4",
             "LatestKnownVersion": "5.7.0",
-            "IsStale": true
+            "IsStale": true,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "Mindscape.Raygun4Net",
             "Version": "5.0.2",
             "LatestKnownVersion": "5.3.0",
-            "IsStale": true
+            "IsStale": true,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "Moq",
             "Version": "4.2.1507.0118",
             "LatestKnownVersion": "4.2.1510.2205",
-            "IsStale": true
+            "IsStale": true,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "NLog",
             "Version": "4.3.4",
             "LatestKnownVersion": "4.3.5",
-            "IsStale": true
-          },
-          {
-            "DependencyId": "NServiceBus.Autofac",
-            "Version": "5.0.0",
-            "LatestKnownVersion": "6.0.0-beta0001",
-            "IsStale": true
-          },
-          {
-            "DependencyId": "NServiceBus.Azure.Transports.WindowsAzureServiceBus",
-            "Version": "6.4.0",
-            "LatestKnownVersion": "7.0.0-beta0007",
-            "IsStale": true
-          },
-          {
-            "DependencyId": "NServiceBus.SqlServer",
-            "Version": "2.2.3",
-            "LatestKnownVersion": "3.0.0-beta0002",
-            "IsStale": true
-          },
-          {
-            "DependencyId": "NUnit",
-            "Version": "2.6.4",
-            "LatestKnownVersion": "3.2.1",
-            "IsStale": true
+            "IsStale": true,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "Particular.Licensing.Sources",
             "Version": "0.1.59",
             "LatestKnownVersion": "0.1.60",
-            "IsStale": true
+            "IsStale": true,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "RavenDB.Database",
             "Version": "2.5.2996",
             "LatestKnownVersion": "3.0.30143",
-            "IsStale": true
+            "IsStale": true,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "RavenDB.Embedded",
             "Version": "2.5.2962",
             "LatestKnownVersion": "2.5.2996",
-            "IsStale": true
+            "IsStale": true,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "ServiceControl.Contracts",
             "Version": "1.1.1",
             "LatestKnownVersion": "1.2.0",
-            "IsStale": true
+            "IsStale": true,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "System.Spatial",
             "Version": "5.6.4",
             "LatestKnownVersion": "5.7.0",
-            "IsStale": true
+            "IsStale": true,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "Fody",
             "Version": "1.29.2",
             "LatestKnownVersion": "1.29.4",
-            "IsStale": true
+            "IsStale": true,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "Microsoft.Data.Edm",
             "Version": "5.6.3",
             "LatestKnownVersion": "5.7.0",
-            "IsStale": true
+            "IsStale": true,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "Microsoft.Data.OData",
             "Version": "5.6.3",
             "LatestKnownVersion": "5.7.0",
-            "IsStale": true
+            "IsStale": true,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "Microsoft.WindowsAzure.ConfigurationManager",
             "Version": "2.0.3",
             "LatestKnownVersion": "3.2.1",
-            "IsStale": true
+            "IsStale": true,
+            "IsPrerelease": false
           },
           {
-            "DependencyId": "NServiceBus.Host",
-            "Version": "6.0.0",
-            "LatestKnownVersion": "7.0.0-beta0003",
-            "IsStale": true
+            "DependencyId": "NServiceBus.RavenDB",
+            "Version": "2.2.4",
+            "LatestKnownVersion": "3.0.10",
+            "IsStale": true,
+            "IsPrerelease": false
           },
           {
-            "DependencyId": "NServiceBus.NLog",
-            "Version": "1.1.0",
-            "LatestKnownVersion": "2.0.0-beta0001",
-            "IsStale": true
-          },
-          {
-            "DependencyId": "NServiceBus.RabbitMQ",
-            "Version": "3.3.1",
-            "LatestKnownVersion": "4.0.0-beta0004",
-            "IsStale": true
+            "DependencyId": "NUnit",
+            "Version": "2.6.4",
+            "LatestKnownVersion": "3.4.0",
+            "IsStale": true,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "PropertyChanged.Fody",
             "Version": "1.49.0",
             "LatestKnownVersion": "1.51.0",
-            "IsStale": true
+            "IsStale": true,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "RavenDB.Database",
             "Version": "2.5.2962",
             "LatestKnownVersion": "3.0.30143",
-            "IsStale": true
+            "IsStale": true,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "System.Spatial",
             "Version": "5.6.3",
             "LatestKnownVersion": "5.7.0",
-            "IsStale": true
-          },
-          {
-            "DependencyId": "Microsoft.WindowsAzure.ConfigurationManager",
-            "Version": "1.8.0.0",
-            "LatestKnownVersion": "3.2.1",
-            "IsStale": true
-          },
-          {
-            "DependencyId": "NServiceBus.Azure.Transports.WindowsAzureStorageQueues",
-            "Version": "6.2.1",
-            "LatestKnownVersion": "7.0.0-beta0004",
-            "IsStale": true
+            "IsStale": true,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "WindowsAzure.Storage",
             "Version": "4.3.0",
-            "LatestKnownVersion": "7.0.1-preview",
-            "IsStale": true
+            "LatestKnownVersion": "7.0.0",
+            "IsStale": true,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "GitVersionTask",
             "Version": "2.0.1",
             "LatestKnownVersion": "3.5.4",
-            "IsStale": true
+            "IsStale": true,
+            "IsPrerelease": false
           },
           {
-            "DependencyId": "NServiceBus.RavenDB",
-            "Version": "2.2.4",
-            "LatestKnownVersion": "4.0.0-beta0005",
-            "IsStale": true
+            "DependencyId": "Microsoft.WindowsAzure.ConfigurationManager",
+            "Version": "1.8.0.0",
+            "LatestKnownVersion": "3.2.1",
+            "IsStale": true,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "RavenDB.Client",
             "Version": "2.5.2996",
             "LatestKnownVersion": "3.0.30143",
-            "IsStale": true
-          },
-          {
-            "DependencyId": "WindowsAzure.ServiceBus",
-            "Version": "2.6.0",
-            "LatestKnownVersion": "3.2.2",
-            "IsStale": true
+            "IsStale": true,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "WindowsAzure.Storage",
             "Version": "2.1.0.4",
-            "LatestKnownVersion": "7.0.1-preview",
-            "IsStale": true
+            "LatestKnownVersion": "7.0.0",
+            "IsStale": true,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "RavenDB.Client",
             "Version": "2.5.2970",
             "LatestKnownVersion": "3.0.30143",
-            "IsStale": true
+            "IsStale": true,
+            "IsPrerelease": false
+          },
+          {
+            "DependencyId": "WindowsAzure.ServiceBus",
+            "Version": "2.6.0",
+            "LatestKnownVersion": "3.3.0",
+            "IsStale": true,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "RavenDB.Client",
             "Version": "2.5.2962",
             "LatestKnownVersion": "3.0.30143",
-            "IsStale": true
-          },
-          {
-            "DependencyId": "NServiceBus",
-            "Version": "5.2.14",
-            "LatestKnownVersion": "6.0.0-unstable1786",
-            "IsStale": true
+            "IsStale": true,
+            "IsPrerelease": false
           }
         ]
       },
@@ -11758,25 +12881,29 @@ g_data = {
             "DependencyId": "NuGet.CommandLine",
             "Version": "2.8.6",
             "LatestKnownVersion": "3.3.0",
-            "IsStale": true
+            "IsStale": true,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "NuGetPackager",
             "Version": "0.5.5",
             "LatestKnownVersion": "0.6.0",
-            "IsStale": true
-          },
-          {
-            "DependencyId": "NuGet.CommandLine",
-            "Version": "2.8.3",
-            "LatestKnownVersion": "3.3.0",
-            "IsStale": true
+            "IsStale": true,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "GitVersionTask",
             "Version": "2.0.1",
             "LatestKnownVersion": "3.5.4",
-            "IsStale": true
+            "IsStale": true,
+            "IsPrerelease": false
+          },
+          {
+            "DependencyId": "NuGet.CommandLine",
+            "Version": "2.8.3",
+            "LatestKnownVersion": "3.3.0",
+            "IsStale": true,
+            "IsPrerelease": false
           }
         ]
       },
@@ -11788,7 +12915,8 @@ g_data = {
             "DependencyId": "RavenDB.Client",
             "Version": "2.5.2970",
             "LatestKnownVersion": "3.0.30143",
-            "IsStale": true
+            "IsStale": true,
+            "IsPrerelease": false
           }
         ]
       },
@@ -11800,55 +12928,64 @@ g_data = {
             "DependencyId": "NuGet.CommandLine",
             "Version": "2.8.2",
             "LatestKnownVersion": "3.3.0",
-            "IsStale": true
+            "IsStale": true,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "log4net",
             "Version": "1.2.10",
             "LatestKnownVersion": "2.0.5",
-            "IsStale": true
+            "IsStale": true,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "GitVersionTask",
             "Version": "1.3.0",
             "LatestKnownVersion": "3.5.4",
-            "IsStale": true
+            "IsStale": true,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "NuGetPackager",
             "Version": "0.1.6",
             "LatestKnownVersion": "0.6.0",
-            "IsStale": true
+            "IsStale": true,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "NServiceBus.Host",
             "Version": "3.3.9",
-            "LatestKnownVersion": "7.0.0-beta0003",
-            "IsStale": true
+            "LatestKnownVersion": "6.0.0",
+            "IsStale": true,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "NServiceBus.Interfaces",
             "Version": "3.3.9",
             "LatestKnownVersion": "4.7.12",
-            "IsStale": true
+            "IsStale": true,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "NServiceBus.Interfaces",
             "Version": "3.3.0",
             "LatestKnownVersion": "4.7.12",
-            "IsStale": true
+            "IsStale": true,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "NServiceBus",
             "Version": "3.3.9",
-            "LatestKnownVersion": "6.0.0-unstable1786",
-            "IsStale": true
+            "LatestKnownVersion": "5.2.14",
+            "IsStale": true,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "NServiceBus",
             "Version": "3.3.0",
-            "LatestKnownVersion": "6.0.0-unstable1786",
-            "IsStale": true
+            "LatestKnownVersion": "5.2.14",
+            "IsStale": true,
+            "IsPrerelease": false
           }
         ]
       },
@@ -11860,67 +12997,78 @@ g_data = {
             "DependencyId": "ConsoleTweet",
             "Version": "0.1.0",
             "LatestKnownVersion": "0.1.0",
-            "IsStale": false
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "GitHubReleaseNotes",
             "Version": "0.1.1",
             "LatestKnownVersion": "0.1.1",
-            "IsStale": false
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "NuGet.CommandLine",
             "Version": "2.8.3",
             "LatestKnownVersion": "3.3.0",
-            "IsStale": true
+            "IsStale": true,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "log4net",
             "Version": "1.2.10",
             "LatestKnownVersion": "2.0.5",
-            "IsStale": true
+            "IsStale": true,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "NuGetPackager",
             "Version": "0.4.13",
             "LatestKnownVersion": "0.6.0",
-            "IsStale": true
+            "IsStale": true,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "GitVersionTask",
             "Version": "1.3.0",
             "LatestKnownVersion": "3.5.4",
-            "IsStale": true
+            "IsStale": true,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "NServiceBus.Host",
             "Version": "3.3.9",
-            "LatestKnownVersion": "7.0.0-beta0003",
-            "IsStale": true
+            "LatestKnownVersion": "6.0.0",
+            "IsStale": true,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "NServiceBus.Interfaces",
             "Version": "3.3.9",
             "LatestKnownVersion": "4.7.12",
-            "IsStale": true
+            "IsStale": true,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "NServiceBus.Interfaces",
             "Version": "3.3.0",
             "LatestKnownVersion": "4.7.12",
-            "IsStale": true
+            "IsStale": true,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "NServiceBus",
             "Version": "3.3.9",
-            "LatestKnownVersion": "6.0.0-unstable1786",
-            "IsStale": true
+            "LatestKnownVersion": "5.2.14",
+            "IsStale": true,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "NServiceBus",
             "Version": "3.3.0",
-            "LatestKnownVersion": "6.0.0-unstable1786",
-            "IsStale": true
+            "LatestKnownVersion": "5.2.14",
+            "IsStale": true,
+            "IsPrerelease": false
           }
         ]
       },
@@ -11932,37 +13080,43 @@ g_data = {
             "DependencyId": "NuGetPackager",
             "Version": "0.5.5",
             "LatestKnownVersion": "0.6.0",
-            "IsStale": true
+            "IsStale": true,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "GitVersionTask",
             "Version": "2.0.1",
             "LatestKnownVersion": "3.5.4",
-            "IsStale": true
+            "IsStale": true,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "NuGet.CommandLine",
             "Version": "2.8.2",
             "LatestKnownVersion": "3.3.0",
-            "IsStale": true
+            "IsStale": true,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "NServiceBus.Interfaces",
             "Version": "4.6.1",
             "LatestKnownVersion": "4.7.12",
-            "IsStale": true
+            "IsStale": true,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "NServiceBus.Host",
             "Version": "4.6.1",
-            "LatestKnownVersion": "7.0.0-beta0003",
-            "IsStale": true
+            "LatestKnownVersion": "6.0.0",
+            "IsStale": true,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "NServiceBus",
             "Version": "4.6.1",
-            "LatestKnownVersion": "6.0.0-unstable1786",
-            "IsStale": true
+            "LatestKnownVersion": "5.2.14",
+            "IsStale": true,
+            "IsPrerelease": false
           }
         ]
       },
@@ -11973,38 +13127,44 @@ g_data = {
           {
             "DependencyId": "NUnit",
             "Version": "2.6.3",
-            "LatestKnownVersion": "3.2.1",
-            "IsStale": true
+            "LatestKnownVersion": "3.4.0",
+            "IsStale": true,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "NuGet.CommandLine",
             "Version": "2.8.2",
             "LatestKnownVersion": "3.3.0",
-            "IsStale": true
+            "IsStale": true,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "NServiceBus.Interfaces",
             "Version": "4.6.1",
             "LatestKnownVersion": "4.7.12",
-            "IsStale": true
+            "IsStale": true,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "GitVersionTask",
             "Version": "1.2.0",
             "LatestKnownVersion": "3.5.4",
-            "IsStale": true
+            "IsStale": true,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "NuGetPackager",
             "Version": "0.1.3",
             "LatestKnownVersion": "0.6.0",
-            "IsStale": true
+            "IsStale": true,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "NServiceBus",
             "Version": "4.6.1",
-            "LatestKnownVersion": "6.0.0-unstable1786",
-            "IsStale": true
+            "LatestKnownVersion": "5.2.14",
+            "IsStale": true,
+            "IsPrerelease": false
           }
         ]
       },
@@ -12016,49 +13176,57 @@ g_data = {
             "DependencyId": "ConsoleTweet",
             "Version": "0.1.0",
             "LatestKnownVersion": "0.1.0",
-            "IsStale": false
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "GitHubReleaseNotes",
             "Version": "0.1.1",
             "LatestKnownVersion": "0.1.1",
-            "IsStale": false
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "NuGet.CommandLine",
             "Version": "2.8.3",
             "LatestKnownVersion": "3.3.0",
-            "IsStale": true
+            "IsStale": true,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "NuGetPackager",
             "Version": "0.4.13",
             "LatestKnownVersion": "0.6.0",
-            "IsStale": true
+            "IsStale": true,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "GitVersionTask",
             "Version": "1.3.0",
             "LatestKnownVersion": "3.5.4",
-            "IsStale": true
+            "IsStale": true,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "NServiceBus.Interfaces",
             "Version": "4.6.1",
             "LatestKnownVersion": "4.7.12",
-            "IsStale": true
+            "IsStale": true,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "NServiceBus.Host",
             "Version": "4.6.1",
-            "LatestKnownVersion": "7.0.0-beta0003",
-            "IsStale": true
+            "LatestKnownVersion": "6.0.0",
+            "IsStale": true,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "NServiceBus",
             "Version": "4.6.1",
-            "LatestKnownVersion": "6.0.0-unstable1786",
-            "IsStale": true
+            "LatestKnownVersion": "5.2.14",
+            "IsStale": true,
+            "IsPrerelease": false
           }
         ]
       },
@@ -12070,55 +13238,64 @@ g_data = {
             "DependencyId": "ConsoleTweet",
             "Version": "0.1.0",
             "LatestKnownVersion": "0.1.0",
-            "IsStale": false
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "GitHubReleaseNotes",
             "Version": "0.1.1",
             "LatestKnownVersion": "0.1.1",
-            "IsStale": false
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "NuGetPackager",
             "Version": "0.5.5",
             "LatestKnownVersion": "0.6.0",
-            "IsStale": true
+            "IsStale": true,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "GitVersionTask",
             "Version": "2.0.1",
             "LatestKnownVersion": "3.5.4",
-            "IsStale": true
+            "IsStale": true,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "NuGet.CommandLine",
             "Version": "2.8.2",
             "LatestKnownVersion": "3.3.0",
-            "IsStale": true
+            "IsStale": true,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "NLog",
             "Version": "3.0.0.0",
             "LatestKnownVersion": "4.3.5",
-            "IsStale": true
+            "IsStale": true,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "NServiceBus.Interfaces",
             "Version": "4.6.1",
             "LatestKnownVersion": "4.7.12",
-            "IsStale": true
+            "IsStale": true,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "NServiceBus.Host",
             "Version": "4.6.1",
-            "LatestKnownVersion": "7.0.0-beta0003",
-            "IsStale": true
+            "LatestKnownVersion": "6.0.0",
+            "IsStale": true,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "NServiceBus",
             "Version": "4.6.1",
-            "LatestKnownVersion": "6.0.0-unstable1786",
-            "IsStale": true
+            "LatestKnownVersion": "5.2.14",
+            "IsStale": true,
+            "IsPrerelease": false
           }
         ]
       },
@@ -12130,31 +13307,36 @@ g_data = {
             "DependencyId": "NuGetPackager",
             "Version": "0.5.5",
             "LatestKnownVersion": "0.6.0",
-            "IsStale": true
+            "IsStale": true,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "GitVersionTask",
             "Version": "2.0.1",
             "LatestKnownVersion": "3.5.4",
-            "IsStale": true
+            "IsStale": true,
+            "IsPrerelease": false
+          },
+          {
+            "DependencyId": "NServiceBus.Host",
+            "Version": "5.0.0",
+            "LatestKnownVersion": "6.0.0",
+            "IsStale": true,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "NuGet.CommandLine",
             "Version": "2.8.2",
             "LatestKnownVersion": "3.3.0",
-            "IsStale": true
-          },
-          {
-            "DependencyId": "NServiceBus.Host",
-            "Version": "5.0.0",
-            "LatestKnownVersion": "7.0.0-beta0003",
-            "IsStale": true
+            "IsStale": true,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "NServiceBus",
             "Version": "5.0.0",
-            "LatestKnownVersion": "6.0.0-unstable1786",
-            "IsStale": true
+            "LatestKnownVersion": "5.2.14",
+            "IsStale": true,
+            "IsPrerelease": false
           }
         ]
       },
@@ -12163,94 +13345,108 @@ g_data = {
         "Score": 5,
         "Dependencies": [
           {
+            "DependencyId": "NServiceBus.AcceptanceTesting",
+            "Version": "5.2.4",
+            "LatestKnownVersion": "5.2.4",
+            "IsStale": false,
+            "IsPrerelease": false
+          },
+          {
             "DependencyId": "NuGetPackager",
             "Version": "0.5.5",
             "LatestKnownVersion": "0.6.0",
-            "IsStale": true
+            "IsStale": true,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "NUnit",
             "Version": "2.6.4",
-            "LatestKnownVersion": "3.2.1",
-            "IsStale": true
+            "LatestKnownVersion": "3.4.0",
+            "IsStale": true,
+            "IsPrerelease": false
+          },
+          {
+            "DependencyId": "NServiceBus.Host",
+            "Version": "5.0.0",
+            "LatestKnownVersion": "6.0.0",
+            "IsStale": true,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "GitVersionTask",
             "Version": "1.3.3",
             "LatestKnownVersion": "3.5.4",
-            "IsStale": true
-          },
-          {
-            "DependencyId": "NServiceBus.Host",
-            "Version": "5.0.0",
-            "LatestKnownVersion": "7.0.0-beta0003",
-            "IsStale": true
-          },
-          {
-            "DependencyId": "NServiceBus.AcceptanceTesting",
-            "Version": "5.2.4",
-            "LatestKnownVersion": "6.0.0-unstable1782",
-            "IsStale": true
+            "IsStale": true,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "NServiceBus",
             "Version": "5.2.4",
-            "LatestKnownVersion": "6.0.0-unstable1786",
-            "IsStale": true
+            "LatestKnownVersion": "5.2.14",
+            "IsStale": true,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "NServiceBus",
             "Version": "5.0.0",
-            "LatestKnownVersion": "6.0.0-unstable1786",
-            "IsStale": true
+            "LatestKnownVersion": "5.2.14",
+            "IsStale": true,
+            "IsPrerelease": false
           }
         ]
       },
       {
         "ServiceId": "ServiceControl.Plugin.Nsb5.SagaAudit",
-        "Score": 5,
+        "Score": 4,
         "Dependencies": [
           {
             "DependencyId": "ConsoleTweet",
             "Version": "0.1.0",
             "LatestKnownVersion": "0.1.0",
-            "IsStale": false
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "GitHubReleaseNotes",
             "Version": "0.1.1",
             "LatestKnownVersion": "0.1.1",
-            "IsStale": false
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "NuGetPackager",
             "Version": "0.5.5",
             "LatestKnownVersion": "0.6.0",
-            "IsStale": true
+            "IsStale": true,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "GitVersionTask",
             "Version": "2.0.1",
             "LatestKnownVersion": "3.5.4",
-            "IsStale": true
+            "IsStale": true,
+            "IsPrerelease": false
+          },
+          {
+            "DependencyId": "NServiceBus.Host",
+            "Version": "5.0.0",
+            "LatestKnownVersion": "6.0.0",
+            "IsStale": true,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "NuGet.CommandLine",
             "Version": "2.8.2",
             "LatestKnownVersion": "3.3.0",
-            "IsStale": true
-          },
-          {
-            "DependencyId": "NServiceBus.Host",
-            "Version": "5.0.0",
-            "LatestKnownVersion": "7.0.0-beta0003",
-            "IsStale": true
+            "IsStale": true,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "NServiceBus",
             "Version": "5.0.0",
-            "LatestKnownVersion": "6.0.0-unstable1786",
-            "IsStale": true
+            "LatestKnownVersion": "5.2.14",
+            "IsStale": true,
+            "IsPrerelease": false
           }
         ]
       },
@@ -12262,31 +13458,36 @@ g_data = {
             "DependencyId": "NuGetPackager",
             "Version": "0.5.5",
             "LatestKnownVersion": "0.6.0",
-            "IsStale": true
+            "IsStale": true,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "GitVersionTask",
             "Version": "2.0.1",
             "LatestKnownVersion": "3.5.4",
-            "IsStale": true
+            "IsStale": true,
+            "IsPrerelease": false
+          },
+          {
+            "DependencyId": "NServiceBus.Host",
+            "Version": "5.0.0",
+            "LatestKnownVersion": "6.0.0",
+            "IsStale": true,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "NuGet.CommandLine",
             "Version": "2.8.2",
             "LatestKnownVersion": "3.3.0",
-            "IsStale": true
-          },
-          {
-            "DependencyId": "NServiceBus.Host",
-            "Version": "5.0.0",
-            "LatestKnownVersion": "7.0.0-beta0003",
-            "IsStale": true
+            "IsStale": true,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "NServiceBus",
             "Version": "5.0.0",
-            "LatestKnownVersion": "6.0.0-unstable1786",
-            "IsStale": true
+            "LatestKnownVersion": "5.2.14",
+            "IsStale": true,
+            "IsPrerelease": false
           }
         ]
       },
@@ -12295,88 +13496,101 @@ g_data = {
         "Score": 5,
         "Dependencies": [
           {
+            "DependencyId": "NServiceBus.AcceptanceTesting",
+            "Version": "5.2.4",
+            "LatestKnownVersion": "5.2.4",
+            "IsStale": false,
+            "IsPrerelease": false
+          },
+          {
             "DependencyId": "NuGetPackager",
             "Version": "0.5.5",
             "LatestKnownVersion": "0.6.0",
-            "IsStale": true
+            "IsStale": true,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "NUnit",
             "Version": "2.6.4",
-            "LatestKnownVersion": "3.2.1",
-            "IsStale": true
+            "LatestKnownVersion": "3.4.0",
+            "IsStale": true,
+            "IsPrerelease": false
+          },
+          {
+            "DependencyId": "NServiceBus.Host",
+            "Version": "5.0.0",
+            "LatestKnownVersion": "6.0.0",
+            "IsStale": true,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "GitVersionTask",
             "Version": "1.3.3",
             "LatestKnownVersion": "3.5.4",
-            "IsStale": true
-          },
-          {
-            "DependencyId": "NServiceBus.Host",
-            "Version": "5.0.0",
-            "LatestKnownVersion": "7.0.0-beta0003",
-            "IsStale": true
-          },
-          {
-            "DependencyId": "NServiceBus.AcceptanceTesting",
-            "Version": "5.2.4",
-            "LatestKnownVersion": "6.0.0-unstable1782",
-            "IsStale": true
+            "IsStale": true,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "NServiceBus",
             "Version": "5.2.4",
-            "LatestKnownVersion": "6.0.0-unstable1786",
-            "IsStale": true
+            "LatestKnownVersion": "5.2.14",
+            "IsStale": true,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "NServiceBus",
             "Version": "5.0.0",
-            "LatestKnownVersion": "6.0.0-unstable1786",
-            "IsStale": true
+            "LatestKnownVersion": "5.2.14",
+            "IsStale": true,
+            "IsPrerelease": false
           }
         ]
       },
       {
         "ServiceId": "ServiceControl.Plugin.Nsb6.SagaAudit",
-        "Score": 5,
+        "Score": 4,
         "Dependencies": [
           {
             "DependencyId": "ConsoleTweet",
             "Version": "0.1.0",
             "LatestKnownVersion": "0.1.0",
-            "IsStale": false
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "GitHubReleaseNotes",
             "Version": "0.1.1",
             "LatestKnownVersion": "0.1.1",
-            "IsStale": false
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "NuGetPackager",
             "Version": "0.5.5",
             "LatestKnownVersion": "0.6.0",
-            "IsStale": true
+            "IsStale": true,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "GitVersionTask",
             "Version": "2.0.1",
             "LatestKnownVersion": "3.5.4",
-            "IsStale": true
+            "IsStale": true,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "NuGet.CommandLine",
             "Version": "2.8.2",
             "LatestKnownVersion": "3.3.0",
-            "IsStale": true
+            "IsStale": true,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "NServiceBus",
             "Version": "5.0.0",
-            "LatestKnownVersion": "6.0.0-unstable1786",
-            "IsStale": true
+            "LatestKnownVersion": "5.2.14",
+            "IsStale": true,
+            "IsPrerelease": false
           }
         ]
       },
@@ -12388,475 +13602,553 @@ g_data = {
             "DependencyId": "Autofac",
             "Version": "3.5.2",
             "LatestKnownVersion": "3.5.2",
-            "IsStale": false
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "Autofac.Configuration",
             "Version": "3.3.0",
             "LatestKnownVersion": "3.3.0",
-            "IsStale": false
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "AvalonEdit",
             "Version": "5.0.2",
             "LatestKnownVersion": "5.0.2",
-            "IsStale": false
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "Comparers",
             "Version": "4.0.0",
             "LatestKnownVersion": "4.0.0",
-            "IsStale": false
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "EmptyConstructor.Fody",
             "Version": "1.1.1.0",
             "LatestKnownVersion": "1.1.1.0",
-            "IsStale": false
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "GitVersionTask",
             "Version": "3.5.4",
             "LatestKnownVersion": "3.5.4",
-            "IsStale": false
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "gong-wpf-dragdrop",
             "Version": "0.1.4.1",
             "LatestKnownVersion": "0.1.4.1",
-            "IsStale": false
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "NUnit.Runners",
             "Version": "2.6.3",
             "LatestKnownVersion": "2.6.3",
-            "IsStale": false
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "ObservablePropertyChanged",
             "Version": "0.1.3",
             "LatestKnownVersion": "0.1.3",
-            "IsStale": false
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "Particular.CodeRules",
             "Version": "0.1.1",
             "LatestKnownVersion": "0.1.1",
-            "IsStale": false
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "Particular.Licensing.Sources",
             "Version": "0.1.60",
             "LatestKnownVersion": "0.1.60",
-            "IsStale": false
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "reactiveui",
             "Version": "5.5.1",
             "LatestKnownVersion": "5.5.1",
-            "IsStale": false
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "reactiveui-core",
             "Version": "5.5.1",
             "LatestKnownVersion": "5.5.1",
-            "IsStale": false
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "reactiveui-platforms",
             "Version": "5.5.1",
             "LatestKnownVersion": "5.5.1",
-            "IsStale": false
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "Rx-Core",
             "Version": "2.2.5",
             "LatestKnownVersion": "2.2.5",
-            "IsStale": false
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "Rx-Interfaces",
             "Version": "2.2.5",
             "LatestKnownVersion": "2.2.5",
-            "IsStale": false
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "Rx-Linq",
             "Version": "2.2.5",
             "LatestKnownVersion": "2.2.5",
-            "IsStale": false
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "Rx-Main",
             "Version": "2.2.5",
             "LatestKnownVersion": "2.2.5",
-            "IsStale": false
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "Rx-PlatformServices",
             "Version": "2.2.5",
             "LatestKnownVersion": "2.2.5",
-            "IsStale": false
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "Rx-XAML",
             "Version": "2.2.5",
             "LatestKnownVersion": "2.2.5",
-            "IsStale": false
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "StyleCop.Analyzers",
             "Version": "1.0.0",
             "LatestKnownVersion": "1.0.0",
-            "IsStale": false
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "Virtuosity.Fody",
             "Version": "1.19.7.0",
             "LatestKnownVersion": "1.19.7.0",
-            "IsStale": false
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "Anotar.Serilog.Fody",
             "Version": "2.16.0.1",
             "LatestKnownVersion": "3.0.1",
-            "IsStale": true
+            "IsStale": true,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "Caliburn.Micro",
             "Version": "2.0.2",
             "LatestKnownVersion": "3.0.0",
-            "IsStale": true
+            "IsStale": true,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "Caliburn.Micro.Core",
             "Version": "2.0.2",
             "LatestKnownVersion": "3.0.0",
-            "IsStale": true
+            "IsStale": true,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "Fody",
             "Version": "1.29.3",
             "LatestKnownVersion": "1.29.4",
-            "IsStale": true
+            "IsStale": true,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "Humanizer",
             "Version": "1.34.0",
             "LatestKnownVersion": "1.37.7",
-            "IsStale": true
+            "IsStale": true,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "PropertyChanged.Fody",
             "Version": "1.50.3",
             "LatestKnownVersion": "1.51.0",
-            "IsStale": true
+            "IsStale": true,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "RestSharp",
             "Version": "105.0.1",
             "LatestKnownVersion": "105.2.3",
-            "IsStale": true
+            "IsStale": true,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "Mindscape.Raygun4Net",
             "Version": "5.0.0",
             "LatestKnownVersion": "5.3.0",
-            "IsStale": true
+            "IsStale": true,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "Newtonsoft.Json",
             "Version": "6.0.8",
             "LatestKnownVersion": "8.0.3",
-            "IsStale": true
+            "IsStale": true,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "NuGet.CommandLine",
             "Version": "2.8.2",
             "LatestKnownVersion": "3.3.0",
-            "IsStale": true
+            "IsStale": true,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "Serilog",
             "Version": "1.4.204",
             "LatestKnownVersion": "1.5.14",
-            "IsStale": true
+            "IsStale": true,
+            "IsPrerelease": false
           }
         ]
       },
       {
         "ServiceId": "ServiceMatrix",
-        "Score": 4,
+        "Score": 3,
         "Dependencies": [
           {
             "DependencyId": "Autofac",
             "Version": "3.5.2",
             "LatestKnownVersion": "3.5.2",
-            "IsStale": false
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "Autofac.Mvc4",
             "Version": "3.1.0",
             "LatestKnownVersion": "3.1.0",
-            "IsStale": false
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "FluentValidation-Signed",
             "Version": "5.2.0.0",
             "LatestKnownVersion": "5.2.0.0",
-            "IsStale": false
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "Microsoft.AspNet.Mvc.FixedDisplayModes",
             "Version": "1.0.0",
             "LatestKnownVersion": "1.0.0",
-            "IsStale": false
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "Microsoft.jQuery.Unobtrusive.Ajax",
             "Version": "2.0.30506.0",
             "LatestKnownVersion": "2.0.30506.0",
-            "IsStale": false
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "Microsoft.Web.Infrastructure",
             "Version": "1.0.0.0",
             "LatestKnownVersion": "1.0.0.0",
-            "IsStale": false
+            "IsStale": false,
+            "IsPrerelease": false
+          },
+          {
+            "DependencyId": "NServiceBus.Autofac",
+            "Version": "5.0.0",
+            "LatestKnownVersion": "5.0.0",
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "NuGet.VisualStudio",
             "Version": "2.8.1",
             "LatestKnownVersion": "2.8.1",
-            "IsStale": false
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "Owin",
             "Version": "1.0",
             "LatestKnownVersion": "1.0",
-            "IsStale": false
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "ServiceControl.Plugin.CustomChecks",
             "Version": "1.0.0",
             "LatestKnownVersion": "1.0.0",
-            "IsStale": false
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "ServiceControl.Plugin.DebugSession",
             "Version": "1.0.0",
             "LatestKnownVersion": "1.0.0",
-            "IsStale": false
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "ServiceControl.Plugin.Heartbeat",
             "Version": "1.0.0",
             "LatestKnownVersion": "1.0.0",
-            "IsStale": false
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "ServiceControl.Plugin.Nsb5.DebugSession",
             "Version": "1.0.0",
             "LatestKnownVersion": "1.0.0",
-            "IsStale": false
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "ServiceControl.Plugin.SagaAudit",
             "Version": "1.0.0",
             "LatestKnownVersion": "1.0.0",
-            "IsStale": false
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "Autofac",
             "Version": "3.1.0",
             "LatestKnownVersion": "3.5.2",
-            "IsStale": true
+            "IsStale": true,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "Microsoft.AspNet.SignalR.JS",
             "Version": "1.0.0",
             "LatestKnownVersion": "2.2.0",
-            "IsStale": true
+            "IsStale": true,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "Microsoft.AspNet.SignalR.Owin",
             "Version": "1.0.0",
             "LatestKnownVersion": "1.2.2",
-            "IsStale": true
+            "IsStale": true,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "Microsoft.Net.Http",
             "Version": "2.0.20710.0",
             "LatestKnownVersion": "2.2.29",
-            "IsStale": true
-          },
-          {
-            "DependencyId": "NServiceBus.Autofac",
-            "Version": "5.0.0",
-            "LatestKnownVersion": "6.0.0-beta0001",
-            "IsStale": true
+            "IsStale": true,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "ServiceControl.Plugin.Nsb5.CustomChecks",
             "Version": "1.0.0",
             "LatestKnownVersion": "1.0.1",
-            "IsStale": true
+            "IsStale": true,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "ServiceControl.Plugin.Nsb5.SagaAudit",
             "Version": "1.0.0",
             "LatestKnownVersion": "1.0.1",
-            "IsStale": true
+            "IsStale": true,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "jQuery",
             "Version": "1.7.1",
             "LatestKnownVersion": "1.11.3",
-            "IsStale": true
+            "IsStale": true,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "Microsoft.AspNet.Mvc",
             "Version": "4.0.20710.0",
             "LatestKnownVersion": "5.2.3",
-            "IsStale": true
+            "IsStale": true,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "Microsoft.AspNet.Razor",
             "Version": "2.0.20715.0",
             "LatestKnownVersion": "3.2.3",
-            "IsStale": true
+            "IsStale": true,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "Microsoft.AspNet.SignalR",
             "Version": "1.0.0",
             "LatestKnownVersion": "2.2.0",
-            "IsStale": true
+            "IsStale": true,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "Microsoft.AspNet.SignalR.Core",
             "Version": "1.0.0",
             "LatestKnownVersion": "2.2.0",
-            "IsStale": true
+            "IsStale": true,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "Microsoft.AspNet.SignalR.SystemWeb",
             "Version": "1.0.0",
             "LatestKnownVersion": "2.2.0",
-            "IsStale": true
+            "IsStale": true,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "Microsoft.AspNet.WebApi",
             "Version": "4.0.20710.0",
             "LatestKnownVersion": "5.2.3",
-            "IsStale": true
+            "IsStale": true,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "Microsoft.AspNet.WebApi.Client",
             "Version": "4.0.20710.0",
             "LatestKnownVersion": "5.2.3",
-            "IsStale": true
+            "IsStale": true,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "Microsoft.AspNet.WebApi.Core",
             "Version": "4.0.20710.0",
             "LatestKnownVersion": "5.2.3",
-            "IsStale": true
+            "IsStale": true,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "Microsoft.AspNet.WebApi.WebHost",
             "Version": "4.0.20710.0",
             "LatestKnownVersion": "5.2.3",
-            "IsStale": true
+            "IsStale": true,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "Microsoft.AspNet.WebPages",
             "Version": "2.0.20710.0",
             "LatestKnownVersion": "3.2.3",
-            "IsStale": true
+            "IsStale": true,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "Moq",
             "Version": "4.2.1408.0717",
             "LatestKnownVersion": "4.2.1510.2205",
-            "IsStale": true
+            "IsStale": true,
+            "IsPrerelease": false
+          },
+          {
+            "DependencyId": "NServiceBus.Autofac",
+            "Version": "4.6.3",
+            "LatestKnownVersion": "5.0.0",
+            "IsStale": true,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "Particular.Licensing.Sources",
             "Version": "0.1.54",
             "LatestKnownVersion": "0.1.60",
-            "IsStale": true
+            "IsStale": true,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "Microsoft.Owin.Host.SystemWeb",
             "Version": "1.0.0",
             "LatestKnownVersion": "3.0.1",
-            "IsStale": true
+            "IsStale": true,
+            "IsPrerelease": false
           },
           {
-            "DependencyId": "NServiceBus.Autofac",
-            "Version": "4.6.3",
-            "LatestKnownVersion": "6.0.0-beta0001",
-            "IsStale": true
+            "DependencyId": "NServiceBus.Host",
+            "Version": "5.0.0",
+            "LatestKnownVersion": "6.0.0",
+            "IsStale": true,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "ServiceControl.Plugin.Nsb5.Heartbeat",
             "Version": "1.0.0",
             "LatestKnownVersion": "2.0.1",
-            "IsStale": true
+            "IsStale": true,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "NuGet.CommandLine",
             "Version": "2.8.2",
             "LatestKnownVersion": "3.3.0",
-            "IsStale": true
-          },
-          {
-            "DependencyId": "NServiceBus.Host",
-            "Version": "5.0.0",
-            "LatestKnownVersion": "7.0.0-beta0003",
-            "IsStale": true
+            "IsStale": true,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "NServiceBus.Interfaces",
             "Version": "4.6.3",
             "LatestKnownVersion": "4.7.12",
-            "IsStale": true
+            "IsStale": true,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "GitVersionTask",
             "Version": "1.2.1",
             "LatestKnownVersion": "3.5.4",
-            "IsStale": true
+            "IsStale": true,
+            "IsPrerelease": false
+          },
+          {
+            "DependencyId": "NServiceBus.Host",
+            "Version": "4.6.3",
+            "LatestKnownVersion": "6.0.0",
+            "IsStale": true,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "Newtonsoft.Json",
             "Version": "5.0.6",
             "LatestKnownVersion": "8.0.3",
-            "IsStale": true
+            "IsStale": true,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "Newtonsoft.Json",
             "Version": "4.5.11",
             "LatestKnownVersion": "8.0.3",
-            "IsStale": true
-          },
-          {
-            "DependencyId": "NServiceBus.Host",
-            "Version": "4.6.3",
-            "LatestKnownVersion": "7.0.0-beta0003",
-            "IsStale": true
+            "IsStale": true,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "NServiceBus",
             "Version": "5.0.0",
-            "LatestKnownVersion": "6.0.0-unstable1786",
-            "IsStale": true
+            "LatestKnownVersion": "5.2.14",
+            "IsStale": true,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "NServiceBus",
             "Version": "4.6.3",
-            "LatestKnownVersion": "6.0.0-unstable1786",
-            "IsStale": true
+            "LatestKnownVersion": "5.2.14",
+            "IsStale": true,
+            "IsPrerelease": false
           }
         ]
       },
@@ -12868,109 +14160,127 @@ g_data = {
             "DependencyId": "jQuery",
             "Version": "1.11.3",
             "LatestKnownVersion": "1.11.3",
-            "IsStale": false
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "Microsoft.AspNet.SignalR.JS",
             "Version": "2.2.0",
             "LatestKnownVersion": "2.2.0",
-            "IsStale": false
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "Microsoft.AspNet.SignalR.Owin",
             "Version": "1.2.2",
             "LatestKnownVersion": "1.2.2",
-            "IsStale": false
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "Microsoft.Web.Infrastructure",
             "Version": "1.0.0.0",
             "LatestKnownVersion": "1.0.0.0",
-            "IsStale": false
+            "IsStale": false,
+            "IsPrerelease": false
+          },
+          {
+            "DependencyId": "NServiceBus",
+            "Version": "5.2.14",
+            "LatestKnownVersion": "5.2.14",
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "Owin",
             "Version": "1.0",
             "LatestKnownVersion": "1.0",
-            "IsStale": false
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "ServiceControl.Plugin.Nsb5.CustomChecks",
             "Version": "1.0.1",
             "LatestKnownVersion": "1.0.1",
-            "IsStale": false
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "Microsoft.AspNet.SignalR",
             "Version": "1.1.3",
             "LatestKnownVersion": "2.2.0",
-            "IsStale": true
+            "IsStale": true,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "Microsoft.AspNet.SignalR.Core",
             "Version": "1.2.2",
             "LatestKnownVersion": "2.2.0",
-            "IsStale": true
+            "IsStale": true,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "Microsoft.AspNet.SignalR.SystemWeb",
             "Version": "1.2.2",
             "LatestKnownVersion": "2.2.0",
-            "IsStale": true
+            "IsStale": true,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "Microsoft.CodeDom.Providers.DotNetCompilerPlatform",
             "Version": "1.0.0",
             "LatestKnownVersion": "1.0.1",
-            "IsStale": true
+            "IsStale": true,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "Microsoft.Net.Compilers",
             "Version": "1.0.0",
             "LatestKnownVersion": "1.2.2",
-            "IsStale": true
+            "IsStale": true,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "ServiceControl.Plugin.Nsb5.Heartbeat",
             "Version": "2.0.0",
             "LatestKnownVersion": "2.0.1",
-            "IsStale": true
+            "IsStale": true,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "Microsoft.Owin.Host.SystemWeb",
             "Version": "1.0.1",
             "LatestKnownVersion": "3.0.1",
-            "IsStale": true
+            "IsStale": true,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "Nancy.Hosting.Self",
             "Version": "1.2.0",
             "LatestKnownVersion": "1.4.1",
-            "IsStale": true
-          },
-          {
-            "DependencyId": "Newtonsoft.Json",
-            "Version": "6.0.8",
-            "LatestKnownVersion": "8.0.3",
-            "IsStale": true
+            "IsStale": true,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "GitVersionTask",
             "Version": "2.0.1",
             "LatestKnownVersion": "3.5.4",
-            "IsStale": true
+            "IsStale": true,
+            "IsPrerelease": false
+          },
+          {
+            "DependencyId": "Newtonsoft.Json",
+            "Version": "6.0.8",
+            "LatestKnownVersion": "8.0.3",
+            "IsStale": true,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "Nancy",
             "Version": "1.2.0",
             "LatestKnownVersion": "1.4.3",
-            "IsStale": true
-          },
-          {
-            "DependencyId": "NServiceBus",
-            "Version": "5.2.14",
-            "LatestKnownVersion": "6.0.0-unstable1786",
-            "IsStale": true
+            "IsStale": true,
+            "IsPrerelease": false
           }
         ]
       },
@@ -12982,307 +14292,356 @@ g_data = {
             "DependencyId": "ConsoleTweet",
             "Version": "0.1.0",
             "LatestKnownVersion": "0.1.0",
-            "IsStale": false
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "GitHubReleaseNotes",
             "Version": "0.1.1",
             "LatestKnownVersion": "0.1.1",
-            "IsStale": false
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "Octokit",
             "Version": "0.18.0",
             "LatestKnownVersion": "0.20.0",
-            "IsStale": true
+            "IsStale": true,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "GitVersionTask",
             "Version": "2.0.1",
             "LatestKnownVersion": "3.5.4",
-            "IsStale": true
+            "IsStale": true,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "NuGet.CommandLine",
             "Version": "2.8.2",
             "LatestKnownVersion": "3.3.0",
-            "IsStale": true
+            "IsStale": true,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "NuGetPackager",
             "Version": "0.4.12",
             "LatestKnownVersion": "0.6.0",
-            "IsStale": true
+            "IsStale": true,
+            "IsPrerelease": false
           }
         ]
       },
       {
         "ServiceId": "TeamCityProjectCreator",
-        "Score": 4,
+        "Score": 3,
         "Dependencies": [
           {
             "DependencyId": "NuGetPackager",
             "Version": "0.5.2",
             "LatestKnownVersion": "0.6.0",
-            "IsStale": true
+            "IsStale": true,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "GitVersionTask",
             "Version": "2.0.1",
             "LatestKnownVersion": "3.5.4",
-            "IsStale": true
+            "IsStale": true,
+            "IsPrerelease": false
           }
         ]
       },
       {
         "ServiceId": "Webinar.SignalR",
-        "Score": 2,
+        "Score": 1,
         "Dependencies": [
           {
             "DependencyId": "Autofac",
             "Version": "3.5.2",
             "LatestKnownVersion": "3.5.2",
-            "IsStale": false
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "Autofac.SignalR",
             "Version": "3.0.2",
             "LatestKnownVersion": "3.0.2",
-            "IsStale": false
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "bootstrap",
             "Version": "3.0.0",
             "LatestKnownVersion": "3.0.0",
-            "IsStale": false
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "jQuery.Validation",
             "Version": "1.11.1",
             "LatestKnownVersion": "1.11.1",
-            "IsStale": false
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "Microsoft.AspNet.Mvc",
             "Version": "5.2.3",
             "LatestKnownVersion": "5.2.3",
-            "IsStale": false
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "Microsoft.AspNet.Razor",
             "Version": "3.2.3",
             "LatestKnownVersion": "3.2.3",
-            "IsStale": false
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "Microsoft.AspNet.SignalR",
             "Version": "2.2.0",
             "LatestKnownVersion": "2.2.0",
-            "IsStale": false
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "Microsoft.AspNet.SignalR.Core",
             "Version": "2.2.0",
             "LatestKnownVersion": "2.2.0",
-            "IsStale": false
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "Microsoft.AspNet.SignalR.JS",
             "Version": "2.2.0",
             "LatestKnownVersion": "2.2.0",
-            "IsStale": false
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "Microsoft.AspNet.SignalR.Redis",
             "Version": "2.2.0",
             "LatestKnownVersion": "2.2.0",
-            "IsStale": false
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "Microsoft.AspNet.SignalR.SystemWeb",
             "Version": "2.2.0",
             "LatestKnownVersion": "2.2.0",
-            "IsStale": false
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "Microsoft.AspNet.Web.Optimization",
             "Version": "1.1.3",
             "LatestKnownVersion": "1.1.3",
-            "IsStale": false
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "Microsoft.AspNet.WebPages",
             "Version": "3.2.3",
             "LatestKnownVersion": "3.2.3",
-            "IsStale": false
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "Microsoft.jQuery.Unobtrusive.Validation",
             "Version": "3.2.3",
             "LatestKnownVersion": "3.2.3",
-            "IsStale": false
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "Microsoft.Web.Infrastructure",
             "Version": "1.0.0.0",
             "LatestKnownVersion": "1.0.0.0",
-            "IsStale": false
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "Modernizr",
             "Version": "2.6.2",
             "LatestKnownVersion": "2.6.2",
-            "IsStale": false
+            "IsStale": false,
+            "IsPrerelease": false
+          },
+          {
+            "DependencyId": "NServiceBus",
+            "Version": "5.2.14",
+            "LatestKnownVersion": "5.2.14",
+            "IsStale": false,
+            "IsPrerelease": false
+          },
+          {
+            "DependencyId": "NServiceBus.Autofac",
+            "Version": "5.0.0",
+            "LatestKnownVersion": "5.0.0",
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "Owin",
             "Version": "1.0",
             "LatestKnownVersion": "1.0",
-            "IsStale": false
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "Respond",
             "Version": "1.2.0",
             "LatestKnownVersion": "1.2.0",
-            "IsStale": false
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "StackExchange.Redis.StrongName",
             "Version": "1.0.322",
             "LatestKnownVersion": "1.0.322",
-            "IsStale": false
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "WebGrease",
             "Version": "1.5.2",
             "LatestKnownVersion": "1.5.2",
-            "IsStale": false
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "Antlr",
             "Version": "3.4.1.9004",
             "LatestKnownVersion": "3.5.0.2",
-            "IsStale": true
+            "IsStale": true,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "jQuery",
             "Version": "1.10.2",
             "LatestKnownVersion": "1.11.3",
-            "IsStale": true
+            "IsStale": true,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "Microsoft.CodeDom.Providers.DotNetCompilerPlatform",
             "Version": "1.0.0",
             "LatestKnownVersion": "1.0.1",
-            "IsStale": true
+            "IsStale": true,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "Microsoft.Net.Compilers",
             "Version": "1.0.0",
             "LatestKnownVersion": "1.2.2",
-            "IsStale": true
+            "IsStale": true,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "Microsoft.Owin",
             "Version": "2.1.0",
             "LatestKnownVersion": "3.0.1",
-            "IsStale": true
+            "IsStale": true,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "Microsoft.Owin.Host.SystemWeb",
             "Version": "2.1.0",
             "LatestKnownVersion": "3.0.1",
-            "IsStale": true
+            "IsStale": true,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "Microsoft.Owin.Security",
             "Version": "2.1.0",
             "LatestKnownVersion": "3.0.1",
-            "IsStale": true
-          },
-          {
-            "DependencyId": "NServiceBus.Autofac",
-            "Version": "5.0.0",
-            "LatestKnownVersion": "6.0.0-beta0001",
-            "IsStale": true
+            "IsStale": true,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "NServiceBus.Azure",
             "Version": "6.2.3",
             "LatestKnownVersion": "6.2.4",
-            "IsStale": true
+            "IsStale": true,
+            "IsPrerelease": false
+          },
+          {
+            "DependencyId": "NServiceBus.Hosting.Azure",
+            "Version": "6.2.4",
+            "LatestKnownVersion": "6.2.5",
+            "IsStale": true,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "RabbitMQ.Client",
             "Version": "3.6.1",
             "LatestKnownVersion": "3.6.2",
-            "IsStale": true
+            "IsStale": true,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "Microsoft.Data.Services.Client",
             "Version": "5.6.2",
             "LatestKnownVersion": "5.7.0",
-            "IsStale": true
+            "IsStale": true,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "Microsoft.WindowsAzure.ConfigurationManager",
             "Version": "2.0.3",
             "LatestKnownVersion": "3.2.1",
-            "IsStale": true
+            "IsStale": true,
+            "IsPrerelease": false
           },
           {
-            "DependencyId": "NServiceBus.Hosting.Azure",
-            "Version": "6.2.4",
-            "LatestKnownVersion": "7.0.0-beta0001",
-            "IsStale": true
+            "DependencyId": "NServiceBus.RabbitMQ",
+            "Version": "3.1.0",
+            "LatestKnownVersion": "3.3.1",
+            "IsStale": true,
+            "IsPrerelease": false
+          },
+          {
+            "DependencyId": "WindowsAzure.Storage",
+            "Version": "4.3.0",
+            "LatestKnownVersion": "7.0.0",
+            "IsStale": true,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "Microsoft.Data.Edm",
             "Version": "5.6.2",
             "LatestKnownVersion": "5.7.0",
-            "IsStale": true
+            "IsStale": true,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "Microsoft.Data.OData",
             "Version": "5.6.2",
             "LatestKnownVersion": "5.7.0",
-            "IsStale": true
+            "IsStale": true,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "System.Spatial",
             "Version": "5.6.2",
             "LatestKnownVersion": "5.7.0",
-            "IsStale": true
-          },
-          {
-            "DependencyId": "WindowsAzure.Storage",
-            "Version": "4.3.0",
-            "LatestKnownVersion": "7.0.1-preview",
-            "IsStale": true
-          },
-          {
-            "DependencyId": "NServiceBus.RabbitMQ",
-            "Version": "3.1.0",
-            "LatestKnownVersion": "4.0.0-beta0004",
-            "IsStale": true
+            "IsStale": true,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "Newtonsoft.Json",
             "Version": "6.0.4",
             "LatestKnownVersion": "8.0.3",
-            "IsStale": true
+            "IsStale": true,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "Newtonsoft.Json",
             "Version": "5.0.8",
             "LatestKnownVersion": "8.0.3",
-            "IsStale": true
-          },
-          {
-            "DependencyId": "NServiceBus",
-            "Version": "5.2.14",
-            "LatestKnownVersion": "6.0.0-unstable1786",
-            "IsStale": true
+            "IsStale": true,
+            "IsPrerelease": false
           }
         ]
       },
@@ -13294,259 +14653,302 @@ g_data = {
             "DependencyId": "Antlr",
             "Version": "3.5.0.2",
             "LatestKnownVersion": "3.5.0.2",
-            "IsStale": false
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "Autofac",
             "Version": "3.5.2",
             "LatestKnownVersion": "3.5.2",
-            "IsStale": false
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "Castle.Core",
             "Version": "3.3.3",
             "LatestKnownVersion": "3.3.3",
-            "IsStale": false
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "Castle.Windsor",
             "Version": "3.3.0",
             "LatestKnownVersion": "3.3.0",
-            "IsStale": false
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "Common.Logging",
             "Version": "3.3.1",
             "LatestKnownVersion": "3.3.1",
-            "IsStale": false
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "Common.Logging.Core",
             "Version": "3.3.1",
             "LatestKnownVersion": "3.3.1",
-            "IsStale": false
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "Common.Logging.Log4Net1211",
             "Version": "3.3.1",
             "LatestKnownVersion": "3.3.1",
-            "IsStale": false
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "Iesi.Collections",
             "Version": "4.0.1.4000",
             "LatestKnownVersion": "4.0.1.4000",
-            "IsStale": false
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "Microsoft.AspNet.Cors",
             "Version": "5.2.3",
             "LatestKnownVersion": "5.2.3",
-            "IsStale": false
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "Microsoft.AspNet.Mvc",
             "Version": "5.2.3",
             "LatestKnownVersion": "5.2.3",
-            "IsStale": false
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "Microsoft.AspNet.Razor",
             "Version": "3.2.3",
             "LatestKnownVersion": "3.2.3",
-            "IsStale": false
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "Microsoft.AspNet.WebApi",
             "Version": "5.2.3",
             "LatestKnownVersion": "5.2.3",
-            "IsStale": false
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "Microsoft.AspNet.WebApi.Client",
             "Version": "5.2.3",
             "LatestKnownVersion": "5.2.3",
-            "IsStale": false
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "Microsoft.AspNet.WebApi.Core",
             "Version": "5.2.3",
             "LatestKnownVersion": "5.2.3",
-            "IsStale": false
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "Microsoft.AspNet.WebApi.Cors",
             "Version": "5.2.3",
             "LatestKnownVersion": "5.2.3",
-            "IsStale": false
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "Microsoft.AspNet.WebApi.WebHost",
             "Version": "5.2.3",
             "LatestKnownVersion": "5.2.3",
-            "IsStale": false
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "Microsoft.AspNet.WebPages",
             "Version": "3.2.3",
             "LatestKnownVersion": "3.2.3",
-            "IsStale": false
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "Microsoft.CodeDom.Providers.DotNetCompilerPlatform",
             "Version": "1.0.1",
             "LatestKnownVersion": "1.0.1",
-            "IsStale": false
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "Microsoft.Net.Compilers",
             "Version": "1.2.2",
             "LatestKnownVersion": "1.2.2",
-            "IsStale": false
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "Microsoft.Owin",
             "Version": "3.0.1",
             "LatestKnownVersion": "3.0.1",
-            "IsStale": false
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "Microsoft.Owin.Cors",
             "Version": "3.0.1",
             "LatestKnownVersion": "3.0.1",
-            "IsStale": false
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "Microsoft.Owin.Host.SystemWeb",
             "Version": "3.0.1",
             "LatestKnownVersion": "3.0.1",
-            "IsStale": false
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "Microsoft.Web.Infrastructure",
             "Version": "1.0.0.0",
             "LatestKnownVersion": "1.0.0.0",
-            "IsStale": false
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "Nancy.Hosting.Self",
             "Version": "1.4.1",
             "LatestKnownVersion": "1.4.1",
-            "IsStale": false
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "Newtonsoft.Json",
             "Version": "8.0.3",
             "LatestKnownVersion": "8.0.3",
-            "IsStale": false
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "NHibernate",
             "Version": "4.0.4.4000",
             "LatestKnownVersion": "4.0.4.4000",
-            "IsStale": false
+            "IsStale": false,
+            "IsPrerelease": false
+          },
+          {
+            "DependencyId": "NServiceBus",
+            "Version": "6.0.0-beta0002",
+            "LatestKnownVersion": "5.2.14",
+            "IsStale": false,
+            "IsPrerelease": true
           },
           {
             "DependencyId": "NServiceBus.Autofac",
             "Version": "6.0.0-beta0001",
-            "LatestKnownVersion": "6.0.0-beta0001",
-            "IsStale": false
+            "LatestKnownVersion": "5.0.0",
+            "IsStale": false,
+            "IsPrerelease": true
+          },
+          {
+            "DependencyId": "NServiceBus.Host",
+            "Version": "7.0.0-beta0002",
+            "LatestKnownVersion": "6.0.0",
+            "IsStale": false,
+            "IsPrerelease": true
+          },
+          {
+            "DependencyId": "NServiceBus.NHibernate",
+            "Version": "7.0.0-beta0001",
+            "LatestKnownVersion": "6.2.7",
+            "IsStale": false,
+            "IsPrerelease": true
           },
           {
             "DependencyId": "Owin",
             "Version": "1.0",
             "LatestKnownVersion": "1.0",
-            "IsStale": false
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "Radical",
             "Version": "1.6.0",
             "LatestKnownVersion": "1.6.0",
-            "IsStale": false
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "Radical.Bootstrapper",
             "Version": "1.0.0.0",
             "LatestKnownVersion": "1.0.0.0",
-            "IsStale": false
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "Radical.Bootstrapper.Windsor",
             "Version": "1.0.0.0",
             "LatestKnownVersion": "1.0.0.0",
-            "IsStale": false
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "Radical.Bootstrapper.Windsor.AspNet",
             "Version": "1.0.0.0",
             "LatestKnownVersion": "1.0.0.0",
-            "IsStale": false
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "SQLite.CodeFirst",
             "Version": "1.2.1.13",
             "LatestKnownVersion": "1.2.1.13",
-            "IsStale": false
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "System.Data.SQLite",
             "Version": "1.0.101.0",
             "LatestKnownVersion": "1.0.101.0",
-            "IsStale": false
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "System.Data.SQLite.Core",
             "Version": "1.0.101.0",
             "LatestKnownVersion": "1.0.101.0",
-            "IsStale": false
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "System.Data.SQLite.EF6",
             "Version": "1.0.101.0",
             "LatestKnownVersion": "1.0.101.0",
-            "IsStale": false
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "System.Data.SQLite.Linq",
             "Version": "1.0.101.0",
             "LatestKnownVersion": "1.0.101.0",
-            "IsStale": false
-          },
-          {
-            "DependencyId": "NServiceBus.Host",
-            "Version": "7.0.0-beta0002",
-            "LatestKnownVersion": "7.0.0-beta0003",
-            "IsStale": true
+            "IsStale": false,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "EntityFramework",
             "Version": "6.1.0",
             "LatestKnownVersion": "6.1.3",
-            "IsStale": true
+            "IsStale": true,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "Nancy",
             "Version": "1.4.1",
             "LatestKnownVersion": "1.4.3",
-            "IsStale": true
-          },
-          {
-            "DependencyId": "NServiceBus.NHibernate",
-            "Version": "7.0.0-beta0001",
-            "LatestKnownVersion": "7.0.0-beta0004",
-            "IsStale": true
+            "IsStale": true,
+            "IsPrerelease": false
           },
           {
             "DependencyId": "log4net",
             "Version": "2.0.0",
             "LatestKnownVersion": "2.0.5",
-            "IsStale": true
-          },
-          {
-            "DependencyId": "NServiceBus",
-            "Version": "6.0.0-beta0002",
-            "LatestKnownVersion": "6.0.0-unstable1786",
-            "IsStale": true
+            "IsStale": true,
+            "IsPrerelease": false
           }
         ]
       }

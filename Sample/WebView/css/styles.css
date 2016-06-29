@@ -90,7 +90,7 @@ ul.tab-links {
     font-size: xx-small;
 }
 
-.dependency.dependency-fresh .version {
+.dependency.dependency-fresh:not(.dependency-prerelease) .version {
     display: none;
 }
 
@@ -107,6 +107,10 @@ ul.tab-links {
     .dependency-stale:before {
         content: '💩';
     }
+
+.dependency-prerelease {
+    color: purple;
+}
 
 ul.dependencies-list {
     padding-left: 20px;

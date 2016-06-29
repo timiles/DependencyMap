@@ -51,8 +51,13 @@ var dependencymap = {
             for (var d = 0; d < service.Dependencies.length; d++) {
                 var dependency = service.Dependencies[d];
                 var dependencyListItem = document.createElement('li');
-                dependencyListItem.className = 'dependency dependency-' + (dependency.IsStale ? 'stale' : 'fresh');
-                dependencyListItem.innerHTML = dependency.DependencyId + ' <span class="version">' + dependency.Version + ' &lt; ' + dependency.LatestKnownVersion + '</span>';
+                dependencyListItem.className = 'dependency dependency-' +
+                    (dependency.IsStale ? 'stale' : 'fresh') +
+                    (dependency.IsPrerelease ? ' dependency-prerelease' : '');
+                dependencyListItem.innerHTML = dependency.DependencyId +
+                    ' <span class="version">' + dependency.Version +
+                    (dependency.IsStale && dependency.Version !== dependency.LatestKnownVersion ? ' &lt; ' + dependency.LatestKnownVersion : '') +
+                    '</span>';
 
                 dependenciesList.appendChild(dependencyListItem);
             }

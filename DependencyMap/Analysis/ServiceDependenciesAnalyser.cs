@@ -43,7 +43,7 @@ namespace DependencyMap.Analysis
                             DependencyId = x.DependencyId,
                             Version = x.Version,
                             LatestKnownVersion = x.LatestKnownVersion,
-                            IsStale = x.Version != x.LatestKnownVersion
+                            IsStale = x.StalenessRating > 0
                         })
                 };
             }
