@@ -111,7 +111,10 @@ ul.tab-links {
 .dependency-prerelease {
     color: purple;
 }
-
+    .dependency-prerelease:before {
+        content: '⚠';
+    }
+    
 ul.dependencies-list {
     padding-left: 20px;
     text-indent: 2px;
